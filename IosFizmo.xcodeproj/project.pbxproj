@@ -1,0 +1,252 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DFA0DF7E14E0B41900B67057 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA0DF7D14E0B41900B67057 /* UIKit.framework */; };
+		DFA0DF8014E0B41900B67057 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA0DF7F14E0B41900B67057 /* Foundation.framework */; };
+		DFA0DF8214E0B41900B67057 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA0DF8114E0B41900B67057 /* CoreGraphics.framework */; };
+		DFA0DF8A14E0B41900B67057 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA0DF8914E0B41900B67057 /* main.m */; };
+		DFA0DFAB14E0BDA700B67057 /* GlkFileSelectLoad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFA0DFA714E0BDA700B67057 /* GlkFileSelectLoad.xib */; };
+		DFA0DFAC14E0BDA700B67057 /* GlkFileSelectStore.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFA0DFA814E0BDA700B67057 /* GlkFileSelectStore.xib */; };
+		DFA0DFAD14E0BDA700B67057 /* IosGlkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFA0DFA914E0BDA700B67057 /* IosGlkViewController.xib */; };
+		DFA0DFAE14E0BDA700B67057 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFA0DFAA14E0BDA700B67057 /* MainWindow.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DFA0DF7914E0B41900B67057 /* IosFizmo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosFizmo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFA0DF7D14E0B41900B67057 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DFA0DF7F14E0B41900B67057 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DFA0DF8114E0B41900B67057 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DFA0DF8514E0B41900B67057 /* IosFizmo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IosFizmo-Info.plist"; sourceTree = "<group>"; };
+		DFA0DF8914E0B41900B67057 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DFA0DF8B14E0B41900B67057 /* IosFizmo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IosFizmo-Prefix.pch"; sourceTree = "<group>"; };
+		DFA0DFA714E0BDA700B67057 /* GlkFileSelectLoad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GlkFileSelectLoad.xib; path = iosglk/GlkFileSelectLoad.xib; sourceTree = "<group>"; };
+		DFA0DFA814E0BDA700B67057 /* GlkFileSelectStore.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GlkFileSelectStore.xib; path = iosglk/GlkFileSelectStore.xib; sourceTree = "<group>"; };
+		DFA0DFA914E0BDA700B67057 /* IosGlkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = IosGlkViewController.xib; path = iosglk/IosGlkViewController.xib; sourceTree = "<group>"; };
+		DFA0DFAA14E0BDA700B67057 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = iosglk/MainWindow.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFA0DF7614E0B41900B67057 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFA0DF7E14E0B41900B67057 /* UIKit.framework in Frameworks */,
+				DFA0DF8014E0B41900B67057 /* Foundation.framework in Frameworks */,
+				DFA0DF8214E0B41900B67057 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DFA0DF6E14E0B41900B67057 = {
+			isa = PBXGroup;
+			children = (
+				DFA0DFA214E0B5BB00B67057 /* Resources */,
+				DFA0DF7C14E0B41900B67057 /* Frameworks */,
+				DFA0DF7A14E0B41900B67057 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DFA0DF7A14E0B41900B67057 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFA0DF7914E0B41900B67057 /* IosFizmo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFA0DF7C14E0B41900B67057 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFA0DF7D14E0B41900B67057 /* UIKit.framework */,
+				DFA0DF7F14E0B41900B67057 /* Foundation.framework */,
+				DFA0DF8114E0B41900B67057 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFA0DFA214E0B5BB00B67057 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DFA0DF8514E0B41900B67057 /* IosFizmo-Info.plist */,
+				DFA0DF8914E0B41900B67057 /* main.m */,
+				DFA0DF8B14E0B41900B67057 /* IosFizmo-Prefix.pch */,
+				DFA0DFAA14E0BDA700B67057 /* MainWindow.xib */,
+				DFA0DFA914E0BDA700B67057 /* IosGlkViewController.xib */,
+				DFA0DFA714E0BDA700B67057 /* GlkFileSelectLoad.xib */,
+				DFA0DFA814E0BDA700B67057 /* GlkFileSelectStore.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFA0DF7814E0B41900B67057 /* IosFizmo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFA0DF9A14E0B41900B67057 /* Build configuration list for PBXNativeTarget "IosFizmo" */;
+			buildPhases = (
+				DFA0DF7514E0B41900B67057 /* Sources */,
+				DFA0DF7614E0B41900B67057 /* Frameworks */,
+				DFA0DF7714E0B41900B67057 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IosFizmo;
+			productName = IosFizmo;
+			productReference = DFA0DF7914E0B41900B67057 /* IosFizmo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFA0DF7014E0B41900B67057 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = Zarfhome;
+			};
+			buildConfigurationList = DFA0DF7314E0B41900B67057 /* Build configuration list for PBXProject "IosFizmo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DFA0DF6E14E0B41900B67057;
+			productRefGroup = DFA0DF7A14E0B41900B67057 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFA0DF7814E0B41900B67057 /* IosFizmo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFA0DF7714E0B41900B67057 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFA0DFAB14E0BDA700B67057 /* GlkFileSelectLoad.xib in Resources */,
+				DFA0DFAC14E0BDA700B67057 /* GlkFileSelectStore.xib in Resources */,
+				DFA0DFAD14E0BDA700B67057 /* IosGlkViewController.xib in Resources */,
+				DFA0DFAE14E0BDA700B67057 /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFA0DF7514E0B41900B67057 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFA0DF8A14E0B41900B67057 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DFA0DF9814E0B41900B67057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DFA0DF9914E0B41900B67057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFA0DF9B14E0B41900B67057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IosFizmo-Prefix.pch";
+				INFOPLIST_FILE = "IosFizmo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DFA0DF9C14E0B41900B67057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IosFizmo-Prefix.pch";
+				INFOPLIST_FILE = "IosFizmo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFA0DF7314E0B41900B67057 /* Build configuration list for PBXProject "IosFizmo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFA0DF9814E0B41900B67057 /* Debug */,
+				DFA0DF9914E0B41900B67057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFA0DF9A14E0B41900B67057 /* Build configuration list for PBXNativeTarget "IosFizmo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFA0DF9B14E0B41900B67057 /* Debug */,
+				DFA0DF9C14E0B41900B67057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFA0DF7014E0B41900B67057 /* Project object */;
+}
