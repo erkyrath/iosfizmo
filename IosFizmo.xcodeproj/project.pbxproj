@@ -70,7 +70,6 @@
 		DF9A845F14E0D994002C2FCB /* wordwrap.c in Sources */ = {isa = PBXBuildFile; fileRef = DF9A840E14E0D994002C2FCB /* wordwrap.c */; };
 		DF9A846014E0D994002C2FCB /* zpu.c in Sources */ = {isa = PBXBuildFile; fileRef = DF9A841014E0D994002C2FCB /* zpu.c */; };
 		DF9A846714E0D994002C2FCB /* libfizmo_locales.c in Sources */ = {isa = PBXBuildFile; fileRef = DF9A841D14E0D994002C2FCB /* libfizmo_locales.c */; };
-		DF9A846914E0D994002C2FCB /* ScreenInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF9A842214E0D994002C2FCB /* ScreenInterface.cpp */; };
 		DF9A847114E0D994002C2FCB /* filesys.c in Sources */ = {isa = PBXBuildFile; fileRef = DF9A842F14E0D994002C2FCB /* filesys.c */; };
 		DF9A847214E0D994002C2FCB /* filesys_c.c in Sources */ = {isa = PBXBuildFile; fileRef = DF9A843114E0D994002C2FCB /* filesys_c.c */; };
 		DF9A847314E0D994002C2FCB /* i18n.c in Sources */ = {isa = PBXBuildFile; fileRef = DF9A843314E0D994002C2FCB /* i18n.c */; };
@@ -79,6 +78,7 @@
 		DF9A847914E0D994002C2FCB /* tracelog.c in Sources */ = {isa = PBXBuildFile; fileRef = DF9A843C14E0D994002C2FCB /* tracelog.c */; };
 		DF9A847A14E0D994002C2FCB /* types.c in Sources */ = {isa = PBXBuildFile; fileRef = DF9A843E14E0D994002C2FCB /* types.c */; };
 		DF9A847B14E0D994002C2FCB /* z_ucs.c in Sources */ = {isa = PBXBuildFile; fileRef = DF9A844114E0D994002C2FCB /* z_ucs.c */; };
+		DF9A847F14E0E887002C2FCB /* libglkif_locales.c in Sources */ = {isa = PBXBuildFile; fileRef = DF9A847D14E0E887002C2FCB /* libglkif_locales.c */; };
 		DFA0DF7E14E0B41900B67057 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA0DF7D14E0B41900B67057 /* UIKit.framework */; };
 		DFA0DF8014E0B41900B67057 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA0DF7F14E0B41900B67057 /* Foundation.framework */; };
 		DFA0DF8214E0B41900B67057 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA0DF8114E0B41900B67057 /* CoreGraphics.framework */; };
@@ -213,8 +213,6 @@
 		DF9A841D14E0D994002C2FCB /* libfizmo_locales.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libfizmo_locales.c; sourceTree = "<group>"; };
 		DF9A841E14E0D994002C2FCB /* libfizmo_locales.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libfizmo_locales.h; sourceTree = "<group>"; };
 		DF9A842114E0D994002C2FCB /* screen_interface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = screen_interface.h; sourceTree = "<group>"; };
-		DF9A842214E0D994002C2FCB /* ScreenInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScreenInterface.cpp; sourceTree = "<group>"; };
-		DF9A842314E0D994002C2FCB /* ScreenInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenInterface.h; sourceTree = "<group>"; };
 		DF9A842514E0D994002C2FCB /* sound_interface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sound_interface.h; sourceTree = "<group>"; };
 		DF9A842F14E0D994002C2FCB /* filesys.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = filesys.c; sourceTree = "<group>"; };
 		DF9A843014E0D994002C2FCB /* filesys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filesys.h; sourceTree = "<group>"; };
@@ -234,6 +232,8 @@
 		DF9A844114E0D994002C2FCB /* z_ucs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = z_ucs.c; sourceTree = "<group>"; };
 		DF9A844214E0D994002C2FCB /* z_ucs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = z_ucs.h; sourceTree = "<group>"; };
 		DF9A847C14E0DE4C002C2FCB /* fizmo-config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "fizmo-config.h"; sourceTree = "<group>"; };
+		DF9A847D14E0E887002C2FCB /* libglkif_locales.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = libglkif_locales.c; path = fizmo/libglkif/src/locales/libglkif_locales.c; sourceTree = SOURCE_ROOT; };
+		DF9A847E14E0E887002C2FCB /* libglkif_locales.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libglkif_locales.h; path = fizmo/libglkif/src/locales/libglkif_locales.h; sourceTree = SOURCE_ROOT; };
 		DFA0DF7914E0B41900B67057 /* IosFizmo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosFizmo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFA0DF7D14E0B41900B67057 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DFA0DF7F14E0B41900B67057 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -357,6 +357,8 @@
 				DF9A83C914E0D825002C2FCB /* glk_interface.h */,
 				DF9A83CA14E0D825002C2FCB /* glk_screen_if.c */,
 				DF9A83CB14E0D825002C2FCB /* glk_screen_if.h */,
+				DF9A847D14E0E887002C2FCB /* libglkif_locales.c */,
+				DF9A847E14E0E887002C2FCB /* libglkif_locales.h */,
 			);
 			name = glk_interface;
 			path = fizmo/libglkif/src/glk_interface;
@@ -470,8 +472,6 @@
 			isa = PBXGroup;
 			children = (
 				DF9A842114E0D994002C2FCB /* screen_interface.h */,
-				DF9A842214E0D994002C2FCB /* ScreenInterface.cpp */,
-				DF9A842314E0D994002C2FCB /* ScreenInterface.h */,
 			);
 			path = screen_interface;
 			sourceTree = "<group>";
@@ -685,7 +685,6 @@
 				DF9A845F14E0D994002C2FCB /* wordwrap.c in Sources */,
 				DF9A846014E0D994002C2FCB /* zpu.c in Sources */,
 				DF9A846714E0D994002C2FCB /* libfizmo_locales.c in Sources */,
-				DF9A846914E0D994002C2FCB /* ScreenInterface.cpp in Sources */,
 				DF9A847114E0D994002C2FCB /* filesys.c in Sources */,
 				DF9A847214E0D994002C2FCB /* filesys_c.c in Sources */,
 				DF9A847314E0D994002C2FCB /* i18n.c in Sources */,
@@ -694,6 +693,7 @@
 				DF9A847914E0D994002C2FCB /* tracelog.c in Sources */,
 				DF9A847A14E0D994002C2FCB /* types.c in Sources */,
 				DF9A847B14E0D994002C2FCB /* z_ucs.c in Sources */,
+				DF9A847F14E0E887002C2FCB /* libglkif_locales.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
