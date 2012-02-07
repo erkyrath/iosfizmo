@@ -1,0 +1,10 @@
+//
+// Prefix header for all source files of the 'iosglulxe' target in the 'iosglulxe' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+	#import <UIKit/UIKit.h>
+#else
+	#define OS_UNIX // The Glulxe source likes this defined.
+#endif
