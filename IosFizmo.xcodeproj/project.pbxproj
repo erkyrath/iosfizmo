@@ -346,7 +346,7 @@
 			path = iosglk/LayerSrc;
 			sourceTree = "<group>";
 		};
-		DF9A83C314E0D825002C2FCB /* glk_interface */ = {
+		DF9A83C314E0D825002C2FCB /* libglkif */ = {
 			isa = PBXGroup;
 			children = (
 				DF9A83C414E0D825002C2FCB /* glk_blorb_if.c */,
@@ -360,7 +360,7 @@
 				DF9A847D14E0E887002C2FCB /* libglkif_locales.c */,
 				DF9A847E14E0E887002C2FCB /* libglkif_locales.h */,
 			);
-			name = glk_interface;
+			name = libglkif;
 			path = fizmo/libglkif/src/glk_interface;
 			sourceTree = "<group>";
 		};
@@ -512,7 +512,7 @@
 			isa = PBXGroup;
 			children = (
 				DF9A83D214E0D994002C2FCB /* libfizmo */,
-				DF9A83C314E0D825002C2FCB /* glk_interface */,
+				DF9A83C314E0D825002C2FCB /* libglkif */,
 				DF9A836B14E0CD5B002C2FCB /* GenSrc */,
 				DF9A837514E0CD7C002C2FCB /* AppSrc */,
 				DF9A839414E0CD8D002C2FCB /* LibSrc */,
@@ -703,7 +703,7 @@
 		DFA0DF9814E0B41900B67057 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -719,17 +719,17 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = fizmo/libfizmo/src;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = fizmo/libfizmo/src;
 			};
 			name = Debug;
 		};
 		DFA0DF9914E0B41900B67057 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
@@ -738,11 +738,11 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = fizmo/libfizmo/src;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = fizmo/libfizmo/src;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
