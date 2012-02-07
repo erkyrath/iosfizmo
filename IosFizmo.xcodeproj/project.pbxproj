@@ -81,6 +81,7 @@
 		DF9A847F14E0E887002C2FCB /* libglkif_locales.c in Sources */ = {isa = PBXBuildFile; fileRef = DF9A847D14E0E887002C2FCB /* libglkif_locales.c */; };
 		DF9A848114E0EE8A002C2FCB /* Game.z5 in Resources */ = {isa = PBXBuildFile; fileRef = DF9A848014E0EE8A002C2FCB /* Game.z5 */; };
 		DF9A848614E0F097002C2FCB /* fizmo-iosglk.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9A848514E0F097002C2FCB /* fizmo-iosglk.m */; };
+		DF9D1A4D14E1BFCF006A6749 /* ios-trace.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9D1A4C14E1BFCF006A6749 /* ios-trace.m */; };
 		DFA0DF7E14E0B41900B67057 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA0DF7D14E0B41900B67057 /* UIKit.framework */; };
 		DFA0DF8014E0B41900B67057 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA0DF7F14E0B41900B67057 /* Foundation.framework */; };
 		DFA0DF8214E0B41900B67057 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA0DF8114E0B41900B67057 /* CoreGraphics.framework */; };
@@ -238,6 +239,7 @@
 		DF9A847E14E0E887002C2FCB /* libglkif_locales.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libglkif_locales.h; path = fizmo/libglkif/src/locales/libglkif_locales.h; sourceTree = SOURCE_ROOT; };
 		DF9A848014E0EE8A002C2FCB /* Game.z5 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Game.z5; sourceTree = "<group>"; };
 		DF9A848514E0F097002C2FCB /* fizmo-iosglk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "fizmo-iosglk.m"; sourceTree = "<group>"; };
+		DF9D1A4C14E1BFCF006A6749 /* ios-trace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ios-trace.m"; sourceTree = "<group>"; };
 		DFA0DF7914E0B41900B67057 /* IosFizmo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosFizmo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFA0DF7D14E0B41900B67057 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DFA0DF7F14E0B41900B67057 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -516,6 +518,7 @@
 			isa = PBXGroup;
 			children = (
 				DF9A848514E0F097002C2FCB /* fizmo-iosglk.m */,
+				DF9D1A4C14E1BFCF006A6749 /* ios-trace.m */,
 			);
 			name = "fizmo-iosglk";
 			path = "fizmo/fizmo-iosglk";
@@ -711,6 +714,7 @@
 				DF9A847B14E0D994002C2FCB /* z_ucs.c in Sources */,
 				DF9A847F14E0E887002C2FCB /* libglkif_locales.c in Sources */,
 				DF9A848614E0F097002C2FCB /* fizmo-iosglk.m in Sources */,
+				DF9D1A4D14E1BFCF006A6749 /* ios-trace.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
