@@ -1,0 +1,5 @@
+More
+Score
+Turns
+libcellinterface version \{0s}.
+Press any key to quit.

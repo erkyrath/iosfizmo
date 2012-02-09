@@ -1,0 +1,5 @@
+Mehr
+Punkte
+Züge
+libcellinterface version \{0s}.
+Drücken Sie eine Taste zum Beenden.

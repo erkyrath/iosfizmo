@@ -1,0 +1,5 @@
+Plus
+Score
+Tours
+libcellinterface version \{0s}.
+Pressez n'importe quelle touche pour quitter.
