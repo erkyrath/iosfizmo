@@ -83,6 +83,7 @@
 		DF9A848614E0F097002C2FCB /* fizmo-iosglk.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9A848514E0F097002C2FCB /* fizmo-iosglk.m */; };
 		DF9D1A4D14E1BFCF006A6749 /* ios-trace.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9D1A4C14E1BFCF006A6749 /* ios-trace.m */; };
 		DF9D1A5414E47E85006A6749 /* FizmoLocales in Resources */ = {isa = PBXBuildFile; fileRef = DF9D1A5314E47E85006A6749 /* FizmoLocales */; };
+		DF9D1A5914E59EF0006A6749 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF9D1A5814E59EF0006A6749 /* MainWindow.xib */; };
 		DFA0DF7E14E0B41900B67057 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA0DF7D14E0B41900B67057 /* UIKit.framework */; };
 		DFA0DF8014E0B41900B67057 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA0DF7F14E0B41900B67057 /* Foundation.framework */; };
 		DFA0DF8214E0B41900B67057 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA0DF8114E0B41900B67057 /* CoreGraphics.framework */; };
@@ -90,7 +91,6 @@
 		DFA0DFAB14E0BDA700B67057 /* GlkFileSelectLoad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFA0DFA714E0BDA700B67057 /* GlkFileSelectLoad.xib */; };
 		DFA0DFAC14E0BDA700B67057 /* GlkFileSelectStore.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFA0DFA814E0BDA700B67057 /* GlkFileSelectStore.xib */; };
 		DFA0DFAD14E0BDA700B67057 /* IosGlkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFA0DFA914E0BDA700B67057 /* IosGlkViewController.xib */; };
-		DFA0DFAE14E0BDA700B67057 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFA0DFAA14E0BDA700B67057 /* MainWindow.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -242,6 +242,7 @@
 		DF9A848514E0F097002C2FCB /* fizmo-iosglk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "fizmo-iosglk.m"; sourceTree = "<group>"; };
 		DF9D1A4C14E1BFCF006A6749 /* ios-trace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ios-trace.m"; sourceTree = "<group>"; };
 		DF9D1A5314E47E85006A6749 /* FizmoLocales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FizmoLocales; sourceTree = "<group>"; };
+		DF9D1A5814E59EF0006A6749 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = Resources/MainWindow.xib; sourceTree = "<group>"; };
 		DFA0DF7914E0B41900B67057 /* IosFizmo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosFizmo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFA0DF7D14E0B41900B67057 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DFA0DF7F14E0B41900B67057 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -252,7 +253,6 @@
 		DFA0DFA714E0BDA700B67057 /* GlkFileSelectLoad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GlkFileSelectLoad.xib; path = iosglk/GlkFileSelectLoad.xib; sourceTree = "<group>"; };
 		DFA0DFA814E0BDA700B67057 /* GlkFileSelectStore.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GlkFileSelectStore.xib; path = iosglk/GlkFileSelectStore.xib; sourceTree = "<group>"; };
 		DFA0DFA914E0BDA700B67057 /* IosGlkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = IosGlkViewController.xib; path = iosglk/IosGlkViewController.xib; sourceTree = "<group>"; };
-		DFA0DFAA14E0BDA700B67057 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = iosglk/MainWindow.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -568,7 +568,7 @@
 				DFA0DF8914E0B41900B67057 /* main.m */,
 				DF9A847C14E0DE4C002C2FCB /* fizmo-config.h */,
 				DFA0DF8B14E0B41900B67057 /* IosFizmo-Prefix.pch */,
-				DFA0DFAA14E0BDA700B67057 /* MainWindow.xib */,
+				DF9D1A5814E59EF0006A6749 /* MainWindow.xib */,
 				DFA0DFA914E0BDA700B67057 /* IosGlkViewController.xib */,
 				DFA0DFA714E0BDA700B67057 /* GlkFileSelectLoad.xib */,
 				DFA0DFA814E0BDA700B67057 /* GlkFileSelectStore.xib */,
@@ -631,9 +631,9 @@
 				DFA0DFAB14E0BDA700B67057 /* GlkFileSelectLoad.xib in Resources */,
 				DFA0DFAC14E0BDA700B67057 /* GlkFileSelectStore.xib in Resources */,
 				DFA0DFAD14E0BDA700B67057 /* IosGlkViewController.xib in Resources */,
-				DFA0DFAE14E0BDA700B67057 /* MainWindow.xib in Resources */,
 				DF9A848114E0EE8A002C2FCB /* Game.z5 in Resources */,
 				DF9D1A5414E47E85006A6749 /* FizmoLocales in Resources */,
+				DF9D1A5914E59EF0006A6749 /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
