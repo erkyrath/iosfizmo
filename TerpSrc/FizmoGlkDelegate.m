@@ -67,4 +67,8 @@
 	return CGSizeMake(4, 4);
 }
 
+- (CGRect) adjustFrame:(CGRect)rect {
+	return rect;
+}
+
 @end
