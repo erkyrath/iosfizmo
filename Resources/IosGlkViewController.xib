@@ -33,6 +33,22 @@
 			<object class="IBUIView" id="774585933">
 				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">274</int>
+				<array class="NSMutableArray" key="NSSubviews">
+					<object class="IBUIView" id="787645399">
+						<reference key="NSNextResponder" ref="774585933"/>
+						<int key="NSvFlags">274</int>
+						<string key="NSFrameSize">{320, 460}</string>
+						<reference key="NSSuperview" ref="774585933"/>
+						<reference key="NSWindow"/>
+						<string key="NSReuseIdentifierKey">_NS:196</string>
+						<object class="NSColor" key="IBUIBackgroundColor">
+							<int key="NSColorSpace">3</int>
+							<bytes key="NSWhite">MC43NDM0NDU2OTI5AA</bytes>
+						</object>
+						<bool key="IBUIAutoresizesSubviews">NO</bool>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+					</object>
+				</array>
 				<string key="NSFrame">{{0, 20}, {320, 460}}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
@@ -41,8 +57,6 @@
 					<int key="NSColorSpace">3</int>
 					<bytes key="NSWhite">MC42OTA2OTc2NzQ0AA</bytes>
 				</object>
-				<bool key="IBUIAutoresizesSubviews">NO</bool>
-				<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
@@ -61,9 +75,9 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">frameview</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="774585933"/>
+						<reference key="destination" ref="787645399"/>
 					</object>
-					<int key="connectionID">9</int>
+					<int key="connectionID">11</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -88,7 +102,15 @@
 					<object class="IBObjectRecord">
 						<int key="objectID">6</int>
 						<reference key="object" ref="774585933"/>
+						<array class="NSMutableArray" key="children">
+							<reference ref="787645399"/>
+						</array>
 						<reference key="parent" ref="0"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">10</int>
+						<reference key="object" ref="787645399"/>
+						<reference key="parent" ref="774585933"/>
 					</object>
 				</array>
 			</object>
@@ -97,14 +119,15 @@
 				<string key="-1.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="-2.CustomClassName">UIResponder</string>
 				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="6.CustomClassName">GlkFrameView</string>
+				<string key="10.CustomClassName">GlkFrameView</string>
+				<string key="10.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="6.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">9</int>
+			<int key="maxID">11</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
