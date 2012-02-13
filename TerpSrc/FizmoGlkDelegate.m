@@ -63,4 +63,8 @@
 	}
 }
 
+- (CGSize) interWindowSpacing {
+	return CGSizeMake(4, 4);
+}
+
 @end
