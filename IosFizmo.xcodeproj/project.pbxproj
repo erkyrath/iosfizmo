@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF19DDD614E89F8A007DCB29 /* CmdTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19DDD114E89F8A007DCB29 /* CmdTextField.m */; };
+		DF19DDD714E89F8A007DCB29 /* InputMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19DDD314E89F8A007DCB29 /* InputMenuView.m */; };
+		DF19DDD814E89F8A007DCB29 /* IosGlkLibDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19DDD514E89F8A007DCB29 /* IosGlkLibDelegate.m */; };
+		DF19DDDB14E8A069007DCB29 /* HistoryMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF19DDD914E8A069007DCB29 /* HistoryMenuVC.xib */; };
+		DF19DDDC14E8A069007DCB29 /* PaletteMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF19DDDA14E8A069007DCB29 /* PaletteMenuVC.xib */; };
 		DF9A837214E0CD5B002C2FCB /* gi_blorb.c in Sources */ = {isa = PBXBuildFile; fileRef = DF9A836C14E0CD5B002C2FCB /* gi_blorb.c */; };
 		DF9A837314E0CD5B002C2FCB /* gi_dispa.c in Sources */ = {isa = PBXBuildFile; fileRef = DF9A836E14E0CD5B002C2FCB /* gi_dispa.c */; };
 		DF9A838A14E0CD7C002C2FCB /* GlkAppWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9A837714E0CD7C002C2FCB /* GlkAppWrapper.m */; };
@@ -94,6 +99,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF19DDD014E89F8A007DCB29 /* CmdTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CmdTextField.h; sourceTree = "<group>"; };
+		DF19DDD114E89F8A007DCB29 /* CmdTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CmdTextField.m; sourceTree = "<group>"; };
+		DF19DDD214E89F8A007DCB29 /* InputMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputMenuView.h; sourceTree = "<group>"; };
+		DF19DDD314E89F8A007DCB29 /* InputMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputMenuView.m; sourceTree = "<group>"; };
+		DF19DDD414E89F8A007DCB29 /* IosGlkLibDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IosGlkLibDelegate.h; sourceTree = "<group>"; };
+		DF19DDD514E89F8A007DCB29 /* IosGlkLibDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IosGlkLibDelegate.m; sourceTree = "<group>"; };
+		DF19DDD914E8A069007DCB29 /* HistoryMenuVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HistoryMenuVC.xib; path = iosglk/Resources/HistoryMenuVC.xib; sourceTree = SOURCE_ROOT; };
+		DF19DDDA14E8A069007DCB29 /* PaletteMenuVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PaletteMenuVC.xib; path = iosglk/Resources/PaletteMenuVC.xib; sourceTree = SOURCE_ROOT; };
 		DF9A836C14E0CD5B002C2FCB /* gi_blorb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gi_blorb.c; sourceTree = "<group>"; };
 		DF9A836D14E0CD5B002C2FCB /* gi_blorb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gi_blorb.h; sourceTree = "<group>"; };
 		DF9A836E14E0CD5B002C2FCB /* gi_dispa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gi_dispa.c; sourceTree = "<group>"; };
@@ -242,7 +255,7 @@
 		DF9A848514E0F097002C2FCB /* fizmo-iosglk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "fizmo-iosglk.m"; sourceTree = "<group>"; };
 		DF9D1A4C14E1BFCF006A6749 /* ios-trace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ios-trace.m"; sourceTree = "<group>"; };
 		DF9D1A5314E47E85006A6749 /* FizmoLocales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FizmoLocales; sourceTree = "<group>"; };
-		DF9D1A5814E59EF0006A6749 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = Resources/MainWindow.xib; sourceTree = "<group>"; };
+		DF9D1A5814E59EF0006A6749 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		DFA0DF7914E0B41900B67057 /* IosFizmo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosFizmo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFA0DF7D14E0B41900B67057 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DFA0DF7F14E0B41900B67057 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -250,9 +263,9 @@
 		DFA0DF8514E0B41900B67057 /* IosFizmo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IosFizmo-Info.plist"; sourceTree = "<group>"; };
 		DFA0DF8914E0B41900B67057 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DFA0DF8B14E0B41900B67057 /* IosFizmo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IosFizmo-Prefix.pch"; sourceTree = "<group>"; };
-		DFA0DFA714E0BDA700B67057 /* GlkFileSelectLoad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GlkFileSelectLoad.xib; path = iosglk/GlkFileSelectLoad.xib; sourceTree = "<group>"; };
-		DFA0DFA814E0BDA700B67057 /* GlkFileSelectStore.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GlkFileSelectStore.xib; path = iosglk/GlkFileSelectStore.xib; sourceTree = "<group>"; };
-		DFA0DFA914E0BDA700B67057 /* IosGlkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = IosGlkViewController.xib; path = iosglk/IosGlkViewController.xib; sourceTree = "<group>"; };
+		DFA0DFA714E0BDA700B67057 /* GlkFileSelectLoad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GlkFileSelectLoad.xib; path = ../iosglk/Resources/GlkFileSelectLoad.xib; sourceTree = "<group>"; };
+		DFA0DFA814E0BDA700B67057 /* GlkFileSelectStore.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GlkFileSelectStore.xib; path = ../iosglk/Resources/GlkFileSelectStore.xib; sourceTree = "<group>"; };
+		DFA0DFA914E0BDA700B67057 /* IosGlkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = IosGlkViewController.xib; path = ../iosglk/Resources/IosGlkViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +282,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF19DDCF14E89EFA007DCB29 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DF9D1A5814E59EF0006A6749 /* MainWindow.xib */,
+				DFA0DFA914E0BDA700B67057 /* IosGlkViewController.xib */,
+				DFA0DFA714E0BDA700B67057 /* GlkFileSelectLoad.xib */,
+				DFA0DFA814E0BDA700B67057 /* GlkFileSelectStore.xib */,
+				DF19DDD914E8A069007DCB29 /* HistoryMenuVC.xib */,
+				DF19DDDA14E8A069007DCB29 /* PaletteMenuVC.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		DF9A836B14E0CD5B002C2FCB /* GenSrc */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +312,12 @@
 		DF9A837514E0CD7C002C2FCB /* AppSrc */ = {
 			isa = PBXGroup;
 			children = (
+				DF19DDD014E89F8A007DCB29 /* CmdTextField.h */,
+				DF19DDD114E89F8A007DCB29 /* CmdTextField.m */,
+				DF19DDD214E89F8A007DCB29 /* InputMenuView.h */,
+				DF19DDD314E89F8A007DCB29 /* InputMenuView.m */,
+				DF19DDD414E89F8A007DCB29 /* IosGlkLibDelegate.h */,
+				DF19DDD514E89F8A007DCB29 /* IosGlkLibDelegate.m */,
 				DF9A837614E0CD7C002C2FCB /* GlkAppWrapper.h */,
 				DF9A837714E0CD7C002C2FCB /* GlkAppWrapper.m */,
 				DF9A837814E0CD7C002C2FCB /* GlkFileSelectViewController.h */,
@@ -536,7 +568,8 @@
 				DF9A837514E0CD7C002C2FCB /* AppSrc */,
 				DF9A839414E0CD8D002C2FCB /* LibSrc */,
 				DF9A83AD14E0CD98002C2FCB /* LayerSrc */,
-				DFA0DFA214E0B5BB00B67057 /* Resources */,
+				DFA0DFA214E0B5BB00B67057 /* Other Sources */,
+				DF19DDCF14E89EFA007DCB29 /* Resources */,
 				DF9D1A5314E47E85006A6749 /* FizmoLocales */,
 				DFA0DF7C14E0B41900B67057 /* Frameworks */,
 				DFA0DF7A14E0B41900B67057 /* Products */,
@@ -561,20 +594,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DFA0DFA214E0B5BB00B67057 /* Resources */ = {
+		DFA0DFA214E0B5BB00B67057 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
 				DFA0DF8514E0B41900B67057 /* IosFizmo-Info.plist */,
 				DFA0DF8914E0B41900B67057 /* main.m */,
 				DF9A847C14E0DE4C002C2FCB /* fizmo-config.h */,
 				DFA0DF8B14E0B41900B67057 /* IosFizmo-Prefix.pch */,
-				DF9D1A5814E59EF0006A6749 /* MainWindow.xib */,
-				DFA0DFA914E0BDA700B67057 /* IosGlkViewController.xib */,
-				DFA0DFA714E0BDA700B67057 /* GlkFileSelectLoad.xib */,
-				DFA0DFA814E0BDA700B67057 /* GlkFileSelectStore.xib */,
 				DF9A848014E0EE8A002C2FCB /* Game.z5 */,
 			);
-			name = Resources;
+			name = "Other Sources";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -634,6 +663,8 @@
 				DF9A848114E0EE8A002C2FCB /* Game.z5 in Resources */,
 				DF9D1A5414E47E85006A6749 /* FizmoLocales in Resources */,
 				DF9D1A5914E59EF0006A6749 /* MainWindow.xib in Resources */,
+				DF19DDDB14E8A069007DCB29 /* HistoryMenuVC.xib in Resources */,
+				DF19DDDC14E8A069007DCB29 /* PaletteMenuVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -719,6 +750,9 @@
 				DF9A847F14E0E887002C2FCB /* libglkif_locales.c in Sources */,
 				DF9A848614E0F097002C2FCB /* fizmo-iosglk.m in Sources */,
 				DF9D1A4D14E1BFCF006A6749 /* ios-trace.m in Sources */,
+				DF19DDD614E89F8A007DCB29 /* CmdTextField.m in Sources */,
+				DF19DDD714E89F8A007DCB29 /* InputMenuView.m in Sources */,
+				DF19DDD814E89F8A007DCB29 /* IosGlkLibDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
