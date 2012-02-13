@@ -12,6 +12,7 @@
 		DF19DDD814E89F8A007DCB29 /* IosGlkLibDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19DDD514E89F8A007DCB29 /* IosGlkLibDelegate.m */; };
 		DF19DDDB14E8A069007DCB29 /* HistoryMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF19DDD914E8A069007DCB29 /* HistoryMenuVC.xib */; };
 		DF19DDDC14E8A069007DCB29 /* PaletteMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF19DDDA14E8A069007DCB29 /* PaletteMenuVC.xib */; };
+		DF19DDE314E8A950007DCB29 /* FizmoGlkDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19DDE214E8A950007DCB29 /* FizmoGlkDelegate.m */; };
 		DF9A837214E0CD5B002C2FCB /* gi_blorb.c in Sources */ = {isa = PBXBuildFile; fileRef = DF9A836C14E0CD5B002C2FCB /* gi_blorb.c */; };
 		DF9A837314E0CD5B002C2FCB /* gi_dispa.c in Sources */ = {isa = PBXBuildFile; fileRef = DF9A836E14E0CD5B002C2FCB /* gi_dispa.c */; };
 		DF9A838A14E0CD7C002C2FCB /* GlkAppWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9A837714E0CD7C002C2FCB /* GlkAppWrapper.m */; };
@@ -107,6 +108,8 @@
 		DF19DDD514E89F8A007DCB29 /* IosGlkLibDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IosGlkLibDelegate.m; sourceTree = "<group>"; };
 		DF19DDD914E8A069007DCB29 /* HistoryMenuVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HistoryMenuVC.xib; path = iosglk/Resources/HistoryMenuVC.xib; sourceTree = SOURCE_ROOT; };
 		DF19DDDA14E8A069007DCB29 /* PaletteMenuVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PaletteMenuVC.xib; path = iosglk/Resources/PaletteMenuVC.xib; sourceTree = SOURCE_ROOT; };
+		DF19DDE114E8A950007DCB29 /* FizmoGlkDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FizmoGlkDelegate.h; sourceTree = "<group>"; };
+		DF19DDE214E8A950007DCB29 /* FizmoGlkDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizmoGlkDelegate.m; sourceTree = "<group>"; };
 		DF9A836C14E0CD5B002C2FCB /* gi_blorb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gi_blorb.c; sourceTree = "<group>"; };
 		DF9A836D14E0CD5B002C2FCB /* gi_blorb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gi_blorb.h; sourceTree = "<group>"; };
 		DF9A836E14E0CD5B002C2FCB /* gi_dispa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gi_dispa.c; sourceTree = "<group>"; };
@@ -293,6 +296,15 @@
 				DF19DDDA14E8A069007DCB29 /* PaletteMenuVC.xib */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		DF19DDE014E8A8CA007DCB29 /* TerpSrc */ = {
+			isa = PBXGroup;
+			children = (
+				DF19DDE114E8A950007DCB29 /* FizmoGlkDelegate.h */,
+				DF19DDE214E8A950007DCB29 /* FizmoGlkDelegate.m */,
+			);
+			path = TerpSrc;
 			sourceTree = "<group>";
 		};
 		DF9A836B14E0CD5B002C2FCB /* GenSrc */ = {
@@ -569,6 +581,7 @@
 				DF9A839414E0CD8D002C2FCB /* LibSrc */,
 				DF9A83AD14E0CD98002C2FCB /* LayerSrc */,
 				DFA0DFA214E0B5BB00B67057 /* Other Sources */,
+				DF19DDE014E8A8CA007DCB29 /* TerpSrc */,
 				DF19DDCF14E89EFA007DCB29 /* Resources */,
 				DF9D1A5314E47E85006A6749 /* FizmoLocales */,
 				DFA0DF7C14E0B41900B67057 /* Frameworks */,
@@ -753,6 +766,7 @@
 				DF19DDD614E89F8A007DCB29 /* CmdTextField.m in Sources */,
 				DF19DDD714E89F8A007DCB29 /* InputMenuView.m in Sources */,
 				DF19DDD814E89F8A007DCB29 /* IosGlkLibDelegate.m in Sources */,
+				DF19DDE314E8A950007DCB29 /* FizmoGlkDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
