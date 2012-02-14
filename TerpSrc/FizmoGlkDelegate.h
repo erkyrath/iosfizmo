@@ -31,6 +31,10 @@
 #import <Foundation/Foundation.h>
 #import "IosGlkLibDelegate.h"
 
-@interface FizmoGlkDelegate : NSObject <IosGlkLibDelegate>
+@interface FizmoGlkDelegate : NSObject <IosGlkLibDelegate> {
+	CGFloat maxwidth;
+}
+
+@property (nonatomic) CGFloat maxwidth;
 
 @end

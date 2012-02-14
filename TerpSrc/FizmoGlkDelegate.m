@@ -34,6 +34,8 @@
 
 @implementation FizmoGlkDelegate
 
+@synthesize maxwidth;
+
 - (void) prepareStyles:(StyleSet *)styles forWindowType:(glui32)wintype rock:(glui32)rock {
 	if (wintype == wintype_TextGrid) {
 		styles.margins = UIEdgeInsetsMake(4, 6, 4, 6);
@@ -68,7 +70,12 @@
 }
 
 - (CGRect) adjustFrame:(CGRect)rect {
+	if (maxwidth > 64 && rect.size.width > maxwidth) {
+		rect.origin.x = (rect.origin.x+0.5*rect.size.width) - 0.5*maxwidth;
+		rect.size.width = maxwidth;
+	}
 	return rect;
 }
 
 @end
+
