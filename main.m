@@ -1,9 +1,23 @@
 /* main.m: Top main() function
-	for IosFizmo, an IosGlk port of the Fizmo Z-machine interpreter.
+ for IosFizmo, an IosGlk port of the Fizmo Z-machine interpreter.
+ Designed by Andrew Plotkin <erkyrath@eblong.com>
+ http://eblong.com/zarf/glk/
 */
 
 /*
- Fizmo:
+ IosGlk license:
+ 
+ The source code in this package is copyright 2011 by Andrew Plotkin. You
+ may copy and distribute it freely, by any means and under any conditions,
+ as long as the code and documentation is not changed. You may also
+ incorporate this code into your own program and distribute that, or modify
+ this code and use and distribute the modified version, as long as you retain
+ a notice in your program or documentation which mentions my name and the
+ URL shown above.
+*/
+
+/*
+ Fizmo license:
  Copyright (c) 2009-2011 Christoph Ender
  All rights reserved.
  
