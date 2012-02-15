@@ -38,7 +38,7 @@
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	[defaults setFloat:maxwidth forKey:@"FrameMaxWidth"];
 	
-	[self.frameview setNeedsLayoutPlusSubviews];
+	[self.frameview setNeedsLayout];
 }
 
 @end
