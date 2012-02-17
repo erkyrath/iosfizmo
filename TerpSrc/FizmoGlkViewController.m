@@ -7,6 +7,7 @@
 #import "FizmoGlkViewController.h"
 #import "FizmoGlkDelegate.h"
 #import "GlkFrameView.h"
+#import "GlkWinBufferView.h"
 
 @implementation FizmoGlkViewController
 
@@ -24,6 +25,17 @@
 
 - (IBAction) pageDisplayChanged {
 	NSLog(@"### page changed");
+	
+	//### some debugging
+	/*
+	for (UIView *subview in self.frameview.subviews) {
+		if ([subview isKindOfClass:[GlkWinBufferView class]]) {
+			GlkWinBufferView *winv = (GlkWinBufferView *)subview;
+			[winv.textview debugDisplay];
+			break;
+		}
+	}
+	 */
 }
 
 - (IBAction) showPreferences {
@@ -32,13 +44,18 @@
 	if (maxwidth > 0)
 		maxwidth = 0;
 	else
-		maxwidth = 600;
+		maxwidth = (self.view.bounds.size.width > 500) ? 600 : 280; //###
 	
 	self.fizmoDelegate.maxwidth = maxwidth;
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	[defaults setFloat:maxwidth forKey:@"FrameMaxWidth"];
 	
 	[self.frameview setNeedsLayout];
+}
+
+- (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)orientation {
+	//### different for iPad?
+	return (orientation == UIInterfaceOrientationPortrait);
 }
 
 @end
