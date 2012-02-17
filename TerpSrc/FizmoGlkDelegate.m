@@ -16,7 +16,7 @@
 	if (wintype == wintype_TextGrid) {
 		styles.margins = UIEdgeInsetsMake(4, 6, 4, 6);
 		
-		FontVariants variants = [StyleSet fontVariantsForSize:14 name:@"Courier", nil];
+		FontVariants variants = [StyleSet fontVariantsForSize:12 name:@"Courier", nil];
 		styles.fonts[style_Normal] = variants.normal;
 		styles.fonts[style_Emphasized] = variants.italic;
 		styles.fonts[style_Preformatted] = variants.normal;
