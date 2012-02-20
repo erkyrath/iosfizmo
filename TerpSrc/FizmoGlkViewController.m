@@ -8,8 +8,11 @@
 #import "FizmoGlkDelegate.h"
 #import "GlkFrameView.h"
 #import "GlkWinBufferView.h"
+#import "NotesViewController.h"
 
 @implementation FizmoGlkViewController
+
+@synthesize notesvc;
 
 - (FizmoGlkDelegate *) fizmoDelegate {
 	return (FizmoGlkDelegate *)self.glkdelegate;
@@ -23,19 +26,8 @@
 	self.fizmoDelegate.maxwidth = maxwidth;
 }
 
-- (IBAction) pageDisplayChanged {
-	NSLog(@"### page changed");
-	
-	//### some debugging
-	/*
-	for (UIView *subview in self.frameview.subviews) {
-		if ([subview isKindOfClass:[GlkWinBufferView class]]) {
-			GlkWinBufferView *winv = (GlkWinBufferView *)subview;
-			[winv.textview debugDisplay];
-			break;
-		}
-	}
-	 */
+- (void) becameInactive {
+	[notesvc saveIfNeeded];
 }
 
 - (IBAction) showPreferences {

@@ -5,10 +5,13 @@
  */
 
 #import <UIKit/UIKit.h>
-
 #import "IosGlkViewController.h"
 
+@class NotesViewController;
+
 @interface FizmoGlkViewController : IosGlkViewController
+
+@property (nonatomic, retain) IBOutlet NotesViewController *notesvc;
 
 - (IBAction) showPreferences;
 

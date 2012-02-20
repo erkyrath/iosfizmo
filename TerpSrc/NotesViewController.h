@@ -6,10 +6,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NotesViewController : UIViewController <UITextViewDelegate>
+@interface NotesViewController : UIViewController <UITextViewDelegate> {
+	BOOL textchanged;
+}
 
 @property (nonatomic, retain) IBOutlet UITextView *textview;
 
+@property (nonatomic, retain) NSString *notespath;
+
 - (IBAction) toggleKeyboard;
+- (void) saveIfNeeded;
 
 @end
