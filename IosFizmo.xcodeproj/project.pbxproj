@@ -15,6 +15,8 @@
 		DF19DDE314E8A950007DCB29 /* FizmoGlkDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19DDE214E8A950007DCB29 /* FizmoGlkDelegate.m */; };
 		DF19DDE514E8DF5C007DCB29 /* IosGlkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF19DDE414E8DF5C007DCB29 /* IosGlkViewController.xib */; };
 		DF19DDF914EA0776007DCB29 /* FizmoGlkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19DDF814EA0776007DCB29 /* FizmoGlkViewController.m */; };
+		DF1F3FEB14F1FD06008FF1C7 /* NotesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF1F3FEA14F1FD06008FF1C7 /* NotesVC.xib */; };
+		DF1F3FEF14F1FD19008FF1C7 /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1F3FEE14F1FD19008FF1C7 /* NotesViewController.m */; };
 		DF9A837214E0CD5B002C2FCB /* gi_blorb.c in Sources */ = {isa = PBXBuildFile; fileRef = DF9A836C14E0CD5B002C2FCB /* gi_blorb.c */; };
 		DF9A837314E0CD5B002C2FCB /* gi_dispa.c in Sources */ = {isa = PBXBuildFile; fileRef = DF9A836E14E0CD5B002C2FCB /* gi_dispa.c */; };
 		DF9A838A14E0CD7C002C2FCB /* GlkAppWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9A837714E0CD7C002C2FCB /* GlkAppWrapper.m */; };
@@ -118,6 +120,9 @@
 		DF19DDE414E8DF5C007DCB29 /* IosGlkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IosGlkViewController.xib; sourceTree = "<group>"; };
 		DF19DDF714EA0776007DCB29 /* FizmoGlkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FizmoGlkViewController.h; sourceTree = "<group>"; };
 		DF19DDF814EA0776007DCB29 /* FizmoGlkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizmoGlkViewController.m; sourceTree = "<group>"; };
+		DF1F3FEA14F1FD06008FF1C7 /* NotesVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotesVC.xib; sourceTree = "<group>"; };
+		DF1F3FED14F1FD19008FF1C7 /* NotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesViewController.h; sourceTree = "<group>"; };
+		DF1F3FEE14F1FD19008FF1C7 /* NotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesViewController.m; sourceTree = "<group>"; };
 		DF9A836C14E0CD5B002C2FCB /* gi_blorb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gi_blorb.c; sourceTree = "<group>"; };
 		DF9A836D14E0CD5B002C2FCB /* gi_blorb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gi_blorb.h; sourceTree = "<group>"; };
 		DF9A836E14E0CD5B002C2FCB /* gi_dispa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gi_dispa.c; sourceTree = "<group>"; };
@@ -307,6 +312,7 @@
 				DF19DDD914E8A069007DCB29 /* HistoryMenuVC.xib */,
 				DF19DDDA14E8A069007DCB29 /* PaletteMenuVC.xib */,
 				DFEFAC2D14F1E0E50062859F /* HelpVC.xib */,
+				DF1F3FEA14F1FD06008FF1C7 /* NotesVC.xib */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -320,6 +326,8 @@
 				DF19DDF814EA0776007DCB29 /* FizmoGlkViewController.m */,
 				DFEFAC2B14F1E0E50062859F /* HelpViewController.h */,
 				DFEFAC2C14F1E0E50062859F /* HelpViewController.m */,
+				DF1F3FED14F1FD19008FF1C7 /* NotesViewController.h */,
+				DF1F3FEE14F1FD19008FF1C7 /* NotesViewController.m */,
 			);
 			path = TerpSrc;
 			sourceTree = "<group>";
@@ -708,6 +716,7 @@
 				DFAA384A14F1DAAE0096A848 /* tabicon-game.png in Resources */,
 				DFEFAC2F14F1E0E50062859F /* HelpVC.xib in Resources */,
 				DFEFAC3214F1E4B00062859F /* WebSite in Resources */,
+				DF1F3FEB14F1FD06008FF1C7 /* NotesVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -799,6 +808,7 @@
 				DF19DDE314E8A950007DCB29 /* FizmoGlkDelegate.m in Sources */,
 				DF19DDF914EA0776007DCB29 /* FizmoGlkViewController.m in Sources */,
 				DFEFAC2E14F1E0E50062859F /* HelpViewController.m in Sources */,
+				DF1F3FEF14F1FD19008FF1C7 /* NotesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
