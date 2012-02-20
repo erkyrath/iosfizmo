@@ -99,6 +99,9 @@
 		DFA0DFAB14E0BDA700B67057 /* GlkFileSelectLoad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFA0DFA714E0BDA700B67057 /* GlkFileSelectLoad.xib */; };
 		DFA0DFAC14E0BDA700B67057 /* GlkFileSelectStore.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFA0DFA814E0BDA700B67057 /* GlkFileSelectStore.xib */; };
 		DFAA384A14F1DAAE0096A848 /* tabicon-game.png in Resources */ = {isa = PBXBuildFile; fileRef = DFAA384914F1DAAE0096A848 /* tabicon-game.png */; };
+		DFEFAC2E14F1E0E50062859F /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEFAC2C14F1E0E50062859F /* HelpViewController.m */; };
+		DFEFAC2F14F1E0E50062859F /* HelpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFEFAC2D14F1E0E50062859F /* HelpVC.xib */; };
+		DFEFAC3214F1E4B00062859F /* WebSite in Resources */ = {isa = PBXBuildFile; fileRef = DFEFAC3114F1E4B00062859F /* WebSite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -274,6 +277,10 @@
 		DFA0DFA714E0BDA700B67057 /* GlkFileSelectLoad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GlkFileSelectLoad.xib; path = ../iosglk/Resources/GlkFileSelectLoad.xib; sourceTree = "<group>"; };
 		DFA0DFA814E0BDA700B67057 /* GlkFileSelectStore.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GlkFileSelectStore.xib; path = ../iosglk/Resources/GlkFileSelectStore.xib; sourceTree = "<group>"; };
 		DFAA384914F1DAAE0096A848 /* tabicon-game.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabicon-game.png"; sourceTree = "<group>"; };
+		DFEFAC2B14F1E0E50062859F /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
+		DFEFAC2C14F1E0E50062859F /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
+		DFEFAC2D14F1E0E50062859F /* HelpVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpVC.xib; sourceTree = "<group>"; };
+		DFEFAC3114F1E4B00062859F /* WebSite */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WebSite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,6 +306,7 @@
 				DFA0DFA814E0BDA700B67057 /* GlkFileSelectStore.xib */,
 				DF19DDD914E8A069007DCB29 /* HistoryMenuVC.xib */,
 				DF19DDDA14E8A069007DCB29 /* PaletteMenuVC.xib */,
+				DFEFAC2D14F1E0E50062859F /* HelpVC.xib */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -310,6 +318,8 @@
 				DF19DDE214E8A950007DCB29 /* FizmoGlkDelegate.m */,
 				DF19DDF714EA0776007DCB29 /* FizmoGlkViewController.h */,
 				DF19DDF814EA0776007DCB29 /* FizmoGlkViewController.m */,
+				DFEFAC2B14F1E0E50062859F /* HelpViewController.h */,
+				DFEFAC2C14F1E0E50062859F /* HelpViewController.m */,
 			);
 			path = TerpSrc;
 			sourceTree = "<group>";
@@ -591,6 +601,7 @@
 				DF19DDE014E8A8CA007DCB29 /* TerpSrc */,
 				DF19DDCF14E89EFA007DCB29 /* Resources */,
 				DFAA384714F1DA930096A848 /* Media */,
+				DFEFAC3114F1E4B00062859F /* WebSite */,
 				DF9D1A5314E47E85006A6749 /* FizmoLocales */,
 				DFA0DF7C14E0B41900B67057 /* Frameworks */,
 				DFA0DF7A14E0B41900B67057 /* Products */,
@@ -695,6 +706,8 @@
 				DF19DDDC14E8A069007DCB29 /* PaletteMenuVC.xib in Resources */,
 				DF19DDE514E8DF5C007DCB29 /* IosGlkViewController.xib in Resources */,
 				DFAA384A14F1DAAE0096A848 /* tabicon-game.png in Resources */,
+				DFEFAC2F14F1E0E50062859F /* HelpVC.xib in Resources */,
+				DFEFAC3214F1E4B00062859F /* WebSite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -785,6 +798,7 @@
 				DF19DDD814E89F8A007DCB29 /* IosGlkLibDelegate.m in Sources */,
 				DF19DDE314E8A950007DCB29 /* FizmoGlkDelegate.m in Sources */,
 				DF19DDF914EA0776007DCB29 /* FizmoGlkViewController.m in Sources */,
+				DFEFAC2E14F1E0E50062859F /* HelpViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
