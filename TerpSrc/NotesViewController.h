@@ -6,8 +6,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NotesViewController : UIViewController <UIWebViewDelegate>
+@interface NotesViewController : UIViewController <UITextViewDelegate>
 
 @property (nonatomic, retain) IBOutlet UITextView *textview;
+
+- (IBAction) toggleKeyboard;
 
 @end

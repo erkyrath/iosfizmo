@@ -10,7 +10,6 @@
 
 @interface FizmoGlkViewController : IosGlkViewController
 
-- (IBAction) pageDisplayChanged;
 - (IBAction) showPreferences;
 
 @end

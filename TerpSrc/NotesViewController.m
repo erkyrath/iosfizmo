@@ -29,6 +29,7 @@
 	NSLog(@"NotesVC: viewDidLoad");
 	
 	//### bang on font if Noteworthy is not available
+	textview.delegate = self;
 }
 
 - (void) viewDidUnload
@@ -40,6 +41,21 @@
 {
 	IosGlkViewController *glkviewc = [IosGlkViewController singleton];
 	return [glkviewc shouldAutorotateToInterfaceOrientation:orientation];
+}
+
+- (IBAction) toggleKeyboard
+{
+	if ([textview isFirstResponder]) {
+		[textview resignFirstResponder];
+	}
+	else {
+		[textview becomeFirstResponder];
+	}
+}
+
+- (void) textViewDidChange:(UITextView *)textView
+{
+	NSLog(@"### textViewDidChange");
 }
 
 @end
