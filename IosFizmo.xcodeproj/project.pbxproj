@@ -672,7 +672,7 @@
 		DFA0DF7014E0B41900B67057 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = Zarfhome;
 			};
 			buildConfigurationList = DFA0DF7314E0B41900B67057 /* Build configuration list for PBXProject "IosFizmo" */;
