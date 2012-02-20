@@ -98,6 +98,7 @@
 		DFA0DF8A14E0B41900B67057 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA0DF8914E0B41900B67057 /* main.m */; };
 		DFA0DFAB14E0BDA700B67057 /* GlkFileSelectLoad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFA0DFA714E0BDA700B67057 /* GlkFileSelectLoad.xib */; };
 		DFA0DFAC14E0BDA700B67057 /* GlkFileSelectStore.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFA0DFA814E0BDA700B67057 /* GlkFileSelectStore.xib */; };
+		DFAA384A14F1DAAE0096A848 /* tabicon-game.png in Resources */ = {isa = PBXBuildFile; fileRef = DFAA384914F1DAAE0096A848 /* tabicon-game.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -272,6 +273,7 @@
 		DFA0DF8B14E0B41900B67057 /* IosFizmo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IosFizmo-Prefix.pch"; sourceTree = "<group>"; };
 		DFA0DFA714E0BDA700B67057 /* GlkFileSelectLoad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GlkFileSelectLoad.xib; path = ../iosglk/Resources/GlkFileSelectLoad.xib; sourceTree = "<group>"; };
 		DFA0DFA814E0BDA700B67057 /* GlkFileSelectStore.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GlkFileSelectStore.xib; path = ../iosglk/Resources/GlkFileSelectStore.xib; sourceTree = "<group>"; };
+		DFAA384914F1DAAE0096A848 /* tabicon-game.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabicon-game.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -588,6 +590,7 @@
 				DFA0DFA214E0B5BB00B67057 /* Other Sources */,
 				DF19DDE014E8A8CA007DCB29 /* TerpSrc */,
 				DF19DDCF14E89EFA007DCB29 /* Resources */,
+				DFAA384714F1DA930096A848 /* Media */,
 				DF9D1A5314E47E85006A6749 /* FizmoLocales */,
 				DFA0DF7C14E0B41900B67057 /* Frameworks */,
 				DFA0DF7A14E0B41900B67057 /* Products */,
@@ -622,6 +625,14 @@
 				DF9A848014E0EE8A002C2FCB /* Game.z5 */,
 			);
 			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		DFAA384714F1DA930096A848 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				DFAA384914F1DAAE0096A848 /* tabicon-game.png */,
+			);
+			path = Media;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -683,6 +694,7 @@
 				DF19DDDB14E8A069007DCB29 /* HistoryMenuVC.xib in Resources */,
 				DF19DDDC14E8A069007DCB29 /* PaletteMenuVC.xib in Resources */,
 				DF19DDE514E8DF5C007DCB29 /* IosGlkViewController.xib in Resources */,
+				DFAA384A14F1DAAE0096A848 /* tabicon-game.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
