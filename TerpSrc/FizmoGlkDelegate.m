@@ -29,6 +29,7 @@
 		styles.fonts[style_Alert] = variants.italic;
 		styles.fonts[style_Note] = variants.italic;
 		
+		styles.backgroundcolor = [UIColor colorWithRed:0.8 green:0.7 blue:0.5 alpha:1];
 	}
 	else {
 		styles.margins = UIEdgeInsetsMake(4, 6, 4, 6);
