@@ -11,11 +11,41 @@
 @implementation PrefsMenuView
 
 @synthesize container;
+@synthesize colbut_full;
+@synthesize colbut_34;
+@synthesize colbut_12;
+@synthesize sizebut_small;
+@synthesize sizebut_big;
+@synthesize fontbutton;
+@synthesize colorbutton;
+
+- (void) dealloc {
+	self.container = nil;
+	self.colbut_full = nil;
+	self.colbut_34 = nil;
+	self.colbut_12 = nil;
+	self.sizebut_small = nil;
+	self.sizebut_big = nil;
+	self.fontbutton = nil;
+	self.colorbutton = nil;
+	
+	[super dealloc];
+}
 
 - (void) loadContent {
 	[[NSBundle mainBundle] loadNibNamed:@"PrefsMenuView" owner:self options:nil];
+	[self updateButtons];
 	[self resizeContentTo:container.frame.size animated:YES];
 	[content addSubview:container];
+}
+
+- (void) updateButtons {
+	FizmoGlkViewController *glkviewc = [FizmoGlkViewController singleton];
+	CGFloat maxwidth = glkviewc.fizmoDelegate.maxwidth;
+	
+	colbut_full.selected = (maxwidth == 0);
+	colbut_34.selected = (maxwidth == 624);
+	colbut_12.selected = (maxwidth == 512);
 }
 
 - (IBAction) handleColumnWidth:(id)sender {
@@ -23,23 +53,21 @@
 	
 	CGFloat maxwidth;
 	
-	UIView *senderview = sender;
-	switch (senderview.tag) {
-		case 2:
-			maxwidth = 624;
-			break;
-		case 3:
-			maxwidth = 512;
-			break;
-		default:
-			maxwidth = 0;
-			break;
+	if (sender == colbut_34) {
+		maxwidth = 624;
+	} 
+	else if (sender == colbut_12) {
+		maxwidth = 512;
+	}
+	else {
+		maxwidth = 0;
 	}
 	
 	glkviewc.fizmoDelegate.maxwidth = maxwidth;
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	[defaults setFloat:maxwidth forKey:@"FrameMaxWidth"];
 	
+	[self updateButtons];
 	[glkviewc.frameview setNeedsLayout];
 }
 

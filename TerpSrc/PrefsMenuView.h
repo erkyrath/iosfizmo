@@ -10,7 +10,15 @@
 @interface PrefsMenuView : PopMenuView
 
 @property (nonatomic, retain) IBOutlet UIView *container;
+@property (nonatomic, retain) IBOutlet UIButton *colbut_full;
+@property (nonatomic, retain) IBOutlet UIButton *colbut_34;
+@property (nonatomic, retain) IBOutlet UIButton *colbut_12;
+@property (nonatomic, retain) IBOutlet UIButton *sizebut_small;
+@property (nonatomic, retain) IBOutlet UIButton *sizebut_big;
+@property (nonatomic, retain) IBOutlet UIButton *fontbutton;
+@property (nonatomic, retain) IBOutlet UIButton *colorbutton;
 
+- (void) updateButtons;
 - (IBAction) handleColumnWidth:(id)sender;
 
 @end
