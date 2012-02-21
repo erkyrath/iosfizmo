@@ -9,6 +9,7 @@
 #import "GlkFrameView.h"
 #import "GlkWinBufferView.h"
 #import "NotesViewController.h"
+#import "PrefsMenuView.h"
 
 @implementation FizmoGlkViewController
 
@@ -32,6 +33,12 @@
 
 - (IBAction) showPreferences {
 	NSLog(@"### preferences");
+	
+	CGRect rect = CGRectMake(300, 400, 40, 2);
+	PrefsMenuView *menuview = [[[PrefsMenuView alloc] initWithFrame:frameview.bounds buttonFrame:rect] autorelease];
+	[frameview postPopMenu:menuview];
+	
+	/*
 	CGFloat maxwidth = self.fizmoDelegate.maxwidth;
 	if (maxwidth > 0)
 		maxwidth = 0;
@@ -43,6 +50,7 @@
 	[defaults setFloat:maxwidth forKey:@"FrameMaxWidth"];
 	
 	[self.frameview setNeedsLayout];
+	 */
 }
 
 - (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)orientation {

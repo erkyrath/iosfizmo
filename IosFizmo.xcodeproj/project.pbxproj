@@ -10,8 +10,8 @@
 		DF19DDD614E89F8A007DCB29 /* CmdTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19DDD114E89F8A007DCB29 /* CmdTextField.m */; };
 		DF19DDD714E89F8A007DCB29 /* InputMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19DDD314E89F8A007DCB29 /* InputMenuView.m */; };
 		DF19DDD814E89F8A007DCB29 /* IosGlkLibDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19DDD514E89F8A007DCB29 /* IosGlkLibDelegate.m */; };
-		DF19DDDB14E8A069007DCB29 /* HistoryMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF19DDD914E8A069007DCB29 /* HistoryMenuVC.xib */; };
-		DF19DDDC14E8A069007DCB29 /* PaletteMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF19DDDA14E8A069007DCB29 /* PaletteMenuVC.xib */; };
+		DF19DDDB14E8A069007DCB29 /* HistoryMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF19DDD914E8A069007DCB29 /* HistoryMenuView.xib */; };
+		DF19DDDC14E8A069007DCB29 /* PaletteMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF19DDDA14E8A069007DCB29 /* PaletteMenuView.xib */; };
 		DF19DDE314E8A950007DCB29 /* FizmoGlkDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19DDE214E8A950007DCB29 /* FizmoGlkDelegate.m */; };
 		DF19DDE514E8DF5C007DCB29 /* IosGlkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF19DDE414E8DF5C007DCB29 /* IosGlkViewController.xib */; };
 		DF19DDF914EA0776007DCB29 /* FizmoGlkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19DDF814EA0776007DCB29 /* FizmoGlkViewController.m */; };
@@ -19,6 +19,10 @@
 		DF1F3FEF14F1FD19008FF1C7 /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1F3FEE14F1FD19008FF1C7 /* NotesViewController.m */; };
 		DF1F3FF214F1FF1D008FF1C7 /* tabicon-help.png in Resources */ = {isa = PBXBuildFile; fileRef = DF1F3FF014F1FF1D008FF1C7 /* tabicon-help.png */; };
 		DF1F3FF314F1FF1D008FF1C7 /* tabicon-notes.png in Resources */ = {isa = PBXBuildFile; fileRef = DF1F3FF114F1FF1D008FF1C7 /* tabicon-notes.png */; };
+		DF1F3FFC14F221FB008FF1C7 /* PopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1F3FFB14F221FB008FF1C7 /* PopMenuView.m */; };
+		DF1F3FFE14F2BA68008FF1C7 /* PopBoxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF1F3FFD14F2BA68008FF1C7 /* PopBoxView.xib */; };
+		DF1F400514F306A0008FF1C7 /* PrefsMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF1F400414F306A0008FF1C7 /* PrefsMenuView.xib */; };
+		DF1F400814F3094F008FF1C7 /* PrefsMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1F400714F3094F008FF1C7 /* PrefsMenuView.m */; };
 		DF9A837214E0CD5B002C2FCB /* gi_blorb.c in Sources */ = {isa = PBXBuildFile; fileRef = DF9A836C14E0CD5B002C2FCB /* gi_blorb.c */; };
 		DF9A837314E0CD5B002C2FCB /* gi_dispa.c in Sources */ = {isa = PBXBuildFile; fileRef = DF9A836E14E0CD5B002C2FCB /* gi_dispa.c */; };
 		DF9A838A14E0CD7C002C2FCB /* GlkAppWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9A837714E0CD7C002C2FCB /* GlkAppWrapper.m */; };
@@ -115,8 +119,8 @@
 		DF19DDD314E89F8A007DCB29 /* InputMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputMenuView.m; sourceTree = "<group>"; };
 		DF19DDD414E89F8A007DCB29 /* IosGlkLibDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IosGlkLibDelegate.h; sourceTree = "<group>"; };
 		DF19DDD514E89F8A007DCB29 /* IosGlkLibDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IosGlkLibDelegate.m; sourceTree = "<group>"; };
-		DF19DDD914E8A069007DCB29 /* HistoryMenuVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HistoryMenuVC.xib; path = iosglk/Resources/HistoryMenuVC.xib; sourceTree = SOURCE_ROOT; };
-		DF19DDDA14E8A069007DCB29 /* PaletteMenuVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PaletteMenuVC.xib; path = iosglk/Resources/PaletteMenuVC.xib; sourceTree = SOURCE_ROOT; };
+		DF19DDD914E8A069007DCB29 /* HistoryMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HistoryMenuView.xib; path = iosglk/Resources/HistoryMenuView.xib; sourceTree = SOURCE_ROOT; };
+		DF19DDDA14E8A069007DCB29 /* PaletteMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PaletteMenuView.xib; path = iosglk/Resources/PaletteMenuView.xib; sourceTree = SOURCE_ROOT; };
 		DF19DDE114E8A950007DCB29 /* FizmoGlkDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FizmoGlkDelegate.h; sourceTree = "<group>"; };
 		DF19DDE214E8A950007DCB29 /* FizmoGlkDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizmoGlkDelegate.m; sourceTree = "<group>"; };
 		DF19DDE414E8DF5C007DCB29 /* IosGlkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IosGlkViewController.xib; sourceTree = "<group>"; };
@@ -127,6 +131,12 @@
 		DF1F3FEE14F1FD19008FF1C7 /* NotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesViewController.m; sourceTree = "<group>"; };
 		DF1F3FF014F1FF1D008FF1C7 /* tabicon-help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabicon-help.png"; sourceTree = "<group>"; };
 		DF1F3FF114F1FF1D008FF1C7 /* tabicon-notes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabicon-notes.png"; sourceTree = "<group>"; };
+		DF1F3FFA14F221FB008FF1C7 /* PopMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenuView.h; sourceTree = "<group>"; };
+		DF1F3FFB14F221FB008FF1C7 /* PopMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuView.m; sourceTree = "<group>"; };
+		DF1F3FFD14F2BA68008FF1C7 /* PopBoxView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PopBoxView.xib; path = iosglk/Resources/PopBoxView.xib; sourceTree = SOURCE_ROOT; };
+		DF1F400414F306A0008FF1C7 /* PrefsMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrefsMenuView.xib; sourceTree = "<group>"; };
+		DF1F400614F3094F008FF1C7 /* PrefsMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefsMenuView.h; sourceTree = "<group>"; };
+		DF1F400714F3094F008FF1C7 /* PrefsMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefsMenuView.m; sourceTree = "<group>"; };
 		DF9A836C14E0CD5B002C2FCB /* gi_blorb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gi_blorb.c; sourceTree = "<group>"; };
 		DF9A836D14E0CD5B002C2FCB /* gi_blorb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gi_blorb.h; sourceTree = "<group>"; };
 		DF9A836E14E0CD5B002C2FCB /* gi_dispa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gi_dispa.c; sourceTree = "<group>"; };
@@ -313,8 +323,10 @@
 				DF19DDE414E8DF5C007DCB29 /* IosGlkViewController.xib */,
 				DFA0DFA714E0BDA700B67057 /* GlkFileSelectLoad.xib */,
 				DFA0DFA814E0BDA700B67057 /* GlkFileSelectStore.xib */,
-				DF19DDD914E8A069007DCB29 /* HistoryMenuVC.xib */,
-				DF19DDDA14E8A069007DCB29 /* PaletteMenuVC.xib */,
+				DF1F3FFD14F2BA68008FF1C7 /* PopBoxView.xib */,
+				DF19DDD914E8A069007DCB29 /* HistoryMenuView.xib */,
+				DF19DDDA14E8A069007DCB29 /* PaletteMenuView.xib */,
+				DF1F400414F306A0008FF1C7 /* PrefsMenuView.xib */,
 				DFEFAC2D14F1E0E50062859F /* HelpVC.xib */,
 				DF1F3FEA14F1FD06008FF1C7 /* NotesVC.xib */,
 			);
@@ -332,6 +344,8 @@
 				DFEFAC2C14F1E0E50062859F /* HelpViewController.m */,
 				DF1F3FED14F1FD19008FF1C7 /* NotesViewController.h */,
 				DF1F3FEE14F1FD19008FF1C7 /* NotesViewController.m */,
+				DF1F400614F3094F008FF1C7 /* PrefsMenuView.h */,
+				DF1F400714F3094F008FF1C7 /* PrefsMenuView.m */,
 			);
 			path = TerpSrc;
 			sourceTree = "<group>";
@@ -375,6 +389,8 @@
 				DF9A838714E0CD7C002C2FCB /* RelDateFormatter.m */,
 				DF19DDD014E89F8A007DCB29 /* CmdTextField.h */,
 				DF19DDD114E89F8A007DCB29 /* CmdTextField.m */,
+				DF1F3FFA14F221FB008FF1C7 /* PopMenuView.h */,
+				DF1F3FFB14F221FB008FF1C7 /* PopMenuView.m */,
 				DF19DDD214E89F8A007DCB29 /* InputMenuView.h */,
 				DF19DDD314E89F8A007DCB29 /* InputMenuView.m */,
 				DF9A838814E0CD7C002C2FCB /* StyledTextView.h */,
@@ -716,8 +732,8 @@
 				DF9A848114E0EE8A002C2FCB /* Game.z5 in Resources */,
 				DF9D1A5414E47E85006A6749 /* FizmoLocales in Resources */,
 				DF9D1A5914E59EF0006A6749 /* MainWindow.xib in Resources */,
-				DF19DDDB14E8A069007DCB29 /* HistoryMenuVC.xib in Resources */,
-				DF19DDDC14E8A069007DCB29 /* PaletteMenuVC.xib in Resources */,
+				DF19DDDB14E8A069007DCB29 /* HistoryMenuView.xib in Resources */,
+				DF19DDDC14E8A069007DCB29 /* PaletteMenuView.xib in Resources */,
 				DF19DDE514E8DF5C007DCB29 /* IosGlkViewController.xib in Resources */,
 				DFAA384A14F1DAAE0096A848 /* tabicon-game.png in Resources */,
 				DFEFAC2F14F1E0E50062859F /* HelpVC.xib in Resources */,
@@ -725,6 +741,8 @@
 				DF1F3FEB14F1FD06008FF1C7 /* NotesVC.xib in Resources */,
 				DF1F3FF214F1FF1D008FF1C7 /* tabicon-help.png in Resources */,
 				DF1F3FF314F1FF1D008FF1C7 /* tabicon-notes.png in Resources */,
+				DF1F3FFE14F2BA68008FF1C7 /* PopBoxView.xib in Resources */,
+				DF1F400514F306A0008FF1C7 /* PrefsMenuView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -817,6 +835,8 @@
 				DF19DDF914EA0776007DCB29 /* FizmoGlkViewController.m in Sources */,
 				DFEFAC2E14F1E0E50062859F /* HelpViewController.m in Sources */,
 				DF1F3FEF14F1FD19008FF1C7 /* NotesViewController.m in Sources */,
+				DF1F3FFC14F221FB008FF1C7 /* PopMenuView.m in Sources */,
+				DF1F400814F3094F008FF1C7 /* PrefsMenuView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
