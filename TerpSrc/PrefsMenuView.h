@@ -11,6 +11,8 @@
 
 @property (nonatomic, retain) IBOutlet UIView *container;
 
+- (IBAction) handleColumnWidth:(id)sender;
+
 @end
 
 

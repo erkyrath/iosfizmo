@@ -8,11 +8,15 @@
 #import "IosGlkViewController.h"
 
 @class NotesViewController;
+@class FizmoGlkDelegate;
 
 @interface FizmoGlkViewController : IosGlkViewController
 
 @property (nonatomic, retain) IBOutlet NotesViewController *notesvc;
 
++ (FizmoGlkViewController *) singleton;
+
+- (FizmoGlkDelegate *) fizmoDelegate;
 - (IBAction) showPreferences;
 
 @end

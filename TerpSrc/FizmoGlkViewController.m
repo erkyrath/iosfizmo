@@ -6,6 +6,7 @@
 
 #import "FizmoGlkViewController.h"
 #import "FizmoGlkDelegate.h"
+#import "IosGlkAppDelegate.h"
 #import "GlkFrameView.h"
 #import "GlkWinBufferView.h"
 #import "NotesViewController.h"
@@ -14,6 +15,10 @@
 @implementation FizmoGlkViewController
 
 @synthesize notesvc;
+
++ (FizmoGlkViewController *) singleton {
+	return (FizmoGlkViewController *)([IosGlkAppDelegate singleton].glkviewc);
+}
 
 - (FizmoGlkDelegate *) fizmoDelegate {
 	return (FizmoGlkDelegate *)self.glkdelegate;
@@ -40,20 +45,6 @@
 	CGRect rect = CGRectMake(4, 0, 40, 4);
 	PrefsMenuView *menuview = [[[PrefsMenuView alloc] initWithFrame:frameview.bounds buttonFrame:rect belowButton:YES] autorelease];
 	[frameview postPopMenu:menuview];
-	
-	/*
-	CGFloat maxwidth = self.fizmoDelegate.maxwidth;
-	if (maxwidth > 0)
-		maxwidth = 0;
-	else
-		maxwidth = (self.view.bounds.size.width > 500) ? 600 : 280; //###
-	
-	self.fizmoDelegate.maxwidth = maxwidth;
-	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-	[defaults setFloat:maxwidth forKey:@"FrameMaxWidth"];
-	
-	[self.frameview setNeedsLayout];
-	 */
 }
 
 - (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)orientation {
