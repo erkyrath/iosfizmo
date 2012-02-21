@@ -11,6 +11,7 @@
 @implementation FizmoGlkDelegate
 
 @synthesize maxwidth;
+@synthesize fontscale;
 
 - (void) prepareStyles:(StyleSet *)styles forWindowType:(glui32)wintype rock:(glui32)rock {
 	BOOL isiphone = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone);
@@ -18,7 +19,13 @@
 	if (wintype == wintype_TextGrid) {
 		styles.margins = UIEdgeInsetsMake(4, 6, 4, 6);
 		
-		CGFloat statusfontsize = (isiphone ? 12 : 14);
+		CGFloat statusfontsize;
+		if (isiphone) {
+			statusfontsize = 9+fontscale;
+		}
+		else {
+			statusfontsize = 11+fontscale;
+		}
 		
 		FontVariants variants = [StyleSet fontVariantsForSize:statusfontsize name:@"Courier", nil];
 		styles.fonts[style_Normal] = variants.normal;
@@ -33,8 +40,10 @@
 	}
 	else {
 		styles.margins = UIEdgeInsetsMake(4, 6, 4, 6);
-		
-		FontVariants variants = [StyleSet fontVariantsForSize:14 name:@"Georgia", nil];
+
+		CGFloat statusfontsize = 11+fontscale;
+
+		FontVariants variants = [StyleSet fontVariantsForSize:statusfontsize name:@"Georgia", nil];
 		styles.fonts[style_Normal] = variants.normal;
 		styles.fonts[style_Emphasized] = variants.italic;
 		styles.fonts[style_Preformatted] = [UIFont fontWithName:@"Courier" size:14];

@@ -7,6 +7,7 @@
 #import "PrefsMenuView.h"
 #import "FizmoGlkViewController.h"
 #import "FizmoGlkDelegate.h"
+#import "GlkFrameView.h"
 
 @implementation PrefsMenuView
 
@@ -69,6 +70,30 @@
 	
 	[self updateButtons];
 	[glkviewc.frameview setNeedsLayout];
+}
+
+- (IBAction) handleFontSize:(id)sender {
+	FizmoGlkViewController *glkviewc = [FizmoGlkViewController singleton];
+	
+	int fontscale = glkviewc.fizmoDelegate.fontscale;
+	
+	if (sender == sizebut_small) {
+		fontscale -= 1;
+	} 
+	else if (sender == sizebut_big) {
+		fontscale += 1;
+	}
+	fontscale = MAX(fontscale, 1);
+	fontscale = MIN(fontscale, FONTSCALE_MAX);
+
+	if (fontscale == glkviewc.fizmoDelegate.fontscale)
+		return;
+	
+	glkviewc.fizmoDelegate.fontscale = fontscale;
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	[defaults setInteger:fontscale forKey:@"FontScale"];
+	
+	[glkviewc.frameview updateWindowStyles];
 }
 
 @end

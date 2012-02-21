@@ -30,6 +30,12 @@
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	CGFloat maxwidth = [defaults floatForKey:@"FrameMaxWidth"];
 	self.fizmoDelegate.maxwidth = maxwidth;
+	
+	/* Font-scale values are arbitrarily between 1 and 5. */
+	int fontscale = [defaults integerForKey:@"FontScale"];
+	if (fontscale == 0)
+		fontscale = 3;
+	self.fizmoDelegate.fontscale = fontscale;
 }
 
 - (void) becameInactive {

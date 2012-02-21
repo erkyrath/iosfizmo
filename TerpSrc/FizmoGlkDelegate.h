@@ -7,10 +7,14 @@
 #import <Foundation/Foundation.h>
 #import "IosGlkLibDelegate.h"
 
+#define FONTSCALE_MAX (7)
+
 @interface FizmoGlkDelegate : NSObject <IosGlkLibDelegate> {
 	CGFloat maxwidth;
+	int fontscale;
 }
 
 @property (nonatomic) CGFloat maxwidth;
+@property (nonatomic) int fontscale;
 
 @end

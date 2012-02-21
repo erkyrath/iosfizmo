@@ -20,6 +20,7 @@
 
 - (void) updateButtons;
 - (IBAction) handleColumnWidth:(id)sender;
+- (IBAction) handleFontSize:(id)sender;
 
 @end
 
