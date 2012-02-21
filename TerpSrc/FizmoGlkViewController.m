@@ -32,10 +32,13 @@
 }
 
 - (IBAction) showPreferences {
-	NSLog(@"### preferences");
+	if (frameview.menuview && [frameview.menuview isKindOfClass:[PrefsMenuView class]]) {
+		[frameview removePopMenuAnimated:YES];
+		return;
+	}
 	
-	CGRect rect = CGRectMake(300, 400, 40, 2);
-	PrefsMenuView *menuview = [[[PrefsMenuView alloc] initWithFrame:frameview.bounds buttonFrame:rect] autorelease];
+	CGRect rect = CGRectMake(4, 0, 40, 4);
+	PrefsMenuView *menuview = [[[PrefsMenuView alloc] initWithFrame:frameview.bounds buttonFrame:rect belowButton:YES] autorelease];
 	[frameview postPopMenu:menuview];
 	
 	/*

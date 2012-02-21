@@ -8,5 +8,19 @@
 
 @implementation PrefsMenuView
 
+@synthesize container;
+
+- (void) loadContent {
+	[[NSBundle mainBundle] loadNibNamed:@"PrefsMenuView" owner:self options:nil];
+	[self resizeContentTo:container.frame.size animated:YES];
+	[content addSubview:container];
+}
+
+@end
+
+@implementation PrefsContainerView
+
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+}
 
 @end

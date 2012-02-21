@@ -9,4 +9,11 @@
 
 @interface PrefsMenuView : PopMenuView
 
+@property (nonatomic, retain) IBOutlet UIView *container;
+
+@end
+
+
+@interface PrefsContainerView : UIView
+
 @end
