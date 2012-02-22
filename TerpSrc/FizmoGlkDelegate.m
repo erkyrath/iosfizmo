@@ -23,7 +23,7 @@
 - (UIColor *) genForegroundColor {
 	switch (colorscheme) {
 		case 1: /* quiet */
-			return [UIColor colorWithRed:0.2 green:0.15 blue:0.0 alpha:1];
+			return [UIColor colorWithRed:0.25 green:0.2 blue:0.0 alpha:1];
 		case 2: /* dark */
 			return [UIColor colorWithRed:0.75 green:0.75 blue:0.7 alpha:1];
 		case 0: /* bright */
