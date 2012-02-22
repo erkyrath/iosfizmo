@@ -28,6 +28,7 @@
 	[super didFinishLaunching];
 	
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	
 	CGFloat maxwidth = [defaults floatForKey:@"FrameMaxWidth"];
 	self.fizmoDelegate.maxwidth = maxwidth;
 	
@@ -36,6 +37,11 @@
 	if (fontscale == 0)
 		fontscale = 3;
 	self.fizmoDelegate.fontscale = fontscale;
+	
+	NSString *fontfamily = [defaults stringForKey:@"FontFamily"];
+	if (!fontfamily)
+		fontfamily = @"Georgia";
+	self.fizmoDelegate.fontfamily = @"Euphemia";
 }
 
 - (void) becameInactive {

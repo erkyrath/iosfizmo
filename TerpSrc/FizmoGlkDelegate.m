@@ -11,7 +11,13 @@
 @implementation FizmoGlkDelegate
 
 @synthesize maxwidth;
+@synthesize fontfamily;
 @synthesize fontscale;
+
+- (void) dealloc {
+	self.fontfamily = nil;
+	[super dealloc];
+}
 
 - (void) prepareStyles:(StyleSet *)styles forWindowType:(glui32)wintype rock:(glui32)rock {
 	BOOL isiphone = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone);
@@ -43,7 +49,20 @@
 
 		CGFloat statusfontsize = 11+fontscale;
 
-		FontVariants variants = [StyleSet fontVariantsForSize:statusfontsize name:@"Georgia", nil];
+		FontVariants variants;
+		if ([fontfamily isEqualToString:@"Helvetica"]) {
+			variants = [StyleSet fontVariantsForSize:statusfontsize name:@"Helvetica Neue", @"Helvetica", nil];
+		}
+		if ([fontfamily isEqualToString:@"Euphemia"]) {
+			variants = [StyleSet fontVariantsForSize:statusfontsize name:@"EuphemiaUCAS", @"Verdana", nil];
+		}
+		else if (!fontfamily) {
+			variants = [StyleSet fontVariantsForSize:statusfontsize name:@"Georgia", nil];
+		}
+		else {
+			variants = [StyleSet fontVariantsForSize:statusfontsize name:fontfamily, @"Georgia", nil];
+		}
+		
 		styles.fonts[style_Normal] = variants.normal;
 		styles.fonts[style_Emphasized] = variants.italic;
 		styles.fonts[style_Preformatted] = [UIFont fontWithName:@"Courier" size:14];

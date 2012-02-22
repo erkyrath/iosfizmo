@@ -11,10 +11,12 @@
 
 @interface FizmoGlkDelegate : NSObject <IosGlkLibDelegate> {
 	CGFloat maxwidth;
+	NSString *fontfamily; // as the user knows it -- not necessarily the true family name
 	int fontscale;
 }
 
 @property (nonatomic) CGFloat maxwidth;
+@property (nonatomic, retain) NSString *fontfamily;
 @property (nonatomic) int fontscale;
 
 @end
