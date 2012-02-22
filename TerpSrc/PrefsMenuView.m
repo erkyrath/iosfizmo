@@ -139,6 +139,7 @@
 	[defaults setInteger:val forKey:@"ColorScheme"];
 	
 	[self updateButtons];
+	glkviewc.navigationController.navigationBar.barStyle = (val==2 ? UIBarStyleBlack : UIBarStyleDefault);
 	glkviewc.frameview.backgroundColor = glkviewc.fizmoDelegate.genBackgroundColor;
 	[glkviewc.frameview updateWindowStyles];
 }

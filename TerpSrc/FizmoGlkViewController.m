@@ -47,6 +47,7 @@
 		fontfamily = @"Georgia";
 	self.fizmoDelegate.fontfamily = fontfamily;
 	
+	self.navigationController.navigationBar.barStyle = (colorscheme==2 ? UIBarStyleBlack : UIBarStyleDefault);
 	self.frameview.backgroundColor = [self.fizmoDelegate genBackgroundColor];
 }
 
