@@ -29,6 +29,8 @@
 @property (nonatomic, retain) IBOutlet UIButton *colorbut_quiet;
 @property (nonatomic, retain) IBOutlet UIButton *colorbut_dark;
 
+@property (nonatomic, retain) NSArray *fontnames;
+
 - (void) updateButtons;
 - (IBAction) handleColumnWidth:(id)sender;
 - (IBAction) handleFontSize:(id)sender;

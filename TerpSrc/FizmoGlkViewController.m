@@ -41,7 +41,7 @@
 	NSString *fontfamily = [defaults stringForKey:@"FontFamily"];
 	if (!fontfamily)
 		fontfamily = @"Georgia";
-	self.fizmoDelegate.fontfamily = @"Euphemia";
+	self.fizmoDelegate.fontfamily = fontfamily;
 }
 
 - (void) becameInactive {

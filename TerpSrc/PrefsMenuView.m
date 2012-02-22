@@ -29,6 +29,7 @@
 @synthesize colorbut_bright;
 @synthesize colorbut_quiet;
 @synthesize colorbut_dark;
+@synthesize fontnames;
 
 - (void) dealloc {
 	self.container = nil;
@@ -48,6 +49,8 @@
 	self.colorbut_bright = nil;
 	self.colorbut_quiet = nil;
 	self.colorbut_dark = nil;
+	
+	self.fontnames = nil;
 	
 	[super dealloc];
 }
@@ -116,12 +119,56 @@
 }
 
 - (IBAction) handleColor:(id)sender {
+	NSLog(@"### handleColor");
 }
 
 - (IBAction) handleFont:(id)sender {
+	NSLog(@"### handleFont");
+}
+
+- (void) setUpFontMenu {
+	NSMutableArray *arr = [NSMutableArray arrayWithObjects:@"Georgia", @"Times New Roman", @"Helvetica", nil];
+	if ([UIFont fontWithName:@"Palatino" size:14])
+		[arr addObject:@"Palatino"];
+	if ([UIFont fontWithName:@"Baskerville" size:14])
+		[arr addObject:@"Baskerville"];
+	if ([UIFont fontWithName:@"HoeflerText-Regular" size:14])
+		[arr addObject:@"Hoefler Text"];
+	if ([UIFont fontWithName:@"EuphemiaUCAS" size:14])
+		[arr addObject:@"Euphemia"];
+	else
+		[arr addObject:@"Verdana"];
+	self.fontnames = arr;
+	
+	CGRect baserect = fontbut_sample1.frame;
+	CGFloat buttonspacing = fontbut_sample2.frame.origin.y - fontbut_sample1.frame.origin.y;
+	CGFloat postbuttonspacing = fontscontainer.frame.size.height - fontbut_sample2.frame.origin.y;
+	[fontbut_sample1 removeFromSuperview];
+	[fontbut_sample2 removeFromSuperview];
+	
+	int count = 0;
+	for (NSString *name in fontnames) {
+		UIButton *button = [UIButton buttonWithType:fontbut_sample1.buttonType];
+		[button setTitle:name forState:UIControlStateNormal];
+		button.tag = count;
+		CGRect rect = baserect;
+		rect.origin.y += count*buttonspacing;
+		button.frame = rect;
+		[button addTarget:self action:@selector(handleFont:) forControlEvents:UIControlEventTouchUpInside];
+		[fontscontainer addSubview:button];
+		count++;
+	}
+	
+	CGRect rect = fontscontainer.frame;
+	rect.size.height = (count-1)*buttonspacing+postbuttonspacing;
+	fontscontainer.frame = rect;
 }
 
 - (IBAction) handleFonts:(id)sender {
+	if (!fontnames) {
+		[self setUpFontMenu];
+	}
+	
 	CGFloat curheight = content.frame.size.height;
 	[self resizeContentTo:fontscontainer.frame.size animated:YES];
 	

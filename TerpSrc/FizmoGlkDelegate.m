@@ -53,7 +53,7 @@
 		if ([fontfamily isEqualToString:@"Helvetica"]) {
 			variants = [StyleSet fontVariantsForSize:statusfontsize name:@"Helvetica Neue", @"Helvetica", nil];
 		}
-		if ([fontfamily isEqualToString:@"Euphemia"]) {
+		else if ([fontfamily isEqualToString:@"Euphemia"]) {
 			variants = [StyleSet fontVariantsForSize:statusfontsize name:@"EuphemiaUCAS", @"Verdana", nil];
 		}
 		else if (!fontfamily) {
