@@ -128,15 +128,13 @@
 	if ([IosGlkAppDelegate animblocksavailable]) {
 		CGRect oldrect = container.frame;
 		CGRect rect = fontscontainer.frame;
-		CGRect subrect = colorsbutton.frame;
 		fontscontainer.frame = CGRectMake(rect.origin.x, rect.origin.y+curheight, rect.size.width, rect.size.height);
 		[content addSubview:fontscontainer];
 		[UIView animateWithDuration:0.35 
 						 animations:^{ 
 							 fontscontainer.frame = rect;
 							 container.alpha = 0;
-							 container.frame = CGRectMake(oldrect.origin.x, oldrect.origin.y-oldrect.size.height, oldrect.size.width, oldrect.size.height); 
-							 colorsbutton.frame = CGRectMake(subrect.origin.x, subrect.origin.y+200, subrect.size.width, subrect.size.height); } 
+							 container.frame = CGRectMake(oldrect.origin.x, oldrect.origin.y-oldrect.size.height, oldrect.size.width, oldrect.size.height); }
 						 completion: ^(BOOL finished){ [container removeFromSuperview]; } ];
 	}
 	else {
