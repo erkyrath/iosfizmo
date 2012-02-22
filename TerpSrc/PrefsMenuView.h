@@ -30,6 +30,7 @@
 @property (nonatomic, retain) IBOutlet UIButton *colorbut_dark;
 
 @property (nonatomic, retain) NSArray *fontnames;
+@property (nonatomic, retain) NSArray *fontbuttons;
 
 - (void) updateButtons;
 - (IBAction) handleColumnWidth:(id)sender;

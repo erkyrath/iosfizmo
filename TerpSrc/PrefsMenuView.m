@@ -30,6 +30,7 @@
 @synthesize colorbut_quiet;
 @synthesize colorbut_dark;
 @synthesize fontnames;
+@synthesize fontbuttons;
 
 - (void) dealloc {
 	self.container = nil;
@@ -51,6 +52,7 @@
 	self.colorbut_dark = nil;
 	
 	self.fontnames = nil;
+	self.fontbuttons = nil;
 	
 	[super dealloc];
 }
@@ -64,11 +66,20 @@
 
 - (void) updateButtons {
 	FizmoGlkViewController *glkviewc = [FizmoGlkViewController singleton];
-	CGFloat maxwidth = glkviewc.fizmoDelegate.maxwidth;
 	
+	CGFloat maxwidth = glkviewc.fizmoDelegate.maxwidth;
 	colbut_full.selected = (maxwidth == 0);
 	colbut_34.selected = (maxwidth == 624);
 	colbut_12.selected = (maxwidth == 512);
+	
+	if (fontnames) {
+		NSString *family = glkviewc.fizmoDelegate.fontfamily;
+		for (int count = 0; count < fontnames.count; count++) {
+			NSString *str = [fontnames objectAtIndex:count];
+			UIButton *button = [fontbuttons objectAtIndex:count];
+			button.selected = [family isEqualToString:str];
+		}
+	}
 }
 
 - (IBAction) handleColumnWidth:(id)sender {
@@ -123,11 +134,23 @@
 }
 
 - (IBAction) handleFont:(id)sender {
-	NSLog(@"### handleFont");
+	FizmoGlkViewController *glkviewc = [FizmoGlkViewController singleton];
+	
+	int val = ((UIView *)sender).tag;
+	if (!fontnames || val < 0 || val >= fontnames.count)
+		return;
+	NSString *name = [fontnames objectAtIndex:val];
+	
+	glkviewc.fizmoDelegate.fontfamily = name;
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	[defaults setObject:name forKey:@"FontFamily"];
+	
+	[self updateButtons];
+	[glkviewc.frameview updateWindowStyles];
 }
 
 - (void) setUpFontMenu {
-	NSMutableArray *arr = [NSMutableArray arrayWithObjects:@"Georgia", @"Times New Roman", @"Helvetica", nil];
+	NSMutableArray *arr = [NSMutableArray arrayWithObjects:@"Times New Roman", @"Helvetica", @"Georgia", nil];
 	if ([UIFont fontWithName:@"Palatino" size:14])
 		[arr addObject:@"Palatino"];
 	if ([UIFont fontWithName:@"Baskerville" size:14])
@@ -146,6 +169,13 @@
 	[fontbut_sample1 removeFromSuperview];
 	[fontbut_sample2 removeFromSuperview];
 	
+	arr = [NSMutableArray arrayWithCapacity:fontnames.count];
+	self.fontbuttons = arr;
+	
+	UIColor *normalcolor = [fontbut_sample1 titleColorForState:UIControlStateNormal];
+	UIColor *selectedcolor = [fontbut_sample1 titleColorForState:UIControlStateSelected];
+	UIColor *highlightedcolor = [fontbut_sample1 titleColorForState:UIControlStateHighlighted];
+	
 	int count = 0;
 	for (NSString *name in fontnames) {
 		UIButton *button = [UIButton buttonWithType:fontbut_sample1.buttonType];
@@ -154,8 +184,12 @@
 		CGRect rect = baserect;
 		rect.origin.y += count*buttonspacing;
 		button.frame = rect;
+		[button setTitleColor:normalcolor forState:UIControlStateNormal];
+		[button setTitleColor:selectedcolor forState:UIControlStateSelected];
+		[button setTitleColor:highlightedcolor forState:UIControlStateHighlighted];
 		[button addTarget:self action:@selector(handleFont:) forControlEvents:UIControlEventTouchUpInside];
 		[fontscontainer addSubview:button];
+		[arr addObject:button];
 		count++;
 	}
 	
@@ -167,6 +201,7 @@
 - (IBAction) handleFonts:(id)sender {
 	if (!fontnames) {
 		[self setUpFontMenu];
+		[self updateButtons];
 	}
 	
 	CGFloat curheight = content.frame.size.height;
