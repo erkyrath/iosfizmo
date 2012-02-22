@@ -6,12 +6,17 @@
 
 #import "PrefsMenuView.h"
 #import "FizmoGlkViewController.h"
+#import "IosGlkAppDelegate.h"
 #import "FizmoGlkDelegate.h"
 #import "GlkFrameView.h"
 
 @implementation PrefsMenuView
 
 @synthesize container;
+@synthesize fontscontainer;
+@synthesize colorscontainer;
+@synthesize colorsbutton;
+@synthesize fontsbutton;
 @synthesize colbut_full;
 @synthesize colbut_34;
 @synthesize colbut_12;
@@ -19,9 +24,18 @@
 @synthesize sizebut_big;
 @synthesize fontbutton;
 @synthesize colorbutton;
+@synthesize fontbut_sample1;
+@synthesize fontbut_sample2;
+@synthesize colorbut_bright;
+@synthesize colorbut_quiet;
+@synthesize colorbut_dark;
 
 - (void) dealloc {
 	self.container = nil;
+	self.fontscontainer = nil;
+	self.colorscontainer = nil;
+	self.colorsbutton = nil;
+	self.fontsbutton = nil;
 	self.colbut_full = nil;
 	self.colbut_34 = nil;
 	self.colbut_12 = nil;
@@ -29,6 +43,11 @@
 	self.sizebut_big = nil;
 	self.fontbutton = nil;
 	self.colorbutton = nil;
+	self.fontbut_sample1 = nil;
+	self.fontbut_sample2 = nil;
+	self.colorbut_bright = nil;
+	self.colorbut_quiet = nil;
+	self.colorbut_dark = nil;
 	
 	[super dealloc];
 }
@@ -94,6 +113,58 @@
 	[defaults setInteger:fontscale forKey:@"FontScale"];
 	
 	[glkviewc.frameview updateWindowStyles];
+}
+
+- (IBAction) handleColor:(id)sender {
+}
+
+- (IBAction) handleFont:(id)sender {
+}
+
+- (IBAction) handleFonts:(id)sender {
+	CGFloat curheight = content.frame.size.height;
+	[self resizeContentTo:fontscontainer.frame.size animated:YES];
+	
+	if ([IosGlkAppDelegate animblocksavailable]) {
+		CGRect oldrect = container.frame;
+		CGRect rect = fontscontainer.frame;
+		CGRect subrect = colorsbutton.frame;
+		fontscontainer.frame = CGRectMake(rect.origin.x, rect.origin.y+curheight, rect.size.width, rect.size.height);
+		[content addSubview:fontscontainer];
+		[UIView animateWithDuration:0.35 
+						 animations:^{ 
+							 fontscontainer.frame = rect;
+							 container.alpha = 0;
+							 container.frame = CGRectMake(oldrect.origin.x, oldrect.origin.y-oldrect.size.height, oldrect.size.width, oldrect.size.height); 
+							 colorsbutton.frame = CGRectMake(subrect.origin.x, subrect.origin.y+200, subrect.size.width, subrect.size.height); } 
+						 completion: ^(BOOL finished){ [container removeFromSuperview]; } ];
+	}
+	else {
+		[content addSubview:fontscontainer];
+		container.hidden = YES;
+	}
+}
+
+- (IBAction) handleColors:(id)sender {
+	CGFloat curheight = content.frame.size.height;
+	[self resizeContentTo:colorscontainer.frame.size animated:YES];
+	
+	if ([IosGlkAppDelegate animblocksavailable]) {
+		CGRect oldrect = container.frame;
+		CGRect rect = colorscontainer.frame;
+		colorscontainer.frame = CGRectMake(rect.origin.x, rect.origin.y+curheight, rect.size.width, rect.size.height);
+		[content addSubview:colorscontainer];
+		[UIView animateWithDuration:0.35 
+						animations:^{ 
+							colorscontainer.frame = rect;
+							container.alpha = 0;
+							container.frame = CGRectMake(oldrect.origin.x, oldrect.origin.y-oldrect.size.height, oldrect.size.width, oldrect.size.height); } 
+						 completion: ^(BOOL finished){ [container removeFromSuperview]; } ];
+	}
+	else {
+		[content addSubview:colorscontainer];
+		container.hidden = YES;
+	}
 }
 
 @end
