@@ -38,10 +38,16 @@
 		fontscale = 3;
 	self.fizmoDelegate.fontscale = fontscale;
 	
+	/* Color-scheme values are 0 to 2. */
+	int colorscheme = [defaults integerForKey:@"ColorScheme"];
+	self.fizmoDelegate.colorscheme = colorscheme;
+	
 	NSString *fontfamily = [defaults stringForKey:@"FontFamily"];
 	if (!fontfamily)
 		fontfamily = @"Georgia";
 	self.fizmoDelegate.fontfamily = fontfamily;
+	
+	self.frameview.backgroundColor = [self.fizmoDelegate genBackgroundColor];
 }
 
 - (void) becameInactive {

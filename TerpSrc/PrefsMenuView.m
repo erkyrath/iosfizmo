@@ -130,7 +130,17 @@
 }
 
 - (IBAction) handleColor:(id)sender {
-	NSLog(@"### handleColor");
+	FizmoGlkViewController *glkviewc = [FizmoGlkViewController singleton];
+	
+	int val = ((UIView *)sender).tag;
+	
+	glkviewc.fizmoDelegate.colorscheme = val;
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	[defaults setInteger:val forKey:@"ColorScheme"];
+	
+	[self updateButtons];
+	glkviewc.frameview.backgroundColor = glkviewc.fizmoDelegate.genBackgroundColor;
+	[glkviewc.frameview updateWindowStyles];
 }
 
 - (IBAction) handleFont:(id)sender {
