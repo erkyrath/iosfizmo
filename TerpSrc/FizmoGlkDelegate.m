@@ -6,6 +6,7 @@
 
 #import "FizmoGlkDelegate.h"
 #import "IosGlkLibDelegate.h"
+#import "FizmoGlkWindows.h"
 #import "StyleSet.h"
 
 @implementation FizmoGlkDelegate
@@ -18,6 +19,14 @@
 - (void) dealloc {
 	self.fontfamily = nil;
 	[super dealloc];
+}
+
+- (GlkWinBufferView *) viewForBufferWindow:(GlkWindow *)win frame:(CGRect)box {
+	return [[[FizmoGlkWinBufferView alloc] initWithWindow:win frame:box] autorelease];
+}
+
+- (GlkWinGridView *) viewForGridWindow:(GlkWindow *)win frame:(CGRect)box {
+	return nil;
 }
 
 - (UIColor *) genForegroundColor {

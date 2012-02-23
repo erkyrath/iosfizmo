@@ -9,6 +9,8 @@
 #import "IosGlkAppDelegate.h"
 #import "FizmoGlkDelegate.h"
 #import "GlkFrameView.h"
+#import "GlkWinBufferView.h"
+#import "StyledTextView.h"
 
 @implementation PrefsMenuView
 
