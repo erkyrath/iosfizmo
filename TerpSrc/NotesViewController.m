@@ -72,6 +72,8 @@
 	textview.delegate = nil;
 }
 
+/* Called both when you leave the Notes tab, and when the notes view is covered by a pushed transcript view.
+ */
 - (void) viewDidDisappear:(BOOL)animated
 {
 	[super viewDidDisappear:animated];

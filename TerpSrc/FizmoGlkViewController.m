@@ -65,6 +65,22 @@
 	[notesvc saveIfNeeded];
 }
 
+/* UITabBarController delegate method */
+- (void) tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewc {
+	if (![viewc isKindOfClass:[UINavigationController class]])
+		return;
+	UINavigationController *navc = (UINavigationController *)viewc;
+	NSArray *viewcstack = navc.viewControllers;
+	if (!viewcstack || !viewcstack.count)
+		return;
+	UIViewController *rootviewc = [viewcstack objectAtIndex:0];
+	//NSLog(@"### tabBarController did select %@ (%@)", navc, rootviewc);
+	
+	if (rootviewc != notesvc) {
+		[notesvc.navigationController popToRootViewControllerAnimated:NO];
+	}
+}
+
 - (IBAction) toggleKeyboard {
 	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
 		/* Can't have the prefs menu up at the same time as the keyboard */

@@ -138,18 +138,21 @@
 	
 	if (!thumb) {
 		// shouldn't happen
+		cell.accessoryType = UITableViewCellAccessoryNone;
 		cell.selectionStyle = UITableViewCellSelectionStyleBlue;
 		cell.textLabel.text = @"(null)";
 		cell.textLabel.textColor = [UIColor blackColor];
 		cell.detailTextLabel.text = @"?";
 	}
 	else if (thumb.isfake) {
+		cell.accessoryType = UITableViewCellAccessoryNone;
 		cell.selectionStyle = UITableViewCellSelectionStyleNone;
 		cell.textLabel.text = thumb.label;
 		cell.textLabel.textColor = [UIColor lightGrayColor];
 		cell.detailTextLabel.text = @"";
 	}
 	else {
+		cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 		cell.selectionStyle = UITableViewCellSelectionStyleBlue;
 		cell.textLabel.text = thumb.label;
 		cell.textLabel.textColor = [UIColor blackColor];
