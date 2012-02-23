@@ -78,7 +78,7 @@
 		
 		switch (colorscheme) {
 			case 1: /* quiet */
-				styles.backgroundcolor = [UIColor colorWithRed:0.75 green:0.7 blue:0.6 alpha:1];
+				styles.backgroundcolor = [UIColor colorWithRed:0.75 green:0.7 blue:0.5 alpha:1];
 				styles.colors[style_Normal] = [UIColor colorWithRed:0.15 green:0.1 blue:0.0 alpha:1];
 				break;
 			case 2: /* dark */
