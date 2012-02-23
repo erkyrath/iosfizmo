@@ -49,6 +49,16 @@
 	
 	self.navigationController.navigationBar.barStyle = (colorscheme==2 ? UIBarStyleBlack : UIBarStyleDefault);
 	self.frameview.backgroundColor = [self.fizmoDelegate genBackgroundColor];
+	if ([frameview respondsToSelector:@selector(addGestureRecognizer:)]) {
+		/* gestures are available in iOS 3.2 and up */
+		UISwipeGestureRecognizer *recognizer;
+		recognizer = [[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeLeft:)] autorelease];
+		recognizer.direction = UISwipeGestureRecognizerDirectionLeft;
+		[frameview addGestureRecognizer:recognizer];
+		recognizer = [[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeRight:)] autorelease];
+		recognizer.direction = UISwipeGestureRecognizerDirectionRight;
+		[frameview addGestureRecognizer:recognizer];
+	}
 }
 
 - (void) becameInactive {
@@ -79,6 +89,18 @@
 	CGRect rect = CGRectMake(4, 0, 40, 4);
 	PrefsMenuView *menuview = [[[PrefsMenuView alloc] initWithFrame:frameview.bounds buttonFrame:rect belowButton:YES] autorelease];
 	[frameview postPopMenu:menuview];
+}
+
+- (void) handleSwipeLeft:(UIGestureRecognizer *)recognizer {
+	if (self.tabBarController) {
+		self.tabBarController.selectedIndex = 1;
+	}
+}
+
+- (void) handleSwipeRight:(UIGestureRecognizer *)recognizer {
+	if (self.tabBarController) {
+		self.tabBarController.selectedIndex = 2;
+	}
 }
 
 - (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)orientation {

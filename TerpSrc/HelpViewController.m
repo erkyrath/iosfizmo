@@ -36,11 +36,34 @@
 	NSString *html = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
 	[webview loadHTMLString:html baseURL:url];
 	webview.delegate = self;
+
+	if ([webview respondsToSelector:@selector(addGestureRecognizer:)]) {
+		/* gestures are available in iOS 3.2 and up */
+		UISwipeGestureRecognizer *recognizer;
+		recognizer = [[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeLeft:)] autorelease];
+		recognizer.direction = UISwipeGestureRecognizerDirectionLeft;
+		[webview addGestureRecognizer:recognizer];
+		recognizer = [[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeRight:)] autorelease];
+		recognizer.direction = UISwipeGestureRecognizerDirectionRight;
+		[webview addGestureRecognizer:recognizer];
+	}
 }
 
 - (void) viewDidUnload
 {
 	NSLog(@"HelpVC: viewDidUnload");
+}
+
+- (void) handleSwipeLeft:(UIGestureRecognizer *)recognizer {
+	if (self.tabBarController) {
+		self.tabBarController.selectedIndex = 0;
+	}
+}
+
+- (void) handleSwipeRight:(UIGestureRecognizer *)recognizer {
+	if (self.tabBarController) {
+		self.tabBarController.selectedIndex = 1;
+	}
 }
 
 - (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)orientation
