@@ -1,10 +1,8 @@
-//
-//  FizmoGlkWindows.m
-//  IosFizmo
-//
-//  Created by Andrew Plotkin on 2/22/12.
-//  Copyright (c) 2012 Zarfhome. All rights reserved.
-//
+/* FizmoGlkWindows.m: Fizmo-specific window buffer subclasses, for the IosGlk library
+ for IosFizmo, an IosGlk port of the Fizmo Z-machine interpreter.
+ Designed by Andrew Plotkin <erkyrath@eblong.com>
+ http://eblong.com/zarf/glk/
+ */
 
 #import "FizmoGlkWindows.h"
 #import "StyledTextView.h"

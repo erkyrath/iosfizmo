@@ -339,18 +339,18 @@
 		DF19DDE014E8A8CA007DCB29 /* TerpSrc */ = {
 			isa = PBXGroup;
 			children = (
-				DF19DDE114E8A950007DCB29 /* FizmoGlkDelegate.h */,
-				DF19DDE214E8A950007DCB29 /* FizmoGlkDelegate.m */,
 				DF19DDF714EA0776007DCB29 /* FizmoGlkViewController.h */,
 				DF19DDF814EA0776007DCB29 /* FizmoGlkViewController.m */,
+				DF19DDE114E8A950007DCB29 /* FizmoGlkDelegate.h */,
+				DF19DDE214E8A950007DCB29 /* FizmoGlkDelegate.m */,
+				DFBB4DE714F5D72D0041016A /* FizmoGlkWindows.h */,
+				DFBB4DE814F5D72D0041016A /* FizmoGlkWindows.m */,
 				DFEFAC2B14F1E0E50062859F /* HelpViewController.h */,
 				DFEFAC2C14F1E0E50062859F /* HelpViewController.m */,
 				DF1F3FED14F1FD19008FF1C7 /* NotesViewController.h */,
 				DF1F3FEE14F1FD19008FF1C7 /* NotesViewController.m */,
 				DF1F400614F3094F008FF1C7 /* PrefsMenuView.h */,
 				DF1F400714F3094F008FF1C7 /* PrefsMenuView.m */,
-				DFBB4DE714F5D72D0041016A /* FizmoGlkWindows.h */,
-				DFBB4DE814F5D72D0041016A /* FizmoGlkWindows.m */,
 			);
 			path = TerpSrc;
 			sourceTree = "<group>";
