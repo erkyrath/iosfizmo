@@ -55,7 +55,22 @@
 	[notesvc saveIfNeeded];
 }
 
+- (IBAction) toggleKeyboard {
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+		/* Can't have the prefs menu up at the same time as the keyboard */
+		if (frameview.menuview && [frameview.menuview isKindOfClass:[PrefsMenuView class]]) {
+			[frameview removePopMenuAnimated:YES];
+		}
+	}
+	[super toggleKeyboard];
+}
+
 - (IBAction) showPreferences {
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+		/* Can't have the prefs menu up at the same time as the keyboard */
+		[self hideKeyboard];
+	}
+	
 	if (frameview.menuview && [frameview.menuview isKindOfClass:[PrefsMenuView class]]) {
 		[frameview removePopMenuAnimated:YES];
 		return;
