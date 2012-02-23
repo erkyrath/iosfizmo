@@ -164,8 +164,8 @@
 
 - (void) setUpFontMenu {
 	NSMutableArray *arr = [NSMutableArray arrayWithObjects:@"Times New Roman", @"Helvetica", @"Georgia", nil];
-	if ([UIFont fontWithName:@"Palatino" size:14])
-		[arr addObject:@"Palatino"];
+	/*if ([UIFont fontWithName:@"Palatino" size:14])
+		[arr addObject:@"Palatino"];*/
 	if ([UIFont fontWithName:@"Baskerville" size:14])
 		[arr addObject:@"Baskerville"];
 	if ([UIFont fontWithName:@"HoeflerText-Regular" size:14])
