@@ -21,6 +21,10 @@
 	[super dealloc];
 }
 
+- (NSString *) gameId {
+	return nil;
+}
+
 - (GlkWinBufferView *) viewForBufferWindow:(GlkWindow *)win frame:(CGRect)box {
 	return [[[FizmoGlkWinBufferView alloc] initWithWindow:win frame:box] autorelease];
 }

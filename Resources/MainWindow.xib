@@ -47,7 +47,6 @@
 				<int key="NSvFlags">292</int>
 				<string key="NSFrameSize">{320, 480}</string>
 				<reference key="NSSuperview"/>
-				<reference key="NSNextKeyView"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">1</int>
 					<bytes key="NSRGB">MSAxIDEAA</bytes>
@@ -71,12 +70,12 @@
 				<bool key="IBUIDefinesPresentationContext">YES</bool>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 				<bool key="IBUIHorizontal">NO</bool>
-				<object class="IBUINavigationController" key="IBUISelectedViewController" id="850027454">
-					<object class="IBUITabBarItem" key="IBUITabBarItem" id="82201855">
-						<string key="IBUITitle">Game</string>
+				<object class="IBUINavigationController" key="IBUISelectedViewController" id="551347222">
+					<object class="IBUITabBarItem" key="IBUITabBarItem" id="780613774">
+						<string key="IBUITitle">Notes</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">tabicon-game.png</string>
+							<string key="NSResourceName">tabicon-notes.png</string>
 						</object>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
@@ -89,7 +88,7 @@
 					<bool key="IBUIDefinesPresentationContext">YES</bool>
 					<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					<bool key="IBUIHorizontal">NO</bool>
-					<object class="IBUINavigationBar" key="IBUINavigationBar" id="83005121">
+					<object class="IBUINavigationBar" key="IBUINavigationBar" id="862530378">
 						<nil key="NSNextResponder"/>
 						<int key="NSvFlags">256</int>
 						<string key="NSFrameSize">{0, 0}</string>
@@ -100,26 +99,25 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 					<array class="NSMutableArray" key="IBUIViewControllers">
-						<object class="IBUIViewController" id="943309135">
-							<object class="IBUINavigationItem" key="IBUINavigationItem" id="55256093">
-								<string key="IBUITitle">Adventure</string>
-								<object class="IBUIBarButtonItem" key="IBUILeftBarButtonItem" id="109378914">
-									<string key="IBUITitle">Pref</string>
+						<object class="IBUIViewController" id="211819072">
+							<object class="IBUINavigationItem" key="IBUINavigationItem" id="988180717">
+								<string key="IBUITitle">My Notes</string>
+								<object class="IBUIBarButtonItem" key="IBUILeftBarButtonItem" id="709856533">
+									<string key="IBUITitle">Transcripts</string>
 									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 									<int key="IBUIStyle">1</int>
-									<reference key="IBUINavigationItem" ref="55256093"/>
+									<reference key="IBUINavigationItem" ref="988180717"/>
 								</object>
-								<object class="IBUIBarButtonItem" key="IBUIRightBarButtonItem" id="204876565">
+								<object class="IBUIBarButtonItem" key="IBUIRightBarButtonItem" id="116672987">
 									<string key="IBUITitle">KeyB</string>
 									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 									<int key="IBUIStyle">1</int>
-									<reference key="IBUINavigationItem" ref="55256093"/>
+									<reference key="IBUINavigationItem" ref="988180717"/>
 								</object>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 							</object>
-							<reference key="IBUIParentViewController" ref="850027454"/>
-							<string key="IBUINibName">IosGlkViewController</string>
-							<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
+							<reference key="IBUIParentViewController" ref="551347222"/>
+							<string key="IBUINibName">NotesVC</string>
 							<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
 								<int key="IBUIInterfaceOrientation">1</int>
 								<int key="interfaceOrientation">1</int>
@@ -130,13 +128,12 @@
 					</array>
 				</object>
 				<array class="NSMutableArray" key="IBUIViewControllers">
-					<reference ref="850027454"/>
-					<object class="IBUINavigationController" id="551347222">
-						<object class="IBUITabBarItem" key="IBUITabBarItem" id="780613774">
-							<string key="IBUITitle">Notes</string>
+					<object class="IBUINavigationController" id="850027454">
+						<object class="IBUITabBarItem" key="IBUITabBarItem" id="82201855">
+							<string key="IBUITitle">Game</string>
 							<object class="NSCustomResource" key="IBUIImage">
 								<string key="NSClassName">NSImage</string>
-								<string key="NSResourceName">tabicon-notes.png</string>
+								<string key="NSResourceName">tabicon-game.png</string>
 							</object>
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						</object>
@@ -149,7 +146,7 @@
 						<bool key="IBUIDefinesPresentationContext">YES</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<bool key="IBUIHorizontal">NO</bool>
-						<object class="IBUINavigationBar" key="IBUINavigationBar" id="862530378">
+						<object class="IBUINavigationBar" key="IBUINavigationBar" id="83005121">
 							<nil key="NSNextResponder"/>
 							<int key="NSvFlags">256</int>
 							<string key="NSFrameSize">{0, 0}</string>
@@ -160,25 +157,26 @@
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						</object>
 						<array class="NSMutableArray" key="IBUIViewControllers">
-							<object class="IBUIViewController" id="211819072">
-								<object class="IBUINavigationItem" key="IBUINavigationItem" id="988180717">
-									<string key="IBUITitle">My Notes</string>
-									<object class="IBUIBarButtonItem" key="IBUILeftBarButtonItem" id="709856533">
-										<string key="IBUITitle">Transcripts</string>
+							<object class="IBUIViewController" id="943309135">
+								<object class="IBUINavigationItem" key="IBUINavigationItem" id="55256093">
+									<string key="IBUITitle">Adventure</string>
+									<object class="IBUIBarButtonItem" key="IBUILeftBarButtonItem" id="109378914">
+										<string key="IBUITitle">Pref</string>
 										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 										<int key="IBUIStyle">1</int>
-										<reference key="IBUINavigationItem" ref="988180717"/>
+										<reference key="IBUINavigationItem" ref="55256093"/>
 									</object>
-									<object class="IBUIBarButtonItem" key="IBUIRightBarButtonItem" id="116672987">
+									<object class="IBUIBarButtonItem" key="IBUIRightBarButtonItem" id="204876565">
 										<string key="IBUITitle">KeyB</string>
 										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 										<int key="IBUIStyle">1</int>
-										<reference key="IBUINavigationItem" ref="988180717"/>
+										<reference key="IBUINavigationItem" ref="55256093"/>
 									</object>
 									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								</object>
-								<reference key="IBUIParentViewController" ref="551347222"/>
-								<string key="IBUINibName">NotesVC</string>
+								<reference key="IBUIParentViewController" ref="850027454"/>
+								<string key="IBUINibName">IosGlkViewController</string>
+								<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
 								<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
 									<int key="IBUIInterfaceOrientation">1</int>
 									<int key="interfaceOrientation">1</int>
@@ -188,6 +186,7 @@
 							</object>
 						</array>
 					</object>
+					<reference ref="551347222"/>
 					<object class="IBUINavigationController" id="805039336">
 						<object class="IBUITabBarItem" key="IBUITabBarItem" id="842970724">
 							<string key="IBUITitle">Help</string>
@@ -239,7 +238,6 @@
 					<int key="NSvFlags">266</int>
 					<string key="NSFrame">{{0, 431}, {320, 49}}</string>
 					<reference key="NSSuperview"/>
-					<reference key="NSNextKeyView"/>
 					<string key="NSReuseIdentifierKey">_NS:473</string>
 					<object class="NSColor" key="IBUIBackgroundColor">
 						<int key="NSColorSpace">3</int>
@@ -325,6 +323,14 @@
 						<reference key="destination" ref="211819072"/>
 					</object>
 					<int key="connectionID">68</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">handleTranscripts</string>
+						<reference key="source" ref="709856533"/>
+						<reference key="destination" ref="211819072"/>
+					</object>
+					<int key="connectionID">70</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -546,7 +552,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">69</int>
+			<int key="maxID">70</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>

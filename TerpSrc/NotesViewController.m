@@ -6,6 +6,7 @@
 
 #import "NotesViewController.h"
 #import "IosGlkViewController.h"
+#import "TranscriptViewController.h"
 
 #define NOTES_SAVE_DELAY (60)
 
@@ -91,6 +92,12 @@
 	else {
 		[textview becomeFirstResponder];
 	}
+}
+
+- (IBAction) handleTranscripts
+{
+	TranscriptViewController *transviewc = [[[TranscriptViewController alloc] initWithNibName:@"TranscriptVC" bundle:nil] autorelease];
+	[self.navigationController pushViewController:transviewc animated:YES];
 }
 
 - (void) saveIfNeeded

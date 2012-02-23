@@ -15,6 +15,7 @@
 @property (nonatomic, retain) NSString *notespath;
 
 - (IBAction) toggleKeyboard;
+- (IBAction) handleTranscripts;
 - (void) saveIfNeeded;
 
 @end
