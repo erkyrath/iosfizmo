@@ -147,6 +147,7 @@
 		DF361B5E14F72B5C00A8D670 /* DisplayTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayTextViewController.m; sourceTree = "<group>"; };
 		DF361B6114F72C5C00A8D670 /* DisplayTextVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DisplayTextVC.xib; sourceTree = "<group>"; };
 		DF361B6314F73B7000A8D670 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		DF361B6514F83CC200A8D670 /* glkstart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glkstart.h; sourceTree = "<group>"; };
 		DF9A836C14E0CD5B002C2FCB /* gi_blorb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gi_blorb.c; sourceTree = "<group>"; };
 		DF9A836D14E0CD5B002C2FCB /* gi_blorb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gi_blorb.h; sourceTree = "<group>"; };
 		DF9A836E14E0CD5B002C2FCB /* gi_dispa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gi_dispa.c; sourceTree = "<group>"; };
@@ -633,6 +634,7 @@
 			isa = PBXGroup;
 			children = (
 				DF9A848514E0F097002C2FCB /* fizmo-iosglk.m */,
+				DF361B6514F83CC200A8D670 /* glkstart.h */,
 				DF9D1A4C14E1BFCF006A6749 /* ios-trace.m */,
 			);
 			name = "fizmo-iosglk";
