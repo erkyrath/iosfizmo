@@ -13,6 +13,8 @@
 @interface DisplayTextViewController : UIViewController
 
 @property (nonatomic, retain) IBOutlet UITextView *textview;
+@property (nonatomic, retain) IBOutlet UILabel *titlelabel;
+@property (nonatomic, retain) IBOutlet UILabel *datelabel;
 @property (nonatomic, retain) GlkFileThumb *thumb;
 
 - (id) initWithNibName:(NSString *)nibName thumb:(GlkFileThumb *)thumb bundle:(NSBundle *)nibBundle;

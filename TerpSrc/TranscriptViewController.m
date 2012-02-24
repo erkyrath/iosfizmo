@@ -56,7 +56,7 @@
 	if (!dirlist) {
 		dirlist = [NSArray array];
 	}
-	NSString *basedir = [[dirlist objectAtIndex:0] retain];
+	NSString *basedir = [dirlist objectAtIndex:0];
 	NSString *dirname = [GlkFileRef subDirOfBase:basedir forUsage:fileusage_Transcript gameid:[GlkLibrary singleton].gameId];
 	
 	[filelist removeAllObjects];
