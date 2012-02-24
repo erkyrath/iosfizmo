@@ -39,7 +39,11 @@
 	[super viewDidLoad];
 
 	self.navigationItem.title = @"Transcript"; //### localize
-	
+
+	UIBarButtonItem *sendbutton = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(buttonSend:)] autorelease];
+	sendbutton.enabled = [MFMailComposeViewController canSendMail];
+	self.navigationItem.rightBarButtonItem = sendbutton;
+
 	titlelabel.text = thumb.label;
 	
 	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
@@ -54,6 +58,23 @@
 	NSString *str = [NSString stringWithContentsOfFile:thumb.pathname encoding:NSUTF8StringEncoding error:nil];
 	if (str)
 		textview.text = str;
+}
+
+- (void) buttonSend:(id)sender
+{
+	MFMailComposeViewController *compose = [[MFMailComposeViewController alloc] init];
+	compose.mailComposeDelegate = self;
+	
+	[compose setSubject:[@"Transcript: " stringByAppendingString:thumb.label]];
+    [compose setMessageBody:textview.text isHTML:NO];
+
+	[self presentModalViewController:compose animated:YES];
+    [compose release]; // Can safely release the controller now.
+}
+
+- (void) mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 - (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

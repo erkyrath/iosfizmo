@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MFMailComposeViewController.h>
 
 @class GlkFileThumb;
 
-@interface DisplayTextViewController : UIViewController
+@interface DisplayTextViewController : UIViewController <MFMailComposeViewControllerDelegate>
 
 @property (nonatomic, retain) IBOutlet UITextView *textview;
 @property (nonatomic, retain) IBOutlet UILabel *titlelabel;

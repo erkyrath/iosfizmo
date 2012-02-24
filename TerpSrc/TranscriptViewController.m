@@ -44,10 +44,6 @@
 	//### localize and customize
 	self.navigationItem.title = @"Transcripts";
 	
-	/*
-	UIBarButtonItem *cancelbutton = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(buttonCancel:)] autorelease];
-	
-	self.navigationItem.leftBarButtonItem = cancelbutton; */
 	self.navigationItem.rightBarButtonItem = [self editButtonItem];
 	
 	/* We use an old-fashioned way of locating the Documents directory. (The NSManager method for this is iOS 4.0 and later.) */
