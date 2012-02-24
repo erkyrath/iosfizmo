@@ -7,6 +7,7 @@
 //
 
 #import "TranscriptViewController.h"
+#import "DisplayTextViewController.h"
 #import "RelDateFormatter.h"
 #import "GlkLibrary.h"
 #import "GlkFileRef.h"
@@ -199,7 +200,8 @@
 	NSLog(@"selector: selected \"%@\"", thumb.label);
 	
 	/* The user has selected a file. */
-	//###
+	DisplayTextViewController *viewc = [[[DisplayTextViewController alloc] initWithNibName:@"DisplayTextVC" thumb:thumb bundle:nil] autorelease];
+	[self.navigationController pushViewController:viewc animated:YES];
 }
 
 
