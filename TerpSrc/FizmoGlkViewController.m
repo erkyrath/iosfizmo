@@ -48,7 +48,20 @@
 	self.fizmoDelegate.fontfamily = fontfamily;
 	
 	self.navigationController.navigationBar.barStyle = (colorscheme==2 ? UIBarStyleBlack : UIBarStyleDefault);
+	
+	// Yes, this is in two places.
 	self.frameview.backgroundColor = [self.fizmoDelegate genBackgroundColor];
+}
+
+- (void) becameInactive {
+	[notesvc saveIfNeeded];
+}
+
+- (void) viewDidLoad {
+	[super viewDidLoad];
+	
+	self.frameview.backgroundColor = [self.fizmoDelegate genBackgroundColor];
+	
 	if ([frameview respondsToSelector:@selector(addGestureRecognizer:)]) {
 		/* gestures are available in iOS 3.2 and up */
 		UISwipeGestureRecognizer *recognizer;
@@ -59,10 +72,6 @@
 		recognizer.direction = UISwipeGestureRecognizerDirectionRight;
 		[frameview addGestureRecognizer:recognizer];
 	}
-}
-
-- (void) becameInactive {
-	[notesvc saveIfNeeded];
 }
 
 /* UITabBarController delegate method */
