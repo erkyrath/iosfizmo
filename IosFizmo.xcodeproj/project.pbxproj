@@ -26,6 +26,8 @@
 		DF361B5F14F72B5C00A8D670 /* DisplayTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF361B5E14F72B5C00A8D670 /* DisplayTextViewController.m */; };
 		DF361B6214F72C5C00A8D670 /* DisplayTextVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF361B6114F72C5C00A8D670 /* DisplayTextVC.xib */; };
 		DF361B6414F73B7000A8D670 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF361B6314F73B7000A8D670 /* MessageUI.framework */; };
+		DF361B6D14FAAD5200A8D670 /* MoreBoxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF361B6C14FAAD5200A8D670 /* MoreBoxView.xib */; };
+		DF361B7014FAAFED00A8D670 /* MoreBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF361B6F14FAAFEC00A8D670 /* MoreBoxView.m */; };
 		DF9A837214E0CD5B002C2FCB /* gi_blorb.c in Sources */ = {isa = PBXBuildFile; fileRef = DF9A836C14E0CD5B002C2FCB /* gi_blorb.c */; };
 		DF9A837314E0CD5B002C2FCB /* gi_dispa.c in Sources */ = {isa = PBXBuildFile; fileRef = DF9A836E14E0CD5B002C2FCB /* gi_dispa.c */; };
 		DF9A838A14E0CD7C002C2FCB /* GlkAppWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9A837714E0CD7C002C2FCB /* GlkAppWrapper.m */; };
@@ -148,6 +150,9 @@
 		DF361B6114F72C5C00A8D670 /* DisplayTextVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DisplayTextVC.xib; sourceTree = "<group>"; };
 		DF361B6314F73B7000A8D670 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		DF361B6514F83CC200A8D670 /* glkstart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glkstart.h; sourceTree = "<group>"; };
+		DF361B6C14FAAD5200A8D670 /* MoreBoxView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MoreBoxView.xib; path = iosglk/Resources/MoreBoxView.xib; sourceTree = SOURCE_ROOT; };
+		DF361B6E14FAAFEC00A8D670 /* MoreBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreBoxView.h; sourceTree = "<group>"; };
+		DF361B6F14FAAFEC00A8D670 /* MoreBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreBoxView.m; sourceTree = "<group>"; };
 		DF9A836C14E0CD5B002C2FCB /* gi_blorb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gi_blorb.c; sourceTree = "<group>"; };
 		DF9A836D14E0CD5B002C2FCB /* gi_blorb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gi_blorb.h; sourceTree = "<group>"; };
 		DF9A836E14E0CD5B002C2FCB /* gi_dispa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gi_dispa.c; sourceTree = "<group>"; };
@@ -341,6 +346,7 @@
 				DFA0DFA714E0BDA700B67057 /* GlkFileSelectLoad.xib */,
 				DFA0DFA814E0BDA700B67057 /* GlkFileSelectStore.xib */,
 				DF1F3FFD14F2BA68008FF1C7 /* PopBoxView.xib */,
+				DF361B6C14FAAD5200A8D670 /* MoreBoxView.xib */,
 				DF19DDD914E8A069007DCB29 /* HistoryMenuView.xib */,
 				DF19DDDA14E8A069007DCB29 /* PaletteMenuView.xib */,
 				DF1F400414F306A0008FF1C7 /* PrefsMenuView.xib */,
@@ -414,6 +420,8 @@
 				DF9A838714E0CD7C002C2FCB /* RelDateFormatter.m */,
 				DF19DDD014E89F8A007DCB29 /* CmdTextField.h */,
 				DF19DDD114E89F8A007DCB29 /* CmdTextField.m */,
+				DF361B6E14FAAFEC00A8D670 /* MoreBoxView.h */,
+				DF361B6F14FAAFEC00A8D670 /* MoreBoxView.m */,
 				DF1F3FFA14F221FB008FF1C7 /* PopMenuView.h */,
 				DF1F3FFB14F221FB008FF1C7 /* PopMenuView.m */,
 				DF19DDD214E89F8A007DCB29 /* InputMenuView.h */,
@@ -772,6 +780,7 @@
 				DF1F400514F306A0008FF1C7 /* PrefsMenuView.xib in Resources */,
 				DFBB4E4214F6E4450041016A /* TranscriptVC.xib in Resources */,
 				DF361B6214F72C5C00A8D670 /* DisplayTextVC.xib in Resources */,
+				DF361B6D14FAAD5200A8D670 /* MoreBoxView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -869,6 +878,7 @@
 				DFBB4DE914F5D72D0041016A /* FizmoGlkWindows.m in Sources */,
 				DFBB4E4614F6E5700041016A /* TranscriptViewController.m in Sources */,
 				DF361B5F14F72B5C00A8D670 /* DisplayTextViewController.m in Sources */,
+				DF361B7014FAAFED00A8D670 /* MoreBoxView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
