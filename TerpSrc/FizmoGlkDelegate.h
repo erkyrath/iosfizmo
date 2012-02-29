@@ -17,9 +17,10 @@
 }
 
 @property (nonatomic) CGFloat maxwidth;
-@property (nonatomic, retain) NSString *fontfamily;
-@property (nonatomic) int fontscale;
-@property (nonatomic) int colorscheme;
+/* The following properties are read from multiple threads, so we declare them atomic. */
+@property (retain) NSString *fontfamily;
+@property int fontscale;
+@property int colorscheme;
 
 - (UIColor *) genBackgroundColor;
 - (UIColor *) genForegroundColor;

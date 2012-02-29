@@ -33,8 +33,10 @@
 	return nil;
 }
 
+/* This is invoked from both the VM and UI threads.
+ */
 - (UIColor *) genForegroundColor {
-	switch (colorscheme) {
+	switch (self.colorscheme) {
 		case 1: /* quiet */
 			return [UIColor colorWithRed:0.25 green:0.2 blue:0.0 alpha:1];
 		case 2: /* dark */
@@ -45,8 +47,10 @@
 	}
 }
 
+/* This is invoked from both the VM and UI threads.
+ */
 - (UIColor *) genBackgroundColor {
-	switch (colorscheme) {
+	switch (self.colorscheme) {
 		case 1: /* quiet */
 			return [UIColor colorWithRed:0.9 green:0.85 blue:0.7 alpha:1];
 		case 2: /* dark */
@@ -57,18 +61,22 @@
 	}
 }
 
+/* This is invoked from both the VM and UI threads.
+ */
 - (void) prepareStyles:(StyleSet *)styles forWindowType:(glui32)wintype rock:(glui32)rock {
 	BOOL isiphone = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone);
+	
+	NSString *fontfam = self.fontfamily;
 	
 	if (wintype == wintype_TextGrid) {
 		styles.margins = UIEdgeInsetsMake(6, 6, 6, 6);
 		
 		CGFloat statusfontsize;
 		if (isiphone) {
-			statusfontsize = 9+fontscale;
+			statusfontsize = 9+self.fontscale;
 		}
 		else {
-			statusfontsize = 11+fontscale;
+			statusfontsize = 11+self.fontscale;
 		}
 		
 		FontVariants variants = [StyleSet fontVariantsForSize:statusfontsize name:@"Courier", nil];
@@ -80,7 +88,7 @@
 		styles.fonts[style_Alert] = variants.italic;
 		styles.fonts[style_Note] = variants.italic;
 		
-		switch (colorscheme) {
+		switch (self.colorscheme) {
 			case 1: /* quiet */
 				styles.backgroundcolor = [UIColor colorWithRed:0.75 green:0.7 blue:0.5 alpha:1];
 				styles.colors[style_Normal] = [UIColor colorWithRed:0.15 green:0.1 blue:0.0 alpha:1];
@@ -99,20 +107,20 @@
 	else {
 		styles.margins = UIEdgeInsetsMake(4, 6, 4, 6);
 
-		CGFloat statusfontsize = 11+fontscale;
+		CGFloat statusfontsize = 11+self.fontscale;
 
 		FontVariants variants;
-		if ([fontfamily isEqualToString:@"Helvetica"]) {
+		if ([fontfam isEqualToString:@"Helvetica"]) {
 			variants = [StyleSet fontVariantsForSize:statusfontsize name:@"Helvetica Neue", @"Helvetica", nil];
 		}
-		else if ([fontfamily isEqualToString:@"Euphemia"]) {
+		else if ([fontfam isEqualToString:@"Euphemia"]) {
 			variants = [StyleSet fontVariantsForSize:statusfontsize name:@"EuphemiaUCAS", @"Verdana", nil];
 		}
-		else if (!fontfamily) {
+		else if (!fontfam) {
 			variants = [StyleSet fontVariantsForSize:statusfontsize name:@"Georgia", nil];
 		}
 		else {
-			variants = [StyleSet fontVariantsForSize:statusfontsize name:fontfamily, @"Georgia", nil];
+			variants = [StyleSet fontVariantsForSize:statusfontsize name:fontfam, @"Georgia", nil];
 		}
 		
 		styles.fonts[style_Normal] = variants.normal;
@@ -129,6 +137,8 @@
 	}
 }
 
+/* This is invoked from both the VM and UI threads.
+ */
 - (CGSize) interWindowSpacing {
 	return CGSizeMake(2, 2);
 }
