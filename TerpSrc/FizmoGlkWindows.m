@@ -11,7 +11,7 @@
 
 @implementation FizmoGlkWinBufferView
 
-- (id) initWithWindow:(GlkWindow *)winref frame:(CGRect)box {
+- (id) initWithWindow:(GlkWindowState *)winref frame:(CGRect)box {
 	self = [super initWithWindow:winref frame:box];
 	if (self) {
 		FizmoGlkViewController *glkviewc = [FizmoGlkViewController singleton];

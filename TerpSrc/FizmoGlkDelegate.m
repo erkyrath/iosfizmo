@@ -25,11 +25,11 @@
 	return nil;
 }
 
-- (GlkWinBufferView *) viewForBufferWindow:(GlkWindow *)win frame:(CGRect)box {
+- (GlkWinBufferView *) viewForBufferWindow:(GlkWindowState *)win frame:(CGRect)box {
 	return [[[FizmoGlkWinBufferView alloc] initWithWindow:win frame:box] autorelease];
 }
 
-- (GlkWinGridView *) viewForGridWindow:(GlkWindow *)win frame:(CGRect)box {
+- (GlkWinGridView *) viewForGridWindow:(GlkWindowState *)win frame:(CGRect)box {
 	return nil;
 }
 

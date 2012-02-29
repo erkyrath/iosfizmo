@@ -15,6 +15,8 @@
 		DF19DDE314E8A950007DCB29 /* FizmoGlkDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19DDE214E8A950007DCB29 /* FizmoGlkDelegate.m */; };
 		DF19DDE514E8DF5C007DCB29 /* IosGlkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF19DDE414E8DF5C007DCB29 /* IosGlkViewController.xib */; };
 		DF19DDF914EA0776007DCB29 /* FizmoGlkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19DDF814EA0776007DCB29 /* FizmoGlkViewController.m */; };
+		DF1DCC0E14FDC4C7001660B9 /* GlkWindowState.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1DCC0D14FDC4C7001660B9 /* GlkWindowState.m */; };
+		DF1DCC1214FDC8B2001660B9 /* GlkLibraryState.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1DCC1114FDC8B2001660B9 /* GlkLibraryState.m */; };
 		DF1F3FEB14F1FD06008FF1C7 /* NotesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF1F3FEA14F1FD06008FF1C7 /* NotesVC.xib */; };
 		DF1F3FEF14F1FD19008FF1C7 /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1F3FEE14F1FD19008FF1C7 /* NotesViewController.m */; };
 		DF1F3FF214F1FF1D008FF1C7 /* tabicon-help.png in Resources */ = {isa = PBXBuildFile; fileRef = DF1F3FF014F1FF1D008FF1C7 /* tabicon-help.png */; };
@@ -134,6 +136,10 @@
 		DF19DDE414E8DF5C007DCB29 /* IosGlkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IosGlkViewController.xib; sourceTree = "<group>"; };
 		DF19DDF714EA0776007DCB29 /* FizmoGlkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FizmoGlkViewController.h; sourceTree = "<group>"; };
 		DF19DDF814EA0776007DCB29 /* FizmoGlkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizmoGlkViewController.m; sourceTree = "<group>"; };
+		DF1DCC0C14FDC4C7001660B9 /* GlkWindowState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkWindowState.h; sourceTree = "<group>"; };
+		DF1DCC0D14FDC4C7001660B9 /* GlkWindowState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkWindowState.m; sourceTree = "<group>"; };
+		DF1DCC1014FDC8B2001660B9 /* GlkLibraryState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkLibraryState.h; sourceTree = "<group>"; };
+		DF1DCC1114FDC8B2001660B9 /* GlkLibraryState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkLibraryState.m; sourceTree = "<group>"; };
 		DF1F3FEA14F1FD06008FF1C7 /* NotesVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotesVC.xib; sourceTree = "<group>"; };
 		DF1F3FED14F1FD19008FF1C7 /* NotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesViewController.h; sourceTree = "<group>"; };
 		DF1F3FEE14F1FD19008FF1C7 /* NotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesViewController.m; sourceTree = "<group>"; };
@@ -436,8 +442,6 @@
 		DF9A839414E0CD8D002C2FCB /* LibSrc */ = {
 			isa = PBXGroup;
 			children = (
-				DF9A839514E0CD8D002C2FCB /* Geometry.h */,
-				DF9A839614E0CD8D002C2FCB /* Geometry.m */,
 				DF9A839714E0CD8D002C2FCB /* GlkFileRef.h */,
 				DF9A839814E0CD8D002C2FCB /* GlkFileRef.m */,
 				DF9A839914E0CD8D002C2FCB /* GlkFileTypes.h */,
@@ -450,6 +454,12 @@
 				DF9A83A014E0CD8D002C2FCB /* GlkUtilTypes.m */,
 				DF9A83A114E0CD8D002C2FCB /* GlkWindow.h */,
 				DF9A83A214E0CD8D002C2FCB /* GlkWindow.m */,
+				DF1DCC1014FDC8B2001660B9 /* GlkLibraryState.h */,
+				DF1DCC1114FDC8B2001660B9 /* GlkLibraryState.m */,
+				DF1DCC0C14FDC4C7001660B9 /* GlkWindowState.h */,
+				DF1DCC0D14FDC4C7001660B9 /* GlkWindowState.m */,
+				DF9A839514E0CD8D002C2FCB /* Geometry.h */,
+				DF9A839614E0CD8D002C2FCB /* Geometry.m */,
 				DF9A83A314E0CD8D002C2FCB /* StyleSet.h */,
 				DF9A83A414E0CD8D002C2FCB /* StyleSet.m */,
 			);
@@ -467,10 +477,10 @@
 				DF9A83B214E0CD98002C2FCB /* GlkFileRefLayer.m */,
 				DF9A83B314E0CD98002C2FCB /* GlkMiscLayer.m */,
 				DF9A83B414E0CD98002C2FCB /* GlkStreamLayer.m */,
+				DF9A83B814E0CD98002C2FCB /* GlkWindowLayer.m */,
 				DF9A83B514E0CD98002C2FCB /* GlkUnicodeLayer.m */,
 				DF9A83B614E0CD98002C2FCB /* GlkUtilities.h */,
 				DF9A83B714E0CD98002C2FCB /* GlkUtilities.m */,
-				DF9A83B814E0CD98002C2FCB /* GlkWindowLayer.m */,
 			);
 			name = LayerSrc;
 			path = iosglk/LayerSrc;
@@ -879,6 +889,8 @@
 				DFBB4E4614F6E5700041016A /* TranscriptViewController.m in Sources */,
 				DF361B5F14F72B5C00A8D670 /* DisplayTextViewController.m in Sources */,
 				DF361B7014FAAFED00A8D670 /* MoreBoxView.m in Sources */,
+				DF1DCC0E14FDC4C7001660B9 /* GlkWindowState.m in Sources */,
+				DF1DCC1214FDC8B2001660B9 /* GlkLibraryState.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
