@@ -31,6 +31,7 @@
 		DF361B6D14FAAD5200A8D670 /* MoreBoxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF361B6C14FAAD5200A8D670 /* MoreBoxView.xib */; };
 		DF361B7014FAAFED00A8D670 /* MoreBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF361B6F14FAAFEC00A8D670 /* MoreBoxView.m */; };
 		DF8FD3F51500AA8C00890116 /* TextSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8FD3F41500AA8C00890116 /* TextSelectView.m */; };
+		DF8FD3FA1501B2C200890116 /* NotesVC~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF8FD3F91501B2C200890116 /* NotesVC~ipad.xib */; };
 		DF9A837214E0CD5B002C2FCB /* gi_blorb.c in Sources */ = {isa = PBXBuildFile; fileRef = DF9A836C14E0CD5B002C2FCB /* gi_blorb.c */; };
 		DF9A837314E0CD5B002C2FCB /* gi_dispa.c in Sources */ = {isa = PBXBuildFile; fileRef = DF9A836E14E0CD5B002C2FCB /* gi_dispa.c */; };
 		DF9A838A14E0CD7C002C2FCB /* GlkAppWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9A837714E0CD7C002C2FCB /* GlkAppWrapper.m */; };
@@ -162,6 +163,7 @@
 		DF361B6F14FAAFEC00A8D670 /* MoreBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreBoxView.m; sourceTree = "<group>"; };
 		DF8FD3F31500AA8C00890116 /* TextSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextSelectView.h; sourceTree = "<group>"; };
 		DF8FD3F41500AA8C00890116 /* TextSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextSelectView.m; sourceTree = "<group>"; };
+		DF8FD3F91501B2C200890116 /* NotesVC~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "NotesVC~ipad.xib"; sourceTree = "<group>"; };
 		DF9A836C14E0CD5B002C2FCB /* gi_blorb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gi_blorb.c; sourceTree = "<group>"; };
 		DF9A836D14E0CD5B002C2FCB /* gi_blorb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gi_blorb.h; sourceTree = "<group>"; };
 		DF9A836E14E0CD5B002C2FCB /* gi_dispa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gi_dispa.c; sourceTree = "<group>"; };
@@ -361,6 +363,7 @@
 				DF1F400414F306A0008FF1C7 /* PrefsMenuView.xib */,
 				DFEFAC2D14F1E0E50062859F /* HelpVC.xib */,
 				DF1F3FEA14F1FD06008FF1C7 /* NotesVC.xib */,
+				DF8FD3F91501B2C200890116 /* NotesVC~ipad.xib */,
 				DFBB4E4114F6E4450041016A /* TranscriptVC.xib */,
 				DF361B6114F72C5C00A8D670 /* DisplayTextVC.xib */,
 			);
@@ -796,6 +799,7 @@
 				DFBB4E4214F6E4450041016A /* TranscriptVC.xib in Resources */,
 				DF361B6214F72C5C00A8D670 /* DisplayTextVC.xib in Resources */,
 				DF361B6D14FAAD5200A8D670 /* MoreBoxView.xib in Resources */,
+				DF8FD3FA1501B2C200890116 /* NotesVC~ipad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
