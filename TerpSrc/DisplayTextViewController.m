@@ -58,6 +58,18 @@
 	NSString *str = [NSString stringWithContentsOfFile:thumb.pathname encoding:NSUTF8StringEncoding error:nil];
 	if (str)
 		textview.text = str;
+
+	if ([textview respondsToSelector:@selector(addGestureRecognizer:)]) {
+		/* gestures are available in iOS 3.2 and up */
+		UISwipeGestureRecognizer *recognizer;
+		recognizer = [[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeRight:)] autorelease];
+		recognizer.direction = UISwipeGestureRecognizerDirectionRight;
+		[textview addGestureRecognizer:recognizer];
+	}
+}
+
+- (void) handleSwipeRight:(UIGestureRecognizer *)recognizer {
+	[self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void) buttonSend:(id)sender
