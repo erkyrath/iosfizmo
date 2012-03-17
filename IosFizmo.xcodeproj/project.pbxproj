@@ -30,6 +30,8 @@
 		DF361B6414F73B7000A8D670 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF361B6314F73B7000A8D670 /* MessageUI.framework */; };
 		DF361B6D14FAAD5200A8D670 /* MoreBoxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF361B6C14FAAD5200A8D670 /* MoreBoxView.xib */; };
 		DF361B7014FAAFED00A8D670 /* MoreBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF361B6F14FAAFEC00A8D670 /* MoreBoxView.m */; };
+		DF70A1521513D9EE00B109A2 /* selecthandle.png in Resources */ = {isa = PBXBuildFile; fileRef = DF70A1501513D9EE00B109A2 /* selecthandle.png */; };
+		DF70A1531513D9EE00B109A2 /* selecthandle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF70A1511513D9EE00B109A2 /* selecthandle@2x.png */; };
 		DF8FD3F51500AA8C00890116 /* TextSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8FD3F41500AA8C00890116 /* TextSelectView.m */; };
 		DF8FD3FA1501B2C200890116 /* NotesVC~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF8FD3F91501B2C200890116 /* NotesVC~ipad.xib */; };
 		DF9A837214E0CD5B002C2FCB /* gi_blorb.c in Sources */ = {isa = PBXBuildFile; fileRef = DF9A836C14E0CD5B002C2FCB /* gi_blorb.c */; };
@@ -161,6 +163,8 @@
 		DF361B6C14FAAD5200A8D670 /* MoreBoxView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MoreBoxView.xib; path = iosglk/Resources/MoreBoxView.xib; sourceTree = SOURCE_ROOT; };
 		DF361B6E14FAAFEC00A8D670 /* MoreBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreBoxView.h; sourceTree = "<group>"; };
 		DF361B6F14FAAFEC00A8D670 /* MoreBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreBoxView.m; sourceTree = "<group>"; };
+		DF70A1501513D9EE00B109A2 /* selecthandle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = selecthandle.png; path = iosglk/Media/selecthandle.png; sourceTree = SOURCE_ROOT; };
+		DF70A1511513D9EE00B109A2 /* selecthandle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "selecthandle@2x.png"; path = "iosglk/Media/selecthandle@2x.png"; sourceTree = SOURCE_ROOT; };
 		DF8FD3F31500AA8C00890116 /* TextSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextSelectView.h; sourceTree = "<group>"; };
 		DF8FD3F41500AA8C00890116 /* TextSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextSelectView.m; sourceTree = "<group>"; };
 		DF8FD3F91501B2C200890116 /* NotesVC~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "NotesVC~ipad.xib"; sourceTree = "<group>"; };
@@ -725,6 +729,8 @@
 				DF1F3FF014F1FF1D008FF1C7 /* tabicon-help.png */,
 				DF1F3FF114F1FF1D008FF1C7 /* tabicon-notes.png */,
 				DFAA384914F1DAAE0096A848 /* tabicon-game.png */,
+				DF70A1501513D9EE00B109A2 /* selecthandle.png */,
+				DF70A1511513D9EE00B109A2 /* selecthandle@2x.png */,
 			);
 			path = Media;
 			sourceTree = "<group>";
@@ -800,6 +806,8 @@
 				DF361B6214F72C5C00A8D670 /* DisplayTextVC.xib in Resources */,
 				DF361B6D14FAAD5200A8D670 /* MoreBoxView.xib in Resources */,
 				DF8FD3FA1501B2C200890116 /* NotesVC~ipad.xib in Resources */,
+				DF70A1521513D9EE00B109A2 /* selecthandle.png in Resources */,
+				DF70A1531513D9EE00B109A2 /* selecthandle@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
