@@ -147,7 +147,7 @@
 }
 
 - (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)orientation {
-	//### different for iPad?
+	//### should the iPad support horizontal layout?
 	return (orientation == UIInterfaceOrientationPortrait);
 }
 
