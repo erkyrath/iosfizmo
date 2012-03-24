@@ -123,6 +123,8 @@
 		DFB7A70F151E463E00C07499 /* tabicon-notes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFB7A70E151E463E00C07499 /* tabicon-notes@2x.png */; };
 		DFB7A711151E59ED00C07499 /* baricon-styles.png in Resources */ = {isa = PBXBuildFile; fileRef = DFB7A710151E59ED00C07499 /* baricon-styles.png */; };
 		DFB7A713151E5D1A00C07499 /* baricon-styles@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFB7A712151E5D1A00C07499 /* baricon-styles@2x.png */; };
+		DFB7A717151E674500C07499 /* background-notes.png in Resources */ = {isa = PBXBuildFile; fileRef = DFB7A716151E674500C07499 /* background-notes.png */; };
+		DFB7A719151E69B300C07499 /* background-notes-s.png in Resources */ = {isa = PBXBuildFile; fileRef = DFB7A718151E69B300C07499 /* background-notes-s.png */; };
 		DFBB4DE914F5D72D0041016A /* FizmoGlkWindows.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBB4DE814F5D72D0041016A /* FizmoGlkWindows.m */; };
 		DFBB4E4214F6E4450041016A /* TranscriptVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBB4E4114F6E4450041016A /* TranscriptVC.xib */; };
 		DFBB4E4614F6E5700041016A /* TranscriptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBB4E4514F6E5700041016A /* TranscriptViewController.m */; };
@@ -337,6 +339,8 @@
 		DFB7A70E151E463E00C07499 /* tabicon-notes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabicon-notes@2x.png"; sourceTree = "<group>"; };
 		DFB7A710151E59ED00C07499 /* baricon-styles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baricon-styles.png"; sourceTree = "<group>"; };
 		DFB7A712151E5D1A00C07499 /* baricon-styles@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baricon-styles@2x.png"; sourceTree = "<group>"; };
+		DFB7A716151E674500C07499 /* background-notes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-notes.png"; sourceTree = "<group>"; };
+		DFB7A718151E69B300C07499 /* background-notes-s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-notes-s.png"; sourceTree = "<group>"; };
 		DFBB4DE714F5D72D0041016A /* FizmoGlkWindows.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FizmoGlkWindows.h; sourceTree = "<group>"; };
 		DFBB4DE814F5D72D0041016A /* FizmoGlkWindows.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizmoGlkWindows.m; sourceTree = "<group>"; };
 		DFBB4E4114F6E4450041016A /* TranscriptVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TranscriptVC.xib; sourceTree = "<group>"; };
@@ -746,6 +750,8 @@
 				DFB7A709151E395600C07499 /* tabicon-game@2x.png */,
 				DF70A1501513D9EE00B109A2 /* selecthandle.png */,
 				DF70A1511513D9EE00B109A2 /* selecthandle@2x.png */,
+				DFB7A716151E674500C07499 /* background-notes.png */,
+				DFB7A718151E69B300C07499 /* background-notes-s.png */,
 			);
 			path = Media;
 			sourceTree = "<group>";
@@ -828,6 +834,8 @@
 				DFB7A70F151E463E00C07499 /* tabicon-notes@2x.png in Resources */,
 				DFB7A711151E59ED00C07499 /* baricon-styles.png in Resources */,
 				DFB7A713151E5D1A00C07499 /* baricon-styles@2x.png in Resources */,
+				DFB7A717151E674500C07499 /* background-notes.png in Resources */,
+				DFB7A719151E69B300C07499 /* background-notes-s.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

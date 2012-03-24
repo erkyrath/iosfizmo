@@ -32,8 +32,15 @@
 {
 	NSLog(@"NotesVC: viewDidLoad");
 	
-	//### bang on font if Noteworthy is not available
 	textview.delegate = self;
+	
+	//### bang on font if Noteworthy is not available
+	UIImage *stripeimg = nil;
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+		stripeimg = [UIImage imageNamed:@"background-notes-s"];
+	else
+		stripeimg = [UIImage imageNamed:@"background-notes"];
+	textview.backgroundColor = [UIColor colorWithPatternImage:stripeimg];
 	
 	/* We use an old-fashioned way of locating the Documents directory. (The NSManager method for this is iOS 4.0 and later.) */
 	
