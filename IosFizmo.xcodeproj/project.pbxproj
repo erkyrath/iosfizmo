@@ -118,6 +118,9 @@
 		DFA0DFAB14E0BDA700B67057 /* GlkFileSelectLoad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFA0DFA714E0BDA700B67057 /* GlkFileSelectLoad.xib */; };
 		DFA0DFAC14E0BDA700B67057 /* GlkFileSelectStore.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFA0DFA814E0BDA700B67057 /* GlkFileSelectStore.xib */; };
 		DFAA384A14F1DAAE0096A848 /* tabicon-game.png in Resources */ = {isa = PBXBuildFile; fileRef = DFAA384914F1DAAE0096A848 /* tabicon-game.png */; };
+		DFB7A70A151E395600C07499 /* tabicon-game@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFB7A709151E395600C07499 /* tabicon-game@2x.png */; };
+		DFB7A70D151E3B3300C07499 /* tabicon-help@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFB7A70C151E3B3200C07499 /* tabicon-help@2x.png */; };
+		DFB7A70F151E463E00C07499 /* tabicon-notes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFB7A70E151E463E00C07499 /* tabicon-notes@2x.png */; };
 		DFBB4DE914F5D72D0041016A /* FizmoGlkWindows.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBB4DE814F5D72D0041016A /* FizmoGlkWindows.m */; };
 		DFBB4E4214F6E4450041016A /* TranscriptVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBB4E4114F6E4450041016A /* TranscriptVC.xib */; };
 		DFBB4E4614F6E5700041016A /* TranscriptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBB4E4514F6E5700041016A /* TranscriptViewController.m */; };
@@ -327,6 +330,9 @@
 		DFA0DFA714E0BDA700B67057 /* GlkFileSelectLoad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GlkFileSelectLoad.xib; path = ../iosglk/Resources/GlkFileSelectLoad.xib; sourceTree = "<group>"; };
 		DFA0DFA814E0BDA700B67057 /* GlkFileSelectStore.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GlkFileSelectStore.xib; path = ../iosglk/Resources/GlkFileSelectStore.xib; sourceTree = "<group>"; };
 		DFAA384914F1DAAE0096A848 /* tabicon-game.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabicon-game.png"; sourceTree = "<group>"; };
+		DFB7A709151E395600C07499 /* tabicon-game@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabicon-game@2x.png"; sourceTree = "<group>"; };
+		DFB7A70C151E3B3200C07499 /* tabicon-help@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabicon-help@2x.png"; sourceTree = "<group>"; };
+		DFB7A70E151E463E00C07499 /* tabicon-notes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabicon-notes@2x.png"; sourceTree = "<group>"; };
 		DFBB4DE714F5D72D0041016A /* FizmoGlkWindows.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FizmoGlkWindows.h; sourceTree = "<group>"; };
 		DFBB4DE814F5D72D0041016A /* FizmoGlkWindows.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizmoGlkWindows.m; sourceTree = "<group>"; };
 		DFBB4E4114F6E4450041016A /* TranscriptVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TranscriptVC.xib; sourceTree = "<group>"; };
@@ -727,8 +733,11 @@
 			isa = PBXGroup;
 			children = (
 				DF1F3FF014F1FF1D008FF1C7 /* tabicon-help.png */,
+				DFB7A70C151E3B3200C07499 /* tabicon-help@2x.png */,
 				DF1F3FF114F1FF1D008FF1C7 /* tabicon-notes.png */,
+				DFB7A70E151E463E00C07499 /* tabicon-notes@2x.png */,
 				DFAA384914F1DAAE0096A848 /* tabicon-game.png */,
+				DFB7A709151E395600C07499 /* tabicon-game@2x.png */,
 				DF70A1501513D9EE00B109A2 /* selecthandle.png */,
 				DF70A1511513D9EE00B109A2 /* selecthandle@2x.png */,
 			);
@@ -808,6 +817,9 @@
 				DF8FD3FA1501B2C200890116 /* NotesVC~ipad.xib in Resources */,
 				DF70A1521513D9EE00B109A2 /* selecthandle.png in Resources */,
 				DF70A1531513D9EE00B109A2 /* selecthandle@2x.png in Resources */,
+				DFB7A70A151E395600C07499 /* tabicon-game@2x.png in Resources */,
+				DFB7A70D151E3B3300C07499 /* tabicon-help@2x.png in Resources */,
+				DFB7A70F151E463E00C07499 /* tabicon-notes@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
