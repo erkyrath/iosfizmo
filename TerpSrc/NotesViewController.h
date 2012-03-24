@@ -18,4 +18,6 @@
 - (IBAction) handleTranscripts;
 - (void) saveIfNeeded;
 
+- (void) adjustToKeyboardBox;
+
 @end

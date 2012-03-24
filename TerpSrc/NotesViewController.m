@@ -80,6 +80,12 @@
 	[self saveIfNeeded];
 }
 
+- (void) viewDidAppear:(BOOL)animated
+{
+	[super viewDidAppear:animated];
+	[self adjustToKeyboardBox];
+}
+
 - (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)orientation
 {
 	IosGlkViewController *glkviewc = [IosGlkViewController singleton];
@@ -93,6 +99,28 @@
 	}
 	else {
 		[textview becomeFirstResponder];
+	}
+}
+
+- (void) adjustToKeyboardBox {
+	CGRect keyboardbox = [IosGlkViewController singleton].keyboardbox;
+	/* This rect is in window coordinates. */
+	
+	if (textview) {
+		CGFloat offset = 0;
+		
+		if (keyboardbox.size.width > 0 && keyboardbox.size.height > 0) {
+			CGRect box = textview.bounds;
+			CGFloat bottom = box.origin.y + box.size.height;
+			CGRect rect = [textview convertRect:keyboardbox fromView:nil];
+			if (rect.origin.y < bottom) {
+				offset = bottom - rect.origin.y;
+			}
+		}
+		
+		UIEdgeInsets insets = UIEdgeInsetsMake(0, 0, offset, 0);
+		textview.contentInset = insets;
+		textview.scrollIndicatorInsets = insets;
 	}
 }
 

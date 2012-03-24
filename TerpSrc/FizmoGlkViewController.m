@@ -100,6 +100,24 @@
 	[super toggleKeyboard];
 }
 
+- (void) keyboardWillBeShown:(NSNotification*)notification {
+	[super keyboardWillBeShown:notification];
+	NSLog(@"Keyboard will be shown (fizmo)");
+
+	if (notesvc) {
+		[notesvc adjustToKeyboardBox];
+	}
+}
+
+- (void) keyboardWillBeHidden:(NSNotification*)notification {
+	[super keyboardWillBeHidden:notification];
+	NSLog(@"Keyboard will be hidden (fizmo)");
+
+	if (notesvc) {
+		[notesvc adjustToKeyboardBox];
+	}
+}
+
 - (IBAction) showPreferences {
 	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
 		/* Can't have the prefs menu up at the same time as the keyboard */
