@@ -39,8 +39,8 @@
 	
 	//### bang on font if Noteworthy is not available
 	
+	UIImage *stripeimg = nil;
 	if (gradview.hasColors) {
-		UIImage *stripeimg = nil;
 		if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
 			stripeimg = [UIImage imageNamed:@"background-notes-s"];
 		else
@@ -51,8 +51,13 @@
 		[gradview setUpColors];
 	}
 	else {
-		/* The GradientView's colors didn't load properly from the nib file. This must be pre-iOS5. In this case, transparent background colors won't load properly either. */
-		//###
+		/* The GradientView's colors didn't load properly from the nib file. This must be pre-iOS5. In this case, transparent background colors won't load properly either. We substitute opaque ones, which handily cover up the missing gradient view. */
+		if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+			stripeimg = [UIImage imageNamed:@"background-notesopaque-s"];
+		else
+			stripeimg = [UIImage imageNamed:@"background-notesopaque"];
+		if (stripeimg)
+			textview.backgroundColor = [UIColor colorWithPatternImage:stripeimg];
 	}
 	
 	/* We use an old-fashioned way of locating the Documents directory. (The NSManager method for this is iOS 4.0 and later.) */

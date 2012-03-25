@@ -127,6 +127,8 @@
 		DFB7A719151E69B300C07499 /* background-notes-s.png in Resources */ = {isa = PBXBuildFile; fileRef = DFB7A718151E69B300C07499 /* background-notes-s.png */; };
 		DFB7A71C151EBDC500C07499 /* GradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB7A71B151EBDC500C07499 /* GradientView.m */; };
 		DFB7A71E151EBEAB00C07499 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB7A71D151EBEAB00C07499 /* QuartzCore.framework */; };
+		DFB7A721151ED33700C07499 /* background-notesopaque-s.png in Resources */ = {isa = PBXBuildFile; fileRef = DFB7A71F151ED33700C07499 /* background-notesopaque-s.png */; };
+		DFB7A722151ED33700C07499 /* background-notesopaque.png in Resources */ = {isa = PBXBuildFile; fileRef = DFB7A720151ED33700C07499 /* background-notesopaque.png */; };
 		DFBB4DE914F5D72D0041016A /* FizmoGlkWindows.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBB4DE814F5D72D0041016A /* FizmoGlkWindows.m */; };
 		DFBB4E4214F6E4450041016A /* TranscriptVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBB4E4114F6E4450041016A /* TranscriptVC.xib */; };
 		DFBB4E4614F6E5700041016A /* TranscriptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBB4E4514F6E5700041016A /* TranscriptViewController.m */; };
@@ -346,6 +348,8 @@
 		DFB7A71A151EBDC500C07499 /* GradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientView.h; sourceTree = "<group>"; };
 		DFB7A71B151EBDC500C07499 /* GradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientView.m; sourceTree = "<group>"; };
 		DFB7A71D151EBEAB00C07499 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DFB7A71F151ED33700C07499 /* background-notesopaque-s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-notesopaque-s.png"; sourceTree = "<group>"; };
+		DFB7A720151ED33700C07499 /* background-notesopaque.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-notesopaque.png"; sourceTree = "<group>"; };
 		DFBB4DE714F5D72D0041016A /* FizmoGlkWindows.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FizmoGlkWindows.h; sourceTree = "<group>"; };
 		DFBB4DE814F5D72D0041016A /* FizmoGlkWindows.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizmoGlkWindows.m; sourceTree = "<group>"; };
 		DFBB4E4114F6E4450041016A /* TranscriptVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TranscriptVC.xib; sourceTree = "<group>"; };
@@ -761,6 +765,8 @@
 				DF70A1511513D9EE00B109A2 /* selecthandle@2x.png */,
 				DFB7A716151E674500C07499 /* background-notes.png */,
 				DFB7A718151E69B300C07499 /* background-notes-s.png */,
+				DFB7A720151ED33700C07499 /* background-notesopaque.png */,
+				DFB7A71F151ED33700C07499 /* background-notesopaque-s.png */,
 			);
 			path = Media;
 			sourceTree = "<group>";
@@ -845,6 +851,8 @@
 				DFB7A713151E5D1A00C07499 /* baricon-styles@2x.png in Resources */,
 				DFB7A717151E674500C07499 /* background-notes.png in Resources */,
 				DFB7A719151E69B300C07499 /* background-notes-s.png in Resources */,
+				DFB7A721151ED33700C07499 /* background-notesopaque-s.png in Resources */,
+				DFB7A722151ED33700C07499 /* background-notesopaque.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
