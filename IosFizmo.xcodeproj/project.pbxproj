@@ -132,6 +132,7 @@
 		DFBB4DE914F5D72D0041016A /* FizmoGlkWindows.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBB4DE814F5D72D0041016A /* FizmoGlkWindows.m */; };
 		DFBB4E4214F6E4450041016A /* TranscriptVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBB4E4114F6E4450041016A /* TranscriptVC.xib */; };
 		DFBB4E4614F6E5700041016A /* TranscriptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBB4E4514F6E5700041016A /* TranscriptViewController.m */; };
+		DFDFBD4B151F7DFD0053783F /* GlkAccessTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDFBD4A151F7DFD0053783F /* GlkAccessTypes.m */; };
 		DFEFAC2E14F1E0E50062859F /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEFAC2C14F1E0E50062859F /* HelpViewController.m */; };
 		DFEFAC2F14F1E0E50062859F /* HelpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFEFAC2D14F1E0E50062859F /* HelpVC.xib */; };
 		DFEFAC3214F1E4B00062859F /* WebSite in Resources */ = {isa = PBXBuildFile; fileRef = DFEFAC3114F1E4B00062859F /* WebSite */; };
@@ -355,6 +356,8 @@
 		DFBB4E4114F6E4450041016A /* TranscriptVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TranscriptVC.xib; sourceTree = "<group>"; };
 		DFBB4E4414F6E5700041016A /* TranscriptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranscriptViewController.h; sourceTree = "<group>"; };
 		DFBB4E4514F6E5700041016A /* TranscriptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranscriptViewController.m; sourceTree = "<group>"; };
+		DFDFBD49151F7DFD0053783F /* GlkAccessTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkAccessTypes.h; sourceTree = "<group>"; };
+		DFDFBD4A151F7DFD0053783F /* GlkAccessTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkAccessTypes.m; sourceTree = "<group>"; };
 		DFEFAC2B14F1E0E50062859F /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
 		DFEFAC2C14F1E0E50062859F /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
 		DFEFAC2D14F1E0E50062859F /* HelpVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpVC.xib; sourceTree = "<group>"; };
@@ -490,6 +493,8 @@
 				DF9A839E14E0CD8D002C2FCB /* GlkStream.m */,
 				DF9A839F14E0CD8D002C2FCB /* GlkUtilTypes.h */,
 				DF9A83A014E0CD8D002C2FCB /* GlkUtilTypes.m */,
+				DFDFBD49151F7DFD0053783F /* GlkAccessTypes.h */,
+				DFDFBD4A151F7DFD0053783F /* GlkAccessTypes.m */,
 				DF9A83A114E0CD8D002C2FCB /* GlkWindow.h */,
 				DF9A83A214E0CD8D002C2FCB /* GlkWindow.m */,
 				DF1DCC1014FDC8B2001660B9 /* GlkLibraryState.h */,
@@ -955,6 +960,7 @@
 				DF1DCC1214FDC8B2001660B9 /* GlkLibraryState.m in Sources */,
 				DF8FD3F51500AA8C00890116 /* TextSelectView.m in Sources */,
 				DFB7A71C151EBDC500C07499 /* GradientView.m in Sources */,
+				DFDFBD4B151F7DFD0053783F /* GlkAccessTypes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
