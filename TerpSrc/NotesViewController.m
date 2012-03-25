@@ -7,12 +7,14 @@
 #import "NotesViewController.h"
 #import "IosGlkViewController.h"
 #import "TranscriptViewController.h"
+#import "GradientView.h"
 
 #define NOTES_SAVE_DELAY (60)
 
 @implementation NotesViewController
 
 @synthesize textview;
+@synthesize gradview;
 @synthesize notespath;
 
 - (id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -25,23 +27,33 @@
 
 - (void) dealloc {
 	self.textview = nil;
+	self.gradview = nil;
 	[super dealloc];
 }
 
 - (void) viewDidLoad
 {
 	NSLog(@"NotesVC: viewDidLoad");
-	
+
 	textview.delegate = self;
 	
 	//### bang on font if Noteworthy is not available
-	UIImage *stripeimg = nil;
-	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
-		stripeimg = [UIImage imageNamed:@"background-notes-s"];
-	else
-		stripeimg = [UIImage imageNamed:@"background-notes"];
-	if (stripeimg)
-		textview.backgroundColor = [UIColor colorWithPatternImage:stripeimg];
+	
+	if (gradview.hasColors) {
+		UIImage *stripeimg = nil;
+		if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+			stripeimg = [UIImage imageNamed:@"background-notes-s"];
+		else
+			stripeimg = [UIImage imageNamed:@"background-notes"];
+		if (stripeimg)
+			textview.backgroundColor = [UIColor colorWithPatternImage:stripeimg];
+		
+		[gradview setUpColors];
+	}
+	else {
+		/* The GradientView's colors didn't load properly from the nib file. This must be pre-iOS5. In this case, transparent background colors won't load properly either. */
+		//###
+	}
 	
 	/* We use an old-fashioned way of locating the Documents directory. (The NSManager method for this is iOS 4.0 and later.) */
 	

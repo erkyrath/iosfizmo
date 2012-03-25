@@ -6,10 +6,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class GradientView;
+
 @interface NotesViewController : UIViewController <UITextViewDelegate> {
 	BOOL textchanged;
 }
 
+@property (nonatomic, retain) IBOutlet GradientView *gradview;
 @property (nonatomic, retain) IBOutlet UITextView *textview;
 
 @property (nonatomic, retain) NSString *notespath;
