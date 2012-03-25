@@ -73,7 +73,7 @@
 		[frameview addGestureRecognizer:recognizer];
 	}
 	
-	/* Interface Building currently doesn't allow us to set the voiceover labels for bar button items. We do it in code. */
+	/* Interface Builder currently doesn't allow us to set the voiceover labels for bar button items. We do it in code. */
 	UIBarButtonItem *stylebutton = self.navigationItem.leftBarButtonItem;
 	if (stylebutton && [stylebutton respondsToSelector:@selector(setAccessibilityLabel:)]) {
 		[stylebutton setAccessibilityLabel:@"Text Styles"]; //###localize
@@ -103,7 +103,7 @@
 
 - (IBAction) toggleKeyboard {
 	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
-		/* Can't have the prefs menu up at the same time as the keyboard */
+		/* Can't have the prefs menu up at the same time as the keyboard -- the iPhone screen is too small. */
 		if (frameview.menuview && [frameview.menuview isKindOfClass:[PrefsMenuView class]]) {
 			[frameview removePopMenuAnimated:YES];
 		}
