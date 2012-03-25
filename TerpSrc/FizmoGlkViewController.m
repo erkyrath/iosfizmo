@@ -72,6 +72,16 @@
 		recognizer.direction = UISwipeGestureRecognizerDirectionRight;
 		[frameview addGestureRecognizer:recognizer];
 	}
+	
+	/* Interface Building currently doesn't allow us to set the voiceover labels for bar button items. We do it in code. */
+	UIBarButtonItem *stylebutton = self.navigationItem.leftBarButtonItem;
+	if (stylebutton && [stylebutton respondsToSelector:@selector(setAccessibilityLabel:)]) {
+		[stylebutton setAccessibilityLabel:@"Text Styles"]; //###localize
+	}
+	UIBarButtonItem *keyboardbutton = self.navigationItem.rightBarButtonItem;
+	if (keyboardbutton && [keyboardbutton respondsToSelector:@selector(setAccessibilityLabel:)]) {
+		[keyboardbutton setAccessibilityLabel:@"Compose Command"]; //###localize
+	}
 }
 
 /* UITabBarController delegate method */
@@ -86,6 +96,7 @@
 	//NSLog(@"### tabBarController did select %@ (%@)", navc, rootviewc);
 	
 	if (rootviewc != notesvc) {
+		/* If the notesvc was drilled into the transcripts view or subviews, pop out of there. */
 		[notesvc.navigationController popToRootViewControllerAnimated:NO];
 	}
 }
