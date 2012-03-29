@@ -33,6 +33,23 @@
 	return nil;
 }
 
+/* Utility method: turn a font menu label into an actual set of fonts.
+ */
+- (FontVariants) fontVariantsForSize:(CGFloat)size label:(NSString *)label {
+	if ([label isEqualToString:@"Helvetica"]) {
+		return [StyleSet fontVariantsForSize:size name:@"Helvetica Neue", @"Helvetica", nil];
+	}
+	else if ([label isEqualToString:@"Euphemia"]) {
+		return [StyleSet fontVariantsForSize:size name:@"EuphemiaUCAS", @"Verdana", nil];
+	}
+	else if (!label) {
+		return [StyleSet fontVariantsForSize:size name:@"Georgia", nil];
+	}
+	else {
+		return [StyleSet fontVariantsForSize:size name:label, @"Georgia", nil];
+	}
+}
+
 /* This is invoked from both the VM and UI threads.
  */
 - (UIColor *) genForegroundColor {
@@ -109,19 +126,7 @@
 
 		CGFloat statusfontsize = 11+self.fontscale;
 
-		FontVariants variants;
-		if ([fontfam isEqualToString:@"Helvetica"]) {
-			variants = [StyleSet fontVariantsForSize:statusfontsize name:@"Helvetica Neue", @"Helvetica", nil];
-		}
-		else if ([fontfam isEqualToString:@"Euphemia"]) {
-			variants = [StyleSet fontVariantsForSize:statusfontsize name:@"EuphemiaUCAS", @"Verdana", nil];
-		}
-		else if (!fontfam) {
-			variants = [StyleSet fontVariantsForSize:statusfontsize name:@"Georgia", nil];
-		}
-		else {
-			variants = [StyleSet fontVariantsForSize:statusfontsize name:fontfam, @"Georgia", nil];
-		}
+		FontVariants variants = [self fontVariantsForSize:statusfontsize label:fontfam];
 		
 		styles.fonts[style_Normal] = variants.normal;
 		styles.fonts[style_Emphasized] = variants.italic;

@@ -6,6 +6,7 @@
 
 #import <Foundation/Foundation.h>
 #import "IosGlkLibDelegate.h"
+#import "StyleSet.h"
 
 #define FONTSCALE_MAX (7)
 
@@ -24,5 +25,6 @@
 
 - (UIColor *) genBackgroundColor;
 - (UIColor *) genForegroundColor;
+- (FontVariants) fontVariantsForSize:(CGFloat)size label:(NSString *)label;
 
 @end

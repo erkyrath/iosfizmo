@@ -169,6 +169,8 @@
 }
 
 - (void) setUpFontMenu {
+	FizmoGlkViewController *glkviewc = [FizmoGlkViewController singleton];
+	
 	NSMutableArray *arr = [NSMutableArray arrayWithObjects:@"Times New Roman", @"Helvetica", @"Georgia", nil];
 	/*if ([UIFont fontWithName:@"Palatino" size:14])
 		[arr addObject:@"Palatino"];*/
@@ -198,6 +200,8 @@
 	UIImage *normalbackimg = [fontbut_sample1 backgroundImageForState:UIControlStateNormal];
 	UIImage *highlightedbackimg = [fontbut_sample1 backgroundImageForState:UIControlStateHighlighted];
 	
+	CGFloat fontsize = fontbut_sample1.titleLabel.font.pointSize;
+	
 	int count = 0;
 	for (NSString *name in fontnames) {
 		UIButton *button = [MButton buttonWithType:fontbut_sample1.buttonType];
@@ -206,7 +210,7 @@
 		CGRect rect = baserect;
 		rect.origin.y += count*buttonspacing;
 		button.frame = rect;
-		button.titleLabel.font = fontbut_sample1.titleLabel.font; //### sample!
+		button.titleLabel.font = [glkviewc.fizmoDelegate fontVariantsForSize:fontsize label:name].normal;
 		[button setTitleColor:normalcolor forState:UIControlStateNormal];
 		[button setTitleColor:selectedcolor forState:UIControlStateSelected];
 		[button setTitleColor:highlightedcolor forState:UIControlStateHighlighted];
