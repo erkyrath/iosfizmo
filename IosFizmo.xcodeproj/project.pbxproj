@@ -137,6 +137,8 @@
 		DFC755B41524C019009F4137 /* MButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC755B31524C019009F4137 /* MButton.m */; };
 		DFC755B71524C02E009F4137 /* button-pref-base.png in Resources */ = {isa = PBXBuildFile; fileRef = DFC755B51524C02E009F4137 /* button-pref-base.png */; };
 		DFC755B81524C02E009F4137 /* button-pref-base@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFC755B61524C02E009F4137 /* button-pref-base@2x.png */; };
+		DFC755BB1524C607009F4137 /* button-pref-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = DFC755B91524C607009F4137 /* button-pref-hi.png */; };
+		DFC755BC1524C607009F4137 /* button-pref-hi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFC755BA1524C607009F4137 /* button-pref-hi@2x.png */; };
 		DFDFBD4B151F7DFD0053783F /* GlkAccessTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDFBD4A151F7DFD0053783F /* GlkAccessTypes.m */; };
 		DFEFAC2E14F1E0E50062859F /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEFAC2C14F1E0E50062859F /* HelpViewController.m */; };
 		DFEFAC2F14F1E0E50062859F /* HelpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFEFAC2D14F1E0E50062859F /* HelpVC.xib */; };
@@ -367,6 +369,8 @@
 		DFC755B31524C019009F4137 /* MButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MButton.m; sourceTree = "<group>"; };
 		DFC755B51524C02E009F4137 /* button-pref-base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-pref-base.png"; sourceTree = "<group>"; };
 		DFC755B61524C02E009F4137 /* button-pref-base@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-pref-base@2x.png"; sourceTree = "<group>"; };
+		DFC755B91524C607009F4137 /* button-pref-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-pref-hi.png"; sourceTree = "<group>"; };
+		DFC755BA1524C607009F4137 /* button-pref-hi@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-pref-hi@2x.png"; sourceTree = "<group>"; };
 		DFDFBD49151F7DFD0053783F /* GlkAccessTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkAccessTypes.h; sourceTree = "<group>"; };
 		DFDFBD4A151F7DFD0053783F /* GlkAccessTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkAccessTypes.m; sourceTree = "<group>"; };
 		DFEFAC2B14F1E0E50062859F /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
@@ -781,6 +785,8 @@
 				DFB7A709151E395600C07499 /* tabicon-game@2x.png */,
 				DFC755B51524C02E009F4137 /* button-pref-base.png */,
 				DFC755B61524C02E009F4137 /* button-pref-base@2x.png */,
+				DFC755B91524C607009F4137 /* button-pref-hi.png */,
+				DFC755BA1524C607009F4137 /* button-pref-hi@2x.png */,
 				DF70A1501513D9EE00B109A2 /* selecthandle.png */,
 				DF70A1511513D9EE00B109A2 /* selecthandle@2x.png */,
 				DFC755A615242354009F4137 /* background-popbox.png */,
@@ -879,6 +885,8 @@
 				DFC755AA15242808009F4137 /* background-popbox@2x.png in Resources */,
 				DFC755B71524C02E009F4137 /* button-pref-base.png in Resources */,
 				DFC755B81524C02E009F4137 /* button-pref-base@2x.png in Resources */,
+				DFC755BB1524C607009F4137 /* button-pref-hi.png in Resources */,
+				DFC755BC1524C607009F4137 /* button-pref-hi@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

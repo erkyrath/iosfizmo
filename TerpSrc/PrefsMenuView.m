@@ -196,6 +196,7 @@
 	UIColor *highlightedcolor = [fontbut_sample1 titleColorForState:UIControlStateHighlighted];
 	
 	UIImage *normalbackimg = [fontbut_sample1 backgroundImageForState:UIControlStateNormal];
+	UIImage *highlightedbackimg = [fontbut_sample1 backgroundImageForState:UIControlStateHighlighted];
 	
 	int count = 0;
 	for (NSString *name in fontnames) {
@@ -210,6 +211,8 @@
 		[button setTitleColor:selectedcolor forState:UIControlStateSelected];
 		[button setTitleColor:highlightedcolor forState:UIControlStateHighlighted];
 		[button setBackgroundImage:normalbackimg forState:UIControlStateNormal];
+		[button setBackgroundImage:highlightedbackimg forState:UIControlStateHighlighted];
+		[button setBackgroundImage:highlightedbackimg forState:UIControlStateHighlighted|UIControlStateSelected];
 		[button addTarget:self action:@selector(handleFont:) forControlEvents:UIControlEventTouchUpInside];
 		[fontscontainer addSubview:button];
 		[arr addObject:button];
