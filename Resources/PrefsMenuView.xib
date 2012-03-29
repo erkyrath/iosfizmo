@@ -47,21 +47,20 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">A</string>
-						<object class="NSColor" key="IBUIHighlightedTitleColor" id="400902171">
-							<int key="NSColorSpace">3</int>
-							<bytes key="NSWhite">MQA</bytes>
-						</object>
-						<object class="NSColor" key="IBUINormalTitleColor">
+						<object class="NSColor" key="IBUIHighlightedTitleColor" id="756042360">
 							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
+							<bytes key="NSRGB">MC4xNjg5ODk2ODgyIDAuMTAxNzU0NTE2NCAwLjA0MzgzMTk3Nzk5AA</bytes>
+						</object>
+						<object class="NSColor" key="IBUINormalTitleColor" id="451343943">
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MC40NDQzMjI4MjQ1IDAuMzEzNDIzMTI2OSAwLjE5MzIyNzYwNAA</bytes>
 						</object>
 						<object class="NSColor" key="IBUINormalTitleShadowColor" id="928170411">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MC41AA</bytes>
 						</object>
-						<object class="NSCustomResource" key="IBUINormalBackgroundImage" id="823894129">
+						<object class="NSCustomResource" key="IBUINormalBackgroundImage" id="392171119">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">button-pref-base.png</string>
 						</object>
@@ -89,15 +88,11 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">A</string>
-						<reference key="IBUIHighlightedTitleColor" ref="400902171"/>
-						<object class="NSColor" key="IBUINormalTitleColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
-						</object>
+						<reference key="IBUIHighlightedTitleColor" ref="756042360"/>
+						<reference key="IBUINormalTitleColor" ref="451343943"/>
 						<reference key="IBUINormalTitleShadowColor" ref="928170411"/>
-						<reference key="IBUINormalBackgroundImage" ref="823894129"/>
+						<reference key="IBUINormalBackgroundImage" ref="392171119"/>
 						<object class="IBUIFontDescription" key="IBUIFontDescription">
 							<string key="name">Georgia-Bold</string>
 							<string key="family">Georgia</string>
@@ -123,19 +118,15 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">Full</string>
-						<reference key="IBUIHighlightedTitleColor" ref="400902171"/>
-						<object class="NSColor" key="IBUISelectedTitleColor" id="443487713">
+						<reference key="IBUIHighlightedTitleColor" ref="756042360"/>
+						<object class="NSColor" key="IBUISelectedTitleColor" id="968184129">
 							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4wMzQ5MDYzNzI0MyAwLjY4ODM0ODExNDUgMAA</bytes>
+							<bytes key="NSRGB">MC43MTYzMzY3ODY3IDAuMzExNjM4OTUxMyAwAA</bytes>
 						</object>
-						<object class="NSColor" key="IBUINormalTitleColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
-						</object>
+						<reference key="IBUINormalTitleColor" ref="451343943"/>
 						<reference key="IBUINormalTitleShadowColor" ref="928170411"/>
-						<reference key="IBUINormalBackgroundImage" ref="823894129"/>
+						<reference key="IBUINormalBackgroundImage" ref="392171119"/>
 						<object class="IBUIFontDescription" key="IBUIFontDescription" id="803702501">
 							<int key="type">2</int>
 							<double key="pointSize">15</double>
@@ -159,16 +150,12 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">3/4</string>
-						<reference key="IBUIHighlightedTitleColor" ref="400902171"/>
-						<reference key="IBUISelectedTitleColor" ref="443487713"/>
-						<object class="NSColor" key="IBUINormalTitleColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
-						</object>
+						<reference key="IBUIHighlightedTitleColor" ref="756042360"/>
+						<reference key="IBUISelectedTitleColor" ref="968184129"/>
+						<reference key="IBUINormalTitleColor" ref="451343943"/>
 						<reference key="IBUINormalTitleShadowColor" ref="928170411"/>
-						<reference key="IBUINormalBackgroundImage" ref="823894129"/>
+						<reference key="IBUINormalBackgroundImage" ref="392171119"/>
 						<reference key="IBUIFontDescription" ref="803702501"/>
 						<reference key="IBUIFont" ref="364755500"/>
 					</object>
@@ -185,16 +172,12 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">1/2</string>
-						<reference key="IBUIHighlightedTitleColor" ref="400902171"/>
-						<reference key="IBUISelectedTitleColor" ref="443487713"/>
-						<object class="NSColor" key="IBUINormalTitleColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
-						</object>
+						<reference key="IBUIHighlightedTitleColor" ref="756042360"/>
+						<reference key="IBUISelectedTitleColor" ref="968184129"/>
+						<reference key="IBUINormalTitleColor" ref="451343943"/>
 						<reference key="IBUINormalTitleShadowColor" ref="928170411"/>
-						<reference key="IBUINormalBackgroundImage" ref="823894129"/>
+						<reference key="IBUINormalBackgroundImage" ref="392171119"/>
 						<reference key="IBUIFontDescription" ref="803702501"/>
 						<reference key="IBUIFont" ref="364755500"/>
 					</object>
@@ -210,15 +193,11 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">Fonts</string>
-						<reference key="IBUIHighlightedTitleColor" ref="400902171"/>
-						<object class="NSColor" key="IBUINormalTitleColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
-						</object>
+						<reference key="IBUIHighlightedTitleColor" ref="756042360"/>
+						<reference key="IBUINormalTitleColor" ref="451343943"/>
 						<reference key="IBUINormalTitleShadowColor" ref="928170411"/>
-						<reference key="IBUINormalBackgroundImage" ref="823894129"/>
+						<reference key="IBUINormalBackgroundImage" ref="392171119"/>
 						<reference key="IBUIFontDescription" ref="803702501"/>
 						<reference key="IBUIFont" ref="364755500"/>
 					</object>
@@ -233,15 +212,11 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">Colors</string>
-						<reference key="IBUIHighlightedTitleColor" ref="400902171"/>
-						<object class="NSColor" key="IBUINormalTitleColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
-						</object>
+						<reference key="IBUIHighlightedTitleColor" ref="756042360"/>
+						<reference key="IBUINormalTitleColor" ref="451343943"/>
 						<reference key="IBUINormalTitleShadowColor" ref="928170411"/>
-						<reference key="IBUINormalBackgroundImage" ref="823894129"/>
+						<reference key="IBUINormalBackgroundImage" ref="392171119"/>
 						<reference key="IBUIFontDescription" ref="803702501"/>
 						<reference key="IBUIFont" ref="364755500"/>
 					</object>
@@ -273,16 +248,21 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">Font Name 1</string>
-						<reference key="IBUIHighlightedTitleColor" ref="400902171"/>
-						<reference key="IBUISelectedTitleColor" ref="443487713"/>
-						<object class="NSColor" key="IBUINormalTitleColor">
+						<object class="NSColor" key="IBUIHighlightedTitleColor" id="178568499">
 							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
+							<bytes key="NSRGB">MC4xNjg5ODk2ODgyIDAuMTAxNzU0NTE2NCAwLjA0MzgzMTk3Nzk5AA</bytes>
+						</object>
+						<object class="NSColor" key="IBUISelectedTitleColor" id="308645818">
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MC43MTYzMzY3ODY3IDAuMzExNjM4OTUxMyAwAA</bytes>
+						</object>
+						<object class="NSColor" key="IBUINormalTitleColor" id="61100594">
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MC40NDQzMjI4MjQ1IDAuMzEzNDIzMTI2OSAwLjE5MzIyNzYwNAA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="928170411"/>
-						<reference key="IBUINormalBackgroundImage" ref="823894129"/>
+						<reference key="IBUINormalBackgroundImage" ref="392171119"/>
 						<reference key="IBUIFontDescription" ref="803702501"/>
 						<reference key="IBUIFont" ref="364755500"/>
 					</object>
@@ -297,16 +277,12 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">Font Name 2</string>
-						<reference key="IBUIHighlightedTitleColor" ref="400902171"/>
-						<reference key="IBUISelectedTitleColor" ref="443487713"/>
-						<object class="NSColor" key="IBUINormalTitleColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
-						</object>
+						<reference key="IBUIHighlightedTitleColor" ref="178568499"/>
+						<reference key="IBUISelectedTitleColor" ref="308645818"/>
+						<reference key="IBUINormalTitleColor" ref="61100594"/>
 						<reference key="IBUINormalTitleShadowColor" ref="928170411"/>
-						<reference key="IBUINormalBackgroundImage" ref="823894129"/>
+						<reference key="IBUINormalBackgroundImage" ref="392171119"/>
 						<reference key="IBUIFontDescription" ref="803702501"/>
 						<reference key="IBUIFont" ref="364755500"/>
 					</object>
@@ -336,16 +312,21 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">Bright</string>
-						<reference key="IBUIHighlightedTitleColor" ref="400902171"/>
-						<reference key="IBUISelectedTitleColor" ref="443487713"/>
-						<object class="NSColor" key="IBUINormalTitleColor">
+						<object class="NSColor" key="IBUIHighlightedTitleColor" id="448386472">
 							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
+							<bytes key="NSRGB">MC4xNjg5ODk2ODgyIDAuMTAxNzU0NTE2NCAwLjA0MzgzMTk3Nzk5AA</bytes>
+						</object>
+						<object class="NSColor" key="IBUISelectedTitleColor" id="231625589">
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MC43MTYzMzY3ODY3IDAuMzExNjM4OTUxMyAwAA</bytes>
+						</object>
+						<object class="NSColor" key="IBUINormalTitleColor" id="245410457">
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MC40NDQzMjI4MjQ1IDAuMzEzNDIzMTI2OSAwLjE5MzIyNzYwNAA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="928170411"/>
-						<reference key="IBUINormalBackgroundImage" ref="823894129"/>
+						<reference key="IBUINormalBackgroundImage" ref="392171119"/>
 						<reference key="IBUIFontDescription" ref="803702501"/>
 						<reference key="IBUIFont" ref="364755500"/>
 					</object>
@@ -362,16 +343,12 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">Quiet</string>
-						<reference key="IBUIHighlightedTitleColor" ref="400902171"/>
-						<reference key="IBUISelectedTitleColor" ref="443487713"/>
-						<object class="NSColor" key="IBUINormalTitleColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
-						</object>
+						<reference key="IBUIHighlightedTitleColor" ref="448386472"/>
+						<reference key="IBUISelectedTitleColor" ref="231625589"/>
+						<reference key="IBUINormalTitleColor" ref="245410457"/>
 						<reference key="IBUINormalTitleShadowColor" ref="928170411"/>
-						<reference key="IBUINormalBackgroundImage" ref="823894129"/>
+						<reference key="IBUINormalBackgroundImage" ref="392171119"/>
 						<reference key="IBUIFontDescription" ref="803702501"/>
 						<reference key="IBUIFont" ref="364755500"/>
 					</object>
@@ -387,16 +364,12 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">Dark</string>
-						<reference key="IBUIHighlightedTitleColor" ref="400902171"/>
-						<reference key="IBUISelectedTitleColor" ref="443487713"/>
-						<object class="NSColor" key="IBUINormalTitleColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
-						</object>
+						<reference key="IBUIHighlightedTitleColor" ref="448386472"/>
+						<reference key="IBUISelectedTitleColor" ref="231625589"/>
+						<reference key="IBUINormalTitleColor" ref="245410457"/>
 						<reference key="IBUINormalTitleShadowColor" ref="928170411"/>
-						<reference key="IBUINormalBackgroundImage" ref="823894129"/>
+						<reference key="IBUINormalBackgroundImage" ref="392171119"/>
 						<reference key="IBUIFontDescription" ref="803702501"/>
 						<reference key="IBUIFont" ref="364755500"/>
 					</object>
@@ -766,31 +739,33 @@
 				<string key="1.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="17.CustomClassName">MButton</string>
 				<string key="17.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<real value="0.0" key="17.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
+				<real value="1" key="17.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
 				<string key="18.CustomClassName">MButton</string>
 				<string key="18.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<real value="0.0" key="18.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
+				<real value="1" key="18.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
 				<string key="21.CustomClassName">MButton</string>
 				<string key="21.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<real value="0.0" key="21.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
+				<real value="2" key="21.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
 				<string key="22.CustomClassName">MButton</string>
 				<string key="22.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<real value="0.0" key="22.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
+				<real value="2" key="22.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
 				<string key="23.CustomClassName">MButton</string>
 				<string key="23.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<real value="0.0" key="23.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
+				<real value="2" key="23.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
 				<string key="27.CustomClassName">MButton</string>
 				<string key="27.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<real value="1" key="27.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
 				<string key="28.CustomClassName">MButton</string>
 				<string key="28.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<real value="1" key="28.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
 				<string key="38.CustomClassName">PrefsContainerView</string>
 				<string key="38.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="39.CustomClassName">MButton</string>
 				<string key="39.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<real value="0.0" key="39.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
+				<real value="2" key="39.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
 				<string key="40.CustomClassName">MButton</string>
 				<string key="40.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<real value="0.0" key="40.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
+				<real value="2" key="40.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
 				<string key="44.CustomClassName">PrefsContainerView</string>
 				<string key="44.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="45.CustomClassName">MButton</string>
