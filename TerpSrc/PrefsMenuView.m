@@ -11,6 +11,7 @@
 #import "GlkFrameView.h"
 #import "GlkWinBufferView.h"
 #import "StyledTextView.h"
+#import "MButton.h"
 
 @implementation PrefsMenuView
 
@@ -189,9 +190,11 @@
 	UIColor *selectedcolor = [fontbut_sample1 titleColorForState:UIControlStateSelected];
 	UIColor *highlightedcolor = [fontbut_sample1 titleColorForState:UIControlStateHighlighted];
 	
+	UIImage *normalbackimg = [fontbut_sample1 backgroundImageForState:UIControlStateNormal];
+	
 	int count = 0;
 	for (NSString *name in fontnames) {
-		UIButton *button = [UIButton buttonWithType:fontbut_sample1.buttonType];
+		UIButton *button = [MButton buttonWithType:fontbut_sample1.buttonType];
 		[button setTitle:name forState:UIControlStateNormal];
 		button.tag = count;
 		CGRect rect = baserect;
@@ -200,6 +203,7 @@
 		[button setTitleColor:normalcolor forState:UIControlStateNormal];
 		[button setTitleColor:selectedcolor forState:UIControlStateSelected];
 		[button setTitleColor:highlightedcolor forState:UIControlStateHighlighted];
+		[button setBackgroundImage:normalbackimg forState:UIControlStateNormal];
 		[button addTarget:self action:@selector(handleFont:) forControlEvents:UIControlEventTouchUpInside];
 		[fontscontainer addSubview:button];
 		[arr addObject:button];
