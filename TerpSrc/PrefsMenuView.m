@@ -75,6 +75,11 @@
 	colbut_34.selected = (maxwidth == 624);
 	colbut_12.selected = (maxwidth == 512);
 	
+	int colorscheme = glkviewc.fizmoDelegate.colorscheme;
+	colorbut_bright.selected = (colorbut_bright.tag == colorscheme);
+	colorbut_quiet.selected = (colorbut_quiet.tag == colorscheme);
+	colorbut_dark.selected = (colorbut_dark.tag == colorscheme);
+
 	if (fontnames) {
 		NSString *family = glkviewc.fizmoDelegate.fontfamily;
 		for (int count = 0; count < fontnames.count; count++) {
@@ -200,6 +205,7 @@
 		CGRect rect = baserect;
 		rect.origin.y += count*buttonspacing;
 		button.frame = rect;
+		button.titleLabel.font = fontbut_sample1.titleLabel.font; //### sample!
 		[button setTitleColor:normalcolor forState:UIControlStateNormal];
 		[button setTitleColor:selectedcolor forState:UIControlStateSelected];
 		[button setTitleColor:highlightedcolor forState:UIControlStateHighlighted];
