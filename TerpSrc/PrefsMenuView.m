@@ -62,11 +62,18 @@
 
 - (void) loadContent {
 	[[NSBundle mainBundle] loadNibNamed:@"PrefsMenuView" owner:self options:nil];
+	FizmoGlkViewController *glkviewc = [FizmoGlkViewController singleton];
 
 	UIImage *checkimage = [UIImage imageNamed:@"checkmark"];
 	[colorbut_bright setSelectImage:checkimage];
 	[colorbut_quiet setSelectImage:checkimage];
 	[colorbut_dark setSelectImage:checkimage];
+	
+	if (faderview) {
+		int val = glkviewc.fizmoDelegate.colorscheme;
+		faderview.alpha = ((val==2) ? 1.0 : 0.0);
+		faderview.hidden = NO;
+	}
 		
 	[self updateButtons];
 	[self resizeContentTo:container.frame.size animated:YES];
@@ -156,6 +163,16 @@
 	glkviewc.navigationController.navigationBar.barStyle = (val==2 ? UIBarStyleBlack : UIBarStyleDefault);
 	glkviewc.frameview.backgroundColor = glkviewc.fizmoDelegate.genBackgroundColor;
 	[glkviewc.frameview updateWindowStyles];
+	
+	if (faderview) {
+		if ([IosGlkAppDelegate animblocksavailable]) {
+			[UIView animateWithDuration:0.15 
+				animations:^{ faderview.alpha = ((val==2) ? 1.0 : 0.0); } ];
+		}
+		else {
+			faderview.alpha = ((val==2) ? 1.0 : 0.0);
+		}
+	}
 }
 
 - (IBAction) handleFont:(id)sender {
