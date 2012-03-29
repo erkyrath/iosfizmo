@@ -62,6 +62,12 @@
 
 - (void) loadContent {
 	[[NSBundle mainBundle] loadNibNamed:@"PrefsMenuView" owner:self options:nil];
+
+	UIImage *checkimage = [UIImage imageNamed:@"checkmark"];
+	[colorbut_bright setSelectImage:checkimage];
+	[colorbut_quiet setSelectImage:checkimage];
+	[colorbut_dark setSelectImage:checkimage];
+		
 	[self updateButtons];
 	[self resizeContentTo:container.frame.size animated:YES];
 	[content addSubview:container];
@@ -171,7 +177,7 @@
 - (void) setUpFontMenu {
 	FizmoGlkViewController *glkviewc = [FizmoGlkViewController singleton];
 	
-	NSMutableArray *arr = [NSMutableArray arrayWithObjects:@"Times New Roman", @"Helvetica", @"Georgia", nil];
+	NSMutableArray *arr = [NSMutableArray arrayWithObjects:@"Times", @"Helvetica", @"Georgia", nil];
 	/*if ([UIFont fontWithName:@"Palatino" size:14])
 		[arr addObject:@"Palatino"];*/
 	if ([UIFont fontWithName:@"Baskerville" size:14])
@@ -201,16 +207,19 @@
 	UIImage *highlightedbackimg = [fontbut_sample1 backgroundImageForState:UIControlStateHighlighted];
 	
 	CGFloat fontsize = fontbut_sample1.titleLabel.font.pointSize;
+	UIImage *checkimage = [UIImage imageNamed:@"checkmark"];
 	
 	int count = 0;
 	for (NSString *name in fontnames) {
-		UIButton *button = [MButton buttonWithType:fontbut_sample1.buttonType];
+		MButton *button = [MButton buttonWithType:fontbut_sample1.buttonType];
 		[button setTitle:name forState:UIControlStateNormal];
 		button.tag = count;
 		CGRect rect = baserect;
 		rect.origin.y += count*buttonspacing;
 		button.frame = rect;
+		[button setSelectImage:checkimage];
 		button.titleLabel.font = [glkviewc.fizmoDelegate fontVariantsForSize:fontsize label:name].normal;
+		button.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
 		[button setTitleColor:normalcolor forState:UIControlStateNormal];
 		[button setTitleColor:selectedcolor forState:UIControlStateSelected];
 		[button setTitleColor:highlightedcolor forState:UIControlStateHighlighted];

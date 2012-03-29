@@ -8,6 +8,7 @@
 #import "PopMenuView.h"
 
 @class PrefsContainerView;
+@class MButton;
 
 @interface PrefsMenuView : PopMenuView
 
@@ -23,11 +24,11 @@
 @property (nonatomic, retain) IBOutlet UIButton *sizebut_big;
 @property (nonatomic, retain) IBOutlet UIButton *fontbutton;
 @property (nonatomic, retain) IBOutlet UIButton *colorbutton;
-@property (nonatomic, retain) IBOutlet UIButton *fontbut_sample1;
-@property (nonatomic, retain) IBOutlet UIButton *fontbut_sample2;
-@property (nonatomic, retain) IBOutlet UIButton *colorbut_bright;
-@property (nonatomic, retain) IBOutlet UIButton *colorbut_quiet;
-@property (nonatomic, retain) IBOutlet UIButton *colorbut_dark;
+@property (nonatomic, retain) IBOutlet MButton *fontbut_sample1;
+@property (nonatomic, retain) IBOutlet MButton *fontbut_sample2;
+@property (nonatomic, retain) IBOutlet MButton *colorbut_bright;
+@property (nonatomic, retain) IBOutlet MButton *colorbut_quiet;
+@property (nonatomic, retain) IBOutlet MButton *colorbut_dark;
 
 @property (nonatomic, retain) NSArray *fontnames;
 @property (nonatomic, retain) NSArray *fontbuttons;

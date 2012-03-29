@@ -8,6 +8,13 @@
 
 
 @interface MButton : UIButton {
+	UIImage *selectimage;
+	UIImageView *selectview;
 }
+
+@property (nonatomic, retain) UIImage *selectimage;
+@property (nonatomic, retain) UIImageView *selectview;
+
+- (void) setSelectImage:(UIImage *)img;
 
 @end
