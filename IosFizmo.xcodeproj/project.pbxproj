@@ -133,6 +133,10 @@
 		DFBB4E4214F6E4450041016A /* TranscriptVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBB4E4114F6E4450041016A /* TranscriptVC.xib */; };
 		DFBB4E4614F6E5700041016A /* TranscriptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBB4E4514F6E5700041016A /* TranscriptViewController.m */; };
 		DFC755A715242354009F4137 /* background-popbox.png in Resources */ = {isa = PBXBuildFile; fileRef = DFC755A615242354009F4137 /* background-popbox.png */; };
+		DFC755AA15242808009F4137 /* background-popbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFC755A915242808009F4137 /* background-popbox@2x.png */; };
+		DFC755B41524C019009F4137 /* MButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC755B31524C019009F4137 /* MButton.m */; };
+		DFC755B71524C02E009F4137 /* button-pref-base.png in Resources */ = {isa = PBXBuildFile; fileRef = DFC755B51524C02E009F4137 /* button-pref-base.png */; };
+		DFC755B81524C02E009F4137 /* button-pref-base@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFC755B61524C02E009F4137 /* button-pref-base@2x.png */; };
 		DFDFBD4B151F7DFD0053783F /* GlkAccessTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDFBD4A151F7DFD0053783F /* GlkAccessTypes.m */; };
 		DFEFAC2E14F1E0E50062859F /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEFAC2C14F1E0E50062859F /* HelpViewController.m */; };
 		DFEFAC2F14F1E0E50062859F /* HelpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFEFAC2D14F1E0E50062859F /* HelpVC.xib */; };
@@ -358,6 +362,11 @@
 		DFBB4E4414F6E5700041016A /* TranscriptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranscriptViewController.h; sourceTree = "<group>"; };
 		DFBB4E4514F6E5700041016A /* TranscriptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranscriptViewController.m; sourceTree = "<group>"; };
 		DFC755A615242354009F4137 /* background-popbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background-popbox.png"; path = "iosglk/Media/background-popbox.png"; sourceTree = SOURCE_ROOT; };
+		DFC755A915242808009F4137 /* background-popbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background-popbox@2x.png"; path = "iosglk/Media/background-popbox@2x.png"; sourceTree = SOURCE_ROOT; };
+		DFC755B21524C019009F4137 /* MButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MButton.h; sourceTree = "<group>"; };
+		DFC755B31524C019009F4137 /* MButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MButton.m; sourceTree = "<group>"; };
+		DFC755B51524C02E009F4137 /* button-pref-base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-pref-base.png"; sourceTree = "<group>"; };
+		DFC755B61524C02E009F4137 /* button-pref-base@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-pref-base@2x.png"; sourceTree = "<group>"; };
 		DFDFBD49151F7DFD0053783F /* GlkAccessTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkAccessTypes.h; sourceTree = "<group>"; };
 		DFDFBD4A151F7DFD0053783F /* GlkAccessTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkAccessTypes.m; sourceTree = "<group>"; };
 		DFEFAC2B14F1E0E50062859F /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
@@ -422,6 +431,8 @@
 				DF361B5E14F72B5C00A8D670 /* DisplayTextViewController.m */,
 				DF1F400614F3094F008FF1C7 /* PrefsMenuView.h */,
 				DF1F400714F3094F008FF1C7 /* PrefsMenuView.m */,
+				DFC755B21524C019009F4137 /* MButton.h */,
+				DFC755B31524C019009F4137 /* MButton.m */,
 				DFB7A71A151EBDC500C07499 /* GradientView.h */,
 				DFB7A71B151EBDC500C07499 /* GradientView.m */,
 			);
@@ -768,9 +779,12 @@
 				DFB7A70E151E463E00C07499 /* tabicon-notes@2x.png */,
 				DFAA384914F1DAAE0096A848 /* tabicon-game.png */,
 				DFB7A709151E395600C07499 /* tabicon-game@2x.png */,
+				DFC755B51524C02E009F4137 /* button-pref-base.png */,
+				DFC755B61524C02E009F4137 /* button-pref-base@2x.png */,
 				DF70A1501513D9EE00B109A2 /* selecthandle.png */,
 				DF70A1511513D9EE00B109A2 /* selecthandle@2x.png */,
 				DFC755A615242354009F4137 /* background-popbox.png */,
+				DFC755A915242808009F4137 /* background-popbox@2x.png */,
 				DFB7A716151E674500C07499 /* background-notes.png */,
 				DFB7A718151E69B300C07499 /* background-notes-s.png */,
 				DFB7A720151ED33700C07499 /* background-notesopaque.png */,
@@ -862,6 +876,9 @@
 				DFB7A721151ED33700C07499 /* background-notesopaque-s.png in Resources */,
 				DFB7A722151ED33700C07499 /* background-notesopaque.png in Resources */,
 				DFC755A715242354009F4137 /* background-popbox.png in Resources */,
+				DFC755AA15242808009F4137 /* background-popbox@2x.png in Resources */,
+				DFC755B71524C02E009F4137 /* button-pref-base.png in Resources */,
+				DFC755B81524C02E009F4137 /* button-pref-base@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -965,6 +982,7 @@
 				DF8FD3F51500AA8C00890116 /* TextSelectView.m in Sources */,
 				DFB7A71C151EBDC500C07499 /* GradientView.m in Sources */,
 				DFDFBD4B151F7DFD0053783F /* GlkAccessTypes.m in Sources */,
+				DFC755B41524C019009F4137 /* MButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
