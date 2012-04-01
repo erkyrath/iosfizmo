@@ -56,9 +56,10 @@
 
 	CGRect selfbounds = self.bounds;	
 	CGRect rect;
+	CGFloat margin = (selfbounds.size.width > 80) ? 6 : 4;
 	rect.size = img.size;
 	rect.origin.y = floorf(0.5 * (selfbounds.size.height - rect.size.height));
-	rect.origin.x = selfbounds.size.width - rect.size.width - 6;
+	rect.origin.x = selfbounds.size.width - rect.size.width - margin;
 	
 	self.selectview = [[[UIImageView alloc] initWithImage:img] autorelease];
 	selectview.frame = rect;

@@ -154,6 +154,8 @@
 		DFC755D81527F342009F4137 /* col-12-sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFC755D51527F342009F4137 /* col-12-sel@2x.png */; };
 		DFC755D91527F342009F4137 /* col-34-sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFC755D61527F342009F4137 /* col-34-sel@2x.png */; };
 		DFC755DA1527F342009F4137 /* col-full-sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFC755D71527F342009F4137 /* col-full-sel@2x.png */; };
+		DFC755DD1527FD74009F4137 /* checkmark-s.png in Resources */ = {isa = PBXBuildFile; fileRef = DFC755DB1527FD74009F4137 /* checkmark-s.png */; };
+		DFC755DE1527FD74009F4137 /* checkmark-s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFC755DC1527FD74009F4137 /* checkmark-s@2x.png */; };
 		DFDFBD4B151F7DFD0053783F /* GlkAccessTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDFBD4A151F7DFD0053783F /* GlkAccessTypes.m */; };
 		DFEFAC2E14F1E0E50062859F /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEFAC2C14F1E0E50062859F /* HelpViewController.m */; };
 		DFEFAC2F14F1E0E50062859F /* HelpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFEFAC2D14F1E0E50062859F /* HelpVC.xib */; };
@@ -401,6 +403,8 @@
 		DFC755D51527F342009F4137 /* col-12-sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "col-12-sel@2x.png"; sourceTree = "<group>"; };
 		DFC755D61527F342009F4137 /* col-34-sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "col-34-sel@2x.png"; sourceTree = "<group>"; };
 		DFC755D71527F342009F4137 /* col-full-sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "col-full-sel@2x.png"; sourceTree = "<group>"; };
+		DFC755DB1527FD74009F4137 /* checkmark-s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkmark-s.png"; sourceTree = "<group>"; };
+		DFC755DC1527FD74009F4137 /* checkmark-s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkmark-s@2x.png"; sourceTree = "<group>"; };
 		DFDFBD49151F7DFD0053783F /* GlkAccessTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkAccessTypes.h; sourceTree = "<group>"; };
 		DFDFBD4A151F7DFD0053783F /* GlkAccessTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkAccessTypes.m; sourceTree = "<group>"; };
 		DFEFAC2B14F1E0E50062859F /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
@@ -831,6 +835,8 @@
 				DFC755D71527F342009F4137 /* col-full-sel@2x.png */,
 				DFC755BD1524D372009F4137 /* checkmark.png */,
 				DFC755BE1524D372009F4137 /* checkmark@2x.png */,
+				DFC755DB1527FD74009F4137 /* checkmark-s.png */,
+				DFC755DC1527FD74009F4137 /* checkmark-s@2x.png */,
 				DF70A1501513D9EE00B109A2 /* selecthandle.png */,
 				DF70A1511513D9EE00B109A2 /* selecthandle@2x.png */,
 				DFC755A615242354009F4137 /* background-popbox.png */,
@@ -947,6 +953,8 @@
 				DFC755D81527F342009F4137 /* col-12-sel@2x.png in Resources */,
 				DFC755D91527F342009F4137 /* col-34-sel@2x.png in Resources */,
 				DFC755DA1527F342009F4137 /* col-full-sel@2x.png in Resources */,
+				DFC755DD1527FD74009F4137 /* checkmark-s.png in Resources */,
+				DFC755DE1527FD74009F4137 /* checkmark-s@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

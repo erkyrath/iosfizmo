@@ -69,6 +69,11 @@
 	[colorbut_quiet setSelectImage:checkimage];
 	[colorbut_dark setSelectImage:checkimage];
 	
+	checkimage = [UIImage imageNamed:@"checkmark-s"];
+	[colbut_full setSelectImage:checkimage];
+	[colbut_34 setSelectImage:checkimage];
+	[colbut_12 setSelectImage:checkimage];
+	 
 	if (faderview) {
 		int val = glkviewc.fizmoDelegate.colorscheme;
 		faderview.alpha = ((val==2) ? 1.0 : 0.0);

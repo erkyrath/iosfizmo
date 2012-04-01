@@ -17,11 +17,11 @@
 @property (nonatomic, retain) IBOutlet PrefsContainerView *colorscontainer;
 @property (nonatomic, retain) IBOutlet UIButton *colorsbutton;
 @property (nonatomic, retain) IBOutlet UIButton *fontsbutton;
-@property (nonatomic, retain) IBOutlet UIButton *colbut_full;
-@property (nonatomic, retain) IBOutlet UIButton *colbut_34;
-@property (nonatomic, retain) IBOutlet UIButton *colbut_12;
-@property (nonatomic, retain) IBOutlet UIButton *sizebut_small;
-@property (nonatomic, retain) IBOutlet UIButton *sizebut_big;
+@property (nonatomic, retain) IBOutlet MButton *colbut_full;
+@property (nonatomic, retain) IBOutlet MButton *colbut_34;
+@property (nonatomic, retain) IBOutlet MButton *colbut_12;
+@property (nonatomic, retain) IBOutlet MButton *sizebut_small;
+@property (nonatomic, retain) IBOutlet MButton *sizebut_big;
 @property (nonatomic, retain) IBOutlet UIButton *fontbutton;
 @property (nonatomic, retain) IBOutlet UIButton *colorbutton;
 @property (nonatomic, retain) IBOutlet MButton *fontbut_sample1;
