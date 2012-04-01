@@ -123,7 +123,6 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<string key="IBUINormalTitle">Full</string>
 						<reference key="IBUIHighlightedTitleColor" ref="18421557"/>
 						<object class="NSColor" key="IBUISelectedTitleColor" id="854987331">
 							<int key="NSColorSpace">1</int>
@@ -131,6 +130,14 @@
 						</object>
 						<reference key="IBUINormalTitleColor" ref="546344510"/>
 						<reference key="IBUINormalTitleShadowColor" ref="928170411"/>
+						<object class="NSCustomResource" key="IBUISelectedImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">col-full-sel.png</string>
+						</object>
+						<object class="NSCustomResource" key="IBUINormalImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">col-full.png</string>
+						</object>
 						<reference key="IBUIHighlightedBackgroundImage" ref="458176918"/>
 						<reference key="IBUINormalBackgroundImage" ref="196989056"/>
 						<object class="IBUIFontDescription" key="IBUIFontDescription" id="803702501">
@@ -156,11 +163,18 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<string key="IBUINormalTitle">3/4</string>
 						<reference key="IBUIHighlightedTitleColor" ref="18421557"/>
 						<reference key="IBUISelectedTitleColor" ref="854987331"/>
 						<reference key="IBUINormalTitleColor" ref="546344510"/>
 						<reference key="IBUINormalTitleShadowColor" ref="928170411"/>
+						<object class="NSCustomResource" key="IBUISelectedImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">col-34-sel.png</string>
+						</object>
+						<object class="NSCustomResource" key="IBUINormalImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">col-34.png</string>
+						</object>
 						<reference key="IBUIHighlightedBackgroundImage" ref="458176918"/>
 						<reference key="IBUINormalBackgroundImage" ref="196989056"/>
 						<reference key="IBUIFontDescription" ref="803702501"/>
@@ -179,11 +193,18 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<string key="IBUINormalTitle">1/2</string>
 						<reference key="IBUIHighlightedTitleColor" ref="18421557"/>
 						<reference key="IBUISelectedTitleColor" ref="854987331"/>
 						<reference key="IBUINormalTitleColor" ref="546344510"/>
 						<reference key="IBUINormalTitleShadowColor" ref="928170411"/>
+						<object class="NSCustomResource" key="IBUISelectedImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">col-12-sel.png</string>
+						</object>
+						<object class="NSCustomResource" key="IBUINormalImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">col-12.png</string>
+						</object>
 						<reference key="IBUIHighlightedBackgroundImage" ref="458176918"/>
 						<reference key="IBUINormalBackgroundImage" ref="196989056"/>
 						<reference key="IBUIFontDescription" ref="803702501"/>
@@ -216,6 +237,7 @@
 						<string key="NSFrame">{{0, 133}, {152, 37}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -283,6 +305,7 @@
 						<string key="NSFrame">{{0, 45}, {152, 37}}</string>
 						<reference key="NSSuperview" ref="409938868"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -372,6 +395,7 @@
 						<string key="NSFrame">{{0, 90}, {152, 37}}</string>
 						<reference key="NSSuperview" ref="290411177"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<int key="IBUITag">2</int>
@@ -760,13 +784,13 @@
 				<real value="1" key="18.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
 				<string key="21.CustomClassName">MButton</string>
 				<string key="21.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<real value="1" key="21.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
+				<real value="2" key="21.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
 				<string key="22.CustomClassName">MButton</string>
 				<string key="22.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<real value="1" key="22.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
+				<real value="0.0" key="22.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
 				<string key="23.CustomClassName">MButton</string>
 				<string key="23.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<real value="1" key="23.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
+				<real value="2" key="23.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
 				<string key="27.CustomClassName">MButton</string>
 				<string key="27.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<real value="1" key="27.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
@@ -814,11 +838,16 @@
 					<string key="superclassName">UIView</string>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="content">UIView</string>
+						<string key="faderview">UIView</string>
 						<string key="frameview">UIView</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="content">
 							<string key="name">content</string>
+							<string key="candidateClassName">UIView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="faderview">
+							<string key="name">faderview</string>
 							<string key="candidateClassName">UIView</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="frameview">
@@ -880,15 +909,15 @@
 						<string key="colbut_12">UIButton</string>
 						<string key="colbut_34">UIButton</string>
 						<string key="colbut_full">UIButton</string>
-						<string key="colorbut_bright">UIButton</string>
-						<string key="colorbut_dark">UIButton</string>
-						<string key="colorbut_quiet">UIButton</string>
+						<string key="colorbut_bright">MButton</string>
+						<string key="colorbut_dark">MButton</string>
+						<string key="colorbut_quiet">MButton</string>
 						<string key="colorbutton">UIButton</string>
 						<string key="colorsbutton">UIButton</string>
 						<string key="colorscontainer">PrefsContainerView</string>
 						<string key="container">PrefsContainerView</string>
-						<string key="fontbut_sample1">UIButton</string>
-						<string key="fontbut_sample2">UIButton</string>
+						<string key="fontbut_sample1">MButton</string>
+						<string key="fontbut_sample2">MButton</string>
 						<string key="fontbutton">UIButton</string>
 						<string key="fontsbutton">UIButton</string>
 						<string key="fontscontainer">PrefsContainerView</string>
@@ -910,15 +939,15 @@
 						</object>
 						<object class="IBToOneOutletInfo" key="colorbut_bright">
 							<string key="name">colorbut_bright</string>
-							<string key="candidateClassName">UIButton</string>
+							<string key="candidateClassName">MButton</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="colorbut_dark">
 							<string key="name">colorbut_dark</string>
-							<string key="candidateClassName">UIButton</string>
+							<string key="candidateClassName">MButton</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="colorbut_quiet">
 							<string key="name">colorbut_quiet</string>
-							<string key="candidateClassName">UIButton</string>
+							<string key="candidateClassName">MButton</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="colorbutton">
 							<string key="name">colorbutton</string>
@@ -938,11 +967,11 @@
 						</object>
 						<object class="IBToOneOutletInfo" key="fontbut_sample1">
 							<string key="name">fontbut_sample1</string>
-							<string key="candidateClassName">UIButton</string>
+							<string key="candidateClassName">MButton</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="fontbut_sample2">
 							<string key="name">fontbut_sample2</string>
-							<string key="candidateClassName">UIButton</string>
+							<string key="candidateClassName">MButton</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="fontbutton">
 							<string key="name">fontbutton</string>
@@ -983,6 +1012,12 @@
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
 			<string key="button-pref-base.png">{32, 32}</string>
 			<string key="button-pref-hi.png">{32, 32}</string>
+			<string key="col-12-sel.png">{20, 20}</string>
+			<string key="col-12.png">{20, 20}</string>
+			<string key="col-34-sel.png">{20, 20}</string>
+			<string key="col-34.png">{20, 20}</string>
+			<string key="col-full-sel.png">{20, 20}</string>
+			<string key="col-full.png">{20, 20}</string>
 		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">1179</string>
 	</data>
