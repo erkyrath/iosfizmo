@@ -145,12 +145,14 @@
 	[frameview postPopMenu:menuview];
 }
 
+//### generalize!
 - (void) handleSwipeLeft:(UIGestureRecognizer *)recognizer {
 	if (self.tabBarController) {
 		self.tabBarController.selectedIndex = 1;
 	}
 }
 
+//### generalize!
 - (void) handleSwipeRight:(UIGestureRecognizer *)recognizer {
 	if (self.tabBarController) {
 		self.tabBarController.selectedIndex = 2;
