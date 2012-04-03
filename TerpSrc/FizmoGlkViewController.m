@@ -145,17 +145,19 @@
 	[frameview postPopMenu:menuview];
 }
 
-//### generalize!
 - (void) handleSwipeLeft:(UIGestureRecognizer *)recognizer {
 	if (self.tabBarController) {
-		self.tabBarController.selectedIndex = 1;
+		int count = self.tabBarController.viewControllers.count;
+		int val = (self.tabBarController.selectedIndex + 1) % count;
+		self.tabBarController.selectedIndex = val;
 	}
 }
 
-//### generalize!
 - (void) handleSwipeRight:(UIGestureRecognizer *)recognizer {
 	if (self.tabBarController) {
-		self.tabBarController.selectedIndex = 2;
+		int count = self.tabBarController.viewControllers.count;
+		int val = (self.tabBarController.selectedIndex + count - 1) % count;
+		self.tabBarController.selectedIndex = val;
 	}
 }
 

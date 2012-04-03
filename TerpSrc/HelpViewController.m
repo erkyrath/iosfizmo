@@ -6,6 +6,7 @@
 
 #import "HelpViewController.h"
 #import "IosGlkViewController.h"
+#import "FizmoGlkViewController.h"
 
 @implementation HelpViewController
 
@@ -39,11 +40,13 @@
 
 	if ([webview respondsToSelector:@selector(addGestureRecognizer:)]) {
 		/* gestures are available in iOS 3.2 and up */
+		
+		FizmoGlkViewController *mainviewc = [FizmoGlkViewController singleton];
 		UISwipeGestureRecognizer *recognizer;
-		recognizer = [[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeLeft:)] autorelease];
+		recognizer = [[[UISwipeGestureRecognizer alloc] initWithTarget:mainviewc action:@selector(handleSwipeLeft:)] autorelease];
 		recognizer.direction = UISwipeGestureRecognizerDirectionLeft;
 		[webview addGestureRecognizer:recognizer];
-		recognizer = [[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeRight:)] autorelease];
+		recognizer = [[[UISwipeGestureRecognizer alloc] initWithTarget:mainviewc action:@selector(handleSwipeRight:)] autorelease];
 		recognizer.direction = UISwipeGestureRecognizerDirectionRight;
 		[webview addGestureRecognizer:recognizer];
 	}
@@ -52,18 +55,6 @@
 - (void) viewDidUnload
 {
 	NSLog(@"HelpVC: viewDidUnload");
-}
-
-- (void) handleSwipeLeft:(UIGestureRecognizer *)recognizer {
-	if (self.tabBarController) {
-		self.tabBarController.selectedIndex = 0;
-	}
-}
-
-- (void) handleSwipeRight:(UIGestureRecognizer *)recognizer {
-	if (self.tabBarController) {
-		self.tabBarController.selectedIndex = 1;
-	}
 }
 
 - (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)orientation

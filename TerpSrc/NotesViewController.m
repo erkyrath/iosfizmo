@@ -5,6 +5,7 @@
  */
 
 #import "NotesViewController.h"
+#import "FizmoGlkViewController.h"
 #import "IosGlkViewController.h"
 #import "TranscriptViewController.h"
 #import "GradientView.h"
@@ -80,11 +81,13 @@
 
 	if ([textview respondsToSelector:@selector(addGestureRecognizer:)]) {
 		/* gestures are available in iOS 3.2 and up */
+		
+		FizmoGlkViewController *mainviewc = [FizmoGlkViewController singleton];
 		UISwipeGestureRecognizer *recognizer;
-		recognizer = [[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeLeft:)] autorelease];
+		recognizer = [[[UISwipeGestureRecognizer alloc] initWithTarget:mainviewc action:@selector(handleSwipeLeft:)] autorelease];
 		recognizer.direction = UISwipeGestureRecognizerDirectionLeft;
 		[textview addGestureRecognizer:recognizer];
-		recognizer = [[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeRight:)] autorelease];
+		recognizer = [[[UISwipeGestureRecognizer alloc] initWithTarget:mainviewc action:@selector(handleSwipeRight:)] autorelease];
 		recognizer.direction = UISwipeGestureRecognizerDirectionRight;
 		[textview addGestureRecognizer:recognizer];
 	}
@@ -164,18 +167,6 @@
 	[NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(saveIfNeeded) object:nil];
 	if (notespath && textview.text) {
 		[textview.text writeToFile:notespath atomically:YES encoding:NSUTF8StringEncoding error:nil];
-	}
-}
-
-- (void) handleSwipeLeft:(UIGestureRecognizer *)recognizer {
-	if (self.tabBarController) {
-		self.tabBarController.selectedIndex = 2;
-	}
-}
-
-- (void) handleSwipeRight:(UIGestureRecognizer *)recognizer {
-	if (self.tabBarController) {
-		self.tabBarController.selectedIndex = 0;
 	}
 }
 
