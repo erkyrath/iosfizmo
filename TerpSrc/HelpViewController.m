@@ -33,7 +33,8 @@
 	NSLog(@"HelpVC: viewDidLoad");
 
 	NSBundle *bundle = [NSBundle mainBundle];
-	NSURL *url = [bundle URLForResource:@"index" withExtension:@"html" subdirectory:@"WebSite"];
+	NSString *filename = ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) ? @"index-s" : @"index");
+	NSURL *url = [bundle URLForResource:filename withExtension:@"html" subdirectory:@"WebSite"];
 	NSString *html = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
 	[webview loadHTMLString:html baseURL:url];
 	webview.delegate = self;
