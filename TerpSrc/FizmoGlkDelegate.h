@@ -23,6 +23,7 @@
 @property int fontscale;
 @property int colorscheme;
 
+- (NSString *) gamePath;
 - (UIColor *) genBackgroundColor;
 - (UIColor *) genForegroundColor;
 - (FontVariants) fontVariantsForSize:(CGFloat)size label:(NSString *)label;

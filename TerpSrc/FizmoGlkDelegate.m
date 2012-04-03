@@ -25,6 +25,12 @@
 	return nil;
 }
 
+- (NSString *) gamePath {
+	NSBundle *bundle = [NSBundle mainBundle];
+	NSString *path = [bundle pathForResource:@"Game" ofType:@"z5"];
+	return path;
+}
+
 - (GlkWinBufferView *) viewForBufferWindow:(GlkWindowState *)win frame:(CGRect)box {
 	return [[[FizmoGlkWinBufferView alloc] initWithWindow:win frame:box] autorelease];
 }
