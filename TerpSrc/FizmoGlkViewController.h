@@ -10,7 +10,7 @@
 @class NotesViewController;
 @class FizmoGlkDelegate;
 
-@interface FizmoGlkViewController : IosGlkViewController
+@interface FizmoGlkViewController : IosGlkViewController <UIGestureRecognizerDelegate>
 
 @property (nonatomic, retain) IBOutlet NotesViewController *notesvc;
 

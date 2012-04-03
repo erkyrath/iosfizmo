@@ -67,9 +67,11 @@
 		UISwipeGestureRecognizer *recognizer;
 		recognizer = [[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeLeft:)] autorelease];
 		recognizer.direction = UISwipeGestureRecognizerDirectionLeft;
+		recognizer.delegate = self;
 		[frameview addGestureRecognizer:recognizer];
 		recognizer = [[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeRight:)] autorelease];
 		recognizer.direction = UISwipeGestureRecognizerDirectionRight;
+		recognizer.delegate = self;
 		[frameview addGestureRecognizer:recognizer];
 	}
 	
@@ -99,6 +101,16 @@
 		/* If the notesvc was drilled into the transcripts view or subviews, pop out of there. */
 		[notesvc.navigationController popToRootViewControllerAnimated:NO];
 	}
+}
+
+/* UIGestureRecognizer delegate method */
+- (BOOL) gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+	/* Turn off tab-swiping if an input menu is open. */
+	if (!frameview)
+		return NO;
+	if (frameview.menuview)
+		return NO;
+	return YES;
 }
 
 - (IBAction) toggleKeyboard {
