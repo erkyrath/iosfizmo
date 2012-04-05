@@ -157,6 +157,7 @@
 		DFC755DD1527FD74009F4137 /* checkmark-s.png in Resources */ = {isa = PBXBuildFile; fileRef = DFC755DB1527FD74009F4137 /* checkmark-s.png */; };
 		DFC755DE1527FD74009F4137 /* checkmark-s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFC755DC1527FD74009F4137 /* checkmark-s@2x.png */; };
 		DFC75644152A9C04009F4137 /* PrefsMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFC75643152A9C04009F4137 /* PrefsMenuView~ipad.xib */; };
+		DFC7565D152CE83A009F4137 /* InputMenuDecor.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFC7565C152CE83A009F4137 /* InputMenuDecor.xib */; };
 		DFDFBD4B151F7DFD0053783F /* GlkAccessTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDFBD4A151F7DFD0053783F /* GlkAccessTypes.m */; };
 		DFEFAC2E14F1E0E50062859F /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEFAC2C14F1E0E50062859F /* HelpViewController.m */; };
 		DFEFAC2F14F1E0E50062859F /* HelpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFEFAC2D14F1E0E50062859F /* HelpVC.xib */; };
@@ -407,6 +408,7 @@
 		DFC755DB1527FD74009F4137 /* checkmark-s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkmark-s.png"; sourceTree = "<group>"; };
 		DFC755DC1527FD74009F4137 /* checkmark-s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkmark-s@2x.png"; sourceTree = "<group>"; };
 		DFC75643152A9C04009F4137 /* PrefsMenuView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "PrefsMenuView~ipad.xib"; sourceTree = "<group>"; };
+		DFC7565C152CE83A009F4137 /* InputMenuDecor.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InputMenuDecor.xib; path = iosglk/Resources/InputMenuDecor.xib; sourceTree = SOURCE_ROOT; };
 		DFDFBD49151F7DFD0053783F /* GlkAccessTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkAccessTypes.h; sourceTree = "<group>"; };
 		DFDFBD4A151F7DFD0053783F /* GlkAccessTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkAccessTypes.m; sourceTree = "<group>"; };
 		DFEFAC2B14F1E0E50062859F /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
@@ -439,6 +441,7 @@
 				DFA0DFA714E0BDA700B67057 /* GlkFileSelectLoad.xib */,
 				DFA0DFA814E0BDA700B67057 /* GlkFileSelectStore.xib */,
 				DF1F3FFD14F2BA68008FF1C7 /* PopBoxView.xib */,
+				DFC7565C152CE83A009F4137 /* InputMenuDecor.xib */,
 				DF361B6C14FAAD5200A8D670 /* MoreBoxView.xib */,
 				DF19DDD914E8A069007DCB29 /* HistoryMenuView.xib */,
 				DF19DDDA14E8A069007DCB29 /* PaletteMenuView.xib */,
@@ -959,6 +962,7 @@
 				DFC755DD1527FD74009F4137 /* checkmark-s.png in Resources */,
 				DFC755DE1527FD74009F4137 /* checkmark-s@2x.png in Resources */,
 				DFC75644152A9C04009F4137 /* PrefsMenuView~ipad.xib in Resources */,
+				DFC7565D152CE83A009F4137 /* InputMenuDecor.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
