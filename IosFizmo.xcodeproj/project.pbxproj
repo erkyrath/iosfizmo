@@ -158,6 +158,8 @@
 		DFC755DE1527FD74009F4137 /* checkmark-s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFC755DC1527FD74009F4137 /* checkmark-s@2x.png */; };
 		DFC75644152A9C04009F4137 /* PrefsMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFC75643152A9C04009F4137 /* PrefsMenuView~ipad.xib */; };
 		DFC7565D152CE83A009F4137 /* InputMenuDecor.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFC7565C152CE83A009F4137 /* InputMenuDecor.xib */; };
+		DFC7565F152D3ADB009F4137 /* button-tab-sel.png in Resources */ = {isa = PBXBuildFile; fileRef = DFC7565E152D3ADB009F4137 /* button-tab-sel.png */; };
+		DFC75661152D3E4C009F4137 /* button-tab-sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFC75660152D3E4C009F4137 /* button-tab-sel@2x.png */; };
 		DFDFBD4B151F7DFD0053783F /* GlkAccessTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDFBD4A151F7DFD0053783F /* GlkAccessTypes.m */; };
 		DFEFAC2E14F1E0E50062859F /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEFAC2C14F1E0E50062859F /* HelpViewController.m */; };
 		DFEFAC2F14F1E0E50062859F /* HelpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFEFAC2D14F1E0E50062859F /* HelpVC.xib */; };
@@ -409,6 +411,8 @@
 		DFC755DC1527FD74009F4137 /* checkmark-s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkmark-s@2x.png"; sourceTree = "<group>"; };
 		DFC75643152A9C04009F4137 /* PrefsMenuView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "PrefsMenuView~ipad.xib"; sourceTree = "<group>"; };
 		DFC7565C152CE83A009F4137 /* InputMenuDecor.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InputMenuDecor.xib; path = iosglk/Resources/InputMenuDecor.xib; sourceTree = SOURCE_ROOT; };
+		DFC7565E152D3ADB009F4137 /* button-tab-sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-tab-sel.png"; path = "iosglk/Media/button-tab-sel.png"; sourceTree = SOURCE_ROOT; };
+		DFC75660152D3E4C009F4137 /* button-tab-sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-tab-sel@2x.png"; path = "iosglk/Media/button-tab-sel@2x.png"; sourceTree = SOURCE_ROOT; };
 		DFDFBD49151F7DFD0053783F /* GlkAccessTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkAccessTypes.h; sourceTree = "<group>"; };
 		DFDFBD4A151F7DFD0053783F /* GlkAccessTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkAccessTypes.m; sourceTree = "<group>"; };
 		DFEFAC2B14F1E0E50062859F /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
@@ -827,6 +831,8 @@
 				DFC755B61524C02E009F4137 /* button-pref-base@2x.png */,
 				DFC755B91524C607009F4137 /* button-pref-hi.png */,
 				DFC755BA1524C607009F4137 /* button-pref-hi@2x.png */,
+				DFC7565E152D3ADB009F4137 /* button-tab-sel.png */,
+				DFC75660152D3E4C009F4137 /* button-tab-sel@2x.png */,
 				DFC755C31527EC54009F4137 /* col-12.png */,
 				DFC755C41527EC54009F4137 /* col-12@2x.png */,
 				DFC755C51527EC54009F4137 /* col-34.png */,
@@ -963,6 +969,8 @@
 				DFC755DE1527FD74009F4137 /* checkmark-s@2x.png in Resources */,
 				DFC75644152A9C04009F4137 /* PrefsMenuView~ipad.xib in Resources */,
 				DFC7565D152CE83A009F4137 /* InputMenuDecor.xib in Resources */,
+				DFC7565F152D3ADB009F4137 /* button-tab-sel.png in Resources */,
+				DFC75661152D3E4C009F4137 /* button-tab-sel@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
