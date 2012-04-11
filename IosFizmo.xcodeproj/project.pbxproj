@@ -160,6 +160,7 @@
 		DFC7565D152CE83A009F4137 /* InputMenuDecor.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFC7565C152CE83A009F4137 /* InputMenuDecor.xib */; };
 		DFC7565F152D3ADB009F4137 /* button-tab-sel.png in Resources */ = {isa = PBXBuildFile; fileRef = DFC7565E152D3ADB009F4137 /* button-tab-sel.png */; };
 		DFC75661152D3E4C009F4137 /* button-tab-sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFC75660152D3E4C009F4137 /* button-tab-sel@2x.png */; };
+		DFDA85DD153545DC00891B91 /* ios-autosave.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDA85DC153545DC00891B91 /* ios-autosave.m */; };
 		DFDFBD4B151F7DFD0053783F /* GlkAccessTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDFBD4A151F7DFD0053783F /* GlkAccessTypes.m */; };
 		DFEFAC2E14F1E0E50062859F /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEFAC2C14F1E0E50062859F /* HelpViewController.m */; };
 		DFEFAC2F14F1E0E50062859F /* HelpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFEFAC2D14F1E0E50062859F /* HelpVC.xib */; };
@@ -413,6 +414,8 @@
 		DFC7565C152CE83A009F4137 /* InputMenuDecor.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InputMenuDecor.xib; path = iosglk/Resources/InputMenuDecor.xib; sourceTree = SOURCE_ROOT; };
 		DFC7565E152D3ADB009F4137 /* button-tab-sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-tab-sel.png"; path = "iosglk/Media/button-tab-sel.png"; sourceTree = SOURCE_ROOT; };
 		DFC75660152D3E4C009F4137 /* button-tab-sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-tab-sel@2x.png"; path = "iosglk/Media/button-tab-sel@2x.png"; sourceTree = SOURCE_ROOT; };
+		DFDA85DC153545DC00891B91 /* ios-autosave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ios-autosave.m"; sourceTree = "<group>"; };
+		DFDA85DF153545EE00891B91 /* ios-autosave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ios-autosave.h"; sourceTree = "<group>"; };
 		DFDFBD49151F7DFD0053783F /* GlkAccessTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkAccessTypes.h; sourceTree = "<group>"; };
 		DFDFBD4A151F7DFD0053783F /* GlkAccessTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkAccessTypes.m; sourceTree = "<group>"; };
 		DFEFAC2B14F1E0E50062859F /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
@@ -758,6 +761,8 @@
 				DF9A848514E0F097002C2FCB /* fizmo-iosglk.m */,
 				DF361B6514F83CC200A8D670 /* glkstart.h */,
 				DF9D1A4C14E1BFCF006A6749 /* ios-trace.m */,
+				DFDA85DF153545EE00891B91 /* ios-autosave.h */,
+				DFDA85DC153545DC00891B91 /* ios-autosave.m */,
 			);
 			name = "fizmo-iosglk";
 			path = "fizmo/fizmo-iosglk";
@@ -1075,6 +1080,7 @@
 				DFB7A71C151EBDC500C07499 /* GradientView.m in Sources */,
 				DFDFBD4B151F7DFD0053783F /* GlkAccessTypes.m in Sources */,
 				DFC755B41524C019009F4137 /* MButton.m in Sources */,
+				DFDA85DD153545DC00891B91 /* ios-autosave.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
