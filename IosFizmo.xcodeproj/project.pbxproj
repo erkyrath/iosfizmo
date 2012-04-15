@@ -596,14 +596,14 @@
 		DF9A83C314E0D825002C2FCB /* libglkif */ = {
 			isa = PBXGroup;
 			children = (
-				DF9A83C414E0D825002C2FCB /* glk_blorb_if.c */,
-				DF9A83C514E0D825002C2FCB /* glk_blorb_if.h */,
-				DF9A83C614E0D825002C2FCB /* glk_filesys_if.c */,
-				DF9A83C714E0D825002C2FCB /* glk_filesys_if.h */,
-				DF9A83C814E0D825002C2FCB /* glk_interface.c */,
-				DF9A83C914E0D825002C2FCB /* glk_interface.h */,
 				DF9A83CA14E0D825002C2FCB /* glk_screen_if.c */,
 				DF9A83CB14E0D825002C2FCB /* glk_screen_if.h */,
+				DF9A83C614E0D825002C2FCB /* glk_filesys_if.c */,
+				DF9A83C714E0D825002C2FCB /* glk_filesys_if.h */,
+				DF9A83C414E0D825002C2FCB /* glk_blorb_if.c */,
+				DF9A83C514E0D825002C2FCB /* glk_blorb_if.h */,
+				DF9A83C814E0D825002C2FCB /* glk_interface.c */,
+				DF9A83C914E0D825002C2FCB /* glk_interface.h */,
 				DF9A847D14E0E887002C2FCB /* libglkif_locales.c */,
 				DF9A847E14E0E887002C2FCB /* libglkif_locales.h */,
 			);
