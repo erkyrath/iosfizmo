@@ -52,6 +52,8 @@
 	}
 	else {
 		RelDateFormatter *dateformatter = [[[RelDateFormatter alloc] init] autorelease];
+		[dateformatter setDateStyle:NSDateFormatterMediumStyle];
+		[dateformatter setTimeStyle:NSDateFormatterShortStyle];
 		datelabel.text = [dateformatter stringFromDate:thumb.modtime];
 	}
 
