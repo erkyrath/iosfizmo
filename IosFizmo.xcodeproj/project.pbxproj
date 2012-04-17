@@ -161,6 +161,7 @@
 		DFC7565F152D3ADB009F4137 /* button-tab-sel.png in Resources */ = {isa = PBXBuildFile; fileRef = DFC7565E152D3ADB009F4137 /* button-tab-sel.png */; };
 		DFC75661152D3E4C009F4137 /* button-tab-sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFC75660152D3E4C009F4137 /* button-tab-sel@2x.png */; };
 		DFCB15D4153E158800936D28 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFCB15D6153E158800936D28 /* Localizable.strings */; };
+		DFCB15D9153E1D5600936D28 /* TerpLocalize.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFCB15DB153E1D5600936D28 /* TerpLocalize.strings */; };
 		DFDA85DD153545DC00891B91 /* ios-autosave.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDA85DC153545DC00891B91 /* ios-autosave.m */; };
 		DFDFBD4B151F7DFD0053783F /* GlkAccessTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDFBD4A151F7DFD0053783F /* GlkAccessTypes.m */; };
 		DFEFAC2E14F1E0E50062859F /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEFAC2C14F1E0E50062859F /* HelpViewController.m */; };
@@ -416,6 +417,7 @@
 		DFC7565E152D3ADB009F4137 /* button-tab-sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-tab-sel.png"; path = "iosglk/Media/button-tab-sel.png"; sourceTree = SOURCE_ROOT; };
 		DFC75660152D3E4C009F4137 /* button-tab-sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-tab-sel@2x.png"; path = "iosglk/Media/button-tab-sel@2x.png"; sourceTree = SOURCE_ROOT; };
 		DFCB15D5153E158800936D28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DFCB15DA153E1D5600936D28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TerpLocalize.strings; sourceTree = "<group>"; };
 		DFDA85DC153545DC00891B91 /* ios-autosave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ios-autosave.m"; sourceTree = "<group>"; };
 		DFDA85DF153545EE00891B91 /* ios-autosave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ios-autosave.h"; sourceTree = "<group>"; };
 		DFDFBD49151F7DFD0053783F /* GlkAccessTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkAccessTypes.h; sourceTree = "<group>"; };
@@ -445,6 +447,7 @@
 		DF19DDCF14E89EFA007DCB29 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DFCB15DB153E1D5600936D28 /* TerpLocalize.strings */,
 				DF9D1A5814E59EF0006A6749 /* MainWindow.xib */,
 				DF19DDE414E8DF5C007DCB29 /* IosGlkViewController.xib */,
 				DFA0DFA714E0BDA700B67057 /* GlkFileSelectLoad.xib */,
@@ -980,6 +983,7 @@
 				DFC7565F152D3ADB009F4137 /* button-tab-sel.png in Resources */,
 				DFC75661152D3E4C009F4137 /* button-tab-sel@2x.png in Resources */,
 				DFCB15D4153E158800936D28 /* Localizable.strings in Resources */,
+				DFCB15D9153E1D5600936D28 /* TerpLocalize.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1099,6 +1103,14 @@
 			name = Localizable.strings;
 			path = iosglk/Resources;
 			sourceTree = SOURCE_ROOT;
+		};
+		DFCB15DB153E1D5600936D28 /* TerpLocalize.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFCB15DA153E1D5600936D28 /* en */,
+			);
+			name = TerpLocalize.strings;
+			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 

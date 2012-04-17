@@ -38,7 +38,7 @@
 {
 	[super viewDidLoad];
 
-	self.navigationItem.title = @"Transcript"; //### localize
+	self.navigationItem.title = NSLocalizedStringFromTable(@"transcript.title", @"TerpLocalize", nil);
 
 	UIBarButtonItem *sendbutton = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(buttonSend:)] autorelease];
 	sendbutton.enabled = [MFMailComposeViewController canSendMail];
