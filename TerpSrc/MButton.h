@@ -1,5 +1,5 @@
 /* MButton.h: A button with some utility features
- for IosGlk, the iOS implementation of the Glk API.
+ for IosFizmo, an IosGlk port of the Fizmo Z-machine interpreter.
  Designed by Andrew Plotkin <erkyrath@eblong.com>
  http://eblong.com/zarf/glk/
  */

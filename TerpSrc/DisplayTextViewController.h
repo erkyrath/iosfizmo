@@ -1,10 +1,8 @@
-//
-//  DisplayTextViewController.h
-//  IosFizmo
-//
-//  Created by Andrew Plotkin on 2/23/12.
-//  Copyright (c) 2012 Zarfhome. All rights reserved.
-//
+/* DisplayTextViewController.h: Transcript display view controller
+ for IosFizmo, an IosGlk port of the Fizmo Z-machine interpreter.
+ Designed by Andrew Plotkin <erkyrath@eblong.com>
+ http://eblong.com/zarf/glk/
+ */
 
 #import <UIKit/UIKit.h>
 #import <MessageUI/MFMailComposeViewController.h>

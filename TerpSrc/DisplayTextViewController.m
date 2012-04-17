@@ -1,10 +1,8 @@
-//
-//  DisplayTextViewController.m
-//  IosFizmo
-//
-//  Created by Andrew Plotkin on 2/23/12.
-//  Copyright (c) 2012 Zarfhome. All rights reserved.
-//
+/* DisplayTextViewController.m: Transcript display view controller
+ for IosFizmo, an IosGlk port of the Fizmo Z-machine interpreter.
+ Designed by Andrew Plotkin <erkyrath@eblong.com>
+ http://eblong.com/zarf/glk/
+ */
 
 #import "DisplayTextViewController.h"
 #import "RelDateFormatter.h"
