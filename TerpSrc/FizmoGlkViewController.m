@@ -78,11 +78,11 @@
 	/* Interface Builder currently doesn't allow us to set the voiceover labels for bar button items. We do it in code. */
 	UIBarButtonItem *stylebutton = self.navigationItem.leftBarButtonItem;
 	if (stylebutton && [stylebutton respondsToSelector:@selector(setAccessibilityLabel:)]) {
-		[stylebutton setAccessibilityLabel:@"Text Styles"]; //###localize
+		[stylebutton setAccessibilityLabel:NSLocalizedStringFromTable(@"label.text-styles", @"TerpLocalize", nil)];
 	}
 	UIBarButtonItem *keyboardbutton = self.navigationItem.rightBarButtonItem;
 	if (keyboardbutton && [keyboardbutton respondsToSelector:@selector(setAccessibilityLabel:)]) {
-		[keyboardbutton setAccessibilityLabel:@"Compose Command"]; //###localize
+		[keyboardbutton setAccessibilityLabel:NSLocalizedStringFromTable(@"label.compose-command", @"TerpLocalize", nil)];
 	}
 }
 

@@ -41,8 +41,7 @@
 - (void) viewDidLoad {
 	[super viewDidLoad];
 	
-	//### localize and customize
-	self.navigationItem.title = @"Transcripts";
+	self.navigationItem.title = NSLocalizedStringFromTable(@"title.transcripts", @"TerpLocalize", nil);
 	
 	self.navigationItem.rightBarButtonItem = [self editButtonItem];
 	
@@ -91,7 +90,7 @@
 	GlkFileThumb *thumb = [[[GlkFileThumb alloc] init] autorelease];
 	thumb.isfake = YES;
 	thumb.modtime = [NSDate date];
-	thumb.label = @"No stored transcripts"; //### localize and customize
+	thumb.label = NSLocalizedStringFromTable(@"label.no-transcripts", @"TerpLocalize", nil);
 	[filelist insertObject:thumb atIndex:0];
 }
 

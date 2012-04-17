@@ -4,4 +4,9 @@
  http://eblong.com/zarf/glk/
  */
 
-"transcript.title" = "Transcript";
+"title.transcript" = "Transcript";
+"title.transcripts" = "Transcripts";
+
+"label.text-styles" = "Text Styles";
+"label.compose-command" = "Compose Command";
+"label.no-transcripts" = "No stored transcripts";

@@ -38,7 +38,7 @@
 {
 	[super viewDidLoad];
 
-	self.navigationItem.title = NSLocalizedStringFromTable(@"transcript.title", @"TerpLocalize", nil);
+	self.navigationItem.title = NSLocalizedStringFromTable(@"title.transcript", @"TerpLocalize", nil);
 
 	UIBarButtonItem *sendbutton = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(buttonSend:)] autorelease];
 	sendbutton.enabled = [MFMailComposeViewController canSendMail];
@@ -77,7 +77,8 @@
 	MFMailComposeViewController *compose = [[MFMailComposeViewController alloc] init];
 	compose.mailComposeDelegate = self;
 	
-	[compose setSubject:[@"Transcript: " stringByAppendingString:thumb.label]];
+	NSString *subjstr = [NSString stringWithFormat:@"%@: %@", NSLocalizedStringFromTable(@"title.transcript", @"TerpLocalize", nil), thumb.label];
+	[compose setSubject:subjstr];
     [compose setMessageBody:textview.text isHTML:NO];
 
 	[self presentModalViewController:compose animated:YES];
