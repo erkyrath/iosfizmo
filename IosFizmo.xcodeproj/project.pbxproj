@@ -160,6 +160,7 @@
 		DFC7565D152CE83A009F4137 /* InputMenuDecor.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFC7565C152CE83A009F4137 /* InputMenuDecor.xib */; };
 		DFC7565F152D3ADB009F4137 /* button-tab-sel.png in Resources */ = {isa = PBXBuildFile; fileRef = DFC7565E152D3ADB009F4137 /* button-tab-sel.png */; };
 		DFC75661152D3E4C009F4137 /* button-tab-sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFC75660152D3E4C009F4137 /* button-tab-sel@2x.png */; };
+		DFCB15D4153E158800936D28 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFCB15D6153E158800936D28 /* Localizable.strings */; };
 		DFDA85DD153545DC00891B91 /* ios-autosave.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDA85DC153545DC00891B91 /* ios-autosave.m */; };
 		DFDFBD4B151F7DFD0053783F /* GlkAccessTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDFBD4A151F7DFD0053783F /* GlkAccessTypes.m */; };
 		DFEFAC2E14F1E0E50062859F /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEFAC2C14F1E0E50062859F /* HelpViewController.m */; };
@@ -414,6 +415,7 @@
 		DFC7565C152CE83A009F4137 /* InputMenuDecor.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InputMenuDecor.xib; path = iosglk/Resources/InputMenuDecor.xib; sourceTree = SOURCE_ROOT; };
 		DFC7565E152D3ADB009F4137 /* button-tab-sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-tab-sel.png"; path = "iosglk/Media/button-tab-sel.png"; sourceTree = SOURCE_ROOT; };
 		DFC75660152D3E4C009F4137 /* button-tab-sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-tab-sel@2x.png"; path = "iosglk/Media/button-tab-sel@2x.png"; sourceTree = SOURCE_ROOT; };
+		DFCB15D5153E158800936D28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DFDA85DC153545DC00891B91 /* ios-autosave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ios-autosave.m"; sourceTree = "<group>"; };
 		DFDA85DF153545EE00891B91 /* ios-autosave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ios-autosave.h"; sourceTree = "<group>"; };
 		DFDFBD49151F7DFD0053783F /* GlkAccessTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkAccessTypes.h; sourceTree = "<group>"; };
@@ -459,6 +461,7 @@
 				DF8FD3F91501B2C200890116 /* NotesVC~ipad.xib */,
 				DFBB4E4114F6E4450041016A /* TranscriptVC.xib */,
 				DF361B6114F72C5C00A8D670 /* DisplayTextVC.xib */,
+				DFCB15D6153E158800936D28 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -976,6 +979,7 @@
 				DFC7565D152CE83A009F4137 /* InputMenuDecor.xib in Resources */,
 				DFC7565F152D3ADB009F4137 /* button-tab-sel.png in Resources */,
 				DFC75661152D3E4C009F4137 /* button-tab-sel@2x.png in Resources */,
+				DFCB15D4153E158800936D28 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1085,6 +1089,18 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DFCB15D6153E158800936D28 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFCB15D5153E158800936D28 /* en */,
+			);
+			name = Localizable.strings;
+			path = iosglk/Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DFA0DF9814E0B41900B67057 /* Debug */ = {
