@@ -1,0 +1,90 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  background: #DCB;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+h1 {
+  color: #543;
+  background: #EDC;
+  font-size: 24px;
+  padding: 4px 40px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.CommandList {
+  list-style: none;
+  padding-left: 40px;
+}
+
+.CommandList li {
+  color: #007;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.Command {
+  color: #007;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.Term {
+  color: #067;
+}
+
+.Gloss {
+  color: black;
+  font-weight: normal;
+  font-style: italic;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.License {
+  font-size: 13px;
+  margin-left: 40px;
+}
+
+@media screen and (max-device-width: 480px) {
+  body {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+    padding: 4px 20px;
+  }
+
+  h2 {
+    font-size: 17px;
+  }
+
+  .CommandList {
+    padding-left: 20px;
+  }
+
+  .CommandList li {
+    font-size: 12px;
+  }
+
+  .Command {
+    font-size: 12px;
+  }
+
+  .License {
+    font-size: 12px;
+    margin-left: 20px;
+  }
+
+}

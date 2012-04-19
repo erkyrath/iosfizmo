@@ -2,10 +2,262 @@
 <html>
 <head>
 <title>How to Play IF</title>
-<meta name="viewport" content="width=640">
+<meta name="viewport" content="width=device-width,user-scalable=no">
+<link rel="stylesheet" href="page.css" type="text/css">
 </head>
 
 <body>
-<p>Here's how to play interactive fiction.</p>
+
+<h1>How to Play</h1>
+
+<p>
+In this game, you are the center of a story. You will type commands
+in simple English; the game will respond, and tell you what happens.
+</p>
+
+<p>
+What commands does this game understand? Well, it depends on the game.
+You can try nearly anything you can think of, if it makes sense in the
+situation you find yourself in.
+</p>
+
+<p>
+Most interactive fiction follows some simple rules, though. Once you&#x2019;re
+familiar with the pattern and the common commands, you can explore freely,
+and you&#x2019;ll have a good idea how to experiment further.
+</p>
+
+<h2>What commands look like</h2>
+
+<p>
+The simplest IF commands are usually one or two words:
+</p>
+
+<ul class="CommandList">
+<li>LOOK
+<li>TAKE SWORD
+<li>EAT CUPCAKE
+<li>PUSH BUTTON
+</ul>
+
+<p>
+But sometimes you need more:
+</p>
+
+<ul class="CommandList">
+<li>LOOK UNDER BED
+<li>PUT LETTER IN ENVELOPE
+</ul>
+
+<p>
+In a more complicated scene, you might have to get more specific:
+</p>
+
+<ul class="CommandList">
+<li>EAT THE SMALL BLUE JELLYBEAN
+<li>PUT COPPER COIN IN SLOT 4
+</ul>
+
+<p>
+You will almost always be dealing with concrete things that you see in
+the game world. Work with what you see around you. If you try wild 
+abstractions like 
+&#x201C;<span class="Command">GO SEE A MOVIE</span>&#x201D; or 
+&#x201C;<span class="Command">RUN FOR PRESIDENT</span>&#x201D;, the game will probably not
+understand you.
+</p>
+
+<h2>Orienting yourself</h2>
+
+<p>
+If you are completely at sea, you can always try these commands:
+</p>
+
+<ul class="CommandList">
+<li>LOOK
+<span class="Gloss">or</span>
+L
+<span class="Gloss">: Look around the room &#x2014; repeat the description of
+everything you see.</span>
+<li>INVENTORY
+<span class="Gloss">or</span>
+I
+<span class="Gloss">: List everything you&#x2019;re carrying.</span>
+<li>EXAMINE <span class="Term">thing</span>
+<span class="Gloss">or</span>
+X <span class="Term">thing</span>
+<span class="Gloss">: Look more closely at something &#x2014; learn more about
+it.</span>
+</ul>
+
+<p>
+Because these actions are so common, they have one-letter
+abbreviations: 
+&#x201C;<span class="Command">L</span>&#x201D;,
+&#x201C;<span class="Command">I</span>&#x201D;, and
+&#x201C;<span class="Command">X</span>&#x201D;.
+</p>
+
+<p>
+Again, your actions should focus on the objects and exits that you see
+in the game world.
+</p>
+
+<h2>Moving around the world</h2>
+
+<p>
+The game world is divided into locations &#x2014; usually called 
+&#x201C;rooms&#x201D;, although
+they might be indoors or outdoors. A room is everything you can see at
+one time, and everything you can conveniently reach. Don&#x2019;t worry about
+crossing the room, turning around, or standing near things; that sort of
+movement is automatic.
+</p>
+
+<p>
+To move to a <em>different</em> location, you&#x2019;ll usually type simple compass
+directions:
+</p>
+
+<ul class="CommandList">
+<li>NORTH
+<li>SOUTH
+<li>EAST
+<li>WEST
+<li>NORTHEAST
+<li>SOUTHWEST
+<li>UP
+<li>DOWN
+</ul>
+
+<p>
+You can abbreviate these directions as
+&#x201C;<span class="Command">N</span>&#x201D;,
+&#x201C;<span class="Command">NE</span>&#x201D;, and so on; also
+&#x201C;<span class="Command">U</span>&#x201D; and
+&#x201C;<span class="Command">D</span>&#x201D;.
+</p>
+
+<p>
+More specific commands sometimes make sense:
+</p>
+
+<ul class="CommandList">
+<li>IN
+<li>OUT
+<li>ENTER BANK VAULT
+<li>GO THROUGH ARCHWAY
+<li>CLIMB LADDER
+</ul>
+
+<h2>Common actions</h2>
+
+<p>
+You&#x2019;re probably staring at your dictionary and shuddering in terror
+(or anticipation!) of the infinite possibilities. Sometimes IF works
+that way. More often, you&#x2019;ll run through a small list of common
+commands &#x2014; some of which you&#x2019;ve already seen.
+</p>
+
+<ul class="CommandList">
+<li>EXAMINE <span class="Term">thing</span>
+<li>GET <span class="Term">thing,</span>
+DROP <span class="Term">thing</span>
+<li>PUT <span class="Term">this</span> IN <span class="Term">that,</span>
+PUT <span class="Term">this</span> ON <span class="Term">that</span>
+<li>PUSH <span class="Term">thing,</span>
+PULL <span class="Term">thing,</span>
+TURN <span class="Term">thing</span>
+<li>OPEN <span class="Term">thing,</span>
+CLOSE <span class="Term">thing</span>
+<li>LOCK <span class="Term">this</span> WITH <span class="Term">that,</span>
+UNLOCK <span class="Term">this</span> WITH <span class="Term">that</span>
+<li>TOUCH <span class="Term">thing,</span>
+SMELL <span class="Term">thing,</span>
+LISTEN TO <span class="Term">thing</span>
+<li>EAT <span class="Term">thing,</span>
+DRINK <span class="Term">thing</span>
+<li>WEAR <span class="Term">thing,</span>
+REMOVE <span class="Term">thing</span>
+<li>SEARCH <span class="Term">thing,</span>
+LOOK IN <span class="Term">thing,</span>
+LOOK UNDER <span class="Term">thing,</span>
+LOOK BEHIND <span class="Term">thing</span>
+<li>ENTER <span class="Term">thing,</span>
+SIT ON <span class="Term">thing,</span>
+CLIMB <span class="Term">thing</span>
+<li>GET IN <span class="Term">thing,</span>
+GET OFF <span class="Term">thing,</span>
+GET OUT OF <span class="Term">thing</span>
+<li>BREAK <span class="Term">thing,</span>
+CUT <span class="Term">thing,</span>
+CRUSH <span class="Term">thing</span>
+<li>WAIT
+</ul>
+
+<h1>About This App</h1>
+
+<p>
+This game is presented to you by 
+<a href="https://github.com/erkyrath/iosfizmo/">iOS Fizmo</a>,
+an open-source interactive fiction
+interpreter.
+</p>
+
+<p>
+This interpreter consists of 
+<a href="https://github.com/erkyrath/iosglk/">iOS Glk</a>
+(an IF display library by Andrew Plotkin)
+and 
+<a href="https://github.com/chrender/fizmo-dist/">Fizmo</a>
+(a general-purpose IF interpreter by Christoph Ender).
+</p>
+
+<p>
+<a href="https://github.com/erkyrath/iosglk/">iOS Glk</a>
+is copyright 2011-2012 by Andrew Plotkin.
+</p>
+
+<p class="License">
+You
+may copy and distribute it freely, by any means and under any conditions,
+as long as the code and documentation is not changed. You may also
+incorporate this code into your own program and distribute that, or modify
+this code and use and distribute the modified version, as long as you retain
+a notice in your program or documentation which mentions my name and the
+URL shown above.
+</p>
+
+<p>
+<a href="https://github.com/chrender/fizmo-dist/">Fizmo</a>
+is copyright (c) 2009-2012 Christoph Ender.
+All rights reserved.
+</p>
+
+<p class="License">
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:<br>
+1. Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.<br>
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.<br>
+3. The name of the author may not be used to endorse or promote products
+   derived from this software without specific prior written permission.
+</p>
+<p class="License">
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+</p>
+
 </body>
 </html>
