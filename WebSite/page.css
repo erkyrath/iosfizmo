@@ -13,7 +13,7 @@ h1 {
   padding: 4px 40px;
   -moz-border-radius: 16px;
   border-radius: 16px;
-
+  margin-top: 32px;
 }
 
 h2 {
@@ -64,6 +64,7 @@ h2 {
   h1 {
     font-size: 20px;
     padding: 4px 20px;
+    margin-top: 20px;
   }
 
   h2 {
