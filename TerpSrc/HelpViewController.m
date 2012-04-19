@@ -57,6 +57,18 @@
 	NSLog(@"HelpVC: viewDidUnload");
 }
 
+/* Ensure that all external URLs are sent to Safari. (UIWebView delegate method.)
+ */
+- (BOOL) webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+	if ([request.URL isFileURL]) {
+		/* Let file:... URLs load normally */
+		return YES;
+	}
+	
+	[[UIApplication sharedApplication] openURL:request.URL];
+	return NO;
+}
+
 - (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)orientation
 {
 	IosGlkViewController *glkviewc = [IosGlkViewController singleton];
