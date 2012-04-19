@@ -162,6 +162,13 @@
 		DFCB15D9153E1D5600936D28 /* TerpLocalize.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFCB15DB153E1D5600936D28 /* TerpLocalize.strings */; };
 		DFCB1624153FAF8500936D28 /* InputMenuDecor.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFCB1626153FAF8500936D28 /* InputMenuDecor.xib */; };
 		DFCB1628153FAF8800936D28 /* MoreBoxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFCB162A153FAF8800936D28 /* MoreBoxView.xib */; };
+		DFCB1635153FB02700936D28 /* button-input-back.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCB162F153FB02700936D28 /* button-input-back.png */; };
+		DFCB1636153FB02700936D28 /* button-input-back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCB1630153FB02700936D28 /* button-input-back@2x.png */; };
+		DFCB1637153FB02700936D28 /* button-input-clear.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCB1631153FB02700936D28 /* button-input-clear.png */; };
+		DFCB1638153FB02700936D28 /* button-input-clear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCB1632153FB02700936D28 /* button-input-clear@2x.png */; };
+		DFCB1639153FB02700936D28 /* button-input-menu.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCB1633153FB02700936D28 /* button-input-menu.png */; };
+		DFCB163A153FB02700936D28 /* button-input-menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCB1634153FB02700936D28 /* button-input-menu@2x.png */; };
+		DFCB163D153FB03800936D28 /* TextFieldRightView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFCB163C153FB03800936D28 /* TextFieldRightView.xib */; };
 		DFDA85DD153545DC00891B91 /* ios-autosave.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDA85DC153545DC00891B91 /* ios-autosave.m */; };
 		DFDFBD4B151F7DFD0053783F /* GlkAccessTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDFBD4A151F7DFD0053783F /* GlkAccessTypes.m */; };
 		DFEFAC2E14F1E0E50062859F /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEFAC2C14F1E0E50062859F /* HelpViewController.m */; };
@@ -418,6 +425,13 @@
 		DFCB15DA153E1D5600936D28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TerpLocalize.strings; sourceTree = "<group>"; };
 		DFCB1625153FAF8500936D28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/InputMenuDecor.xib; sourceTree = "<group>"; };
 		DFCB1629153FAF8800936D28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MoreBoxView.xib; sourceTree = "<group>"; };
+		DFCB162F153FB02700936D28 /* button-input-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-input-back.png"; path = "iosglk/Media/button-input-back.png"; sourceTree = SOURCE_ROOT; };
+		DFCB1630153FB02700936D28 /* button-input-back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-input-back@2x.png"; path = "iosglk/Media/button-input-back@2x.png"; sourceTree = SOURCE_ROOT; };
+		DFCB1631153FB02700936D28 /* button-input-clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-input-clear.png"; path = "iosglk/Media/button-input-clear.png"; sourceTree = SOURCE_ROOT; };
+		DFCB1632153FB02700936D28 /* button-input-clear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-input-clear@2x.png"; path = "iosglk/Media/button-input-clear@2x.png"; sourceTree = SOURCE_ROOT; };
+		DFCB1633153FB02700936D28 /* button-input-menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-input-menu.png"; path = "iosglk/Media/button-input-menu.png"; sourceTree = SOURCE_ROOT; };
+		DFCB1634153FB02700936D28 /* button-input-menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-input-menu@2x.png"; path = "iosglk/Media/button-input-menu@2x.png"; sourceTree = SOURCE_ROOT; };
+		DFCB163C153FB03800936D28 /* TextFieldRightView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TextFieldRightView.xib; path = iosglk/Resources/TextFieldRightView.xib; sourceTree = SOURCE_ROOT; };
 		DFDA85DC153545DC00891B91 /* ios-autosave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ios-autosave.m"; sourceTree = "<group>"; };
 		DFDA85DF153545EE00891B91 /* ios-autosave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ios-autosave.h"; sourceTree = "<group>"; };
 		DFDFBD49151F7DFD0053783F /* GlkAccessTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkAccessTypes.h; sourceTree = "<group>"; };
@@ -452,6 +466,7 @@
 				DFA0DFA714E0BDA700B67057 /* GlkFileSelectLoad.xib */,
 				DFA0DFA814E0BDA700B67057 /* GlkFileSelectStore.xib */,
 				DF1F3FFD14F2BA68008FF1C7 /* PopBoxView.xib */,
+				DFCB163C153FB03800936D28 /* TextFieldRightView.xib */,
 				DFCB1626153FAF8500936D28 /* InputMenuDecor.xib */,
 				DFCB162A153FAF8800936D28 /* MoreBoxView.xib */,
 				DF19DDD914E8A069007DCB29 /* HistoryMenuView.xib */,
@@ -844,6 +859,12 @@
 				DFC755BA1524C607009F4137 /* button-pref-hi@2x.png */,
 				DFC7565E152D3ADB009F4137 /* button-tab-sel.png */,
 				DFC75660152D3E4C009F4137 /* button-tab-sel@2x.png */,
+				DFCB162F153FB02700936D28 /* button-input-back.png */,
+				DFCB1630153FB02700936D28 /* button-input-back@2x.png */,
+				DFCB1631153FB02700936D28 /* button-input-clear.png */,
+				DFCB1632153FB02700936D28 /* button-input-clear@2x.png */,
+				DFCB1633153FB02700936D28 /* button-input-menu.png */,
+				DFCB1634153FB02700936D28 /* button-input-menu@2x.png */,
 				DFC755C31527EC54009F4137 /* col-12.png */,
 				DFC755C41527EC54009F4137 /* col-12@2x.png */,
 				DFC755C51527EC54009F4137 /* col-34.png */,
@@ -984,6 +1005,13 @@
 				DFC75661152D3E4C009F4137 /* button-tab-sel@2x.png in Resources */,
 				DFCB15D4153E158800936D28 /* Localizable.strings in Resources */,
 				DFCB15D9153E1D5600936D28 /* TerpLocalize.strings in Resources */,
+				DFCB1635153FB02700936D28 /* button-input-back.png in Resources */,
+				DFCB1636153FB02700936D28 /* button-input-back@2x.png in Resources */,
+				DFCB1637153FB02700936D28 /* button-input-clear.png in Resources */,
+				DFCB1638153FB02700936D28 /* button-input-clear@2x.png in Resources */,
+				DFCB1639153FB02700936D28 /* button-input-menu.png in Resources */,
+				DFCB163A153FB02700936D28 /* button-input-menu@2x.png in Resources */,
+				DFCB163D153FB03800936D28 /* TextFieldRightView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
