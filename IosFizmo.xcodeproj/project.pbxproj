@@ -169,6 +169,16 @@
 		DFCB1641153FB13C00936D28 /* NotesVC~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFCB1643153FB13C00936D28 /* NotesVC~ipad.xib */; };
 		DFCB1644153FB14A00936D28 /* PrefsMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFCB1646153FB14A00936D28 /* PrefsMenuView.xib */; };
 		DFCB1647153FB14D00936D28 /* PrefsMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFCB1649153FB14D00936D28 /* PrefsMenuView~ipad.xib */; };
+		DFCB169A1544842700936D28 /* Icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCB16901544842700936D28 /* Icon-50.png */; };
+		DFCB169B1544842700936D28 /* Icon-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCB16911544842700936D28 /* Icon-50@2x.png */; };
+		DFCB169C1544842700936D28 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCB16921544842700936D28 /* Icon-72.png */; };
+		DFCB169D1544842700936D28 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCB16931544842700936D28 /* Icon-72@2x.png */; };
+		DFCB169E1544842700936D28 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCB16941544842700936D28 /* Icon-Small-50.png */; };
+		DFCB169F1544842700936D28 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCB16951544842700936D28 /* Icon-Small-50@2x.png */; };
+		DFCB16A01544842700936D28 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCB16961544842700936D28 /* Icon-Small.png */; };
+		DFCB16A11544842700936D28 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCB16971544842700936D28 /* Icon-Small@2x.png */; };
+		DFCB16A21544842700936D28 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCB16981544842700936D28 /* Icon.png */; };
+		DFCB16A31544842700936D28 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCB16991544842700936D28 /* Icon@2x.png */; };
 		DFDA85DD153545DC00891B91 /* ios-autosave.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDA85DC153545DC00891B91 /* ios-autosave.m */; };
 		DFDFBD4B151F7DFD0053783F /* GlkAccessTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDFBD4A151F7DFD0053783F /* GlkAccessTypes.m */; };
 		DFEFAC2E14F1E0E50062859F /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEFAC2C14F1E0E50062859F /* HelpViewController.m */; };
@@ -432,6 +442,16 @@
 		DFCB1642153FB13C00936D28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "en.lproj/NotesVC~ipad.xib"; sourceTree = "<group>"; };
 		DFCB1645153FB14A00936D28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PrefsMenuView.xib; sourceTree = "<group>"; };
 		DFCB1648153FB14D00936D28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "en.lproj/PrefsMenuView~ipad.xib"; sourceTree = "<group>"; };
+		DFCB16901544842700936D28 /* Icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-50.png"; sourceTree = "<group>"; };
+		DFCB16911544842700936D28 /* Icon-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-50@2x.png"; sourceTree = "<group>"; };
+		DFCB16921544842700936D28 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		DFCB16931544842700936D28 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		DFCB16941544842700936D28 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		DFCB16951544842700936D28 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		DFCB16961544842700936D28 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		DFCB16971544842700936D28 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		DFCB16981544842700936D28 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		DFCB16991544842700936D28 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		DFDA85DC153545DC00891B91 /* ios-autosave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ios-autosave.m"; sourceTree = "<group>"; };
 		DFDA85DF153545EE00891B91 /* ios-autosave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ios-autosave.h"; sourceTree = "<group>"; };
 		DFDFBD49151F7DFD0053783F /* GlkAccessTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkAccessTypes.h; sourceTree = "<group>"; };
@@ -837,6 +857,16 @@
 				DFA0DF8914E0B41900B67057 /* main.m */,
 				DF9A847C14E0DE4C002C2FCB /* fizmo-config.h */,
 				DFA0DF8B14E0B41900B67057 /* IosFizmo-Prefix.pch */,
+				DFCB16981544842700936D28 /* Icon.png */,
+				DFCB16991544842700936D28 /* Icon@2x.png */,
+				DFCB16921544842700936D28 /* Icon-72.png */,
+				DFCB16931544842700936D28 /* Icon-72@2x.png */,
+				DFCB16901544842700936D28 /* Icon-50.png */,
+				DFCB16911544842700936D28 /* Icon-50@2x.png */,
+				DFCB16941544842700936D28 /* Icon-Small-50.png */,
+				DFCB16951544842700936D28 /* Icon-Small-50@2x.png */,
+				DFCB16961544842700936D28 /* Icon-Small.png */,
+				DFCB16971544842700936D28 /* Icon-Small@2x.png */,
 				DF9A848014E0EE8A002C2FCB /* Game.z5 */,
 			);
 			name = "Other Sources";
@@ -1012,6 +1042,16 @@
 				DFCB1639153FB02700936D28 /* button-input-menu.png in Resources */,
 				DFCB163A153FB02700936D28 /* button-input-menu@2x.png in Resources */,
 				DFCB163D153FB03800936D28 /* TextFieldRightView.xib in Resources */,
+				DFCB169A1544842700936D28 /* Icon-50.png in Resources */,
+				DFCB169B1544842700936D28 /* Icon-50@2x.png in Resources */,
+				DFCB169C1544842700936D28 /* Icon-72.png in Resources */,
+				DFCB169D1544842700936D28 /* Icon-72@2x.png in Resources */,
+				DFCB169E1544842700936D28 /* Icon-Small-50.png in Resources */,
+				DFCB169F1544842700936D28 /* Icon-Small-50@2x.png in Resources */,
+				DFCB16A01544842700936D28 /* Icon-Small.png in Resources */,
+				DFCB16A11544842700936D28 /* Icon-Small@2x.png in Resources */,
+				DFCB16A21544842700936D28 /* Icon.png in Resources */,
+				DFCB16A31544842700936D28 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1211,6 +1251,7 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -1233,6 +1274,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Andrew Plotkin";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -1252,6 +1294,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IosFizmo-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "IosFizmo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -1263,6 +1306,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IosFizmo-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "IosFizmo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
