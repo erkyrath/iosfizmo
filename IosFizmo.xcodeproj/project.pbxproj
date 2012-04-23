@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF0C5FB51545F73F002081D5 /* InputMenuDecor~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0C5FB31545F73F002081D5 /* InputMenuDecor~ipad.xib */; };
+		DF0C5FB91545F75B002081D5 /* HistoryMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0C5FB71545F75B002081D5 /* HistoryMenuView~ipad.xib */; };
+		DF0C5FBA1545F75B002081D5 /* PaletteMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0C5FB81545F75B002081D5 /* PaletteMenuView~ipad.xib */; };
 		DF19DDD614E89F8A007DCB29 /* CmdTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19DDD114E89F8A007DCB29 /* CmdTextField.m */; };
 		DF19DDD714E89F8A007DCB29 /* InputMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19DDD314E89F8A007DCB29 /* InputMenuView.m */; };
 		DF19DDD814E89F8A007DCB29 /* IosGlkLibDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19DDD514E89F8A007DCB29 /* IosGlkLibDelegate.m */; };
@@ -187,6 +190,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF0C5FB41545F73F002081D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "iosglk/Resources/en.lproj/InputMenuDecor~ipad.xib"; sourceTree = SOURCE_ROOT; };
+		DF0C5FB71545F75B002081D5 /* HistoryMenuView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "HistoryMenuView~ipad.xib"; path = "iosglk/Resources/HistoryMenuView~ipad.xib"; sourceTree = SOURCE_ROOT; };
+		DF0C5FB81545F75B002081D5 /* PaletteMenuView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "PaletteMenuView~ipad.xib"; path = "iosglk/Resources/PaletteMenuView~ipad.xib"; sourceTree = SOURCE_ROOT; };
 		DF19DDD014E89F8A007DCB29 /* CmdTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CmdTextField.h; sourceTree = "<group>"; };
 		DF19DDD114E89F8A007DCB29 /* CmdTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CmdTextField.m; sourceTree = "<group>"; };
 		DF19DDD214E89F8A007DCB29 /* InputMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputMenuView.h; sourceTree = "<group>"; };
@@ -488,9 +494,12 @@
 				DF1F3FFD14F2BA68008FF1C7 /* PopBoxView.xib */,
 				DFCB163C153FB03800936D28 /* TextFieldRightView.xib */,
 				DFCB1626153FAF8500936D28 /* InputMenuDecor.xib */,
+				DF0C5FB31545F73F002081D5 /* InputMenuDecor~ipad.xib */,
 				DFCB162A153FAF8800936D28 /* MoreBoxView.xib */,
 				DF19DDD914E8A069007DCB29 /* HistoryMenuView.xib */,
+				DF0C5FB71545F75B002081D5 /* HistoryMenuView~ipad.xib */,
 				DF19DDDA14E8A069007DCB29 /* PaletteMenuView.xib */,
+				DF0C5FB81545F75B002081D5 /* PaletteMenuView~ipad.xib */,
 				DFCB1646153FB14A00936D28 /* PrefsMenuView.xib */,
 				DFCB1649153FB14D00936D28 /* PrefsMenuView~ipad.xib */,
 				DFEFAC2D14F1E0E50062859F /* HelpVC.xib */,
@@ -1052,6 +1061,9 @@
 				DFCB16A11544842700936D28 /* Icon-Small@2x.png in Resources */,
 				DFCB16A21544842700936D28 /* Icon.png in Resources */,
 				DFCB16A31544842700936D28 /* Icon@2x.png in Resources */,
+				DF0C5FB51545F73F002081D5 /* InputMenuDecor~ipad.xib in Resources */,
+				DF0C5FB91545F75B002081D5 /* HistoryMenuView~ipad.xib in Resources */,
+				DF0C5FBA1545F75B002081D5 /* PaletteMenuView~ipad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1163,6 +1175,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		DF0C5FB31545F73F002081D5 /* InputMenuDecor~ipad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF0C5FB41545F73F002081D5 /* en */,
+			);
+			name = "InputMenuDecor~ipad.xib";
+			sourceTree = "<group>";
+		};
 		DFCB15D6153E158800936D28 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
