@@ -4,9 +4,13 @@
  http://eblong.com/zarf/glk/
  */
 
+"button.cancel" = "Cancel";
+
 "title.transcript" = "Transcript";
 "title.transcripts" = "Transcripts";
 
 "label.text-styles" = "Text Styles";
 "label.compose-command" = "Compose Command";
 "label.no-transcripts" = "No stored transcripts";
+"label.copy-all" = "Copy All";
+"label.email" = "Email";
