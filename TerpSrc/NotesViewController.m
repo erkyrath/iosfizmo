@@ -38,7 +38,19 @@
 
 	textview.delegate = self;
 	
-	//### bang on font if Noteworthy is not available
+	/* Bang on font if Noteworthy is not available. I don't know why Marker Felt needs to be so enormous to fit the same grid as Noteworthy, though. */
+	if ([textview.font.familyName isEqualToString:@"Helvetica"]) {
+		CGFloat fontsize;
+		if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+			fontsize = 21;
+		else
+			fontsize = 25;
+		UIFont *font = [UIFont fontWithName:@"MarkerFelt-Thin" size:fontsize];
+		if (font)
+			textview.font = font;
+		else
+			textview.font = [UIFont systemFontOfSize:fontsize];
+	}
 	
 	UIImage *stripeimg = nil;
 	if (gradview.hasColors) {
