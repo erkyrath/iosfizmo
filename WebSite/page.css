@@ -20,6 +20,21 @@ h2 {
   font-size: 20px;
 }
 
+.BulletList {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.BulletList li:before {
+  content: "\2043\00A0\00A0";
+  display: inline;
+}
+
+.BulletList li {
+  text-indent: -15px;
+  margin-left: 40px;
+}
+
 .CommandList {
   list-style: none;
   padding-left: 40px;
@@ -69,6 +84,10 @@ h2 {
 
   h2 {
     font-size: 17px;
+  }
+
+  .BulletList li {
+    margin-left: 20px;
   }
 
   .CommandList {
