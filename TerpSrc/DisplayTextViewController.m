@@ -5,6 +5,7 @@
  */
 
 #import "DisplayTextViewController.h"
+#import "IosGlkViewController.h"
 #import "RelDateFormatter.h"
 #import "GlkFileTypes.h"
 
@@ -116,9 +117,9 @@
     [self dismissModalViewControllerAnimated:YES];
 }
 
-- (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+- (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)orientation {
+	return [[IosGlkViewController singleton] shouldAutorotateToInterfaceOrientation:orientation];
 }
+
 
 @end

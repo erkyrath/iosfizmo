@@ -6,6 +6,7 @@
 
 #import "TranscriptViewController.h"
 #import "DisplayTextViewController.h"
+#import "IosGlkViewController.h"
 #import "RelDateFormatter.h"
 #import "GlkLibrary.h"
 #import "GlkFileRef.h"
@@ -197,5 +198,8 @@
 	[self.navigationController pushViewController:viewc animated:YES];
 }
 
+- (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)orientation {
+	return [[IosGlkViewController singleton] shouldAutorotateToInterfaceOrientation:orientation];
+}
 
 @end
