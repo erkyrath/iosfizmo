@@ -9,6 +9,10 @@
 #import "FizmoGlkWindows.h"
 #import "StyleSet.h"
 
+// This typedef works around header file annoyance. We're not going to refer to it.
+typedef struct z_file_struct z_file;
+#include "ios-autosave.h"
+
 @implementation FizmoGlkDelegate
 
 @synthesize maxwidth;
@@ -163,7 +167,7 @@
 }
 
 - (void) vmHasExited {
-	//### clobber the autosave
+	iosglk_clear_autosave();
 }
 
 @end
