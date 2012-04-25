@@ -162,5 +162,9 @@
 	return rect;
 }
 
+- (void) vmHasExited {
+	//### clobber the autosave
+}
+
 @end
 
