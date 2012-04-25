@@ -90,8 +90,8 @@
 	
 	CGFloat maxwidth = glkviewc.fizmoDelegate.maxwidth;
 	colbut_full.selected = (maxwidth == 0);
-	colbut_34.selected = (maxwidth == 624);
-	colbut_12.selected = (maxwidth == 512);
+	colbut_34.selected = (maxwidth == 1);
+	colbut_12.selected = (maxwidth == 2);
 	
 	int colorscheme = glkviewc.fizmoDelegate.colorscheme;
 	colorbut_bright.selected = (colorbut_bright.tag == colorscheme);
@@ -111,13 +111,13 @@
 - (IBAction) handleColumnWidth:(id)sender {
 	FizmoGlkViewController *glkviewc = [FizmoGlkViewController singleton];
 	
-	CGFloat maxwidth;
+	int maxwidth;
 	
 	if (sender == colbut_34) {
-		maxwidth = 624;
+		maxwidth = 1;
 	} 
 	else if (sender == colbut_12) {
-		maxwidth = 512;
+		maxwidth = 2;
 	}
 	else {
 		maxwidth = 0;
@@ -125,7 +125,7 @@
 	
 	glkviewc.fizmoDelegate.maxwidth = maxwidth;
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-	[defaults setFloat:maxwidth forKey:@"FrameMaxWidth"];
+	[defaults setInteger:maxwidth forKey:@"FrameMaxWidth"];
 	
 	[self updateButtons];
 	[glkviewc.frameview setNeedsLayout];
