@@ -14,6 +14,7 @@
 		DF188B601547113F00CC6929 /* button-input-menu-sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF188B5E1547113F00CC6929 /* button-input-menu-sel@2x.png */; };
 		DF188B9315479A3000CC6929 /* GameOverView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF188B9015479A3000CC6929 /* GameOverView.m */; };
 		DF188B9415479A3000CC6929 /* MButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DF188B9215479A3000CC6929 /* MButton.m */; };
+		DF188B9715479B4900CC6929 /* GameOverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF188B9515479B4900CC6929 /* GameOverView.xib */; };
 		DF19DDD614E89F8A007DCB29 /* CmdTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19DDD114E89F8A007DCB29 /* CmdTextField.m */; };
 		DF19DDD714E89F8A007DCB29 /* InputMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19DDD314E89F8A007DCB29 /* InputMenuView.m */; };
 		DF19DDD814E89F8A007DCB29 /* IosGlkLibDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19DDD514E89F8A007DCB29 /* IosGlkLibDelegate.m */; };
@@ -202,6 +203,7 @@
 		DF188B9015479A3000CC6929 /* GameOverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverView.m; sourceTree = "<group>"; };
 		DF188B9115479A3000CC6929 /* MButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MButton.h; sourceTree = "<group>"; };
 		DF188B9215479A3000CC6929 /* MButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MButton.m; sourceTree = "<group>"; };
+		DF188B9615479B4900CC6929 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GameOverView.xib; sourceTree = "<group>"; };
 		DF19DDD014E89F8A007DCB29 /* CmdTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CmdTextField.h; sourceTree = "<group>"; };
 		DF19DDD114E89F8A007DCB29 /* CmdTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CmdTextField.m; sourceTree = "<group>"; };
 		DF19DDD214E89F8A007DCB29 /* InputMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputMenuView.h; sourceTree = "<group>"; };
@@ -509,6 +511,7 @@
 				DF0C5FB81545F75B002081D5 /* PaletteMenuView~ipad.xib */,
 				DFCB1646153FB14A00936D28 /* PrefsMenuView.xib */,
 				DFCB1649153FB14D00936D28 /* PrefsMenuView~ipad.xib */,
+				DF188B9515479B4900CC6929 /* GameOverView.xib */,
 				DFEFAC2D14F1E0E50062859F /* HelpVC.xib */,
 				DFCB1640153FB13700936D28 /* NotesVC.xib */,
 				DFCB1643153FB13C00936D28 /* NotesVC~ipad.xib */,
@@ -1077,6 +1080,7 @@
 				DF0C5FBA1545F75B002081D5 /* PaletteMenuView~ipad.xib in Resources */,
 				DF188B5F1547113F00CC6929 /* button-input-menu-sel.png in Resources */,
 				DF188B601547113F00CC6929 /* button-input-menu-sel@2x.png in Resources */,
+				DF188B9715479B4900CC6929 /* GameOverView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1195,6 +1199,14 @@
 				DF0C5FB41545F73F002081D5 /* en */,
 			);
 			name = "InputMenuDecor~ipad.xib";
+			sourceTree = "<group>";
+		};
+		DF188B9515479B4900CC6929 /* GameOverView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF188B9615479B4900CC6929 /* en */,
+			);
+			name = GameOverView.xib;
 			sourceTree = "<group>";
 		};
 		DFCB15D6153E158800936D28 /* Localizable.strings */ = {
