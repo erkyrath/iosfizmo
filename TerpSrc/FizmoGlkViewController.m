@@ -110,6 +110,20 @@
 		return NO;
 	if (frameview.menuview)
 		return NO;
+	/* Reject the swipe if it's on a window's text-selection rectangle. */
+	if (self.textselecttag) {
+		GlkWindowView *winv = [frameview windowViewForTag:textselecttag];
+		if (winv) {
+			CGRect rect = winv.textSelectArea;
+			if (rect.size.width > 0 && rect.size.height > 0) {
+				CGPoint loc = [touch locationInView:winv];
+				if (loc.y >= rect.origin.y - 32 && loc.y < rect.origin.y+rect.size.height + 32
+					&& loc.x >= rect.origin.x && loc.x < rect.origin.x+rect.size.width) {
+					return NO;
+				}
+			}
+		}
+	}
 	return YES;
 }
 
