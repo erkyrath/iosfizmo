@@ -21,14 +21,6 @@
 @synthesize transcriptbutton;
 @synthesize notespath;
 
-- (id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-	self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-	if (self) {
-	}
-	return self;
-}
-
 - (void) dealloc {
 	self.textview = nil;
 	self.gradview = nil;
