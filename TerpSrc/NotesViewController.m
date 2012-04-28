@@ -9,6 +9,7 @@
 #import "IosGlkViewController.h"
 #import "TranscriptViewController.h"
 #import "GradientView.h"
+#import "MButton.h"
 
 #define NOTES_SAVE_DELAY (60)
 
@@ -16,6 +17,8 @@
 
 @synthesize textview;
 @synthesize gradview;
+@synthesize buttonbox;
+@synthesize transcriptbutton;
 @synthesize notespath;
 
 - (id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -29,6 +32,8 @@
 - (void) dealloc {
 	self.textview = nil;
 	self.gradview = nil;
+	self.buttonbox = nil;
+	self.transcriptbutton = nil;
 	[super dealloc];
 }
 
@@ -37,6 +42,13 @@
 	NSLog(@"NotesVC: viewDidLoad");
 
 	textview.delegate = self;
+	
+	UIEdgeInsets insets = UIEdgeInsetsMake(buttonbox.bounds.size.height, 0, 0, 0);
+	textview.contentInset = insets;
+	textview.scrollIndicatorInsets = insets;
+	
+	[transcriptbutton setSelectImage:[UIImage imageNamed:@"detail-arrow"]];
+	transcriptbutton.selectview.hidden = NO;
 	
 	/* Bang on font if Noteworthy is not available. I don't know why Marker Felt needs to be so enormous to fit the same grid as Noteworthy, though. */
 	if ([textview.font.familyName isEqualToString:@"Helvetica"]) {
@@ -158,7 +170,7 @@
 			}
 		}
 		
-		UIEdgeInsets insets = UIEdgeInsetsMake(0, 0, offset, 0);
+		UIEdgeInsets insets = UIEdgeInsetsMake(buttonbox.bounds.size.height, 0, offset, 0);
 		textview.contentInset = insets;
 		textview.scrollIndicatorInsets = insets;
 	}
@@ -180,6 +192,15 @@
 	if (notespath && textview.text) {
 		[textview.text writeToFile:notespath atomically:YES encoding:NSUTF8StringEncoding error:nil];
 	}
+}
+
+- (void) scrollViewDidScroll:(UIScrollView *)scrollView
+{
+	CGRect rect = buttonbox.frame;
+	rect.origin.y = -textview.contentOffset.y - rect.size.height;
+	if (rect.origin.y > 0)
+		rect.origin.y = 0;
+	buttonbox.frame = rect;
 }
 
 /* UITextView delegate method */

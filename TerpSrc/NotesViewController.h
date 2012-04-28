@@ -7,6 +7,7 @@
 #import <UIKit/UIKit.h>
 
 @class GradientView;
+@class MButton;
 
 @interface NotesViewController : UIViewController <UITextViewDelegate> {
 	BOOL textchanged;
@@ -14,6 +15,8 @@
 
 @property (nonatomic, retain) IBOutlet GradientView *gradview;
 @property (nonatomic, retain) IBOutlet UITextView *textview;
+@property (nonatomic, retain) IBOutlet UIView *buttonbox;
+@property (nonatomic, retain) IBOutlet MButton *transcriptbutton;
 
 @property (nonatomic, retain) NSString *notespath;
 
