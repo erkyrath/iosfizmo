@@ -152,6 +152,10 @@ typedef struct z_file_struct z_file;
 	}
 }
 
+- (BOOL) hasDarkTheme {
+	return (colorscheme == 2);
+}
+
 /* This is invoked from both the VM and UI threads.
  */
 - (CGSize) interWindowSpacing {

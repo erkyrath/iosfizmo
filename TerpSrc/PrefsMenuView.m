@@ -75,11 +75,10 @@
 	[colbut_12 setSelectImage:checkimage];
 	 
 	if (faderview) {
-		int val = glkviewc.fizmoDelegate.colorscheme;
-		faderview.alpha = ((val==2) ? 1.0 : 0.0);
+		faderview.alpha = ((glkviewc.glkdelegate.hasDarkTheme) ? 1.0 : 0.0);
 		faderview.hidden = NO;
 	}
-		
+	
 	[self updateButtons];
 	[self resizeContentTo:container.frame.size animated:YES];
 	[content addSubview:container];
