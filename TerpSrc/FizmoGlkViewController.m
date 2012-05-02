@@ -6,11 +6,15 @@
 
 #import "FizmoGlkViewController.h"
 #import "FizmoGlkDelegate.h"
+#import "GlkLibrary.h"
+#import "FizmoGameOverView.h"
 #import "IosGlkAppDelegate.h"
 #import "GlkFrameView.h"
 #import "GlkWinBufferView.h"
 #import "NotesViewController.h"
 #import "PrefsMenuView.h"
+
+#include "ios-restart.h"
 
 @implementation FizmoGlkViewController
 
@@ -57,6 +61,16 @@
 	[notesvc saveIfNeeded];
 }
 
+- (void) enteredBackground {
+	[super enteredBackground];
+	
+	/* If the interpreter hit a "fatal error" state, and we're just waiting around to tell the user about it, we want the Home button to shut down the app. That is, the user can kill the app by backgrounding it. */
+	GlkLibrary *library = [GlkLibrary singleton];
+	if (library && library.vmexited && !iosglk_can_restart_cleanly()) {
+		iosglk_shut_down_process();
+	}
+}
+
 - (void) viewDidLoad {
 	[super viewDidLoad];
 	
@@ -84,6 +98,12 @@
 	if (keyboardbutton && [keyboardbutton respondsToSelector:@selector(setAccessibilityLabel:)]) {
 		[keyboardbutton setAccessibilityLabel:NSLocalizedStringFromTable(@"label.compose-command", @"TerpLocalize", nil)];
 	}
+}
+
+- (void) postGameOver {
+	CGRect rect = frameview.bounds;
+	FizmoGameOverView *menuview = [[[FizmoGameOverView alloc] initWithFrame:frameview.bounds centerInFrame:rect] autorelease];
+	[frameview postPopMenu:menuview];	
 }
 
 /* UITabBarController delegate method */

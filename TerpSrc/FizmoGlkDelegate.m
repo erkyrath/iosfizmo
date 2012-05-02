@@ -190,6 +190,8 @@ typedef struct z_file_struct z_file;
 	return rect;
 }
 
+/* This is called when the library leaves glk_main(), either by returning or by a glk_exit() exception.
+ */
 - (void) vmHasExited {
 	iosglk_clear_autosave();
 }

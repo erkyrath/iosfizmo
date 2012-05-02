@@ -33,6 +33,9 @@
 		DF1F400814F3094F008FF1C7 /* PrefsMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1F400714F3094F008FF1C7 /* PrefsMenuView.m */; };
 		DF2247C41551B20D002EBC30 /* baricon-edit.png in Resources */ = {isa = PBXBuildFile; fileRef = DF2247C21551B20D002EBC30 /* baricon-edit.png */; };
 		DF2247C51551B20D002EBC30 /* baricon-edit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF2247C31551B20D002EBC30 /* baricon-edit@2x.png */; };
+		DF2247D11551D97C002EBC30 /* FizmoGameOverView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2247D01551D97C002EBC30 /* FizmoGameOverView.m */; };
+		DF2247D51551DCF6002EBC30 /* FatalGameOverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF2247D71551DCF6002EBC30 /* FatalGameOverView.xib */; };
+		DF2247DA1551E15E002EBC30 /* ios-restart.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2247D91551E15E002EBC30 /* ios-restart.m */; };
 		DF361B5F14F72B5C00A8D670 /* DisplayTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF361B5E14F72B5C00A8D670 /* DisplayTextViewController.m */; };
 		DF361B6214F72C5C00A8D670 /* DisplayTextVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF361B6114F72C5C00A8D670 /* DisplayTextVC.xib */; };
 		DF361B6414F73B7000A8D670 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF361B6314F73B7000A8D670 /* MessageUI.framework */; };
@@ -240,6 +243,11 @@
 		DF1F400714F3094F008FF1C7 /* PrefsMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefsMenuView.m; sourceTree = "<group>"; };
 		DF2247C21551B20D002EBC30 /* baricon-edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baricon-edit.png"; sourceTree = "<group>"; };
 		DF2247C31551B20D002EBC30 /* baricon-edit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baricon-edit@2x.png"; sourceTree = "<group>"; };
+		DF2247CF1551D97C002EBC30 /* FizmoGameOverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FizmoGameOverView.h; sourceTree = "<group>"; };
+		DF2247D01551D97C002EBC30 /* FizmoGameOverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizmoGameOverView.m; sourceTree = "<group>"; };
+		DF2247D61551DCF6002EBC30 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FatalGameOverView.xib; sourceTree = "<group>"; };
+		DF2247D81551E15E002EBC30 /* ios-restart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ios-restart.h"; sourceTree = "<group>"; };
+		DF2247D91551E15E002EBC30 /* ios-restart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ios-restart.m"; sourceTree = "<group>"; };
 		DF361B5D14F72B5C00A8D670 /* DisplayTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayTextViewController.h; sourceTree = "<group>"; };
 		DF361B5E14F72B5C00A8D670 /* DisplayTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayTextViewController.m; sourceTree = "<group>"; };
 		DF361B6114F72C5C00A8D670 /* DisplayTextVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DisplayTextVC.xib; sourceTree = "<group>"; };
@@ -528,6 +536,7 @@
 				DFCB1646153FB14A00936D28 /* PrefsMenuView.xib */,
 				DFCB1649153FB14D00936D28 /* PrefsMenuView~ipad.xib */,
 				DF188B9515479B4900CC6929 /* GameOverView.xib */,
+				DF2247D71551DCF6002EBC30 /* FatalGameOverView.xib */,
 				DFEFAC2D14F1E0E50062859F /* HelpVC.xib */,
 				DFCB1640153FB13700936D28 /* NotesVC.xib */,
 				DFCB1643153FB13C00936D28 /* NotesVC~ipad.xib */,
@@ -548,6 +557,8 @@
 				DF19DDE214E8A950007DCB29 /* FizmoGlkDelegate.m */,
 				DFBB4DE714F5D72D0041016A /* FizmoGlkWindows.h */,
 				DFBB4DE814F5D72D0041016A /* FizmoGlkWindows.m */,
+				DF2247CF1551D97C002EBC30 /* FizmoGameOverView.h */,
+				DF2247D01551D97C002EBC30 /* FizmoGameOverView.m */,
 				DF1F3FED14F1FD19008FF1C7 /* NotesViewController.h */,
 				DF1F3FEE14F1FD19008FF1C7 /* NotesViewController.m */,
 				DFBB4E4414F6E5700041016A /* TranscriptViewController.h */,
@@ -839,6 +850,8 @@
 				DF9A848514E0F097002C2FCB /* fizmo-iosglk.m */,
 				DF361B6514F83CC200A8D670 /* glkstart.h */,
 				DF9D1A4C14E1BFCF006A6749 /* ios-trace.m */,
+				DF2247D81551E15E002EBC30 /* ios-restart.h */,
+				DF2247D91551E15E002EBC30 /* ios-restart.m */,
 				DFDA85DF153545EE00891B91 /* ios-autosave.h */,
 				DFDA85DC153545DC00891B91 /* ios-autosave.m */,
 			);
@@ -1113,6 +1126,7 @@
 				DFD6F391154B85E300F6FC93 /* button-detail-hi@2x.png in Resources */,
 				DF2247C41551B20D002EBC30 /* baricon-edit.png in Resources */,
 				DF2247C51551B20D002EBC30 /* baricon-edit@2x.png in Resources */,
+				DF2247D51551DCF6002EBC30 /* FatalGameOverView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1219,6 +1233,8 @@
 				DFDA85DD153545DC00891B91 /* ios-autosave.m in Sources */,
 				DF188B9315479A3000CC6929 /* GameOverView.m in Sources */,
 				DF188B9415479A3000CC6929 /* MButton.m in Sources */,
+				DF2247D11551D97C002EBC30 /* FizmoGameOverView.m in Sources */,
+				DF2247DA1551E15E002EBC30 /* ios-restart.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1239,6 +1255,14 @@
 				DF188B9615479B4900CC6929 /* en */,
 			);
 			name = GameOverView.xib;
+			sourceTree = "<group>";
+		};
+		DF2247D71551DCF6002EBC30 /* FatalGameOverView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF2247D61551DCF6002EBC30 /* en */,
+			);
+			name = FatalGameOverView.xib;
 			sourceTree = "<group>";
 		};
 		DFCB15D6153E158800936D28 /* Localizable.strings */ = {
