@@ -103,10 +103,13 @@
 							<object class="IBUINavigationItem" key="IBUINavigationItem" id="988180717">
 								<string key="IBUITitle">My Notes</string>
 								<object class="IBUIBarButtonItem" key="IBUIRightBarButtonItem" id="116672987">
+									<object class="NSCustomResource" key="IBUIImage" id="382627009">
+										<string key="NSClassName">NSImage</string>
+										<string key="NSResourceName">baricon-edit.png</string>
+									</object>
 									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 									<int key="IBUIStyle">1</int>
 									<reference key="IBUINavigationItem" ref="988180717"/>
-									<int key="IBUISystemItemIdentifier">7</int>
 								</object>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 							</object>
@@ -164,10 +167,10 @@
 										<reference key="IBUINavigationItem" ref="55256093"/>
 									</object>
 									<object class="IBUIBarButtonItem" key="IBUIRightBarButtonItem" id="204876565">
+										<reference key="IBUIImage" ref="382627009"/>
 										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 										<int key="IBUIStyle">1</int>
 										<reference key="IBUINavigationItem" ref="55256093"/>
-										<int key="IBUISystemItemIdentifier">7</int>
 									</object>
 									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								</object>
@@ -558,6 +561,7 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
+			<string key="baricon-edit.png">{20, 20}</string>
 			<string key="baricon-styles.png">{28, 20}</string>
 			<string key="tabicon-game.png">{30, 30}</string>
 			<string key="tabicon-help.png">{30, 30}</string>

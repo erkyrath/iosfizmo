@@ -31,6 +31,10 @@
 		DF1F3FFC14F221FB008FF1C7 /* PopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1F3FFB14F221FB008FF1C7 /* PopMenuView.m */; };
 		DF1F3FFE14F2BA68008FF1C7 /* PopBoxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF1F3FFD14F2BA68008FF1C7 /* PopBoxView.xib */; };
 		DF1F400814F3094F008FF1C7 /* PrefsMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1F400714F3094F008FF1C7 /* PrefsMenuView.m */; };
+		DF2247C41551B20D002EBC30 /* baricon-edit.png in Resources */ = {isa = PBXBuildFile; fileRef = DF2247C21551B20D002EBC30 /* baricon-edit.png */; };
+		DF2247C51551B20D002EBC30 /* baricon-edit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF2247C31551B20D002EBC30 /* baricon-edit@2x.png */; };
+		DF2247C91551B349002EBC30 /* baricon-edit-sel.png in Resources */ = {isa = PBXBuildFile; fileRef = DF2247C71551B349002EBC30 /* baricon-edit-sel.png */; };
+		DF2247CA1551B349002EBC30 /* baricon-edit-sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF2247C81551B349002EBC30 /* baricon-edit-sel@2x.png */; };
 		DF361B5F14F72B5C00A8D670 /* DisplayTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF361B5E14F72B5C00A8D670 /* DisplayTextViewController.m */; };
 		DF361B6214F72C5C00A8D670 /* DisplayTextVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF361B6114F72C5C00A8D670 /* DisplayTextVC.xib */; };
 		DF361B6414F73B7000A8D670 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF361B6314F73B7000A8D670 /* MessageUI.framework */; };
@@ -236,6 +240,10 @@
 		DF1F3FFD14F2BA68008FF1C7 /* PopBoxView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PopBoxView.xib; path = iosglk/Resources/PopBoxView.xib; sourceTree = SOURCE_ROOT; };
 		DF1F400614F3094F008FF1C7 /* PrefsMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefsMenuView.h; sourceTree = "<group>"; };
 		DF1F400714F3094F008FF1C7 /* PrefsMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefsMenuView.m; sourceTree = "<group>"; };
+		DF2247C21551B20D002EBC30 /* baricon-edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baricon-edit.png"; sourceTree = "<group>"; };
+		DF2247C31551B20D002EBC30 /* baricon-edit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baricon-edit@2x.png"; sourceTree = "<group>"; };
+		DF2247C71551B349002EBC30 /* baricon-edit-sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baricon-edit-sel.png"; sourceTree = "<group>"; };
+		DF2247C81551B349002EBC30 /* baricon-edit-sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baricon-edit-sel@2x.png"; sourceTree = "<group>"; };
 		DF361B5D14F72B5C00A8D670 /* DisplayTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayTextViewController.h; sourceTree = "<group>"; };
 		DF361B5E14F72B5C00A8D670 /* DisplayTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayTextViewController.m; sourceTree = "<group>"; };
 		DF361B6114F72C5C00A8D670 /* DisplayTextVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DisplayTextVC.xib; sourceTree = "<group>"; };
@@ -910,6 +918,10 @@
 			children = (
 				DFB7A710151E59ED00C07499 /* baricon-styles.png */,
 				DFB7A712151E5D1A00C07499 /* baricon-styles@2x.png */,
+				DF2247C21551B20D002EBC30 /* baricon-edit.png */,
+				DF2247C31551B20D002EBC30 /* baricon-edit@2x.png */,
+				DF2247C71551B349002EBC30 /* baricon-edit-sel.png */,
+				DF2247C81551B349002EBC30 /* baricon-edit-sel@2x.png */,
 				DF1F3FF014F1FF1D008FF1C7 /* tabicon-help.png */,
 				DFB7A70C151E3B3200C07499 /* tabicon-help@2x.png */,
 				DF1F3FF114F1FF1D008FF1C7 /* tabicon-notes.png */,
@@ -1105,6 +1117,10 @@
 				DFD6F38D154B83F300F6FC93 /* button-detail-base@2x.png in Resources */,
 				DFD6F390154B85E300F6FC93 /* button-detail-hi.png in Resources */,
 				DFD6F391154B85E300F6FC93 /* button-detail-hi@2x.png in Resources */,
+				DF2247C41551B20D002EBC30 /* baricon-edit.png in Resources */,
+				DF2247C51551B20D002EBC30 /* baricon-edit@2x.png in Resources */,
+				DF2247C91551B349002EBC30 /* baricon-edit-sel.png in Resources */,
+				DF2247CA1551B349002EBC30 /* baricon-edit-sel@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
