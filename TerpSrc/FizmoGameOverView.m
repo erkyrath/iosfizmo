@@ -20,9 +20,8 @@
 
 - (IBAction) handleRestartButton:(id)sender {
 	[self.superviewAsFrameView removePopMenuAnimated:YES];
-	NSLog(@"### restart button");
 	
-	//###[[GlkAppWrapper singleton] acceptEventRestart];
+	[[GlkAppWrapper singleton] acceptEventRestart];
 }
 
 - (IBAction) handleRestoreButton:(id)sender {
