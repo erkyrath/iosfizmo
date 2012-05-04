@@ -5,11 +5,19 @@
  */
 
 #import "FizmoGameOverView.h"
+#import "FizmoGlkViewController.h"
 #import "GlkAppWrapper.h"
+#import "GlkLibrary.h"
+#import "GlkFileRef.h"
 #import "GlkFrameView.h"
+#import "GlkFileTypes.h"
 #include "ios-restart.h"
 
 @implementation FizmoGameOverView
+
+- (void) dealloc {
+	[super dealloc];
+}
 
 - (NSString *) nibForContent {
 	if (iosglk_can_restart_cleanly())
@@ -26,9 +34,16 @@
 
 - (IBAction) handleRestoreButton:(id)sender {
 	[self.superviewAsFrameView removePopMenuAnimated:YES];
-	NSLog(@"### restore button");
 	
-	//###[[GlkAppWrapper singleton] acceptEventRestart];
+	NSString *basedir = [GlkFileRef documentsDirectory];
+	NSString *dirname = [GlkFileRef subDirOfBase:basedir forUsage:fileusage_SavedGame gameid:[GlkLibrary singleton].gameId];
+	
+	FizmoGlkViewController *viewc = [FizmoGlkViewController singleton];
+	
+	viewc.restorefileprompt = [[[GlkFileRefPrompt alloc] initWithUsage:fileusage_SavedGame fmode:filemode_Read dirname:dirname] autorelease];
+	[viewc displayModalRequest:viewc.restorefileprompt];
+	
+	// The callback from the FileSelectVC will trigger acceptEventRestart.
 }
 
 - (IBAction) handleQuitButton:(id)sender {

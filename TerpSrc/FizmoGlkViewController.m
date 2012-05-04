@@ -7,6 +7,8 @@
 #import "FizmoGlkViewController.h"
 #import "FizmoGlkDelegate.h"
 #import "GlkLibrary.h"
+#import "GlkAppWrapper.h"
+#import "GlkFileTypes.h"
 #import "FizmoGameOverView.h"
 #import "IosGlkAppDelegate.h"
 #import "GlkFrameView.h"
@@ -19,6 +21,7 @@
 @implementation FizmoGlkViewController
 
 @synthesize notesvc;
+@synthesize restorefileprompt;
 
 + (FizmoGlkViewController *) singleton {
 	return (FizmoGlkViewController *)([IosGlkAppDelegate singleton].glkviewc);
@@ -98,6 +101,23 @@
 	if (keyboardbutton && [keyboardbutton respondsToSelector:@selector(setAccessibilityLabel:)]) {
 		[keyboardbutton setAccessibilityLabel:NSLocalizedStringFromTable(@"label.compose-command", @"TerpLocalize", nil)];
 	}
+}
+
+- (id) filterEvent:(id)data {
+	if (self.vmexited && data && [data isKindOfClass:[GlkFileRefPrompt class]] && data == restorefileprompt) {
+		if (!restorefileprompt.filename) {
+			/* Cancelled. Forget it. */
+			self.restorefileprompt = nil;
+			return nil;
+		}
+		
+		/* Leave the restore prompt in place, and restart the interpreter. It will autorestore. */
+		//### this is *still* not the right way to do this!
+		[[GlkAppWrapper singleton] acceptEventRestart];
+		return nil;
+	}
+	
+	return data;
 }
 
 - (void) postGameOver {

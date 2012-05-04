@@ -9,10 +9,12 @@
 
 @class NotesViewController;
 @class FizmoGlkDelegate;
+@class GlkFileRefPrompt;
 
 @interface FizmoGlkViewController : IosGlkViewController <UIGestureRecognizerDelegate>
 
 @property (nonatomic, retain) IBOutlet NotesViewController *notesvc;
+@property (nonatomic, retain) GlkFileRefPrompt *restorefileprompt;
 
 + (FizmoGlkViewController *) singleton;
 
