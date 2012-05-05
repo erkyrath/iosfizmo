@@ -25,6 +25,8 @@
 @synthesize colbut_12;
 @synthesize sizebut_small;
 @synthesize sizebut_big;
+@synthesize leadbut_small;
+@synthesize leadbut_big;
 @synthesize fontbutton;
 @synthesize colorbutton;
 @synthesize fontbut_sample1;
@@ -46,6 +48,8 @@
 	self.colbut_12 = nil;
 	self.sizebut_small = nil;
 	self.sizebut_big = nil;
+	self.leadbut_small = nil;
+	self.leadbut_big = nil;
 	self.fontbutton = nil;
 	self.colorbutton = nil;
 	self.fontbut_sample1 = nil;
@@ -150,6 +154,30 @@
 	glkviewc.fizmoDelegate.fontscale = fontscale;
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	[defaults setInteger:fontscale forKey:@"FontScale"];
+	
+	[glkviewc.frameview updateWindowStyles];
+}
+
+- (IBAction) handleFontLeading:(id)sender {
+	FizmoGlkViewController *glkviewc = [FizmoGlkViewController singleton];
+	
+	int leading = glkviewc.fizmoDelegate.leading;
+	
+	if (sender == leadbut_small) {
+		leading -= 1;
+	} 
+	else if (sender == leadbut_big) {
+		leading += 1;
+	}
+	leading = MAX(leading, 0);
+	leading = MIN(leading, LEADING_MAX);
+	
+	if (leading == glkviewc.fizmoDelegate.leading)
+		return;
+	
+	glkviewc.fizmoDelegate.leading = leading;
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	[defaults setInteger:leading forKey:@"FontLeading"];
 	
 	[glkviewc.frameview updateWindowStyles];
 }

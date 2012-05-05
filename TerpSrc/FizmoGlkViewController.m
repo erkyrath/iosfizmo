@@ -48,7 +48,7 @@ typedef struct z_file_struct z_file;
 		fontscale = 3;
 	self.fizmoDelegate.fontscale = fontscale;
 	
-	/* Leading is between 0 and 4. */
+	/* Leading is between 0 and 5. */
 	int leading = [defaults integerForKey:@"FontLeading"];
 	self.fizmoDelegate.leading = leading;
 	

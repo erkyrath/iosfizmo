@@ -22,6 +22,8 @@
 @property (nonatomic, retain) IBOutlet MButton *colbut_12;
 @property (nonatomic, retain) IBOutlet MButton *sizebut_small;
 @property (nonatomic, retain) IBOutlet MButton *sizebut_big;
+@property (nonatomic, retain) IBOutlet MButton *leadbut_small;
+@property (nonatomic, retain) IBOutlet MButton *leadbut_big;
 @property (nonatomic, retain) IBOutlet UIButton *fontbutton;
 @property (nonatomic, retain) IBOutlet UIButton *colorbutton;
 @property (nonatomic, retain) IBOutlet MButton *fontbut_sample1;
@@ -36,6 +38,7 @@
 - (void) updateButtons;
 - (IBAction) handleColumnWidth:(id)sender;
 - (IBAction) handleFontSize:(id)sender;
+- (IBAction) handleFontLeading:(id)sender;
 - (IBAction) handleFonts:(id)sender;
 - (IBAction) handleFont:(id)sender;
 - (IBAction) handleColors:(id)sender;

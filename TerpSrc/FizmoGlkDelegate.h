@@ -9,7 +9,7 @@
 #import "StyleSet.h"
 
 #define FONTSCALE_MAX (7)
-#define LEADING_MAX (4)
+#define LEADING_MAX (5)
 
 @interface FizmoGlkDelegate : NSObject <IosGlkLibDelegate> {
 	int maxwidth; // 0 for full-width, 1 for 3/4-ish, 2 for 1/2-ish.
