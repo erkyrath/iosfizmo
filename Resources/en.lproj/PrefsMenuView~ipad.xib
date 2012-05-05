@@ -110,43 +110,46 @@
 							<int key="NSfFlags">16</int>
 						</object>
 					</object>
-					<object class="IBUIButton" id="126338454">
+					<object class="IBUIButton" id="851946422">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{0, 45}, {72, 37}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="354045782"/>
+						<reference key="NSNextKeyView" ref="992121058"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<string key="IBUINormalTitle">=</string>
-						<object class="NSColor" key="IBUIHighlightedTitleColor" id="326273354">
+						<object class="NSColor" key="IBUIHighlightedTitleColor" id="318865463">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MC4xNjg5ODk2ODgyIDAuMTAxNzU0NTE2NCAwLjA0MzgzMTk3Nzk5AA</bytes>
 						</object>
-						<object class="NSColor" key="IBUINormalTitleColor" id="864292227">
+						<object class="NSColor" key="IBUINormalTitleColor" id="729950464">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MC40NDQzMjI4MjQ1IDAuMzEzNDIzMTI2OSAwLjE5MzIyNzYwNAA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="928170411"/>
+						<object class="NSCustomResource" key="IBUINormalImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">lead-narrow.png</string>
+						</object>
 						<reference key="IBUIHighlightedBackgroundImage" ref="458176918"/>
 						<reference key="IBUINormalBackgroundImage" ref="196989056"/>
-						<object class="IBUIFontDescription" key="IBUIFontDescription" id="751533064">
+						<object class="IBUIFontDescription" key="IBUIFontDescription" id="658595780">
 							<string key="name">Georgia-Bold</string>
 							<string key="family">Georgia</string>
 							<int key="traits">2</int>
 							<double key="pointSize">15</double>
 						</object>
-						<object class="NSFont" key="IBUIFont" id="1034574849">
+						<object class="NSFont" key="IBUIFont" id="906286418">
 							<string key="NSName">Georgia-Bold</string>
 							<double key="NSSize">15</double>
 							<int key="NSfFlags">16</int>
 						</object>
 					</object>
-					<object class="IBUIButton" id="354045782">
+					<object class="IBUIButton" id="992121058">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{80, 45}, {72, 37}}</string>
@@ -158,14 +161,17 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<string key="IBUINormalTitle">=</string>
-						<reference key="IBUIHighlightedTitleColor" ref="326273354"/>
-						<reference key="IBUINormalTitleColor" ref="864292227"/>
+						<reference key="IBUIHighlightedTitleColor" ref="318865463"/>
+						<reference key="IBUINormalTitleColor" ref="729950464"/>
 						<reference key="IBUINormalTitleShadowColor" ref="928170411"/>
+						<object class="NSCustomResource" key="IBUINormalImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">lead-wide.png</string>
+						</object>
 						<reference key="IBUIHighlightedBackgroundImage" ref="458176918"/>
 						<reference key="IBUINormalBackgroundImage" ref="196989056"/>
-						<reference key="IBUIFontDescription" ref="751533064"/>
-						<reference key="IBUIFont" ref="1034574849"/>
+						<reference key="IBUIFontDescription" ref="658595780"/>
+						<reference key="IBUIFont" ref="906286418"/>
 					</object>
 					<object class="IBUIButton" id="496624988">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -243,7 +249,7 @@
 						<string key="NSFrame">{{104, 90}, {48, 37}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="126338454"/>
+						<reference key="NSNextKeyView" ref="851946422"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<int key="IBUITag">3</int>
@@ -294,7 +300,6 @@
 						<string key="NSFrame">{{0, 180}, {152, 37}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -362,7 +367,6 @@
 						<string key="NSFrame">{{0, 45}, {152, 37}}</string>
 						<reference key="NSSuperview" ref="409938868"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -452,7 +456,6 @@
 						<string key="NSFrame">{{0, 90}, {152, 37}}</string>
 						<reference key="NSSuperview" ref="290411177"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<int key="IBUITag">2</int>
@@ -622,7 +625,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">leadbut_big</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="354045782"/>
+						<reference key="destination" ref="992121058"/>
 					</object>
 					<int key="connectionID">68</int>
 				</object>
@@ -630,7 +633,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">leadbut_small</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="126338454"/>
+						<reference key="destination" ref="851946422"/>
 					</object>
 					<int key="connectionID">69</int>
 				</object>
@@ -727,7 +730,7 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">handleFontLeading:</string>
-						<reference key="source" ref="126338454"/>
+						<reference key="source" ref="851946422"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">7</int>
 					</object>
@@ -736,7 +739,7 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">handleFontLeading:</string>
-						<reference key="source" ref="354045782"/>
+						<reference key="source" ref="992121058"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">7</int>
 					</object>
@@ -762,8 +765,8 @@
 							<reference ref="811182246"/>
 							<reference ref="816870845"/>
 							<reference ref="106115723"/>
-							<reference ref="126338454"/>
-							<reference ref="354045782"/>
+							<reference ref="851946422"/>
+							<reference ref="992121058"/>
 						</array>
 						<reference key="parent" ref="0"/>
 						<string key="objectName">Container</string>
@@ -862,12 +865,12 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">62</int>
-						<reference key="object" ref="126338454"/>
+						<reference key="object" ref="851946422"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">63</int>
-						<reference key="object" ref="354045782"/>
+						<reference key="object" ref="992121058"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</array>
@@ -1147,6 +1150,8 @@
 			<string key="col-34.png">{20, 20}</string>
 			<string key="col-full-sel.png">{20, 20}</string>
 			<string key="col-full.png">{20, 20}</string>
+			<string key="lead-narrow.png">{20, 20}</string>
+			<string key="lead-wide.png">{20, 20}</string>
 		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">1181</string>
 	</data>
