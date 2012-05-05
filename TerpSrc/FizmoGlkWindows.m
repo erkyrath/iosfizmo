@@ -15,8 +15,8 @@
 	self = [super initWithWindow:winref frame:box];
 	if (self) {
 		FizmoGlkViewController *glkviewc = [FizmoGlkViewController singleton];
-		int val = glkviewc.fizmoDelegate.colorscheme;
-		self.textview.indicatorStyle = (val==2 ? UIScrollViewIndicatorStyleWhite : UIScrollViewIndicatorStyleDefault);
+		BOOL isdark = glkviewc.fizmoDelegate.hasDarkTheme;
+		self.textview.indicatorStyle = (isdark ? UIScrollViewIndicatorStyleWhite : UIScrollViewIndicatorStyleDefault);
 	}
 	return self;
 }
@@ -25,8 +25,8 @@
 	[super uncacheLayoutAndStyles];
 
 	FizmoGlkViewController *glkviewc = [FizmoGlkViewController singleton];
-	int val = glkviewc.fizmoDelegate.colorscheme;
-	self.textview.indicatorStyle = (val==2 ? UIScrollViewIndicatorStyleWhite : UIScrollViewIndicatorStyleDefault);
+	BOOL isdark = glkviewc.fizmoDelegate.hasDarkTheme;
+	self.textview.indicatorStyle = (isdark ? UIScrollViewIndicatorStyleWhite : UIScrollViewIndicatorStyleDefault);
 }
 
 @end

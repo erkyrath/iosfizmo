@@ -163,18 +163,20 @@
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	[defaults setInteger:val forKey:@"ColorScheme"];
 	
+	BOOL isdark = glkviewc.fizmoDelegate.hasDarkTheme;
+	
 	[self updateButtons];
-	glkviewc.navigationController.navigationBar.barStyle = (val==2 ? UIBarStyleBlack : UIBarStyleDefault);
+	glkviewc.navigationController.navigationBar.barStyle = (isdark ? UIBarStyleBlack : UIBarStyleDefault);
 	glkviewc.frameview.backgroundColor = glkviewc.fizmoDelegate.genBackgroundColor;
 	[glkviewc.frameview updateWindowStyles];
 	
 	if (faderview) {
 		if ([IosGlkAppDelegate animblocksavailable]) {
 			[UIView animateWithDuration:0.15 
-				animations:^{ faderview.alpha = ((val==2) ? 1.0 : 0.0); } ];
+				animations:^{ faderview.alpha = (isdark ? 1.0 : 0.0); } ];
 		}
 		else {
-			faderview.alpha = ((val==2) ? 1.0 : 0.0);
+			faderview.alpha = (isdark ? 1.0 : 0.0);
 		}
 	}
 }

@@ -42,11 +42,15 @@ typedef struct z_file_struct z_file;
 	int maxwidth = [defaults integerForKey:@"FrameMaxWidth"];
 	self.fizmoDelegate.maxwidth = maxwidth;
 	
-	/* Font-scale values are arbitrarily between 1 and 5. */
+	/* Font-scale values are arbitrarily between 1 and 5. We default to 3. */
 	int fontscale = [defaults integerForKey:@"FontScale"];
 	if (fontscale == 0)
 		fontscale = 3;
 	self.fizmoDelegate.fontscale = fontscale;
+	
+	/* Leading is between 0 and 4. */
+	int leading = [defaults integerForKey:@"FontLeading"];
+	self.fizmoDelegate.leading = leading;
 	
 	/* Color-scheme values are 0 to 2. */
 	int colorscheme = [defaults integerForKey:@"ColorScheme"];
@@ -57,7 +61,7 @@ typedef struct z_file_struct z_file;
 		fontfamily = @"Georgia";
 	self.fizmoDelegate.fontfamily = fontfamily;
 	
-	self.navigationController.navigationBar.barStyle = (colorscheme==2 ? UIBarStyleBlack : UIBarStyleDefault);
+	self.navigationController.navigationBar.barStyle = (self.fizmoDelegate.hasDarkTheme ? UIBarStyleBlack : UIBarStyleDefault);
 	
 	// Yes, this is in two places.
 	self.frameview.backgroundColor = [self.fizmoDelegate genBackgroundColor];
