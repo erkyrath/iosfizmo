@@ -16,6 +16,9 @@
 #import "NotesViewController.h"
 #import "PrefsMenuView.h"
 
+// This typedef works around header file annoyance. We're not going to refer to it.
+typedef struct z_file_struct z_file;
+#include "ios-autosave.h"
 #include "ios-restart.h"
 
 @implementation FizmoGlkViewController
@@ -105,14 +108,18 @@
 
 - (id) filterEvent:(id)data {
 	if (self.vmexited && data && [data isKindOfClass:[GlkFileRefPrompt class]] && data == restorefileprompt) {
-		if (!restorefileprompt.filename) {
+		/* Drop the field reference to the prompt. */
+		GlkFileRefPrompt *prompt = restorefileprompt;
+		[[prompt retain] autorelease];
+		self.restorefileprompt = nil;
+		
+		if (!prompt.filename) {
 			/* Cancelled. Forget it. */
-			self.restorefileprompt = nil;
 			return nil;
 		}
 		
-		/* Leave the restore prompt in place, and restart the interpreter. It will autorestore. */
-		//### this is *still* not the right way to do this!
+		/* Queue up the autorestore file, and restart the interpreter. */
+		iosglk_queue_autosave(prompt.pathname);
 		[[GlkAppWrapper singleton] acceptEventRestart];
 		return nil;
 	}
