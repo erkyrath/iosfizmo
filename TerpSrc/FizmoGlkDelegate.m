@@ -19,6 +19,7 @@ typedef struct z_file_struct z_file;
 @synthesize fontfamily;
 @synthesize fontscale;
 @synthesize colorscheme;
+@synthesize leading;
 
 - (void) dealloc {
 	self.fontfamily = nil;
@@ -97,6 +98,7 @@ typedef struct z_file_struct z_file;
 	
 	if (wintype == wintype_TextGrid) {
 		styles.margins = UIEdgeInsetsMake(6, 6, 6, 6);
+		styles.leading = self.leading;
 		
 		CGFloat statusfontsize;
 		if (isiphone) {
@@ -133,6 +135,7 @@ typedef struct z_file_struct z_file;
 	}
 	else {
 		styles.margins = UIEdgeInsetsMake(4, 6, 4, 6);
+		styles.leading = self.leading;
 
 		CGFloat statusfontsize = 11+self.fontscale;
 
