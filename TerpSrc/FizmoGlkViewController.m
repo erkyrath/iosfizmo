@@ -39,6 +39,18 @@ typedef struct z_file_struct z_file;
 	
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	
+	/* Set some reasonable defaults, if none have ever been set. */
+	if (UI_USER_INTERFACE_IDIOM() != UIUserInterfaceIdiomPhone) {
+		/* On the iPad, use a 3/4 column and bump the leading a little. */
+		if (![defaults objectForKey:@"FrameMaxWidth"])
+			[defaults setInteger:1 forKey:@"FrameMaxWidth"];
+		if (![defaults objectForKey:@"FontLeading"])
+			[defaults setInteger:1 forKey:@"FontLeading"];
+	}
+	else {
+		/* On the iPhone, leave everything as-is. */
+	}
+	
 	int maxwidth = [defaults integerForKey:@"FrameMaxWidth"];
 	self.fizmoDelegate.maxwidth = maxwidth;
 	
