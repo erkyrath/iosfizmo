@@ -34,12 +34,7 @@
 	if ([tableview respondsToSelector:@selector(backgroundView)]) {
 		/* This is only available in iOS 3.2 and up */
 		tableview.backgroundView = [[[UIView alloc] initWithFrame:tableview.backgroundView.frame] autorelease];
-		if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
-			tableview.backgroundView.backgroundColor = [UIColor colorWithRed:1.0 green:0.98 blue:0.92 alpha:1];
-		}
-		else {
-			tableview.backgroundView.backgroundColor = [UIColor colorWithRed:0.85 green:0.8 blue:0.6 alpha:1];
-		}
+		tableview.backgroundView.backgroundColor = [UIColor colorWithRed:0.85 green:0.8 blue:0.6 alpha:1];
 	}
 		
 	if ([tableview respondsToSelector:@selector(addGestureRecognizer:)]) {
