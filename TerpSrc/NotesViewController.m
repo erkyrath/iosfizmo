@@ -17,15 +17,15 @@
 
 @synthesize textview;
 @synthesize gradview;
-@synthesize buttonbox;
-@synthesize transcriptbutton;
+@synthesize buttontable;
+@synthesize transcriptcell;
 @synthesize notespath;
 
 - (void) dealloc {
 	self.textview = nil;
 	self.gradview = nil;
-	self.buttonbox = nil;
-	self.transcriptbutton = nil;
+	self.buttontable = nil;
+	self.transcriptcell = nil;
 	[super dealloc];
 }
 
@@ -35,13 +35,18 @@
 
 	textview.delegate = self;
 	
-	UIEdgeInsets insets = UIEdgeInsetsMake(buttonbox.bounds.size.height, 0, 0, 0);
+	UIEdgeInsets insets = UIEdgeInsetsMake(buttontable.bounds.size.height, 0, 0, 0);
 	textview.contentInset = insets;
 	textview.scrollIndicatorInsets = insets;
 	
-	[transcriptbutton setSelectImage:[UIImage imageNamed:@"detail-arrow"]];
-	transcriptbutton.selectview.hidden = NO;
-	
+	buttontable.backgroundView = [[[UIView alloc] initWithFrame:buttontable.backgroundView.frame] autorelease];
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+		buttontable.backgroundView.backgroundColor = [UIColor colorWithRed:1.0 green:0.98 blue:0.92 alpha:1];
+	}
+	else {
+		buttontable.backgroundView.backgroundColor = [UIColor colorWithRed:0.85 green:0.8 blue:0.6 alpha:1];
+	}
+
 	/* Bang on font if Noteworthy is not available. I don't know why Marker Felt needs to be so enormous to fit the same grid as Noteworthy, though. */
 	if ([textview.font.familyName isEqualToString:@"Helvetica"]) {
 		CGFloat fontsize;
@@ -162,7 +167,7 @@
 			}
 		}
 		
-		UIEdgeInsets insets = UIEdgeInsetsMake(buttonbox.bounds.size.height, 0, offset, 0);
+		UIEdgeInsets insets = UIEdgeInsetsMake(buttontable.bounds.size.height, 0, offset, 0);
 		textview.contentInset = insets;
 		textview.scrollIndicatorInsets = insets;
 	}
@@ -188,11 +193,11 @@
 
 - (void) scrollViewDidScroll:(UIScrollView *)scrollView
 {
-	CGRect rect = buttonbox.frame;
+	CGRect rect = buttontable.frame;
 	rect.origin.y = -textview.contentOffset.y - rect.size.height;
 	if (rect.origin.y > 0)
 		rect.origin.y = 0;
-	buttonbox.frame = rect;
+	buttontable.frame = rect;
 }
 
 /* UITextView delegate method */
@@ -204,6 +209,43 @@
 		[self performSelector:@selector(saveIfNeeded) withObject:nil afterDelay:NOTES_SAVE_DELAY];
 	}
 }
+
+/* UITableViewDataSource methods */
+
+- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+	return 1;
+}
+
+- (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexpath
+{
+	switch (indexpath.row) {
+		case 0:
+			return transcriptcell;
+		default:
+			return nil;
+	}
+}
+
+/* UITableViewDelegate methods */
+
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexpath
+{
+	[buttontable deselectRowAtIndexPath:indexpath animated:NO];
+	if (indexpath.row == 0)
+		[self handleTranscripts];
+}
+
+- (NSString *) tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
+{
+	return nil;
+}
+
+- (NSString *) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+	return nil;
+}
+
 
 @end
 
