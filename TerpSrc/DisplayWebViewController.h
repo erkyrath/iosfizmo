@@ -10,7 +10,8 @@
 
 @property (nonatomic, retain) IBOutlet UIWebView *webview;
 @property (nonatomic, retain) NSString *filename;
+@property (nonatomic, retain) NSString *doctitle;
 
-- (id) initWithNibName:(NSString *)nibName filename:(NSString *)filename bundle:(NSBundle *)nibBundle;
+- (id) initWithNibName:(NSString *)nibName filename:(NSString *)filename title:(NSString *)title bundle:(NSBundle *)nibBundle;
 
 @end

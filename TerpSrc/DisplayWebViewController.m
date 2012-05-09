@@ -12,18 +12,21 @@
 
 @synthesize webview;
 @synthesize filename;
+@synthesize doctitle;
 
-- (id) initWithNibName:(NSString *)nibName filename:(NSString *)fileref bundle:(NSBundle *)nibBundle
+- (id) initWithNibName:(NSString *)nibName filename:(NSString *)fileref title:(NSString *)titleref bundle:(NSBundle *)nibBundle
 {
 	self = [super initWithNibName:nibName bundle:nibBundle];
 	if (self) {
 		self.filename = fileref;
+		self.doctitle = titleref;
 	}
 	return self;
 }
 
 - (void) dealloc {
 	self.filename = nil;
+	self.doctitle = nil;
 	if (webview) {
 		webview.delegate = nil;
 		self.webview = nil;
@@ -33,6 +36,8 @@
 
 - (void) viewDidLoad
 {
+	self.navigationItem.title = doctitle;
+
 	NSBundle *bundle = [NSBundle mainBundle];
 	NSURL *url = [bundle URLForResource:filename withExtension:@"html" subdirectory:@"WebSite"];
 	NSString *html = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];

@@ -64,7 +64,8 @@
 
 - (void) handleLicenses
 {
-	DisplayWebViewController *viewc = [[[DisplayWebViewController alloc] initWithNibName:@"WebDocVC" filename:@"index" bundle:nil] autorelease];
+	NSString *title = NSLocalizedStringFromTable(@"settings.title.license", @"TerpLocalize", nil);
+	DisplayWebViewController *viewc = [[[DisplayWebViewController alloc] initWithNibName:@"WebDocVC" filename:@"index" title:title bundle:nil] autorelease];
 	[self.navigationController pushViewController:viewc animated:YES];
 }
 
