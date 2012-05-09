@@ -14,6 +14,7 @@
 #import "GlkFrameView.h"
 #import "GlkWinBufferView.h"
 #import "NotesViewController.h"
+#import "SettingsViewController.h"
 #import "PrefsMenuView.h"
 
 // This typedef works around header file annoyance. We're not going to refer to it.
@@ -24,6 +25,7 @@ typedef struct z_file_struct z_file;
 @implementation FizmoGlkViewController
 
 @synthesize notesvc;
+@synthesize settingsvc;
 @synthesize restorefileprompt;
 
 + (FizmoGlkViewController *) singleton {
@@ -163,6 +165,10 @@ typedef struct z_file_struct z_file;
 	if (rootviewc != notesvc) {
 		/* If the notesvc was drilled into the transcripts view or subviews, pop out of there. */
 		[notesvc.navigationController popToRootViewControllerAnimated:NO];
+	}
+	if (rootviewc != settingsvc) {
+		/* If the settingsvc was drilled into the transcripts view or subviews, pop out of there. */
+		[settingsvc.navigationController popToRootViewControllerAnimated:NO];
 	}
 }
 

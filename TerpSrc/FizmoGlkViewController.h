@@ -8,12 +8,14 @@
 #import "IosGlkViewController.h"
 
 @class NotesViewController;
+@class SettingsViewController;
 @class FizmoGlkDelegate;
 @class GlkFileRefPrompt;
 
 @interface FizmoGlkViewController : IosGlkViewController <UIGestureRecognizerDelegate>
 
 @property (nonatomic, retain) IBOutlet NotesViewController *notesvc;
+@property (nonatomic, retain) IBOutlet SettingsViewController *settingsvc;
 @property (nonatomic, retain) GlkFileRefPrompt *restorefileprompt;
 
 + (FizmoGlkViewController *) singleton;
