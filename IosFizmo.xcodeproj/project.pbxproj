@@ -36,6 +36,8 @@
 		DF2247D11551D97C002EBC30 /* FizmoGameOverView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2247D01551D97C002EBC30 /* FizmoGameOverView.m */; };
 		DF2247D51551DCF6002EBC30 /* FatalGameOverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF2247D71551DCF6002EBC30 /* FatalGameOverView.xib */; };
 		DF2247DA1551E15E002EBC30 /* ios-restart.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2247D91551E15E002EBC30 /* ios-restart.m */; };
+		DF29B823155AE24E009DA4BE /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF29B822155AE24E009DA4BE /* SettingsViewController.m */; };
+		DF29B826155AE374009DA4BE /* SettingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF29B825155AE374009DA4BE /* SettingsVC.xib */; };
 		DF361B5F14F72B5C00A8D670 /* DisplayTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF361B5E14F72B5C00A8D670 /* DisplayTextViewController.m */; };
 		DF361B6214F72C5C00A8D670 /* DisplayTextVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF361B6114F72C5C00A8D670 /* DisplayTextVC.xib */; };
 		DF361B6414F73B7000A8D670 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF361B6314F73B7000A8D670 /* MessageUI.framework */; };
@@ -254,6 +256,9 @@
 		DF2247D61551DCF6002EBC30 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FatalGameOverView.xib; sourceTree = "<group>"; };
 		DF2247D81551E15E002EBC30 /* ios-restart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ios-restart.h"; sourceTree = "<group>"; };
 		DF2247D91551E15E002EBC30 /* ios-restart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ios-restart.m"; sourceTree = "<group>"; };
+		DF29B821155AE24E009DA4BE /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		DF29B822155AE24E009DA4BE /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		DF29B825155AE374009DA4BE /* SettingsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsVC.xib; sourceTree = "<group>"; };
 		DF361B5D14F72B5C00A8D670 /* DisplayTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayTextViewController.h; sourceTree = "<group>"; };
 		DF361B5E14F72B5C00A8D670 /* DisplayTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayTextViewController.m; sourceTree = "<group>"; };
 		DF361B6114F72C5C00A8D670 /* DisplayTextVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DisplayTextVC.xib; sourceTree = "<group>"; };
@@ -550,6 +555,7 @@
 				DF188B9515479B4900CC6929 /* GameOverView.xib */,
 				DF2247D71551DCF6002EBC30 /* FatalGameOverView.xib */,
 				DFEFAC2D14F1E0E50062859F /* HelpVC.xib */,
+				DF29B825155AE374009DA4BE /* SettingsVC.xib */,
 				DFCB1640153FB13700936D28 /* NotesVC.xib */,
 				DFCB1643153FB13C00936D28 /* NotesVC~ipad.xib */,
 				DFBB4E4114F6E4450041016A /* TranscriptVC.xib */,
@@ -577,6 +583,8 @@
 				DFBB4E4514F6E5700041016A /* TranscriptViewController.m */,
 				DFEFAC2B14F1E0E50062859F /* HelpViewController.h */,
 				DFEFAC2C14F1E0E50062859F /* HelpViewController.m */,
+				DF29B821155AE24E009DA4BE /* SettingsViewController.h */,
+				DF29B822155AE24E009DA4BE /* SettingsViewController.m */,
 				DF361B5D14F72B5C00A8D670 /* DisplayTextViewController.h */,
 				DF361B5E14F72B5C00A8D670 /* DisplayTextViewController.m */,
 				DF1F400614F3094F008FF1C7 /* PrefsMenuView.h */,
@@ -1151,6 +1159,7 @@
 				DFD1D7401555E6540091E8EB /* lead-wide@2x.png in Resources */,
 				DF53C4411559E4D800709FC2 /* more-arrow.png in Resources */,
 				DF53C4441559E4EA00709FC2 /* more-arrow@2x.png in Resources */,
+				DF29B826155AE374009DA4BE /* SettingsVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1259,6 +1268,7 @@
 				DF188B9415479A3000CC6929 /* MButton.m in Sources */,
 				DF2247D11551D97C002EBC30 /* FizmoGameOverView.m in Sources */,
 				DF2247DA1551E15E002EBC30 /* ios-restart.m in Sources */,
+				DF29B823155AE24E009DA4BE /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
