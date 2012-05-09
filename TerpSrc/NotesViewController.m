@@ -39,12 +39,15 @@
 	textview.contentInset = insets;
 	textview.scrollIndicatorInsets = insets;
 	
-	buttontable.backgroundView = [[[UIView alloc] initWithFrame:buttontable.backgroundView.frame] autorelease];
-	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
-		buttontable.backgroundView.backgroundColor = [UIColor colorWithRed:1.0 green:0.98 blue:0.92 alpha:1];
-	}
-	else {
-		buttontable.backgroundView.backgroundColor = [UIColor colorWithRed:0.85 green:0.8 blue:0.6 alpha:1];
+	if ([buttontable respondsToSelector:@selector(backgroundView)]) {
+		/* This is only available in iOS 3.2 and up */
+		buttontable.backgroundView = [[[UIView alloc] initWithFrame:buttontable.backgroundView.frame] autorelease];
+		if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+			buttontable.backgroundView.backgroundColor = [UIColor colorWithRed:1.0 green:0.98 blue:0.92 alpha:1];
+		}
+		else {
+			buttontable.backgroundView.backgroundColor = [UIColor colorWithRed:0.85 green:0.8 blue:0.6 alpha:1];
+		}
 	}
 
 	/* Bang on font if Noteworthy is not available. I don't know why Marker Felt needs to be so enormous to fit the same grid as Noteworthy, though. */
