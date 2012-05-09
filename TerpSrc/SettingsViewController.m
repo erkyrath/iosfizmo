@@ -6,6 +6,7 @@
 
 #import "SettingsViewController.h"
 #import "FizmoGlkViewController.h"
+#import "DisplayWebViewController.h"
 
 @implementation SettingsViewController
 
@@ -63,7 +64,8 @@
 
 - (void) handleLicenses
 {
-	NSLog(@"### licenses");
+	DisplayWebViewController *viewc = [[[DisplayWebViewController alloc] initWithNibName:@"WebDocVC" filename:@"index" bundle:nil] autorelease];
+	[self.navigationController pushViewController:viewc animated:YES];
 }
 
 /* UITableViewDataSource methods */
@@ -132,7 +134,7 @@
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexpath
 {
 	[tableview deselectRowAtIndexPath:indexpath animated:NO];
-	if (indexpath.row == 0)
+	if (indexpath.section == SECTION_LICENSE && indexpath.row == 0)
 		[self handleLicenses];
 }
 
