@@ -14,3 +14,5 @@
 "label.no-transcripts" = "No stored transcripts";
 "label.copy-all" = "Copy All";
 "label.email" = "Email";
+
+"settings.section.settings" = "Settings";

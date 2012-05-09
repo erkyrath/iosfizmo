@@ -6,8 +6,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SettingsViewController : UIViewController
+@interface SettingsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, retain) IBOutlet UITableView *tableview;
+
+@property (nonatomic, retain) IBOutlet UITableViewCell *autocorrectcell;
+@property (nonatomic, retain) IBOutlet UITableViewCell *morepromptcell;
+@property (nonatomic, retain) IBOutlet UITableViewCell *licensecell;
+
+@property (nonatomic, retain) IBOutlet UISwitch *autocorrectswitch;
+@property (nonatomic, retain) IBOutlet UISwitch *morepromptswitch;
 
 @end
