@@ -69,10 +69,10 @@
 				<bool key="IBUIDefinesPresentationContext">YES</bool>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 				<bool key="IBUIHorizontal">NO</bool>
-				<object class="IBUINavigationController" key="IBUISelectedViewController" id="243566145">
-					<object class="IBUITabBarItem" key="IBUITabBarItem" id="425448276">
+				<object class="IBUINavigationController" key="IBUISelectedViewController" id="716001178">
+					<object class="IBUITabBarItem" key="IBUITabBarItem" id="696879453">
 						<string key="IBUITitle">Settings</string>
-						<object class="NSCustomResource" key="IBUIImage" id="67096428">
+						<object class="NSCustomResource" key="IBUIImage" id="361264416">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">tabicon-help.png</string>
 						</object>
@@ -87,7 +87,7 @@
 					<bool key="IBUIDefinesPresentationContext">YES</bool>
 					<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					<bool key="IBUIHorizontal">NO</bool>
-					<object class="IBUINavigationBar" key="IBUINavigationBar" id="310675534">
+					<object class="IBUINavigationBar" key="IBUINavigationBar" id="566428113">
 						<nil key="NSNextResponder"/>
 						<int key="NSvFlags">256</int>
 						<string key="NSFrameSize">{0, 0}</string>
@@ -98,12 +98,12 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 					<array class="NSMutableArray" key="IBUIViewControllers">
-						<object class="IBUIViewController" id="954612423">
-							<object class="IBUINavigationItem" key="IBUINavigationItem" id="147910396">
+						<object class="IBUIViewController" id="323736148">
+							<object class="IBUINavigationItem" key="IBUINavigationItem" id="456509379">
 								<string key="IBUITitle">Settings</string>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 							</object>
-							<reference key="IBUIParentViewController" ref="243566145"/>
+							<reference key="IBUIParentViewController" ref="716001178"/>
 							<string key="IBUINibName">SettingsVC</string>
 							<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
 								<int key="IBUIInterfaceOrientation">1</int>
@@ -157,7 +157,7 @@
 										<reference key="IBUINavigationItem" ref="55256093"/>
 									</object>
 									<object class="IBUIBarButtonItem" key="IBUIRightBarButtonItem" id="204876565">
-										<object class="NSCustomResource" key="IBUIImage" id="500751666">
+										<object class="NSCustomResource" key="IBUIImage" id="625100282">
 											<string key="NSClassName">NSImage</string>
 											<string key="NSResourceName">baricon-edit.png</string>
 										</object>
@@ -212,7 +212,7 @@
 								<object class="IBUINavigationItem" key="IBUINavigationItem" id="988180717">
 									<string key="IBUITitle">My Notes</string>
 									<object class="IBUIBarButtonItem" key="IBUIRightBarButtonItem" id="116672987">
-										<reference key="IBUIImage" ref="500751666"/>
+										<reference key="IBUIImage" ref="625100282"/>
 										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 										<int key="IBUIStyle">1</int>
 										<reference key="IBUINavigationItem" ref="988180717"/>
@@ -233,7 +233,7 @@
 					<object class="IBUINavigationController" id="805039336">
 						<object class="IBUITabBarItem" key="IBUITabBarItem" id="842970724">
 							<string key="IBUITitle">Help</string>
-							<reference key="IBUIImage" ref="67096428"/>
+							<reference key="IBUIImage" ref="361264416"/>
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						</object>
 						<reference key="IBUIParentViewController" ref="435996885"/>
@@ -272,7 +272,7 @@
 							</object>
 						</array>
 					</object>
-					<reference ref="243566145"/>
+					<reference ref="716001178"/>
 				</array>
 				<object class="IBUITabBar" key="IBUITabBar" id="132880894">
 					<reference key="NSNextResponder"/>
@@ -417,7 +417,7 @@
 							<reference ref="850027454"/>
 							<reference ref="551347222"/>
 							<reference ref="805039336"/>
-							<reference ref="243566145"/>
+							<reference ref="716001178"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -549,36 +549,36 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">72</int>
-						<reference key="object" ref="243566145"/>
+						<reference key="object" ref="716001178"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="310675534"/>
-							<reference ref="954612423"/>
-							<reference ref="425448276"/>
+							<reference ref="566428113"/>
+							<reference ref="323736148"/>
+							<reference ref="696879453"/>
 						</array>
 						<reference key="parent" ref="435996885"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">73</int>
-						<reference key="object" ref="310675534"/>
-						<reference key="parent" ref="243566145"/>
+						<reference key="object" ref="566428113"/>
+						<reference key="parent" ref="716001178"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">74</int>
-						<reference key="object" ref="954612423"/>
+						<reference key="object" ref="323736148"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="147910396"/>
+							<reference ref="456509379"/>
 						</array>
-						<reference key="parent" ref="243566145"/>
+						<reference key="parent" ref="716001178"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">75</int>
-						<reference key="object" ref="147910396"/>
-						<reference key="parent" ref="954612423"/>
+						<reference key="object" ref="456509379"/>
+						<reference key="parent" ref="323736148"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">76</int>
-						<reference key="object" ref="425448276"/>
-						<reference key="parent" ref="243566145"/>
+						<reference key="object" ref="696879453"/>
+						<reference key="parent" ref="716001178"/>
 					</object>
 				</array>
 			</object>
