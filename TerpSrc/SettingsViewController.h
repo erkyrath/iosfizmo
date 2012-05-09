@@ -17,4 +17,7 @@
 @property (nonatomic, retain) IBOutlet UISwitch *autocorrectswitch;
 @property (nonatomic, retain) IBOutlet UISwitch *morepromptswitch;
 
+- (IBAction) handleAutoCorrect:(id)sender;
+- (IBAction) handleMorePrompt:(id)sender;
+
 @end

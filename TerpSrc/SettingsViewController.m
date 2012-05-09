@@ -7,6 +7,7 @@
 #import "SettingsViewController.h"
 #import "FizmoGlkViewController.h"
 #import "DisplayWebViewController.h"
+#import "GlkFrameView.h"
 
 @implementation SettingsViewController
 
@@ -51,10 +52,33 @@
 	}
 }
 
+- (void) viewWillAppear:(BOOL)animated
+{
+	[super viewWillAppear:animated];
+	
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	autocorrectswitch.on = ![defaults boolForKey:@"NoAutocorrect"];
+	morepromptswitch.on = ![defaults boolForKey:@"NoMorePrompt"];
+}
+
 - (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)orientation
 {
 	IosGlkViewController *glkviewc = [IosGlkViewController singleton];
 	return [glkviewc shouldAutorotateToInterfaceOrientation:orientation];
+}
+
+- (IBAction) handleAutoCorrect:(id)sender
+{
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	[defaults setBool:!autocorrectswitch.on forKey:@"NoAutocorrect"];
+	
+	IosGlkViewController *glkviewc = [IosGlkViewController singleton];
+	if (glkviewc.frameview)
+		[glkviewc.frameview updateInputTraits];
+}
+
+- (IBAction) handleMorePrompt:(id)sender
+{
 }
 
 - (void) handleLicenses
