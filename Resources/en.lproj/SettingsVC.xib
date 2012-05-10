@@ -216,6 +216,10 @@ AAgACAAIAAEAAQABAAE</bytes>
 				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="492309474"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
+				<object class="NSColor" key="IBUIBackgroundColor" id="524320888">
+					<int key="NSColorSpace">1</int>
+					<bytes key="NSRGB">MSAwLjk4MDcwMjgzMjQgMC45MTk4OTk5Mjk4AA</bytes>
+				</object>
 				<object class="IBUIAccessibilityConfiguration" key="IBUIAccessibilityConfiguration">
 					<integer value="1" key="IBUIAccessibilityTraits"/>
 				</object>
@@ -299,6 +303,7 @@ AAgACAAIAAEAAQABAAE</bytes>
 				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="771577386"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
+				<reference key="IBUIBackgroundColor" ref="524320888"/>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 				<int key="IBUISelectionStyle">0</int>
 				<reference key="IBUIContentView" ref="771577386"/>
@@ -379,6 +384,7 @@ AAgACAAIAAEAAQABAAE</bytes>
 				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="932688695"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
+				<reference key="IBUIBackgroundColor" ref="524320888"/>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 				<int key="IBUISelectionStyle">0</int>
 				<reference key="IBUIContentView" ref="932688695"/>
