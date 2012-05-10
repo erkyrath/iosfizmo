@@ -65,6 +65,16 @@ h2 {
   padding-right: 4px;
 }
 
+.LinkLine {
+  font-style: italic;
+  font-size: 14px;
+  margin-left: 40px;
+}
+
+.LinkLine a {
+  color: #22D;
+}
+
 .License {
   font-size: 13px;
   margin-left: 40px;
@@ -101,6 +111,12 @@ h2 {
 
   .Command {
     font-size: 12px;
+  }
+
+  .LinkLine {
+    font-style: italic;
+    font-size: 12px;
+    margin-left: 0px;
   }
 
   .License {
