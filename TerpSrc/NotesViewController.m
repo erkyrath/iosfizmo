@@ -64,8 +64,12 @@
 			textview.font = [UIFont systemFontOfSize:fontsize];
 	}
 	
+	NSString *reqSysVer = @"5.0";
+	NSString *currSysVer = [[UIDevice currentDevice] systemVersion];
+	BOOL hasios5 = ([currSysVer compare:reqSysVer options:NSNumericSearch] != NSOrderedAscending);
+	
 	UIImage *stripeimg = nil;
-	if (gradview.hasColors) {
+	if (hasios5) {
 		if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
 			stripeimg = [UIImage imageNamed:@"background-notes-s"];
 		else
@@ -73,10 +77,10 @@
 		if (stripeimg)
 			textview.backgroundColor = [UIColor colorWithPatternImage:stripeimg];
 		
-		[gradview setUpColors];
+		[gradview setUpColorsPreset:1];
 	}
 	else {
-		/* The GradientView's colors didn't load properly from the nib file. This must be pre-iOS5. In this case, transparent background colors won't load properly either. We substitute opaque ones, which handily cover up the missing gradient view. */
+		/* Transparent background colors won't load properly. We substitute opaque ones, which handily cover up the missing gradient view. */
 		if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
 			stripeimg = [UIImage imageNamed:@"background-notesopaque-s"];
 		else

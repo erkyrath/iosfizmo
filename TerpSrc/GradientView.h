@@ -24,6 +24,6 @@
 @property (nonatomic, retain) UIColor *color4;
 
 - (BOOL) hasColors;
-- (void) setUpColors;
+- (void) setUpColorsPreset:(int)val;
 
 @end
