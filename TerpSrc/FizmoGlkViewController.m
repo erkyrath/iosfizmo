@@ -120,7 +120,7 @@ typedef struct z_file_struct z_file;
 	}
 	UIBarButtonItem *keyboardbutton = self.navigationItem.rightBarButtonItem;
 	if (keyboardbutton && [keyboardbutton respondsToSelector:@selector(setAccessibilityLabel:)]) {
-		[keyboardbutton setAccessibilityLabel:NSLocalizedStringFromTable(@"label.compose-command", @"TerpLocalize", nil)];
+		[keyboardbutton setAccessibilityLabel:NSLocalizedStringFromTable(@"label.keyboard", @"TerpLocalize", nil)];
 	}
 }
 

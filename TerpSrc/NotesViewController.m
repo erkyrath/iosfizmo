@@ -103,6 +103,12 @@
 			textview.text = str;
 	}
 
+	/* Interface Builder currently doesn't allow us to set the voiceover labels for bar button items. We do it in code. */
+	UIBarButtonItem *keyboardbutton = self.navigationItem.rightBarButtonItem;
+	if (keyboardbutton && [keyboardbutton respondsToSelector:@selector(setAccessibilityLabel:)]) {
+		[keyboardbutton setAccessibilityLabel:NSLocalizedStringFromTable(@"label.keyboard", @"TerpLocalize", nil)];
+	}
+
 	if ([textview respondsToSelector:@selector(addGestureRecognizer:)]) {
 		/* gestures are available in iOS 3.2 and up */
 		
