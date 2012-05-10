@@ -1,7 +1,7 @@
 body {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 16px;
-  background: #DCB;
+  background: #D8CC99;
   max-width: 688px;
   margin-left: auto;
   margin-right: auto;
@@ -9,7 +9,7 @@ body {
 
 h1 {
   color: #543;
-  background: #EDC;
+  background: #F8E8B8;
   font-size: 24px;
   padding: 4px 40px;
   -moz-border-radius: 16px;
