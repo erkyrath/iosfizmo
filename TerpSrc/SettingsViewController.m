@@ -79,6 +79,8 @@
 
 - (IBAction) handleMorePrompt:(id)sender
 {
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	[defaults setBool:!morepromptswitch.on forKey:@"NoMorePrompt"];
 }
 
 - (void) handleLicenses
