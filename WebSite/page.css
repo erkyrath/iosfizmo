@@ -10,7 +10,7 @@ body {
 h1 {
   color: #543;
   background: #F8E8B8;
-  font-size: 24px;
+  font-size: 20px;
   padding: 4px 40px;
   -moz-border-radius: 16px;
   border-radius: 16px;
@@ -68,7 +68,10 @@ h2 {
 .LinkLine {
   font-style: italic;
   font-size: 14px;
-  margin-left: 40px;
+  background: #F8E8B8;
+  padding: 8px 40px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
 }
 
 .LinkLine a {
@@ -88,7 +91,7 @@ h2 {
   }
 
   h1 {
-    font-size: 20px;
+    font-size: 17px;
     padding: 4px 20px;
     margin-top: 20px;
   }
@@ -116,7 +119,7 @@ h2 {
   .LinkLine {
     font-style: italic;
     font-size: 12px;
-    margin-left: 0px;
+    padding: 4px 20px;
   }
 
   .License {
