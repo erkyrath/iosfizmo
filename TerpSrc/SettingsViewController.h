@@ -19,5 +19,6 @@
 
 - (IBAction) handleAutoCorrect:(id)sender;
 - (IBAction) handleMorePrompt:(id)sender;
+- (void) handleLicenses;
 
 @end
