@@ -7,6 +7,7 @@
 #import "HelpViewController.h"
 #import "IosGlkViewController.h"
 #import "FizmoGlkViewController.h"
+#import "IosGlkAppDelegate.h"
 
 @implementation HelpViewController
 
@@ -30,7 +31,7 @@
 	[webview loadHTMLString:html baseURL:url];
 	webview.delegate = self;
 
-	if ([webview respondsToSelector:@selector(addGestureRecognizer:)]) {
+	if ([IosGlkAppDelegate gesturesavailable]) {
 		/* gestures are available in iOS 3.2 and up */
 		
 		FizmoGlkViewController *mainviewc = [FizmoGlkViewController singleton];

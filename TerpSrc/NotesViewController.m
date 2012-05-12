@@ -10,6 +10,7 @@
 #import "TranscriptViewController.h"
 #import "GradientView.h"
 #import "MButton.h"
+#import "IosGlkAppDelegate.h"
 
 #define NOTES_SAVE_DELAY (60)
 
@@ -113,7 +114,7 @@
 		[keyboardbutton setAccessibilityLabel:NSLocalizedStringFromTable(@"label.keyboard", @"TerpLocalize", nil)];
 	}
 
-	if ([textview respondsToSelector:@selector(addGestureRecognizer:)]) {
+	if ([IosGlkAppDelegate gesturesavailable]) {
 		/* gestures are available in iOS 3.2 and up */
 		
 		FizmoGlkViewController *mainviewc = [FizmoGlkViewController singleton];

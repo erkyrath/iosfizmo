@@ -100,7 +100,7 @@ typedef struct z_file_struct z_file;
 	
 	self.frameview.backgroundColor = [self.fizmoDelegate genBackgroundColor];
 	
-	if ([frameview respondsToSelector:@selector(addGestureRecognizer:)]) {
+	if ([IosGlkAppDelegate gesturesavailable]) {
 		/* gestures are available in iOS 3.2 and up */
 		UISwipeGestureRecognizer *recognizer;
 		recognizer = [[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeLeft:)] autorelease];

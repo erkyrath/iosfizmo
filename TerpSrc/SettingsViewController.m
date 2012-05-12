@@ -8,6 +8,7 @@
 #import "FizmoGlkViewController.h"
 #import "DisplayWebViewController.h"
 #import "GlkFrameView.h"
+#import "IosGlkAppDelegate.h"
 
 @implementation SettingsViewController
 
@@ -38,7 +39,7 @@
 		tableview.backgroundView.backgroundColor = [UIColor colorWithRed:0.85 green:0.8 blue:0.6 alpha:1];
 	}
 		
-	if ([tableview respondsToSelector:@selector(addGestureRecognizer:)]) {
+	if ([IosGlkAppDelegate gesturesavailable]) {
 		/* gestures are available in iOS 3.2 and up */
 		
 		FizmoGlkViewController *mainviewc = [FizmoGlkViewController singleton];

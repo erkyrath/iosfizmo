@@ -8,6 +8,7 @@
 #import "IosGlkViewController.h"
 #import "RelDateFormatter.h"
 #import "GlkFileTypes.h"
+#import "IosGlkAppDelegate.h"
 
 @implementation DisplayTextViewController
 
@@ -62,7 +63,7 @@
 	if (str)
 		textview.text = str;
 
-	if ([textview respondsToSelector:@selector(addGestureRecognizer:)]) {
+	if ([IosGlkAppDelegate gesturesavailable]) {
 		/* gestures are available in iOS 3.2 and up */
 		UISwipeGestureRecognizer *recognizer;
 		recognizer = [[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeRight:)] autorelease];
