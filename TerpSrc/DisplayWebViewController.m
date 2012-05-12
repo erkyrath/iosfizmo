@@ -40,7 +40,9 @@
 	self.navigationItem.title = doctitle;
 
 	NSBundle *bundle = [NSBundle mainBundle];
-	NSURL *url = [bundle URLForResource:filename withExtension:@"html" subdirectory:@"WebSite"];
+	// Do this the annoying iOS3-compatible way
+	NSString *path = [bundle pathForResource:filename ofType:@"html" inDirectory:@"WebSite"];
+	NSURL *url = [NSURL fileURLWithPath:path isDirectory:NO];
 	NSString *html = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
 	[webview loadHTMLString:html baseURL:url];
 	webview.delegate = self;
