@@ -43,7 +43,6 @@
 	self.navigationItem.title = NSLocalizedStringFromTable(@"title.transcript", @"TerpLocalize", nil);
 
 	UIBarButtonItem *sendbutton = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(buttonSend:)] autorelease];
-	sendbutton.enabled = [MFMailComposeViewController canSendMail];
 	self.navigationItem.rightBarButtonItem = sendbutton;
 
 	titlelabel.text = thumb.label;
@@ -78,20 +77,26 @@
 
 - (void) buttonSend:(id)sender
 {
+	NSString *copylabel = NSLocalizedStringFromTable(@"label.copy-all", @"TerpLocalize", nil);
+	NSString *emaillabel = nil;
+	if ([MFMailComposeViewController class] && [MFMailComposeViewController canSendMail])
+		emaillabel = NSLocalizedStringFromTable(@"label.email", @"TerpLocalize", nil);
+	
 	self.exportsheet = [[[UIActionSheet alloc]
 						 initWithTitle:nil
 						 delegate:self
 						 cancelButtonTitle:NSLocalizedStringFromTable(@"button.cancel", @"TerpLocalize", nil)
 						 destructiveButtonTitle:nil
-						 otherButtonTitles:
-						 NSLocalizedStringFromTable(@"label.copy-all", @"TerpLocalize", nil),
-						 NSLocalizedStringFromTable(@"label.email", @"TerpLocalize", nil),
-						 nil] autorelease];
+						 otherButtonTitles: copylabel, emaillabel, nil] autorelease];
 	[exportsheet showFromBarButtonItem:self.navigationItem.rightBarButtonItem animated:YES];
 }
 
 - (void) actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
 	self.exportsheet = nil;
+	
+	/* Because we have a variable number of options, cancelButtonIndex might be 1. */
+	if (buttonIndex == actionSheet.cancelButtonIndex)
+		return;
 	
 	switch (buttonIndex) {
 		case 0:
