@@ -44,7 +44,7 @@
 		DF29B832155B051B009DA4BE /* WebDocVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF29B831155B051B009DA4BE /* WebDocVC.xib */; };
 		DF361B5F14F72B5C00A8D670 /* DisplayTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF361B5E14F72B5C00A8D670 /* DisplayTextViewController.m */; };
 		DF361B6214F72C5C00A8D670 /* DisplayTextVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF361B6114F72C5C00A8D670 /* DisplayTextVC.xib */; };
-		DF361B6414F73B7000A8D670 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF361B6314F73B7000A8D670 /* MessageUI.framework */; };
+		DF361B6414F73B7000A8D670 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF361B6314F73B7000A8D670 /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		DF361B7014FAAFED00A8D670 /* MoreBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF361B6F14FAAFEC00A8D670 /* MoreBoxView.m */; };
 		DF53C4411559E4D800709FC2 /* more-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = DF53C4401559E4D800709FC2 /* more-arrow.png */; };
 		DF53C4441559E4EA00709FC2 /* more-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF53C4431559E4EA00709FC2 /* more-arrow@2x.png */; };

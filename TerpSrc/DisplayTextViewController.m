@@ -88,7 +88,12 @@
 						 cancelButtonTitle:NSLocalizedStringFromTable(@"button.cancel", @"TerpLocalize", nil)
 						 destructiveButtonTitle:nil
 						 otherButtonTitles: copylabel, emaillabel, nil] autorelease];
-	[exportsheet showFromBarButtonItem:self.navigationItem.rightBarButtonItem animated:YES];
+	
+	// iOS3 compatibility
+	if ([exportsheet respondsToSelector:@selector(showFromBarButtonItem:animated:)])
+		[exportsheet showFromBarButtonItem:self.navigationItem.rightBarButtonItem animated:YES];
+	else
+		[exportsheet showInView:textview];
 }
 
 - (void) actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
