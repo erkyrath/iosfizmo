@@ -41,21 +41,24 @@
 	
 	/* Create the cells... */
 	self.licensecell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Settings"] autorelease];
-	self.licensecell.textLabel.text = NSLocalizedStringFromTable(@"settings.cell.license", @"TerpLocalize", nil);
-	self.licensecell.textLabel.textColor = [UIColor colorWithRed:0.35 green:0.215 blue:0 alpha:1];
-	self.licensecell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+	licensecell.backgroundColor = [UIColor colorWithRed:1.0 green:0.98 blue:0.92 alpha:1];
+	licensecell.textLabel.text = NSLocalizedStringFromTable(@"settings.cell.license", @"TerpLocalize", nil);
+	licensecell.textLabel.textColor = [UIColor colorWithRed:0.35 green:0.215 blue:0 alpha:1];
+	licensecell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 	
 	self.autocorrectcell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Settings"] autorelease];
-	self.autocorrectcell.textLabel.text = NSLocalizedStringFromTable(@"settings.cell.autocorrect", @"TerpLocalize", nil);
-	self.autocorrectcell.textLabel.textColor = self.licensecell.textLabel.textColor;
-	self.autocorrectcell.selectionStyle = UITableViewCellSelectionStyleNone;
-	self.autocorrectcell.accessoryView = autocorrectswitch;
+	autocorrectcell.backgroundColor = licensecell.backgroundColor;
+	autocorrectcell.textLabel.text = NSLocalizedStringFromTable(@"settings.cell.autocorrect", @"TerpLocalize", nil);
+	autocorrectcell.textLabel.textColor = licensecell.textLabel.textColor;
+	autocorrectcell.selectionStyle = UITableViewCellSelectionStyleNone;
+	autocorrectcell.accessoryView = autocorrectswitch;
 	
 	self.morepromptcell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Settings"] autorelease];
-	self.morepromptcell.textLabel.text = NSLocalizedStringFromTable(@"settings.cell.moreprompt", @"TerpLocalize", nil);
-	self.morepromptcell.textLabel.textColor = self.licensecell.textLabel.textColor;
-	self.morepromptcell.selectionStyle = UITableViewCellSelectionStyleNone;
-	self.morepromptcell.accessoryView = morepromptswitch;
+	morepromptcell.backgroundColor = licensecell.backgroundColor;
+	morepromptcell.textLabel.text = NSLocalizedStringFromTable(@"settings.cell.moreprompt", @"TerpLocalize", nil);
+	morepromptcell.textLabel.textColor = licensecell.textLabel.textColor;
+	morepromptcell.selectionStyle = UITableViewCellSelectionStyleNone;
+	morepromptcell.accessoryView = morepromptswitch;
 		
 	if ([IosGlkAppDelegate gesturesavailable]) {
 		/* gestures are available in iOS 3.2 and up */

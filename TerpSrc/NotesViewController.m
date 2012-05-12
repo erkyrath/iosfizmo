@@ -50,14 +50,15 @@
 			buttontable.backgroundView.backgroundColor = [UIColor colorWithRed:0.85 green:0.8 blue:0.6 alpha:1];
 		}
 	}
-
+	
 	/* Create the cells... */
 	self.transcriptcell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Notes"] autorelease];
-	self.transcriptcell.textLabel.text = NSLocalizedStringFromTable(@"title.transcripts", @"TerpLocalize", nil);
-	self.transcriptcell.textLabel.textColor = [UIColor colorWithRed:0.35 green:0.215 blue:0 alpha:1];
+	transcriptcell.backgroundColor = [UIColor colorWithRed:1.0 green:0.98 blue:0.92 alpha:1];
+	transcriptcell.textLabel.text = NSLocalizedStringFromTable(@"title.transcripts", @"TerpLocalize", nil);
+	transcriptcell.textLabel.textColor = [UIColor colorWithRed:0.35 green:0.215 blue:0 alpha:1];
 	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
-		self.transcriptcell.textLabel.font = [self.transcriptcell.textLabel.font fontWithSize:17];
-	self.transcriptcell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+		transcriptcell.textLabel.font = [transcriptcell.textLabel.font fontWithSize:17];
+	transcriptcell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 	
 	/* Bang on font if Noteworthy is not available. I don't know why Marker Felt needs to be so enormous to fit the same grid as Noteworthy, though. */
 	if ([textview.font.familyName isEqualToString:@"Helvetica"]) {
