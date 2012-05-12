@@ -69,7 +69,7 @@
 						<bool key="IBUIMultipleTouchEnabled">YES</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<bool key="IBUIAlwaysBounceVertical">YES</bool>
-						<string key="IBUIText">My journey began... </string>
+						<string type="base64-UTF8" key="IBUIText">TXkgam91cm5leSBiZWdhbi4uLgoKKFlvdSBjYW4gdGFrZSBub3RlcyBvbiB0aGlzIHBhZ2UuKQ</string>
 						<object class="IBUITextInputTraits" key="IBUITextInputTraits">
 							<int key="IBUIAutocapitalizationType">2</int>
 							<int key="IBUIAutocorrectionType">1</int>
