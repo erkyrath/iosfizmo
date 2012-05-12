@@ -38,6 +38,24 @@
 		tableview.backgroundView = [[[UIView alloc] initWithFrame:tableview.backgroundView.frame] autorelease];
 		tableview.backgroundView.backgroundColor = [UIColor colorWithRed:0.85 green:0.8 blue:0.6 alpha:1];
 	}
+	
+	/* Create the cells... */
+	self.licensecell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Settings"] autorelease];
+	self.licensecell.textLabel.text = NSLocalizedStringFromTable(@"settings.cell.license", @"TerpLocalize", nil);
+	self.licensecell.textLabel.textColor = [UIColor colorWithRed:0.35 green:0.215 blue:0 alpha:1];
+	self.licensecell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+	
+	self.autocorrectcell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Settings"] autorelease];
+	self.autocorrectcell.textLabel.text = NSLocalizedStringFromTable(@"settings.cell.autocorrect", @"TerpLocalize", nil);
+	self.autocorrectcell.textLabel.textColor = self.licensecell.textLabel.textColor;
+	self.autocorrectcell.selectionStyle = UITableViewCellSelectionStyleNone;
+	self.autocorrectcell.accessoryView = autocorrectswitch;
+	
+	self.morepromptcell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Settings"] autorelease];
+	self.morepromptcell.textLabel.text = NSLocalizedStringFromTable(@"settings.cell.moreprompt", @"TerpLocalize", nil);
+	self.morepromptcell.textLabel.textColor = self.licensecell.textLabel.textColor;
+	self.morepromptcell.selectionStyle = UITableViewCellSelectionStyleNone;
+	self.morepromptcell.accessoryView = morepromptswitch;
 		
 	if ([IosGlkAppDelegate gesturesavailable]) {
 		/* gestures are available in iOS 3.2 and up */

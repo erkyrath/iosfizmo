@@ -17,3 +17,7 @@
 
 "settings.section.settings" = "Text Entry and Display";
 "settings.title.license" = "License Information";
+
+"settings.cell.license" = "License Information";
+"settings.cell.autocorrect" = "Auto-Correction";
+"settings.cell.moreprompt" = "Page Long Output";
