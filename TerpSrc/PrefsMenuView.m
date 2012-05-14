@@ -68,12 +68,12 @@
 	[[NSBundle mainBundle] loadNibNamed:@"PrefsMenuView" owner:self options:nil];
 	FizmoGlkViewController *glkviewc = [FizmoGlkViewController singleton];
 
-	UIImage *checkimage = [UIImage imageNamed:@"checkmark"];
+	UIImage *checkimage = [UIImage imageNamed:[IosGlkAppDelegate imageHackPNG:@"checkmark"]];
 	[colorbut_bright setSelectImage:checkimage];
 	[colorbut_quiet setSelectImage:checkimage];
 	[colorbut_dark setSelectImage:checkimage];
 	
-	checkimage = [UIImage imageNamed:@"checkmark-s"];
+	checkimage = [UIImage imageNamed:[IosGlkAppDelegate imageHackPNG:@"checkmark-s"]];
 	[colbut_full setSelectImage:checkimage];
 	[colbut_34 setSelectImage:checkimage];
 	[colbut_12 setSelectImage:checkimage];
@@ -258,7 +258,7 @@
 	UIImage *highlightedbackimg = [fontbut_sample1 backgroundImageForState:UIControlStateHighlighted];
 	
 	CGFloat fontsize = fontbut_sample1.titleLabel.font.pointSize;
-	UIImage *checkimage = [UIImage imageNamed:@"checkmark"];
+	UIImage *checkimage = [UIImage imageNamed:[IosGlkAppDelegate imageHackPNG:@"checkmark"]];
 	
 	int count = 0;
 	for (NSString *name in fontnames) {

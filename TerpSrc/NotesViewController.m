@@ -92,9 +92,9 @@
 	else {
 		/* Transparent background colors won't load properly. We substitute opaque ones, which handily cover up the missing gradient view. */
 		if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
-			stripeimg = [UIImage imageNamed:@"background-notesopaque-s"];
+			stripeimg = [UIImage imageNamed:[IosGlkAppDelegate imageHackPNG:@"background-notesopaque-s"]];
 		else
-			stripeimg = [UIImage imageNamed:@"background-notesopaque"];
+			stripeimg = [UIImage imageNamed:[IosGlkAppDelegate imageHackPNG:@"background-notesopaque"]];
 		if (stripeimg)
 			textview.backgroundColor = [UIColor colorWithPatternImage:stripeimg];
 	}
