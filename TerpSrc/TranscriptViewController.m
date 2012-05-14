@@ -165,7 +165,7 @@
 			thumb = [filelist objectAtIndex:row];
 		if (thumb && !thumb.isfake) {
 			GlkFileThumb *thumb = [filelist objectAtIndex:row];
-			NSLog(@"selector: deleting file \"%@\" (%@)", thumb.label, thumb.pathname);
+			//NSLog(@"selector: deleting file \"%@\" (%@)", thumb.label, thumb.pathname);
 			BOOL res = [[NSFileManager defaultManager] removeItemAtPath:thumb.pathname error:nil];
 			if (res) {
 				[filelist removeObjectAtIndex:row];
@@ -190,9 +190,7 @@
 		return;
 	if (thumb.isfake)
 		return;
-	
-	NSLog(@"selector: selected \"%@\"", thumb.label);
-	
+		
 	/* The user has selected a file. */
 	DisplayTextViewController *viewc = [[[DisplayTextViewController alloc] initWithNibName:@"DisplayTextVC" thumb:thumb bundle:nil] autorelease];
 	[self.navigationController pushViewController:viewc animated:YES];

@@ -32,8 +32,6 @@
 
 - (void) viewDidLoad
 {
-	NSLog(@"NotesVC: viewDidLoad");
-
 	textview.delegate = self;
 	
 	UIEdgeInsets insets = UIEdgeInsetsMake(buttontable.bounds.size.height, 0, 0, 0);
@@ -139,7 +137,6 @@
 
 - (void) viewWillUnload
 {
-	NSLog(@"NotesVC: viewWillUnload");
 	[self saveIfNeeded];
 	textview.delegate = nil;
 }
@@ -206,7 +203,6 @@
 {
 	if (!textchanged)
 		return;
-	NSLog(@"NotesVC: saving notes");
 	textchanged = NO;
 	[NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(saveIfNeeded) object:nil];
 	if (notespath && textview.text) {
