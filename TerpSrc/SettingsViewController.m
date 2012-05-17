@@ -14,18 +14,18 @@
 
 @synthesize tableview;
 @synthesize autocorrectcell;
-@synthesize morepromptcell;
+@synthesize keepopencell;
 @synthesize licensecell;
 @synthesize autocorrectswitch;
-@synthesize morepromptswitch;
+@synthesize keepopenswitch;
 
 - (void) dealloc {
 	self.tableview = nil;
 	self.autocorrectcell = nil;
-	self.morepromptcell = nil;
+	self.keepopencell = nil;
 	self.licensecell = nil;
 	self.autocorrectswitch = nil;
-	self.morepromptswitch = nil;
+	self.keepopenswitch = nil;
 	[super dealloc];
 }
 
@@ -51,12 +51,12 @@
 	autocorrectcell.selectionStyle = UITableViewCellSelectionStyleNone;
 	autocorrectcell.accessoryView = autocorrectswitch;
 	
-	self.morepromptcell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Settings"] autorelease];
-	morepromptcell.backgroundColor = licensecell.backgroundColor;
-	morepromptcell.textLabel.text = NSLocalizedStringFromTable(@"settings.cell.moreprompt", @"TerpLocalize", nil);
-	morepromptcell.textLabel.textColor = licensecell.textLabel.textColor;
-	morepromptcell.selectionStyle = UITableViewCellSelectionStyleNone;
-	morepromptcell.accessoryView = morepromptswitch;
+	self.keepopencell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Settings"] autorelease];
+	keepopencell.backgroundColor = licensecell.backgroundColor;
+	keepopencell.textLabel.text = NSLocalizedStringFromTable(@"settings.cell.keepopen", @"TerpLocalize", nil);
+	keepopencell.textLabel.textColor = licensecell.textLabel.textColor;
+	keepopencell.selectionStyle = UITableViewCellSelectionStyleNone;
+	keepopencell.accessoryView = keepopenswitch;
 		
 	if ([IosGlkAppDelegate gesturesavailable]) {
 		/* gestures are available in iOS 3.2 and up */
@@ -78,7 +78,7 @@
 	
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	autocorrectswitch.on = ![defaults boolForKey:@"NoAutocorrect"];
-	morepromptswitch.on = ![defaults boolForKey:@"NoMorePrompt"];
+	keepopenswitch.on = ![defaults boolForKey:@"NoKeepOpen"];
 }
 
 - (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)orientation
@@ -97,10 +97,10 @@
 		[glkviewc.frameview updateInputTraits];
 }
 
-- (IBAction) handleMorePrompt:(id)sender
+- (IBAction) handleKeepOpen:(id)sender
 {
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-	[defaults setBool:!morepromptswitch.on forKey:@"NoMorePrompt"];
+	[defaults setBool:!keepopenswitch.on forKey:@"NoKeepOpen"];
 }
 
 - (void) handleLicenses
@@ -153,7 +153,7 @@
 				case 0:
 					return autocorrectcell;
 				case 1:
-					return morepromptcell;
+					return keepopencell;
 				default:
 					return nil;
 			}

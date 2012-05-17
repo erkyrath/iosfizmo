@@ -42,6 +42,7 @@
 						<string key="NSFrameSize">{320, 460}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">10</int>
@@ -130,6 +131,7 @@ AAgACAAIAAEAAQABAAE</bytes>
 				<string key="NSFrameSize">{79, 27}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
+				<reference key="NSNextKeyView"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
 				<bool key="IBUIOpaque">NO</bool>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -143,6 +145,7 @@ AAgACAAIAAEAAQABAAE</bytes>
 				<string key="NSFrameSize">{79, 27}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
+				<reference key="NSNextKeyView"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
 				<bool key="IBUIOpaque">NO</bool>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -179,11 +182,11 @@ AAgACAAIAAEAAQABAAE</bytes>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">morepromptswitch</string>
+						<string key="label">keepopenswitch</string>
 						<reference key="source" ref="372490531"/>
 						<reference key="destination" ref="852037606"/>
 					</object>
-					<int key="connectionID">28</int>
+					<int key="connectionID">31</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
@@ -212,12 +215,12 @@ AAgACAAIAAEAAQABAAE</bytes>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">handleMorePrompt:</string>
+						<string key="label">handleKeepOpen:</string>
 						<reference key="source" ref="852037606"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">13</int>
 					</object>
-					<int key="connectionID">30</int>
+					<int key="connectionID">32</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -262,7 +265,7 @@ AAgACAAIAAEAAQABAAE</bytes>
 						<int key="objectID">25</int>
 						<reference key="object" ref="852037606"/>
 						<reference key="parent" ref="0"/>
-						<string key="objectName">More Prompt Switch</string>
+						<string key="objectName">Keep Open Switch</string>
 					</object>
 				</array>
 			</object>
@@ -280,7 +283,7 @@ AAgACAAIAAEAAQABAAE</bytes>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">30</int>
+			<int key="maxID">32</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -289,24 +292,24 @@ AAgACAAIAAEAAQABAAE</bytes>
 					<string key="superclassName">UIViewController</string>
 					<dictionary class="NSMutableDictionary" key="actions">
 						<string key="handleAutoCorrect:">id</string>
-						<string key="handleMorePrompt:">id</string>
+						<string key="handleKeepOpen:">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
 						<object class="IBActionInfo" key="handleAutoCorrect:">
 							<string key="name">handleAutoCorrect:</string>
 							<string key="candidateClassName">id</string>
 						</object>
-						<object class="IBActionInfo" key="handleMorePrompt:">
-							<string key="name">handleMorePrompt:</string>
+						<object class="IBActionInfo" key="handleKeepOpen:">
+							<string key="name">handleKeepOpen:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="autocorrectcell">UITableViewCell</string>
 						<string key="autocorrectswitch">UISwitch</string>
+						<string key="keepopencell">UITableViewCell</string>
+						<string key="keepopenswitch">UISwitch</string>
 						<string key="licensecell">UITableViewCell</string>
-						<string key="morepromptcell">UITableViewCell</string>
-						<string key="morepromptswitch">UISwitch</string>
 						<string key="tableview">UITableView</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
@@ -318,17 +321,17 @@ AAgACAAIAAEAAQABAAE</bytes>
 							<string key="name">autocorrectswitch</string>
 							<string key="candidateClassName">UISwitch</string>
 						</object>
+						<object class="IBToOneOutletInfo" key="keepopencell">
+							<string key="name">keepopencell</string>
+							<string key="candidateClassName">UITableViewCell</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="keepopenswitch">
+							<string key="name">keepopenswitch</string>
+							<string key="candidateClassName">UISwitch</string>
+						</object>
 						<object class="IBToOneOutletInfo" key="licensecell">
 							<string key="name">licensecell</string>
 							<string key="candidateClassName">UITableViewCell</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="morepromptcell">
-							<string key="name">morepromptcell</string>
-							<string key="candidateClassName">UITableViewCell</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="morepromptswitch">
-							<string key="name">morepromptswitch</string>
-							<string key="candidateClassName">UISwitch</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="tableview">
 							<string key="name">tableview</string>

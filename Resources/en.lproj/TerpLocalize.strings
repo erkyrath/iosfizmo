@@ -20,4 +20,4 @@
 
 "settings.cell.license" = "License Information";
 "settings.cell.autocorrect" = "Auto-Correction";
-"settings.cell.moreprompt" = "Page Long Output";
+"settings.cell.keepopen" = "Keyboard Stays Open";

@@ -11,14 +11,14 @@
 @property (nonatomic, retain) IBOutlet UITableView *tableview;
 
 @property (nonatomic, retain) IBOutlet UITableViewCell *autocorrectcell;
-@property (nonatomic, retain) IBOutlet UITableViewCell *morepromptcell;
+@property (nonatomic, retain) IBOutlet UITableViewCell *keepopencell;
 @property (nonatomic, retain) IBOutlet UITableViewCell *licensecell;
 
 @property (nonatomic, retain) IBOutlet UISwitch *autocorrectswitch;
-@property (nonatomic, retain) IBOutlet UISwitch *morepromptswitch;
+@property (nonatomic, retain) IBOutlet UISwitch *keepopenswitch;
 
 - (IBAction) handleAutoCorrect:(id)sender;
-- (IBAction) handleMorePrompt:(id)sender;
+- (IBAction) handleKeepOpen:(id)sender;
 - (void) handleLicenses;
 
 @end
