@@ -13,6 +13,8 @@
 #define DISABLE_FILELIST 1
 #define DISABLE_OUTPUT_HISTORY 1
 #define DISABLE_PREFIX_COMMANDS 1
+#define DISABLE_SIGNAL_HANDLERS 1
+#define DISABLE_BLOCKBUFFER 1
 
 /* This sends TRACE_LOG output to the Xcode standard console. (Fizmo is very verbose, so we leave it off.) */
 //#define ENABLE_IOS_TRACING 1
