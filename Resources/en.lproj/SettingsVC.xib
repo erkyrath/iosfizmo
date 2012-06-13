@@ -138,6 +138,10 @@ AAgACAAIAAEAAQABAAE</bytes>
 				<int key="IBUIContentHorizontalAlignment">0</int>
 				<int key="IBUIContentVerticalAlignment">0</int>
 				<bool key="IBUIOn">YES</bool>
+				<object class="NSColor" key="IBUIOnTintColor">
+					<int key="NSColorSpace">1</int>
+					<bytes key="NSRGB">MC42MzEyNzUyOTYyIDAuNTAzMjI5NTU4NSAwAA</bytes>
+				</object>
 			</object>
 			<object class="IBUISwitch" id="852037606">
 				<reference key="NSNextResponder"/>
@@ -152,6 +156,10 @@ AAgACAAIAAEAAQABAAE</bytes>
 				<int key="IBUIContentHorizontalAlignment">0</int>
 				<int key="IBUIContentVerticalAlignment">0</int>
 				<bool key="IBUIOn">YES</bool>
+				<object class="NSColor" key="IBUIOnTintColor">
+					<int key="NSColorSpace">1</int>
+					<bytes key="NSRGB">MC42MzEyNzUyOTYyIDAuNTAzMjI5NTU4NSAwAA</bytes>
+				</object>
 			</object>
 		</array>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
