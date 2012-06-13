@@ -301,6 +301,7 @@
 						<string key="NSFrame">{{0, 180}, {152, 37}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="241413933"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -315,23 +316,27 @@
 						<reference key="IBUIFontDescription" ref="803702501"/>
 						<reference key="IBUIFont" ref="364755500"/>
 					</object>
-					<object class="IBUISlider" id="344970176">
+					<object class="IBUISlider" id="241413933">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{-2, 229}, {156, 23}}</string>
+						<string key="NSFrame">{{0, 229}, {152, 23}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
 						<float key="IBUIValue">0.5</float>
-						<object class="NSCustomResource" key="IBUIMinimumValueImage" id="1050075830">
+						<object class="NSCustomResource" key="IBUIMinimumValueImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">checkmark.png</string>
+							<string key="NSResourceName">brightness-lo.png</string>
 						</object>
-						<reference key="IBUIMaximumValueImage" ref="1050075830"/>
+						<object class="NSCustomResource" key="IBUIMaximumValueImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">brightness-hi.png</string>
+						</object>
 						<object class="NSColor" key="IBUIMinimumTrackTintColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MC42MzEyNzUyOTYyIDAuNTAzMjI5NTU4NSAwAA</bytes>
@@ -394,6 +399,7 @@
 						<string key="NSFrame">{{0, 45}, {152, 37}}</string>
 						<reference key="NSSuperview" ref="409938868"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -483,6 +489,7 @@
 						<string key="NSFrame">{{0, 90}, {152, 37}}</string>
 						<reference key="NSSuperview" ref="290411177"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<int key="IBUITag">2</int>
@@ -668,7 +675,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">brightslider</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="344970176"/>
+						<reference key="destination" ref="241413933"/>
 					</object>
 					<int key="connectionID">71</int>
 				</object>
@@ -783,7 +790,7 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">handleBrightChanged:</string>
-						<reference key="source" ref="344970176"/>
+						<reference key="source" ref="241413933"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">13</int>
 					</object>
@@ -811,7 +818,7 @@
 							<reference ref="106115723"/>
 							<reference ref="851946422"/>
 							<reference ref="992121058"/>
-							<reference ref="344970176"/>
+							<reference ref="241413933"/>
 						</array>
 						<reference key="parent" ref="0"/>
 						<string key="objectName">Container</string>
@@ -920,7 +927,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">70</int>
-						<reference key="object" ref="344970176"/>
+						<reference key="object" ref="241413933"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</array>
@@ -1203,9 +1210,10 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
+			<string key="brightness-hi.png">{16, 16}</string>
+			<string key="brightness-lo.png">{16, 16}</string>
 			<string key="button-pref-base.png">{32, 32}</string>
 			<string key="button-pref-hi.png">{32, 32}</string>
-			<string key="checkmark.png">{20, 20}</string>
 			<string key="col-12-sel.png">{20, 20}</string>
 			<string key="col-12.png">{20, 20}</string>
 			<string key="col-34-sel.png">{20, 20}</string>
