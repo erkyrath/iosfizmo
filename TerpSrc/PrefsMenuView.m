@@ -20,6 +20,7 @@
 @synthesize colorscontainer;
 @synthesize colorsbutton;
 @synthesize fontsbutton;
+@synthesize brightslider;
 @synthesize colbut_full;
 @synthesize colbut_34;
 @synthesize colbut_12;
@@ -34,6 +35,7 @@
 @synthesize colorbut_bright;
 @synthesize colorbut_quiet;
 @synthesize colorbut_dark;
+@synthesize supportsbrightness;
 @synthesize fontnames;
 @synthesize fontbuttons;
 
@@ -43,6 +45,7 @@
 	self.colorscontainer = nil;
 	self.colorsbutton = nil;
 	self.fontsbutton = nil;
+	self.brightslider = nil;
 	self.colbut_full = nil;
 	self.colbut_34 = nil;
 	self.colbut_12 = nil;
@@ -65,6 +68,10 @@
 }
 
 - (void) loadContent {
+	NSString *reqSysVer = @"5.0";
+	NSString *currSysVer = [[UIDevice currentDevice] systemVersion];
+	supportsbrightness = ([currSysVer compare:reqSysVer options:NSNumericSearch] != NSOrderedAscending);
+	
 	[[NSBundle mainBundle] loadNibNamed:@"PrefsMenuView" owner:self options:nil];
 	FizmoGlkViewController *glkviewc = [FizmoGlkViewController singleton];
 
@@ -81,6 +88,14 @@
 	if (faderview) {
 		faderview.alpha = ((glkviewc.glkdelegate.hasDarkTheme) ? 1.0 : 0.0);
 		faderview.hidden = NO;
+	}
+	
+	if (!supportsbrightness) {
+		/* Shrink the container box to exclude the brightness slider. */
+		CGFloat val = CGRectGetMaxY(colorsbutton.frame);
+		CGRect rect = container.frame;
+		rect.size.height = val - rect.origin.y;
+		container.frame = rect;
 	}
 	
 	[self updateButtons];
@@ -108,6 +123,13 @@
 			UIButton *button = [fontbuttons objectAtIndex:count];
 			button.selected = [family isEqualToString:str];
 		}
+	}
+	
+	if (supportsbrightness) {
+		brightslider.value = [UIScreen mainScreen].brightness;
+	}
+	else {
+		brightslider.hidden = YES;
 	}
 }
 
@@ -334,6 +356,12 @@
 	else {
 		[content addSubview:colorscontainer];
 		container.hidden = YES;
+	}
+}
+
+- (IBAction) handleBrightChanged:(id)sender {
+	if (supportsbrightness) {
+		[UIScreen mainScreen].brightness = brightslider.value;
 	}
 }
 

@@ -17,6 +17,7 @@
 @property (nonatomic, retain) IBOutlet PrefsContainerView *colorscontainer;
 @property (nonatomic, retain) IBOutlet UIButton *colorsbutton;
 @property (nonatomic, retain) IBOutlet UIButton *fontsbutton;
+@property (nonatomic, retain) IBOutlet UISlider *brightslider;
 @property (nonatomic, retain) IBOutlet MButton *colbut_full;
 @property (nonatomic, retain) IBOutlet MButton *colbut_34;
 @property (nonatomic, retain) IBOutlet MButton *colbut_12;
@@ -32,6 +33,7 @@
 @property (nonatomic, retain) IBOutlet MButton *colorbut_quiet;
 @property (nonatomic, retain) IBOutlet MButton *colorbut_dark;
 
+@property (nonatomic) BOOL supportsbrightness;
 @property (nonatomic, retain) NSArray *fontnames;
 @property (nonatomic, retain) NSArray *fontbuttons;
 
@@ -43,6 +45,7 @@
 - (IBAction) handleFont:(id)sender;
 - (IBAction) handleColors:(id)sender;
 - (IBAction) handleColor:(id)sender;
+- (IBAction) handleBrightChanged:(id)sender;
 
 @end
 
