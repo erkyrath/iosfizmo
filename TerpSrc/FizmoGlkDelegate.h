@@ -8,7 +8,7 @@
 #import "IosGlkLibDelegate.h"
 #import "StyleSet.h"
 
-#define FONTSCALE_MAX (7)
+#define FONTSCALE_MAX (9)
 #define LEADING_MAX (5)
 
 @interface FizmoGlkDelegate : NSObject <IosGlkLibDelegate> {
