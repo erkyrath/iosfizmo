@@ -16,6 +16,7 @@
 "label.email" = "Email";
 
 "settings.section.settings" = "Text Entry and Display";
+"settings.footer.settings" = "If you have Auto-Correction turned off in your iOS Settings, this option will not apply.";
 "settings.title.license" = "License Information";
 
 "settings.cell.license" = "License Information";

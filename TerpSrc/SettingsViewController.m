@@ -130,6 +130,8 @@
 
 - (NSString *) tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
 {
+	if (section == SECTION_PREFS)
+		return NSLocalizedStringFromTable(@"settings.footer.settings", @"TerpLocalize", nil);
 	return nil;
 }
 
@@ -151,9 +153,9 @@
 		case SECTION_PREFS:
 			switch (indexpath.row) {
 				case 0:
-					return autocorrectcell;
-				case 1:
 					return keepopencell;
+				case 1:
+					return autocorrectcell;
 				default:
 					return nil;
 			}
