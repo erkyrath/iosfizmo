@@ -1,1 +1,47 @@
-This project is a combination of two subprojects: fizmo and iosglk.
+IosFizmo -- an IosGlk port of the Fizmo Z-machine interpreter.
+Designed by Andrew Plotkin <erkyrath@eblong.com>
+Home site: <http://eblong.com/zarf/glk/>
+
+This project is a combination of two subprojects: Fizmo (a portable
+Z-machine interpreter) and IosGlk (an iOS display library for interactive
+fiction). Please see the README information in the "fizmo" and "iosglk"
+subdirectories.
+
+In addition, this project contains:
+
+- IosFizmo.xcodeproj: The Xcode project file.
+- IosFizmo-Info.plist: Some important app configuration information.
+- IosFizmo-Prefix.pch: Header file containing iOS includes.
+- fizmo-config.h: Header file containing Fizmo configuration defines.
+- main.m: Top-level function for the app.
+
+- fizmo (subdirectory): Source code for the Fizmo interpreter (Christoph
+  Ender). This is the portable Z-code interpreter engine.
+- iosglk (subdirectory): Source code for the iOS Glk display library. This
+  is the general iOS display library. (This directory contains its own Xcode
+  project file, but you should ignore that.)
+- TerpSrc (subdirectory): Source code specifically for iOS Fizmo. This
+  glues together fizmo and iosglk, and also handles the four app tabs.
+- Resources (subdirectory): All of the interface layout files. These define
+  the appearance of each screen and menu in the app.
+- Media (subdirectory): Interface graphics for the interpreter. Buttons and
+  icons.
+- WebSite (subdirectory): HTML files for the in-app "help" and "license
+  information" screens.
+- FizmoLocales (subdirectory): Localized text for Fizmo error messages.
+  (These are extracted from the fizmo directory, but you don't have to
+  worry about that.)
+
+- Icon.png, Icon-*.png: The iOS icons. There are a whole bunch of these,
+  in different sizes.
+- iTunesArtwork: The cover art image. This is a PNG file, even though it
+  lacks the .png suffix.
+- Default.png, Default-*.png: The iOS launch images. These appear as the
+  app is starting up. (Default.png is for iPhone; the other two are for
+  iPad.)
+- Game.z5: The game file. When you download the project, this is Colossal
+  Cave.
+
+- README: This file.
+- doc-app-building.txt: A guide to building and releasing an IosFizmo
+  game app.

@@ -113,7 +113,7 @@ The directory contains a plethora of files. Some interesting ones:
 - `IosFizmo.xcodeproj`: The Xcode project file. If Xcode isn't running and you want to start working on your app, double-click this.
 - `IosFizmo-Info.plist`: Some important app configuration information.
 - `fizmo` (subdirectory): Source code for the [Fizmo][] interpreter (Christoph Ender). This is the portable Z-code interpreter engine.
-- `iosglk` (subdirectory): Source code for the [iOS Glk][iosglk] display library. This is the general iOS displa library. (This directory contains its own Xcode project file, but you should ignore that.)
+- `iosglk` (subdirectory): Source code for the [iOS Glk][iosglk] display library. This is the general iOS display library. (This directory contains its own Xcode project file, but you should ignore that.)
 - `TerpSrc` (subdirectory): Source code specifically for iOS Fizmo. This glues together `fizmo` and `iosglk`, and also handles the four app tabs.
 - `Resources` (subdirectory): All of the interface layout files (Interface Builder files -- `.xib`). These define the appearance of each screen and menu in the app.
 - `Media` (subdirectory): Interface graphics for the interpreter. Buttons and icons.
@@ -189,7 +189,7 @@ This is just because you tested the app earlier with Colossal Cave, and then ins
 
 - Test it in the iOS Simulator, to make sure your title isn't too wide for the iPhone navigation bar.
 
-## Customize the game colors
+## Customize the game colors (optional)
 
 - In the left column, open `IosFizmo` (the top-level blue project folder).
 
@@ -239,3 +239,6 @@ Each case contains lines to define the foreground and background colors.
 
 - If you want to customize the color of a particular style (as opposed to the whole window), you can do that too. You'll need to add code to `prepareStyles` to set `styles.colors[style_...]`, for the appropriate Glk style constant. 
 
+### icons and cover art
+### launch images
+### help / license screens
