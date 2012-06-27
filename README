@@ -23,9 +23,10 @@ In addition, this project contains:
 - TerpSrc (subdirectory): Source code specifically for iOS Fizmo. This
   glues together fizmo and iosglk, and also handles the four app tabs.
 - Resources (subdirectory): All of the interface layout files. These define
-  the appearance of each screen and menu in the app.
+  the appearance of the screens and menus in the app. (For more resources,
+  see iosglk/Resources.)
 - Media (subdirectory): Interface graphics for the interpreter. Buttons and
-  icons.
+  icons. (See also iosglk/Media.)
 - WebSite (subdirectory): HTML files for the in-app "help" and "license
   information" screens.
 - FizmoLocales (subdirectory): Localized text for Fizmo error messages.
@@ -39,8 +40,7 @@ In addition, this project contains:
 - Default.png, Default-*.png: The iOS launch images. These appear as the
   app is starting up. (Default.png is for iPhone; the other two are for
   iPad.)
-- Game.z5: The game file. When you download the project, this is Colossal
-  Cave.
+- Game.z5: The game file. This is Colossal Cave.
 
 - README: This file.
 - doc-app-building.txt: A guide to building and releasing an IosFizmo

@@ -115,8 +115,8 @@ The directory contains a plethora of files. Some interesting ones:
 - `fizmo` (subdirectory): Source code for the [Fizmo][] interpreter (Christoph Ender). This is the portable Z-code interpreter engine.
 - `iosglk` (subdirectory): Source code for the [iOS Glk][iosglk] display library. This is the general iOS display library. (This directory contains its own Xcode project file, but you should ignore that.)
 - `TerpSrc` (subdirectory): Source code specifically for iOS Fizmo. This glues together `fizmo` and `iosglk`, and also handles the four app tabs.
-- `Resources` (subdirectory): All of the interface layout files (Interface Builder files -- `.xib`). These define the appearance of each screen and menu in the app.
-- `Media` (subdirectory): Interface graphics for the interpreter. Buttons and icons.
+- `Resources` (subdirectory): All of the interface layout files (Interface Builder files -- `.xib`). These define the appearance of the screens and menus in the app. (Note: more resources are in `iosglk/Resources`.)
+- `Media` (subdirectory): Interface graphics for the interpreter. Buttons and icons. (Note: more graphics are in `iosglk/Media`.)
 - `WebSite` (subdirectory): HTML files for the in-app "help" and "license information" screens.
 - `FizmoLocales` (subdirectory): Localized text for Fizmo error messages. (These are extracted from the `fizmo` directory, but you don't have to worry about that.)
 - `Icon.png`, `Icon-*.png`: The iOS icons. There are a whole bunch of these, in different sizes. It's a nuisance.
