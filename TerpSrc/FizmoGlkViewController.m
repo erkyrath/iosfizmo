@@ -113,6 +113,17 @@ typedef struct z_file_struct z_file;
 		[frameview addGestureRecognizer:recognizer];
 	}
 	
+	/* Set the title of the game tab. */
+	NSString *maintitle = self.navigationItem.title;
+	if (maintitle.length <= 2) {
+		/* Use a title from the delegate */
+		maintitle = [self.fizmoDelegate gameTitle];
+		/* ...If that's not provided, pull it from TerpLocalize.strings. */
+		if (!maintitle)
+			maintitle = NSLocalizedStringFromTable(@"title.game", @"TerpLocalize", nil);
+		self.navigationItem.title = maintitle;
+	}
+	
 	/* Interface Builder currently doesn't allow us to set the voiceover labels for bar button items. We do it in code. */
 	UIBarButtonItem *stylebutton = self.navigationItem.leftBarButtonItem;
 	if (stylebutton && [stylebutton respondsToSelector:@selector(setAccessibilityLabel:)]) {

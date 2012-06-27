@@ -30,6 +30,10 @@ typedef struct z_file_struct z_file;
 	return nil;
 }
 
+- (NSString *) gameTitle {
+	return nil;
+}
+
 - (NSString *) gamePath {
 	NSBundle *bundle = [NSBundle mainBundle];
 	NSString *path = [bundle pathForResource:@"Game" ofType:@"z5"];

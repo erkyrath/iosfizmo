@@ -26,6 +26,7 @@
 @property int colorscheme;
 @property int leading;
 
+- (NSString *) gameTitle;
 - (NSString *) gamePath;
 - (UIColor *) genBackgroundColor;
 - (UIColor *) genForegroundColor;
