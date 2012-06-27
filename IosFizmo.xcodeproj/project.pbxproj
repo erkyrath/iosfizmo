@@ -10,6 +10,7 @@
 		DF0C5FB51545F73F002081D5 /* InputMenuDecor~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0C5FB31545F73F002081D5 /* InputMenuDecor~ipad.xib */; };
 		DF0C5FB91545F75B002081D5 /* HistoryMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0C5FB71545F75B002081D5 /* HistoryMenuView~ipad.xib */; };
 		DF0C5FBA1545F75B002081D5 /* PaletteMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0C5FB81545F75B002081D5 /* PaletteMenuView~ipad.xib */; };
+		DF0FBD47159B6D34002CE66A /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = DF0FBD46159B6D34002CE66A /* iTunesArtwork */; };
 		DF188B5F1547113F00CC6929 /* button-input-menu-sel.png in Resources */ = {isa = PBXBuildFile; fileRef = DF188B5D1547113F00CC6929 /* button-input-menu-sel.png */; };
 		DF188B601547113F00CC6929 /* button-input-menu-sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF188B5E1547113F00CC6929 /* button-input-menu-sel@2x.png */; };
 		DF188B9315479A3000CC6929 /* GameOverView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF188B9015479A3000CC6929 /* GameOverView.m */; };
@@ -231,6 +232,7 @@
 		DF0C5FB41545F73F002081D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "iosglk/Resources/en.lproj/InputMenuDecor~ipad.xib"; sourceTree = SOURCE_ROOT; };
 		DF0C5FB71545F75B002081D5 /* HistoryMenuView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "HistoryMenuView~ipad.xib"; path = "iosglk/Resources/HistoryMenuView~ipad.xib"; sourceTree = SOURCE_ROOT; };
 		DF0C5FB81545F75B002081D5 /* PaletteMenuView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "PaletteMenuView~ipad.xib"; path = "iosglk/Resources/PaletteMenuView~ipad.xib"; sourceTree = SOURCE_ROOT; };
+		DF0FBD46159B6D34002CE66A /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		DF188B5D1547113F00CC6929 /* button-input-menu-sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-input-menu-sel.png"; path = "iosglk/Media/button-input-menu-sel.png"; sourceTree = SOURCE_ROOT; };
 		DF188B5E1547113F00CC6929 /* button-input-menu-sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-input-menu-sel@2x.png"; path = "iosglk/Media/button-input-menu-sel@2x.png"; sourceTree = SOURCE_ROOT; };
 		DF188B8F15479A3000CC6929 /* GameOverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverView.h; sourceTree = "<group>"; };
@@ -961,6 +963,7 @@
 				DFA0DF8914E0B41900B67057 /* main.m */,
 				DF9A847C14E0DE4C002C2FCB /* fizmo-config.h */,
 				DFA0DF8B14E0B41900B67057 /* IosFizmo-Prefix.pch */,
+				DF0FBD46159B6D34002CE66A /* iTunesArtwork */,
 				DFCB16981544842700936D28 /* Icon.png */,
 				DFCB16991544842700936D28 /* Icon@2x.png */,
 				DFCB16921544842700936D28 /* Icon-72.png */,
@@ -1221,6 +1224,7 @@
 				DF56495915898256002A52E2 /* button-done-hi@2x.png in Resources */,
 				DF56495A15898256002A52E2 /* button-done.png in Resources */,
 				DF56495B15898256002A52E2 /* button-done@2x.png in Resources */,
+				DF0FBD47159B6D34002CE66A /* iTunesArtwork in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
