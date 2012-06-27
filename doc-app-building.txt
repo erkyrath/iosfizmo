@@ -1,0 +1,241 @@
+# How to Turn Your Inform Game Into an iOS App
+
+iOS Fizmo is a Z-code interpreter for iOS. It's designed to be packaged up with a single game file -- a one-game app. (This is the opposite of iOS Frotz, which is designed to host lots of game files.)
+
+Would you like to package up your Inform game as an iOS app? Probably! Is it easy? Yye-- well, no, not *easy*. But it's manageable.
+
+Let's start with:
+
+## The Requirements
+
+**You must have a Mac and the latest version of MacOS.**
+
+**You must have [Xcode][] installed on your Mac.**
+
+(Xcode is free; you download it from the [Mac App Store][Xcode] or from the [iOS Dev Center][iosdev]. Yes, it's a gigabyte and a half, it's enormous.)
+
+[Xcode]: http://itunes.apple.com/us/app/xcode/id497799835?mt=12
+
+**You must be a registered Apple iOS developer to release an iOS app.** This costs $100 per year. Visit Apple's [iOS Dev Center][iosdev].
+
+(You can build a test app and test it in Xcode without being a registered iOS developer. To test it on an actual iPhone, or submit it to Apple for release, you need to pony up the fee.)
+
+(Note that when you visit Apple's dev site, it will first ask you to register as a *developer* -- in general -- this is free. Once your dev account exists, you'll see the option to buy an *iOS developer* membership for $100.)
+
+[iosdev]: https://developer.apple.com/devcenter/ios/
+
+## What Doesn't Work Yet
+
+**You must have an Inform game compiled as a Z-code game file.**
+
+I am working on Glulx support but it is not yet complete.
+
+**There is no good way to upgrade your game file once you release it.**
+
+Or rather, if you do, everybody's saved games will break. You know how, in an IF game, saved game files have to match the exact version of the game? That's still true. So if you release an update with a different game file, your players will find all their progress erased. You don't want to do that to them.
+
+(This also applies to the hidden save file that's used to launch the app in the same state the player left it. If you update the game file, that won't work; the player will see the game start from the beginning, with an extra bonus error about "checksum doesn't match.")
+
+I have a plan for this: I am going to build a way to include *multiple versions* of your game file in the app. Each saved game will cause the matching game file to be loaded up. This is of course not ideal -- it means that players will be stuck in the old version of the game until they start over -- but at least they won't see their games break.
+
+Unfortunately, even that much of a plan is still theoretical. I will update this document when the feature is available. In the meantime, the plan is "Release your game right the first time." That's a terrible plan but it's what I've got.
+
+**Menus don't work nicely.**
+
+That is, the standard Inform menus that appear in the status window. They're not *broken* -- you can use them -- but players who aren't already IF fans will probably be confused by hitting the "P" and "N" keys to cycle through a menu.
+
+(Also, there's a bug where the game can start up with the status window at menu-height, even after the menu has been closed.)
+
+Overall, it is better to rebuild your game without menus, and move your HELP and ABOUT information to the app's help screen. More on that later.
+
+# What This Document Will Not Teach You
+
+This is not an Xcode tutorial. Xcode is Apple's development environment; it's pretty good, but you *do* have to spend some time getting used to it. (For what it's worth, I found it *much* easier than Eclipse. This is not worth a lot, I admit.)
+
+For an introduction to Xcode, and the process of releasing an iOS app, read Apple's [Start Developing iOS Apps][startdevelop] guide. (The same guide, and all the rest of the Xcode documentation, is included inside Xcode itself. There's a reason it's a gig and a half large.)
+
+[startdevelop]: https://developer.apple.com/library/ios/#referencelibrary/GettingStarted/RoadMapiOS/Introduction/Introduction.html
+
+This document is also not a Git tutorial. [Git][] is the version control system I use. You don't have to know anything about it, really. You can download all the Fizmo source code inside Xcode, and then ignore Git thereafter.
+
+[Git]: http://git-scm.com/documentation
+
+However, if you want to pick up my improvements to the interpreter, you'll have to go back to Git. The clever way to do this is to create a Git branch, store all your changes in it, and then merge my master branch into it. The easy way is just to re-download all the source code and make your changes again. Feel free to use the easy way.
+
+# Okay, Let's Get This Show on the Elephant
+
+## Downloading the source code (and project file)
+
+- Launch Xcode. (I am writing this document with Xcode 4.3.2.)
+
+- Open the Organizer window. (`Windows` menu, `Organizer`)
+
+- Select the Repositories tab. (Organizer window, top bar, `Repositories`)
+
+- Press the `+` button in the lower left-hand corner. This brings up a pop-up menu. Select `Checkout or Clone Repository...`
+
+- The "Checkout or Clone" dialog appears. It has a field for `Location`. Paste in this URL:
+
+	https://github.com/erkyrath/iosfizmo.git
+
+- Press the `Clone` button. (Lower right of the dialog.) Ignore the "Authentication required" warning -- it's not actually required.
+
+- A "Clone" dialog appears, asking for a place to create the directory `iosfizmo`. Navigate to wherever you want this and press the `Clone` button.
+
+- After a few moments of work, the dialog will display "Clone of 'iosfizmo' complete." Press the `Open Project` button. (Lower right of the dialog.)
+
+- You now have a project window for `IosFizmo.xcodeproj`. 
+
+(Note: this gets you the most current, bleeding-edge IosFizmo source code. This should work for you -- I don't plan to break the build. If you want to use the latest stable release, you'll need to do additional work.) (TODO)
+
+## Test the interpreter
+
+- Find the `Scheme` pop-up menu. (Project window, top bar, the wide pop-up menu on the left.) Click the *right side* of this menu and select `iPhone 5.1 Simulator`.
+
+(Or whatever is the latest iPhone OS version you see. If the pop-up menu says "Edit Scheme...", "New Scheme..." and so on, you clicked the left side. Don't do that.)
+
+- Click the `Run` button. (Top bar, left end, the big triangle.)
+
+(If you hold down this button for a moment, you'll get a pop-up menu of `Run`, `Test`, `Profile`, `Analyze`. You want `Run`. Or just click the button instead of holding it down.)
+
+- The project will go through a cycle of building and attaching to the app.
+
+(If the project seems to get stuck on "Attaching...", wait another minute or so. When you get tired of waiting, press the `Stop` button (the big square), wait for it to turn grey, and then press `Run` again.)
+
+- The iOS Simulator will appear. (This is a separate app, but Xcode manages it.) You should now see Colossal Cave running in a simulated iPhone. You can play it!
+
+- To test on a simulated iPad, select `iPad 5.1 Simulator` in the `Scheme` menu and hit `Run` again.
+
+## Know your way around your `iosfizmo` directory
+
+The directory contains a plethora of files. Some interesting ones:
+
+- `IosFizmo.xcodeproj`: The Xcode project file. If Xcode isn't running and you want to start working on your app, double-click this.
+- `IosFizmo-Info.plist`: Some important app configuration information.
+- `fizmo` (subdirectory): Source code for the [Fizmo][] interpreter (Christoph Ender). This is the portable Z-code interpreter engine.
+- `iosglk` (subdirectory): Source code for the [iOS Glk][iosglk] display library. This is the general iOS displa library. (This directory contains its own Xcode project file, but you should ignore that.)
+- `TerpSrc` (subdirectory): Source code specifically for iOS Fizmo. This glues together `fizmo` and `iosglk`, and also handles the four app tabs.
+- `Resources` (subdirectory): All of the interface layout files (Interface Builder files -- `.xib`). These define the appearance of each screen and menu in the app.
+- `Media` (subdirectory): Interface graphics for the interpreter. Buttons and icons.
+- `WebSite` (subdirectory): HTML files for the in-app "help" and "license information" screens.
+- `FizmoLocales` (subdirectory): Localized text for Fizmo error messages. (These are extracted from the `fizmo` directory, but you don't have to worry about that.)
+- `Icon.png`, `Icon-*.png`: The iOS icons. There are a whole bunch of these, in different sizes. It's a nuisance.
+- `iTunesArtwork`: The cover art image. This is a PNG file, even though it lacks the `.png` suffix.
+- `Default.png`, `Default-*.png`: The iOS launch images. These appear as the app is starting up. (`Default.png` is for iPhone; the other two are for iPad.)
+- `Game.z5`: The game file. When you download the project, this is Colossal Cave.
+
+[iosglk]: https://github.com/erkyrath/iosglk/
+[Fizmo]: https://github.com/chrender/fizmo-dist/
+
+## Know your way around the Xcode project window
+
+Again, this isn't a Xcode tutorial (see [Apple's docs][startdevelop] for that). But I'll go over the basic "where the hell did my files go" orientation.
+
+The project window has three columns:
+
+- Left: the navigator (normally a list of files)
+- Center: the primary editor (displays the source code, image, or settings you have selected in the left column)
+- Right: the utilities (lets you edit metadata or special features of whatever's selected in the left or center column)
+
+If you don't see these, turn on the left and right buttons in the `View` control (the three-button widget on the right of the top bar).
+
+(There's also a debug area, which is a pane at the bottom of the center column. That's controlled by the center button in the `View` control. You shouldn't need it, so feel free to close it.)
+
+If the center column is split in half, you have the assistant view open. You don't want that. Press the left button in the `Editor` control (top bar, the button with horizontal lines) and the center column should unsplit.
+
+If the left column doesn't show a list of files (or a folder with a disclosure triangle), you have the wrong navigator selected. Look at the top of the left column, and press the leftmost button (the folder icon). 
+
+(There are many ways to rearrange this layout, in the `Preferences` or the `View` menu. Go for it if you must.)
+
+Now that you have the columns in front of you, you can open the project tree in the left column (the disclosure triangle on the `IosFizmo` entry). You'll see a list of folders which is similar to the directory layout I described above. (It's not grouped exactly the same way, but you'll see `TerpSrc`, `Resources`, `Media`, `WebSite`, and so on.)
+
+## Change the project's bundle name and identifier
+
+- In the left column, open `IosFizmo` (the top-level blue project folder).
+
+- Under that, open `Other Sources`.
+
+- Select `IosFizmo-Info.plist`. A list of settings will appear in the center column.
+
+- Find the `Bundle identifier` line. By default this is `com.eblong.iosfizmotest`. Change it to something appropriate to your app: `com.yourcompany.yourgametitle`.
+
+- Find the `Bundle display name` line. This is the label that appears with your icon on the iOS home screen. By default it is `Fizmo`; change this to your game title.
+
+(There isn't much room on the iOS screen, so you may need to shorten the title. Test it in the iPhone Simulator to make sure it looks good.)
+
+## Replace Colossal Cave with your game
+
+The easy way to do this is simply to rename your game file (.z5, .z8, or .zblorb) to `Game.z5`, and copy it over the `Game.z5` in the project directory. Yes, you can rename your .zblorb file to .z5 -- IosFizmo won't care.
+
+When you start your game up, you'll see a spurious error message:
+
+	Release number, serial number, or checksum doesn't match.
+
+This is just because you tested the app earlier with Colossal Cave, and then installed your game -- it's trying to launch a save file that doesn't match. Type "restart" in the game and that will go away.
+
+## Replace the game title (the title of the app's game tab)
+
+- In the left column, open `IosFizmo` (the top-level blue project folder).
+
+- Under that, open `Resources`.
+
+- Select `TerpLocalize.strings` (at the bottom of the `Resources` folder). A list of string definitions will appear in the center column.
+
+- Early in that file, you'll see the line:
+
+	"title.game" = "Adventure";
+
+- Change the string `Adventure` to your game title.
+
+- Test it in the iOS Simulator, to make sure your title isn't too wide for the iPhone navigation bar.
+
+## Customize the game colors
+
+- In the left column, open `IosFizmo` (the top-level blue project folder).
+
+- Under that, open `TerpSrc`.
+
+- Select `FizmoGlkDelegate.m`. This file contains some methods which customize the interpreter behavior.
+
+- Find the `genForegroundColor` method. This defines the text color for the app's three color schemes. (The scheme is selected by the user with the `Colors` button in the game's style (`Aa`) menu.)
+
+The function looks like this:
+
+	- (UIColor *) genForegroundColor {
+		switch (self.colorscheme) {
+			case 1: /* quiet */
+				return [UIColor colorWithRed:0.25 green:0.2 blue:0.0 alpha:1];
+			case 2: /* dark */
+				return [UIColor colorWithRed:0.75 green:0.75 blue:0.7 alpha:1];
+			case 0: /* bright */
+			default:
+				return [UIColor blackColor];
+		}
+	}
+
+You can adjust the text red, green, and blue values for each of the three schemes. (Alpha should always be 1.) `blackColor` is a shortcut for `colorWithRed:0 green:0 blue:0 alpha:1`.
+
+- Right below this is the `genBackgroundColor` method. This defines the background (paper) color for the story window. (Again, in each of the three schemes.)
+
+- The status bar color is handled differently. Find the `prepareStyles` method, and this stanza of code:
+
+	switch (self.colorscheme) {
+		case 1: /* quiet */
+			styles.backgroundcolor = [UIColor colorWithRed:0.75 green:0.7 blue:0.5 alpha:1];
+			styles.colors[style_Normal] = [UIColor colorWithRed:0.15 green:0.1 blue:0.0 alpha:1];
+			break;
+		case 2: /* dark */
+			styles.backgroundcolor =  [UIColor colorWithRed:0.55 green:0.55 blue:0.5 alpha:1];
+			styles.colors[style_Normal] = [UIColor blackColor];
+			break;
+		case 0: /* bright */
+		default:
+			styles.backgroundcolor = [UIColor colorWithRed:0.85 green:0.8 blue:0.6 alpha:1];
+			styles.colors[style_Normal] = [UIColor colorWithRed:0.25 green:0.2 blue:0.0 alpha:1];
+			break;
+	}
+
+Each case contains lines to define the foreground and background colors.
+
+- If you want to customize the color of a particular style (as opposed to the whole window), you can do that too. You'll need to add code to `prepareStyles` to set `styles.colors[style_...]`, for the appropriate Glk style constant. 
+
