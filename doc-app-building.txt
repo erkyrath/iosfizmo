@@ -283,6 +283,58 @@ The files are normal HTML, so you can edit and test them with normal Web tools. 
 
 This defines a slightly different layout for the iPhone display. (Smaller fonts and margins.)
 
+## Set up the AppID and provisioning you need to test on real hardware
+
+*You cannot do this until you have [registered as an iOS developer][iosdev] and paid the registration fee.*
+
+- Go to the [iOS Dev Center][iosdev] on Apple's web site. Log in. Follow the link to the iOS Provisioning Portal.
+
+- Select `Certificates` and set up your iOS Development Certificate. (I'm not going to try to give full instructions for this. The web site is reasonably helpful.)
+
+- Select `Devices` and add your mighty collection of iPhones, iPads, iPod touches.
+
+- Select `App IDs`. Press the `New App ID` button (top right corner).
+
+- In the `Create App ID` form, enter your game title under `Description`. Leave `Bundle Seed ID` alone. For `Bundle Identifier`, enter the string that you used earlier in `IosFizmo-Info.plist` -- my example string was `com.yourcompany.yourgametitle`. Press `Submit`.
+
+- Select `Provisioning`. Make sure the `Development` tab is selected, and press the `New Profile` button (top right corner).
+
+- In the `Create iOS Development Provisioning Profile` form, enter `(Game Title) Development` for `Profile Name`. Check your name under `Certificates`. For the `App ID`, select the ID you just created (with your game title). Check all your devices under `Devices`. Press `Submit`.
+
+- You will probably see your profile listed with status `Pending`. Reload the web page. Now the status has changed to `Active`. Press the `Download` button.
+
+- Go back to Xcode. Open the Organizer window. (`Windows` menu, `Organizer`)
+
+- Select the Devices tab. (Organizer window, top bar, `Devices`)
+
+- Select `Provisioning Profiles` in the left column.
+
+- Drag the ".mobileprovision" file from wherever you downloaded it into the Organizer window. It should appear and be listed as `Valid Profile`.
+
+- Plug your iPhone/iPad/iPod whatever into your Mac's USB port.
+
+- Go back to your Xcode project window.
+
+- Find the `Scheme` pop-up menu. (Project window, top bar, the wide pop-up menu on the left.) Click the *right side* of this menu and select the device you just plugged in.
+
+- Press the `Run` button. The app should compile, install, and run on your device.
+
+## Do some beta-testing
+
+You will have to create an "Ad Hoc" build to distribute. This will use the same App ID as your development build, but you will have to create a new Provisioning Profile (under the `Distribution` tab, as opposed to `Development`. Be sure to check `Ad Hoc`.) The rest of the procedure is pretty much the same.
+
+For distributing your beta build and organizing testers, I recommend the [TestFlight][] service.
+
+[TestFlight]: https://testflightapp.com/
+
+## Submit it to the App Store
+
+You create an App Store submission in the [iTunes Connect][connect] section of Apple's web site. You will need a large cover image (1024x1024) and some screenshots of your app.
+
+[connect]: https://itunesconnect.apple.com/
+
+To create the final build, you will need a third Provisioning Profile: the `Distribution` tab, but this time you check `App Store`.
+
 # Things to watch out for
 
 - Test your app on an iPhone (or the iPhone Simulator) with the font size turned up. Play a few moves while watching the status line; make sure it draws acceptably.
