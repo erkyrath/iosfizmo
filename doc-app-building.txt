@@ -183,7 +183,7 @@ This is just because you tested the app earlier with Colossal Cave. The app is t
 
 - Select `TerpLocalize.strings` (at the bottom of the `Resources` folder). A list of string definitions will appear in the center column.
 
-- Early in that file, you'll see the line:
+Early in that file, you'll see the line:
 
 	"title.game" = "Adventure";
 
@@ -219,7 +219,9 @@ You can adjust the text red, green, and blue values for each of the three scheme
 
 - Right below this is the `genBackgroundColor` method. This defines the background (paper) color for the story window. (Again, in each of the three schemes.)
 
-- The status bar color is handled differently. Find the `prepareStyles` method, and this stanza of code:
+- The status bar color is handled differently.
+
+Find the `prepareStyles` method, and this stanza of code:
 
 	switch (self.colorscheme) {
 		case 1: /* quiet */
