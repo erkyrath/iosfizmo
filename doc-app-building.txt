@@ -42,7 +42,7 @@ Unfortunately, even that much of a plan is still theoretical. I will update this
 
 **Menus don't work nicely.**
 
-That is, the standard Inform menus that appear in the status window. They're not *broken* -- you can use them -- but players who aren't already IF fans will probably be confused by hitting the "P" and "N" keys to cycle through a menu.
+That is, the standard Inform menus that appear in the status window. They're not *broken* -- you can cycle through the menu by tapping the "P" and "N" keys on the virtual keyboard. However, players who aren't already IF fans will probably be confused by this.
 
 (Also, there's a bug where the game can start up with the status window at menu-height, even after the menu has been closed.)
 
@@ -161,17 +161,19 @@ Now that you have the columns in front of you, you can open the project tree in 
 
 - Find the `Bundle display name` line. This is the label that appears with your icon on the iOS home screen. By default it is `Fizmo`; change this to your game title.
 
-(There isn't much room on the iOS screen, so you may need to shorten the title. Test it in the iPhone Simulator to make sure it looks good.)
+(There isn't much room on the iOS screen, so you may need to shorten the title. Test it in the iPhone Simulator to make sure it looks good. Remember that you have to exit the app in order to see the icon!)
+
+(If the app appears with a blank white icon after this change, try quitting the iPhone Simulator -- not just the app, but the whole simulator -- and then running the app again.)
 
 ## Replace Colossal Cave with your game
 
 The easy way to do this is simply to rename your game file (.z5, .z8, or .zblorb) to `Game.z5`, and copy it over the `Game.z5` in the project directory. Yes, you can rename your .zblorb file to .z5 -- IosFizmo won't care.
 
-When you start your game up, you'll see a spurious error message:
+When you start your game up, you may see a spurious error message:
 
 	Release number, serial number, or checksum doesn't match.
 
-This is just because you tested the app earlier with Colossal Cave, and then installed your game -- it's trying to launch a save file that doesn't match. Type "restart" in the game and that will go away.
+This is just because you tested the app earlier with Colossal Cave. The app is trying to restore your earlier session, but the session save file doesn't match. Type "restart" in the game and that will go away.
 
 ## Replace the game title (the title of the app's game tab)
 
@@ -239,6 +241,53 @@ Each case contains lines to define the foreground and background colors.
 
 - If you want to customize the color of a particular style (as opposed to the whole window), you can do that too. You'll need to add code to `prepareStyles` to set `styles.colors[style_...]`, for the appropriate Glk style constant. 
 
-### icons and cover art
-### launch images
-### help / license screens
+## Customize the icon and cover art
+
+In the project directory, you'll see a whole lot of `Icon...png` files. You need to replace all of them.
+
+You need to retain the name and size of every icon file. Notice that some of the icons name their own size (`Icon-72.png` is 72x72); some don't (`Icon.png` is 57x57); and some have a wacky "@2x" modifier (`Icon-50@2x.png` is 100x100). Don't try to figure out the reasons behind all of this; it's historical remnants all the way down. Just make new icons with the same names and sizes as the existing ones.
+
+(The "dpi" or dots-per-inch of the PNG files does *not* matter -- only the overall size in pixels.)
+
+You should also make a `iTunesArtwork` file. This should be a 512x512 PNG file. Notice that the filename *does not* have a ".png" extension.
+
+The easiest way to do all of this is to create a large version of your artwork -- 1024x1024 pixels. Then reduce that to each of the required sizes, and copy the result into the project directory. (A 1024x1024 version will be required for the App Store submission, so you might as well have that ready.)
+
+It's important not to put in too much detail. Even though your starting image is large, it will be reduced for display -- even in the App Store. If you put the game title in the image as a text element, it will be squished into unreadability.
+
+You might want to make a different, simplified image for the smaller icon sizes. However, I don't bother.
+
+By default, iOS adds a gloss-highlight to your icon when displaying it on the home screen. To turn this off, go into `IosFizmo-Info.plist`, find the `Icon already includes gloss effects` entry, and set it to `YES`. (I know, it seems backwards. You don't actually have to include a gloss effect; you're just telling iOS not to add more.)
+
+## Customize the launch images (optional)
+
+In the project directory, you'll see files called `Default.png`, `Default-Landscape.png`, and `Default-Portrait.png`. These are flashed up briefly while the app in launching. `Default.png` is used for the iPhone (which launches all apps portrait-style); the others are used for the iPad.
+
+You do not have to replace these, but you might want to. (For *Dreamhold*, I added a low-contrast company logo to the center area.) If you change the game's default background color, you should change the background color of the launch images.
+
+The iOS convention is that launch images do not include content. The images I provide don't even include a blank status line. (I tried adding one, but it led to an unpleasant flicker in the launch sequence. Also, the user might have selected a different column width or font size, which changes the status line's outline. So I took it out.)
+
+## Customize the help and license information screens
+
+The `WebSite` subdirectory contains two HTML files, plus a CSS file that they both include. 
+
+- `index.html` appears as the content of the app's `Help` tab. 
+
+- `license.html` appears when the user taps the `License Information` button in the `Settings` tab.
+
+You can customize these to include information about your game. Remember that you must retain the iOS Glk and Fizmo license information in `license.html`.
+
+The files are normal HTML, so you can edit and test them with normal Web tools. Note that the CSS file has a special section:
+
+	@media screen and (max-device-width: 480px) { ... }
+
+This defines a slightly different layout for the iPhone display. (Smaller fonts and margins.)
+
+# Things to watch out for
+
+- Test your app on an iPhone (or the iPhone Simulator) with the font size turned up. Play a few moves while watching the status line; make sure it draws acceptably.
+
+(When the font is large, the "window width" of the status line is quite small -- it's measured in characters, after all. You may have to adjust your status-line code to fit the tighter width.)
+
+(Note that when you change the font size or device orientation, the status line does not redraw right away. It only redraws after you enter a move. This is inherent to the Z-machine architecture, sadly.)
+
