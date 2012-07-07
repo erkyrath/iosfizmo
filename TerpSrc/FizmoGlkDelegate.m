@@ -40,11 +40,11 @@ typedef struct z_file_struct z_file;
 	return path;
 }
 
-- (GlkWinBufferView *) viewForBufferWindow:(GlkWindowState *)win frame:(CGRect)box {
-	return [[[FizmoGlkWinBufferView alloc] initWithWindow:win frame:box] autorelease];
+- (GlkWinBufferView *) viewForBufferWindow:(GlkWindowState *)win frame:(CGRect)box margin:(UIEdgeInsets)margin {
+	return [[[FizmoGlkWinBufferView alloc] initWithWindow:win frame:box margin:margin] autorelease];
 }
 
-- (GlkWinGridView *) viewForGridWindow:(GlkWindowState *)win frame:(CGRect)box {
+- (GlkWinGridView *) viewForGridWindow:(GlkWindowState *)win frame:(CGRect)box margin:(UIEdgeInsets)margin {
 	return nil;
 }
 
@@ -195,6 +195,10 @@ typedef struct z_file_struct z_file;
 		rect.size.width = limit;
 	}
 	return rect;
+}
+
+- (UIEdgeInsets) viewMarginForWindow:(GlkWindowState *)win {
+	return UIEdgeInsetsZero;
 }
 
 /* This is called when the library leaves glk_main(), either by returning or by a glk_exit() exception.

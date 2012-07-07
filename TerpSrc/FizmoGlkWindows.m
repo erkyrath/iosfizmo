@@ -11,8 +11,8 @@
 
 @implementation FizmoGlkWinBufferView
 
-- (id) initWithWindow:(GlkWindowState *)winref frame:(CGRect)box {
-	self = [super initWithWindow:winref frame:box];
+- (id) initWithWindow:(GlkWindowState *)winref frame:(CGRect)box margin:(UIEdgeInsets)margin {
+	self = [super initWithWindow:winref frame:box margin:margin];
 	if (self) {
 		FizmoGlkViewController *glkviewc = [FizmoGlkViewController singleton];
 		BOOL isdark = glkviewc.fizmoDelegate.hasDarkTheme;
