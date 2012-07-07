@@ -45,6 +45,9 @@
 						<reference key="NSNextKeyView" ref="694489315"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
+						<object class="IBUIAccessibilityConfiguration" key="IBUIAccessibilityConfiguration">
+							<string key="IBUIAccessibilityLabel">Decrease font size</string>
+						</object>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
@@ -90,6 +93,9 @@
 						<reference key="NSNextKeyView" ref="48785137"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
+						<object class="IBUIAccessibilityConfiguration" key="IBUIAccessibilityConfiguration">
+							<string key="IBUIAccessibilityLabel">Increase font size</string>
+						</object>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
@@ -120,6 +126,9 @@
 						<reference key="NSNextKeyView" ref="292385905"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
+						<object class="IBUIAccessibilityConfiguration" key="IBUIAccessibilityConfiguration">
+							<string key="IBUIAccessibilityLabel">Decrease line spacing</string>
+						</object>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
@@ -159,6 +168,9 @@
 						<reference key="NSNextKeyView" ref="816870845"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
+						<object class="IBUIAccessibilityConfiguration" key="IBUIAccessibilityConfiguration">
+							<string key="IBUIAccessibilityLabel">Increase line spacing</string>
+						</object>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
@@ -232,6 +244,9 @@
 						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
+						<object class="IBUIAccessibilityConfiguration" key="IBUIAccessibilityConfiguration">
+							<string key="IBUIAccessibilityLabel">Brightness</string>
+						</object>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
@@ -1033,8 +1048,8 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="brightness-hi.png">{16, 16}</string>
-			<string key="brightness-lo.png">{16, 16}</string>
+			<string key="brightness-hi.png">{20, 20}</string>
+			<string key="brightness-lo.png">{20, 20}</string>
 			<string key="button-pref-base.png">{32, 32}</string>
 			<string key="button-pref-hi.png">{32, 32}</string>
 			<string key="lead-narrow.png">{20, 20}</string>
