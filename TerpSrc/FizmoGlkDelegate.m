@@ -7,7 +7,9 @@
 #import "FizmoGlkDelegate.h"
 #import "IosGlkLibDelegate.h"
 #import "FizmoGlkWindows.h"
+#import "GlkWindowState.h"
 #import "StyleSet.h"
+#import "GlkUtilities.h"
 
 // This typedef works around header file annoyance. We're not going to refer to it.
 typedef struct z_file_struct z_file;
@@ -197,7 +199,18 @@ typedef struct z_file_struct z_file;
 	return rect;
 }
 
-- (UIEdgeInsets) viewMarginForWindow:(GlkWindowState *)win {
+- (UIEdgeInsets) viewMarginForWindow:(GlkWindowState *)win rect:(CGRect)rect framebounds:(CGRect)framebounds {
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+		return UIEdgeInsetsZero;
+		
+	if ([win isKindOfClass:[GlkWindowBufferState class]]) {
+		CGFloat left = rect.origin.x - framebounds.origin.x;
+		CGFloat right = (framebounds.origin.x+framebounds.size.width) - (rect.origin.x+rect.size.width);
+		if (left >= 32 && right >= 32) {
+			return UIEdgeInsetsMake(0, left, 0, right);
+		}
+	}
+	
 	return UIEdgeInsetsZero;
 }
 
