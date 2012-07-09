@@ -44,8 +44,6 @@ Unfortunately, even that much of a plan is still theoretical. I will update this
 
 That is, the standard Inform menus that appear in the status window. They're not *broken* -- you can cycle through the menu by tapping the "P" and "N" keys on the virtual keyboard. However, players who aren't already IF fans will probably be confused by this.
 
-(Also, there's a bug where the game can start up with the status window at menu-height, even after the menu has been closed.)
-
 Overall, it is better to rebuild your game without menus, and move your HELP and ABOUT information to the app's help screen. More on that later.
 
 # What This Document Will Not Teach You
