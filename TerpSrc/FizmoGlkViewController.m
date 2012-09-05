@@ -159,7 +159,7 @@ typedef struct z_file_struct z_file;
 - (void) postGameOver {
 	CGRect rect = frameview.bounds;
 	FizmoGameOverView *menuview = [[[FizmoGameOverView alloc] initWithFrame:frameview.bounds centerInFrame:rect] autorelease];
-	[frameview postPopMenu:menuview];	
+	[frameview postPopMenu:menuview];
 }
 
 /* UITabBarController delegate method */
@@ -178,7 +178,7 @@ typedef struct z_file_struct z_file;
 		[notesvc.navigationController popToRootViewControllerAnimated:NO];
 	}
 	if (rootviewc != settingsvc) {
-		/* If the settingsvc was drilled into the transcripts view or subviews, pop out of there. */
+		/* If the settingsvc was drilled into a web subview, pop out of there. */
 		[settingsvc.navigationController popToRootViewControllerAnimated:NO];
 	}
 }
