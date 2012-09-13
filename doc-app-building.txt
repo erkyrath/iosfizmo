@@ -8,6 +8,12 @@ Let's start with:
 
 ## The Requirements
 
+**You must have an Inform game compiled as a Z-code game file.**
+
+If you have a Glulx game, [read this page instead][glulx-doc].
+
+[glulx-doc]: https://github.com/erkyrath/iosglulxe/wiki/How-to-Turn-Your-Inform-Game-Into-an-iOS-App
+
 **You must have a Mac and the latest version of MacOS.**
 
 **You must have [Xcode][] installed on your Mac.**
@@ -25,10 +31,6 @@ Let's start with:
 [iosdev]: https://developer.apple.com/devcenter/ios/
 
 ## What Doesn't Work Yet
-
-**You must have an Inform game compiled as a Z-code game file.**
-
-I am working on Glulx support but it is not yet complete.
 
 **There is no good way to upgrade your game file once you release it.**
 
