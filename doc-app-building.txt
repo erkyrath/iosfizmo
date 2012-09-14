@@ -317,6 +317,16 @@ This defines a slightly different layout for the iPhone display. (Smaller fonts 
 
 - Go back to your Xcode project window.
 
+- In the left column, select `iosglulxe` (the top-level blue project folder).
+
+- The main column now has a left sidebar (`PROJECT` and `TARGETS`) and a center column of build settings.
+
+- Select `iosglulxe` under `PROJECT`.
+
+- Scroll down to `Code Signing Identity`. This has two subheadings, `Debug/Any iOS SDK` and `Release/Any iOS SDK`. Next to each of these is a light-green pop-up menu.
+
+- Make sure the pop-up for `Debug/Any iOS SDK` is set to `Automatic profile selector/iPhone Developer`.
+
 - Find the `Scheme` pop-up menu. (Project window, top bar, the wide pop-up menu on the left.) Click the *right side* of this menu and select the device you just plugged in.
 
 - Press the `Run` button. The app should compile, install, and run on your device.
