@@ -76,7 +76,7 @@ However, if you want to pick up my improvements to the interpreter, you'll have 
 
 - The "Checkout or Clone" dialog appears. It has a field for `Location`. Paste in this URL:
 
-	https://github.com/erkyrath/iosfizmo.git
+	git://github.com/erkyrath/iosfizmo.git
 
 - Press the `Clone` button. (Lower right of the dialog.) Ignore the "Authentication required" warning -- it's not actually required.
 
