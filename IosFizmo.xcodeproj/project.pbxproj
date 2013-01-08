@@ -47,6 +47,7 @@
 		DF361B6214F72C5C00A8D670 /* DisplayTextVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF361B6114F72C5C00A8D670 /* DisplayTextVC.xib */; };
 		DF361B6414F73B7000A8D670 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF361B6314F73B7000A8D670 /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		DF361B7014FAAFED00A8D670 /* MoreBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF361B6F14FAAFEC00A8D670 /* MoreBoxView.m */; };
+		DF4ACCAE169CAB8100620E03 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4ACCAD169CAB8100620E03 /* Default-568h@2x.png */; };
 		DF53C4411559E4D800709FC2 /* more-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = DF53C4401559E4D800709FC2 /* more-arrow.png */; };
 		DF53C4441559E4EA00709FC2 /* more-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF53C4431559E4EA00709FC2 /* more-arrow@2x.png */; };
 		DF53C4451559E61800709FC2 /* MoreBoxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF53C4461559E61800709FC2 /* MoreBoxView.xib */; };
@@ -288,6 +289,7 @@
 		DF361B6514F83CC200A8D670 /* glkstart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glkstart.h; sourceTree = "<group>"; };
 		DF361B6E14FAAFEC00A8D670 /* MoreBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreBoxView.h; sourceTree = "<group>"; };
 		DF361B6F14FAAFEC00A8D670 /* MoreBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreBoxView.m; sourceTree = "<group>"; };
+		DF4ACCAD169CAB8100620E03 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		DF53C4401559E4D800709FC2 /* more-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "more-arrow.png"; path = "iosglk/Media/more-arrow.png"; sourceTree = SOURCE_ROOT; };
 		DF53C4431559E4EA00709FC2 /* more-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "more-arrow@2x.png"; path = "iosglk/Media/more-arrow@2x.png"; sourceTree = SOURCE_ROOT; };
 		DF53C4461559E61800709FC2 /* MoreBoxView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MoreBoxView.xib; path = iosglk/Resources/MoreBoxView.xib; sourceTree = SOURCE_ROOT; };
@@ -975,6 +977,7 @@
 				DFCB16961544842700936D28 /* Icon-Small.png */,
 				DFCB16971544842700936D28 /* Icon-Small@2x.png */,
 				DF564932158909F1002A52E2 /* Default.png */,
+				DF4ACCAD169CAB8100620E03 /* Default-568h@2x.png */,
 				DF564930158909F1002A52E2 /* Default-Landscape.png */,
 				DF564931158909F1002A52E2 /* Default-Portrait.png */,
 				DF9A848014E0EE8A002C2FCB /* Game.z5 */,
@@ -1225,6 +1228,7 @@
 				DF56495A15898256002A52E2 /* button-done.png in Resources */,
 				DF56495B15898256002A52E2 /* button-done@2x.png in Resources */,
 				DF0FBD47159B6D34002CE66A /* iTunesArtwork in Resources */,
+				DF4ACCAE169CAB8100620E03 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
