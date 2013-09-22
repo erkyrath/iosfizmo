@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8979090E17EE6094004F6F9C /* baricon-styles-ios7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8979090D17EE6094004F6F9C /* baricon-styles-ios7@2x.png */; };
+		8979091017EE7AAF004F6F9C /* baricon-edit-ios7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8979090F17EE7AAF004F6F9C /* baricon-edit-ios7@2x.png */; };
+		8979091217EE7B36004F6F9C /* baricon-edit-ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 8979091117EE7B36004F6F9C /* baricon-edit-ios7.png */; };
+		8979091417EE7B3D004F6F9C /* baricon-styles-ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 8979091317EE7B3D004F6F9C /* baricon-styles-ios7.png */; };
 		DF0C5FB51545F73F002081D5 /* InputMenuDecor~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0C5FB31545F73F002081D5 /* InputMenuDecor~ipad.xib */; };
 		DF0C5FB91545F75B002081D5 /* HistoryMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0C5FB71545F75B002081D5 /* HistoryMenuView~ipad.xib */; };
 		DF0C5FBA1545F75B002081D5 /* PaletteMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0C5FB81545F75B002081D5 /* PaletteMenuView~ipad.xib */; };
@@ -230,6 +234,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8979090D17EE6094004F6F9C /* baricon-styles-ios7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baricon-styles-ios7@2x.png"; sourceTree = "<group>"; };
+		8979090F17EE7AAF004F6F9C /* baricon-edit-ios7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baricon-edit-ios7@2x.png"; sourceTree = "<group>"; };
+		8979091117EE7B36004F6F9C /* baricon-edit-ios7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baricon-edit-ios7.png"; sourceTree = "<group>"; };
+		8979091317EE7B3D004F6F9C /* baricon-styles-ios7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baricon-styles-ios7.png"; sourceTree = "<group>"; };
 		DF0C5FB41545F73F002081D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "iosglk/Resources/en.lproj/InputMenuDecor~ipad.xib"; sourceTree = SOURCE_ROOT; };
 		DF0C5FB71545F75B002081D5 /* HistoryMenuView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "HistoryMenuView~ipad.xib"; path = "iosglk/Resources/HistoryMenuView~ipad.xib"; sourceTree = SOURCE_ROOT; };
 		DF0C5FB81545F75B002081D5 /* PaletteMenuView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "PaletteMenuView~ipad.xib"; path = "iosglk/Resources/PaletteMenuView~ipad.xib"; sourceTree = SOURCE_ROOT; };
@@ -988,10 +996,14 @@
 		DFAA384714F1DA930096A848 /* Media */ = {
 			isa = PBXGroup;
 			children = (
+				8979091317EE7B3D004F6F9C /* baricon-styles-ios7.png */,
+				8979091117EE7B36004F6F9C /* baricon-edit-ios7.png */,
+				8979090F17EE7AAF004F6F9C /* baricon-edit-ios7@2x.png */,
 				DFB7A710151E59ED00C07499 /* baricon-styles.png */,
 				DFB7A712151E5D1A00C07499 /* baricon-styles@2x.png */,
 				DF2247C21551B20D002EBC30 /* baricon-edit.png */,
 				DF2247C31551B20D002EBC30 /* baricon-edit@2x.png */,
+				8979090D17EE6094004F6F9C /* baricon-styles-ios7@2x.png */,
 				DF1F3FF014F1FF1D008FF1C7 /* tabicon-help.png */,
 				DFB7A70C151E3B3200C07499 /* tabicon-help@2x.png */,
 				DF1F3FF114F1FF1D008FF1C7 /* tabicon-notes.png */,
@@ -1091,6 +1103,11 @@
 			attributes = {
 				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = Zarfhome;
+				TargetAttributes = {
+					DFA0DF7814E0B41900B67057 = {
+						DevelopmentTeam = 4YCW72ATTS;
+					};
+				};
 			};
 			buildConfigurationList = DFA0DF7314E0B41900B67057 /* Build configuration list for PBXProject "IosFizmo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1180,16 +1197,19 @@
 				DFCB1638153FB02700936D28 /* button-input-clear@2x.png in Resources */,
 				DFCB1639153FB02700936D28 /* button-input-menu.png in Resources */,
 				DFCB163A153FB02700936D28 /* button-input-menu@2x.png in Resources */,
+				8979091217EE7B36004F6F9C /* baricon-edit-ios7.png in Resources */,
 				DFCB163D153FB03800936D28 /* TextFieldRightView.xib in Resources */,
 				DFCB169A1544842700936D28 /* Icon-50.png in Resources */,
 				DFCB169B1544842700936D28 /* Icon-50@2x.png in Resources */,
 				DFCB169C1544842700936D28 /* Icon-72.png in Resources */,
 				DFCB169D1544842700936D28 /* Icon-72@2x.png in Resources */,
+				8979090E17EE6094004F6F9C /* baricon-styles-ios7@2x.png in Resources */,
 				DFCB169E1544842700936D28 /* Icon-Small-50.png in Resources */,
 				DFCB169F1544842700936D28 /* Icon-Small-50@2x.png in Resources */,
 				DFCB16A01544842700936D28 /* Icon-Small.png in Resources */,
 				DFCB16A11544842700936D28 /* Icon-Small@2x.png in Resources */,
 				DFCB16A21544842700936D28 /* Icon.png in Resources */,
+				8979091017EE7AAF004F6F9C /* baricon-edit-ios7@2x.png in Resources */,
 				DFCB16A31544842700936D28 /* Icon@2x.png in Resources */,
 				DF0C5FB51545F73F002081D5 /* InputMenuDecor~ipad.xib in Resources */,
 				DF0C5FB91545F75B002081D5 /* HistoryMenuView~ipad.xib in Resources */,
@@ -1218,6 +1238,7 @@
 				DF29B832155B051B009DA4BE /* WebDocVC.xib in Resources */,
 				DF564933158909F1002A52E2 /* Default-Landscape.png in Resources */,
 				DF564934158909F1002A52E2 /* Default-Portrait.png in Resources */,
+				8979091417EE7B3D004F6F9C /* baricon-styles-ios7.png in Resources */,
 				DF564935158909F1002A52E2 /* Default.png in Resources */,
 				DF56494115894112002A52E2 /* brightness-hi.png in Resources */,
 				DF56494215894112002A52E2 /* brightness-lo.png in Resources */,
@@ -1499,11 +1520,14 @@
 		DFA0DF9B14E0B41900B67057 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IosFizmo-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "IosFizmo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1511,11 +1535,14 @@
 		DFA0DF9C14E0B41900B67057 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IosFizmo-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "IosFizmo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
