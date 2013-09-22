@@ -11,6 +11,15 @@
 		8979091017EE7AAF004F6F9C /* baricon-edit-ios7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8979090F17EE7AAF004F6F9C /* baricon-edit-ios7@2x.png */; };
 		8979091217EE7B36004F6F9C /* baricon-edit-ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 8979091117EE7B36004F6F9C /* baricon-edit-ios7.png */; };
 		8979091417EE7B3D004F6F9C /* baricon-styles-ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 8979091317EE7B3D004F6F9C /* baricon-styles-ios7.png */; };
+		8979091717EE7F47004F6F9C /* iPad portrait ios 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 8979091517EE7F47004F6F9C /* iPad portrait ios 7.png */; };
+		8979091817EE7F47004F6F9C /* iPad retina portrait ios 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 8979091617EE7F47004F6F9C /* iPad retina portrait ios 7.png */; };
+		8979091A17EE7F82004F6F9C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8979091917EE7F82004F6F9C /* Images.xcassets */; };
+		8979091F17EE7FAC004F6F9C /* iPhone landscape iOS 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 8979091B17EE7FAC004F6F9C /* iPhone landscape iOS 7.png */; };
+		8979092117EE7FAC004F6F9C /* iPhone retina landscape iOS 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 8979091D17EE7FAC004F6F9C /* iPhone retina landscape iOS 7.png */; };
+		8979092217EE7FAC004F6F9C /* iPhone retina portait iOS 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 8979091E17EE7FAC004F6F9C /* iPhone retina portait iOS 7.png */; };
+		8979092517EE82CD004F6F9C /* iPad landscape ios 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 8979092317EE82CD004F6F9C /* iPad landscape ios 7.png */; };
+		8979092617EE82CD004F6F9C /* iPad retina landscape ios 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 8979092417EE82CD004F6F9C /* iPad retina landscape ios 7.png */; };
+		8979092817EE84A2004F6F9C /* iPhone short retina portrait iOS 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 8979092717EE84A2004F6F9C /* iPhone short retina portrait iOS 7.png */; };
 		DF0C5FB51545F73F002081D5 /* InputMenuDecor~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0C5FB31545F73F002081D5 /* InputMenuDecor~ipad.xib */; };
 		DF0C5FB91545F75B002081D5 /* HistoryMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0C5FB71545F75B002081D5 /* HistoryMenuView~ipad.xib */; };
 		DF0C5FBA1545F75B002081D5 /* PaletteMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0C5FB81545F75B002081D5 /* PaletteMenuView~ipad.xib */; };
@@ -238,6 +247,15 @@
 		8979090F17EE7AAF004F6F9C /* baricon-edit-ios7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baricon-edit-ios7@2x.png"; sourceTree = "<group>"; };
 		8979091117EE7B36004F6F9C /* baricon-edit-ios7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baricon-edit-ios7.png"; sourceTree = "<group>"; };
 		8979091317EE7B3D004F6F9C /* baricon-styles-ios7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baricon-styles-ios7.png"; sourceTree = "<group>"; };
+		8979091517EE7F47004F6F9C /* iPad portrait ios 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPad portrait ios 7.png"; sourceTree = "<group>"; };
+		8979091617EE7F47004F6F9C /* iPad retina portrait ios 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPad retina portrait ios 7.png"; sourceTree = "<group>"; };
+		8979091917EE7F82004F6F9C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = IosFizmo/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		8979091B17EE7FAC004F6F9C /* iPhone landscape iOS 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone landscape iOS 7.png"; sourceTree = "<group>"; };
+		8979091D17EE7FAC004F6F9C /* iPhone retina landscape iOS 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone retina landscape iOS 7.png"; sourceTree = "<group>"; };
+		8979091E17EE7FAC004F6F9C /* iPhone retina portait iOS 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone retina portait iOS 7.png"; sourceTree = "<group>"; };
+		8979092317EE82CD004F6F9C /* iPad landscape ios 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPad landscape ios 7.png"; sourceTree = "<group>"; };
+		8979092417EE82CD004F6F9C /* iPad retina landscape ios 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPad retina landscape ios 7.png"; sourceTree = "<group>"; };
+		8979092717EE84A2004F6F9C /* iPhone short retina portrait iOS 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone short retina portrait iOS 7.png"; sourceTree = "<group>"; };
 		DF0C5FB41545F73F002081D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "iosglk/Resources/en.lproj/InputMenuDecor~ipad.xib"; sourceTree = SOURCE_ROOT; };
 		DF0C5FB71545F75B002081D5 /* HistoryMenuView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "HistoryMenuView~ipad.xib"; path = "iosglk/Resources/HistoryMenuView~ipad.xib"; sourceTree = SOURCE_ROOT; };
 		DF0C5FB81545F75B002081D5 /* PaletteMenuView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "PaletteMenuView~ipad.xib"; path = "iosglk/Resources/PaletteMenuView~ipad.xib"; sourceTree = SOURCE_ROOT; };
@@ -580,6 +598,7 @@
 		DF19DDCF14E89EFA007DCB29 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8979091917EE7F82004F6F9C /* Images.xcassets */,
 				DF9D1A5814E59EF0006A6749 /* MainWindow.xib */,
 				DF19DDE414E8DF5C007DCB29 /* IosGlkViewController.xib */,
 				DFA0DFA714E0BDA700B67057 /* GlkFileSelectLoad.xib */,
@@ -969,6 +988,14 @@
 		DFA0DFA214E0B5BB00B67057 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				8979091B17EE7FAC004F6F9C /* iPhone landscape iOS 7.png */,
+				8979091D17EE7FAC004F6F9C /* iPhone retina landscape iOS 7.png */,
+				8979092317EE82CD004F6F9C /* iPad landscape ios 7.png */,
+				8979092417EE82CD004F6F9C /* iPad retina landscape ios 7.png */,
+				8979092717EE84A2004F6F9C /* iPhone short retina portrait iOS 7.png */,
+				8979091E17EE7FAC004F6F9C /* iPhone retina portait iOS 7.png */,
+				8979091517EE7F47004F6F9C /* iPad portrait ios 7.png */,
+				8979091617EE7F47004F6F9C /* iPad retina portrait ios 7.png */,
 				DFA0DF8514E0B41900B67057 /* IosFizmo-Info.plist */,
 				DFA0DF8914E0B41900B67057 /* main.m */,
 				DF9A847C14E0DE4C002C2FCB /* fizmo-config.h */,
@@ -1137,7 +1164,9 @@
 				DF9D1A5414E47E85006A6749 /* FizmoLocales in Resources */,
 				DF9D1A5914E59EF0006A6749 /* MainWindow.xib in Resources */,
 				DF19DDDB14E8A069007DCB29 /* HistoryMenuView.xib in Resources */,
+				8979092817EE84A2004F6F9C /* iPhone short retina portrait iOS 7.png in Resources */,
 				DF19DDDC14E8A069007DCB29 /* PaletteMenuView.xib in Resources */,
+				8979091717EE7F47004F6F9C /* iPad portrait ios 7.png in Resources */,
 				DF19DDE514E8DF5C007DCB29 /* IosGlkViewController.xib in Resources */,
 				DFAA384A14F1DAAE0096A848 /* tabicon-game.png in Resources */,
 				DFEFAC2F14F1E0E50062859F /* HelpVC.xib in Resources */,
@@ -1146,9 +1175,11 @@
 				DF1F3FF214F1FF1D008FF1C7 /* tabicon-help.png in Resources */,
 				DF1F3FF314F1FF1D008FF1C7 /* tabicon-notes.png in Resources */,
 				DF1F3FFE14F2BA68008FF1C7 /* PopBoxView.xib in Resources */,
+				8979091F17EE7FAC004F6F9C /* iPhone landscape iOS 7.png in Resources */,
 				DFCB1644153FB14A00936D28 /* PrefsMenuView.xib in Resources */,
 				DFBB4E4214F6E4450041016A /* TranscriptVC.xib in Resources */,
 				DF361B6214F72C5C00A8D670 /* DisplayTextVC.xib in Resources */,
+				8979092617EE82CD004F6F9C /* iPad retina landscape ios 7.png in Resources */,
 				DF53C4451559E61800709FC2 /* MoreBoxView.xib in Resources */,
 				DFCB1641153FB13C00936D28 /* NotesVC~ipad.xib in Resources */,
 				DF70A1521513D9EE00B109A2 /* selecthandle.png in Resources */,
@@ -1177,6 +1208,7 @@
 				DFC755CC1527EC54009F4137 /* col-34@2x.png in Resources */,
 				DFC755CD1527EC54009F4137 /* col-full.png in Resources */,
 				DFC755CE1527EC54009F4137 /* col-full@2x.png in Resources */,
+				8979092517EE82CD004F6F9C /* iPad landscape ios 7.png in Resources */,
 				DFC755D21527F104009F4137 /* col-12-sel.png in Resources */,
 				DFC755D31527F104009F4137 /* col-34-sel.png in Resources */,
 				DFC755D41527F104009F4137 /* col-full-sel.png in Resources */,
@@ -1190,10 +1222,13 @@
 				DFC7565F152D3ADB009F4137 /* button-tab-sel.png in Resources */,
 				DFC75661152D3E4C009F4137 /* button-tab-sel@2x.png in Resources */,
 				DFCB15D4153E158800936D28 /* Localizable.strings in Resources */,
+				8979091817EE7F47004F6F9C /* iPad retina portrait ios 7.png in Resources */,
 				DFCB15D9153E1D5600936D28 /* TerpLocalize.strings in Resources */,
 				DFCB1635153FB02700936D28 /* button-input-back.png in Resources */,
 				DFCB1636153FB02700936D28 /* button-input-back@2x.png in Resources */,
 				DFCB1637153FB02700936D28 /* button-input-clear.png in Resources */,
+				8979091A17EE7F82004F6F9C /* Images.xcassets in Resources */,
+				8979092117EE7FAC004F6F9C /* iPhone retina landscape iOS 7.png in Resources */,
 				DFCB1638153FB02700936D28 /* button-input-clear@2x.png in Resources */,
 				DFCB1639153FB02700936D28 /* button-input-menu.png in Resources */,
 				DFCB163A153FB02700936D28 /* button-input-menu@2x.png in Resources */,
@@ -1232,6 +1267,7 @@
 				DFD1D7401555E6540091E8EB /* lead-wide@2x.png in Resources */,
 				DF53C4411559E4D800709FC2 /* more-arrow.png in Resources */,
 				DF53C4441559E4EA00709FC2 /* more-arrow@2x.png in Resources */,
+				8979092217EE7FAC004F6F9C /* iPhone retina portait iOS 7.png in Resources */,
 				DF29B827155AE4D2009DA4BE /* SettingsVC.xib in Resources */,
 				DF29B82C155AE576009DA4BE /* tabicon-settings.png in Resources */,
 				DF29B82D155AE576009DA4BE /* tabicon-settings@2x.png in Resources */,
@@ -1520,6 +1556,8 @@
 		DFA0DF9B14E0B41900B67057 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1535,6 +1573,8 @@
 		DFA0DF9C14E0B41900B67057 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
