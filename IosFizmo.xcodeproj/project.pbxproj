@@ -148,6 +148,10 @@
 		DFA0DF8A14E0B41900B67057 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA0DF8914E0B41900B67057 /* main.m */; };
 		DFA0DFAB14E0BDA700B67057 /* GlkFileSelectLoad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFA0DFA714E0BDA700B67057 /* GlkFileSelectLoad.xib */; };
 		DFA0DFAC14E0BDA700B67057 /* GlkFileSelectStore.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFA0DFA814E0BDA700B67057 /* GlkFileSelectStore.xib */; };
+		DFA5BD621860CBA300F11F5F /* baricon-edit-old.png in Resources */ = {isa = PBXBuildFile; fileRef = DFA5BD5E1860CBA300F11F5F /* baricon-edit-old.png */; };
+		DFA5BD631860CBA300F11F5F /* baricon-edit-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFA5BD5F1860CBA300F11F5F /* baricon-edit-old@2x.png */; };
+		DFA5BD641860CBA300F11F5F /* baricon-styles-old.png in Resources */ = {isa = PBXBuildFile; fileRef = DFA5BD601860CBA300F11F5F /* baricon-styles-old.png */; };
+		DFA5BD651860CBA300F11F5F /* baricon-styles-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFA5BD611860CBA300F11F5F /* baricon-styles-old@2x.png */; };
 		DFAA384A14F1DAAE0096A848 /* tabicon-game.png in Resources */ = {isa = PBXBuildFile; fileRef = DFAA384914F1DAAE0096A848 /* tabicon-game.png */; };
 		DFB7A70A151E395600C07499 /* tabicon-game@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFB7A709151E395600C07499 /* tabicon-game@2x.png */; };
 		DFB7A70D151E3B3300C07499 /* tabicon-help@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFB7A70C151E3B3200C07499 /* tabicon-help@2x.png */; };
@@ -466,6 +470,10 @@
 		DFA0DF8B14E0B41900B67057 /* IosFizmo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IosFizmo-Prefix.pch"; sourceTree = "<group>"; };
 		DFA0DFA714E0BDA700B67057 /* GlkFileSelectLoad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GlkFileSelectLoad.xib; path = ../iosglk/Resources/GlkFileSelectLoad.xib; sourceTree = "<group>"; };
 		DFA0DFA814E0BDA700B67057 /* GlkFileSelectStore.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GlkFileSelectStore.xib; path = ../iosglk/Resources/GlkFileSelectStore.xib; sourceTree = "<group>"; };
+		DFA5BD5E1860CBA300F11F5F /* baricon-edit-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baricon-edit-old.png"; sourceTree = "<group>"; };
+		DFA5BD5F1860CBA300F11F5F /* baricon-edit-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baricon-edit-old@2x.png"; sourceTree = "<group>"; };
+		DFA5BD601860CBA300F11F5F /* baricon-styles-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baricon-styles-old.png"; sourceTree = "<group>"; };
+		DFA5BD611860CBA300F11F5F /* baricon-styles-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baricon-styles-old@2x.png"; sourceTree = "<group>"; };
 		DFAA384914F1DAAE0096A848 /* tabicon-game.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabicon-game.png"; sourceTree = "<group>"; };
 		DFB7A709151E395600C07499 /* tabicon-game@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabicon-game@2x.png"; sourceTree = "<group>"; };
 		DFB7A70C151E3B3200C07499 /* tabicon-help@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabicon-help@2x.png"; sourceTree = "<group>"; };
@@ -992,6 +1000,10 @@
 				DFB7A712151E5D1A00C07499 /* baricon-styles@2x.png */,
 				DF2247C21551B20D002EBC30 /* baricon-edit.png */,
 				DF2247C31551B20D002EBC30 /* baricon-edit@2x.png */,
+				DFA5BD601860CBA300F11F5F /* baricon-styles-old.png */,
+				DFA5BD611860CBA300F11F5F /* baricon-styles-old@2x.png */,
+				DFA5BD5E1860CBA300F11F5F /* baricon-edit-old.png */,
+				DFA5BD5F1860CBA300F11F5F /* baricon-edit-old@2x.png */,
 				DF1F3FF014F1FF1D008FF1C7 /* tabicon-help.png */,
 				DFB7A70C151E3B3200C07499 /* tabicon-help@2x.png */,
 				DF1F3FF114F1FF1D008FF1C7 /* tabicon-notes.png */,
@@ -1115,6 +1127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFA0DFAB14E0BDA700B67057 /* GlkFileSelectLoad.xib in Resources */,
+				DFA5BD651860CBA300F11F5F /* baricon-styles-old@2x.png in Resources */,
 				DFA0DFAC14E0BDA700B67057 /* GlkFileSelectStore.xib in Resources */,
 				DF9A848114E0EE8A002C2FCB /* Game.z5 in Resources */,
 				DF9D1A5414E47E85006A6749 /* FizmoLocales in Resources */,
@@ -1154,10 +1167,12 @@
 				DFC755BF1524D372009F4137 /* checkmark.png in Resources */,
 				DFC755C01524D372009F4137 /* checkmark@2x.png in Resources */,
 				DFC755C21524DFFC009F4137 /* fader-popbox.png in Resources */,
+				DFA5BD641860CBA300F11F5F /* baricon-styles-old.png in Resources */,
 				DFC755C91527EC54009F4137 /* col-12.png in Resources */,
 				DFC755CA1527EC54009F4137 /* col-12@2x.png in Resources */,
 				DFC755CB1527EC54009F4137 /* col-34.png in Resources */,
 				DFC755CC1527EC54009F4137 /* col-34@2x.png in Resources */,
+				DFA5BD621860CBA300F11F5F /* baricon-edit-old.png in Resources */,
 				DFC755CD1527EC54009F4137 /* col-full.png in Resources */,
 				DFC755CE1527EC54009F4137 /* col-full@2x.png in Resources */,
 				DFC755D21527F104009F4137 /* col-12-sel.png in Resources */,
@@ -1201,6 +1216,7 @@
 				DFD6F388154B834000F6FC93 /* detail-arrow@2x.png in Resources */,
 				DFD6F38B154B83E000F6FC93 /* button-detail-base.png in Resources */,
 				DFD6F38D154B83F300F6FC93 /* button-detail-base@2x.png in Resources */,
+				DFA5BD631860CBA300F11F5F /* baricon-edit-old@2x.png in Resources */,
 				DFD6F390154B85E300F6FC93 /* button-detail-hi.png in Resources */,
 				DFD6F391154B85E300F6FC93 /* button-detail-hi@2x.png in Resources */,
 				DF2247C41551B20D002EBC30 /* baricon-edit.png in Resources */,

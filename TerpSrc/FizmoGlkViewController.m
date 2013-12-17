@@ -133,6 +133,14 @@ typedef struct z_file_struct z_file;
 	if (keyboardbutton && [keyboardbutton respondsToSelector:@selector(setAccessibilityLabel:)]) {
 		[keyboardbutton setAccessibilityLabel:NSLocalizedStringFromTable(@"label.keyboard", @"TerpLocalize", nil)];
 	}
+	
+	if ([IosGlkAppDelegate oldstyleui]) {
+		/* Use the old-style drop-shadowed buttons in the navbar. */
+		if (stylebutton)
+			[stylebutton setImage:[UIImage imageNamed:@"baricon-styles-old"]];
+		if (keyboardbutton)
+			[keyboardbutton setImage:[UIImage imageNamed:@"baricon-edit-old"]];
+	}
 }
 
 - (id) filterEvent:(id)data {
