@@ -152,6 +152,10 @@
 		DFA5BD631860CBA300F11F5F /* baricon-edit-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFA5BD5F1860CBA300F11F5F /* baricon-edit-old@2x.png */; };
 		DFA5BD641860CBA300F11F5F /* baricon-styles-old.png in Resources */ = {isa = PBXBuildFile; fileRef = DFA5BD601860CBA300F11F5F /* baricon-styles-old.png */; };
 		DFA5BD651860CBA300F11F5F /* baricon-styles-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFA5BD611860CBA300F11F5F /* baricon-styles-old@2x.png */; };
+		DFA5BD6A1860F4B900F11F5F /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFA5BD661860F4B800F11F5F /* Icon-40@2x.png */; };
+		DFA5BD6B1860F4B900F11F5F /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFA5BD671860F4B800F11F5F /* Icon-60@2x.png */; };
+		DFA5BD6C1860F4B900F11F5F /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = DFA5BD681860F4B800F11F5F /* Icon-76.png */; };
+		DFA5BD6D1860F4B900F11F5F /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFA5BD691860F4B900F11F5F /* Icon-76@2x.png */; };
 		DFAA384A14F1DAAE0096A848 /* tabicon-game.png in Resources */ = {isa = PBXBuildFile; fileRef = DFAA384914F1DAAE0096A848 /* tabicon-game.png */; };
 		DFB7A70A151E395600C07499 /* tabicon-game@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFB7A709151E395600C07499 /* tabicon-game@2x.png */; };
 		DFB7A70D151E3B3300C07499 /* tabicon-help@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFB7A70C151E3B3200C07499 /* tabicon-help@2x.png */; };
@@ -474,6 +478,10 @@
 		DFA5BD5F1860CBA300F11F5F /* baricon-edit-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baricon-edit-old@2x.png"; sourceTree = "<group>"; };
 		DFA5BD601860CBA300F11F5F /* baricon-styles-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baricon-styles-old.png"; sourceTree = "<group>"; };
 		DFA5BD611860CBA300F11F5F /* baricon-styles-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baricon-styles-old@2x.png"; sourceTree = "<group>"; };
+		DFA5BD661860F4B800F11F5F /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		DFA5BD671860F4B800F11F5F /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		DFA5BD681860F4B800F11F5F /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		DFA5BD691860F4B900F11F5F /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
 		DFAA384914F1DAAE0096A848 /* tabicon-game.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabicon-game.png"; sourceTree = "<group>"; };
 		DFB7A709151E395600C07499 /* tabicon-game@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabicon-game@2x.png"; sourceTree = "<group>"; };
 		DFB7A70C151E3B3200C07499 /* tabicon-help@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabicon-help@2x.png"; sourceTree = "<group>"; };
@@ -984,6 +992,10 @@
 				DFCB16951544842700936D28 /* Icon-Small-50@2x.png */,
 				DFCB16961544842700936D28 /* Icon-Small.png */,
 				DFCB16971544842700936D28 /* Icon-Small@2x.png */,
+				DFA5BD661860F4B800F11F5F /* Icon-40@2x.png */,
+				DFA5BD671860F4B800F11F5F /* Icon-60@2x.png */,
+				DFA5BD681860F4B800F11F5F /* Icon-76.png */,
+				DFA5BD691860F4B900F11F5F /* Icon-76@2x.png */,
 				DF564932158909F1002A52E2 /* Default.png */,
 				DF4ACCAD169CAB8100620E03 /* Default-568h@2x.png */,
 				DF564930158909F1002A52E2 /* Default-Landscape.png */,
@@ -1157,8 +1169,10 @@
 				DFB7A717151E674500C07499 /* background-notes.png in Resources */,
 				DFB7A719151E69B300C07499 /* background-notes-s.png in Resources */,
 				DFB7A721151ED33700C07499 /* background-notesopaque-s.png in Resources */,
+				DFA5BD6D1860F4B900F11F5F /* Icon-76@2x.png in Resources */,
 				DFB7A722151ED33700C07499 /* background-notesopaque.png in Resources */,
 				DFC755A715242354009F4137 /* background-popbox.png in Resources */,
+				DFA5BD6C1860F4B900F11F5F /* Icon-76.png in Resources */,
 				DFC755AA15242808009F4137 /* background-popbox@2x.png in Resources */,
 				DFC755B71524C02E009F4137 /* button-pref-base.png in Resources */,
 				DFC755B81524C02E009F4137 /* button-pref-base@2x.png in Resources */,
@@ -1174,6 +1188,7 @@
 				DFC755CC1527EC54009F4137 /* col-34@2x.png in Resources */,
 				DFA5BD621860CBA300F11F5F /* baricon-edit-old.png in Resources */,
 				DFC755CD1527EC54009F4137 /* col-full.png in Resources */,
+				DFA5BD6B1860F4B900F11F5F /* Icon-60@2x.png in Resources */,
 				DFC755CE1527EC54009F4137 /* col-full@2x.png in Resources */,
 				DFC755D21527F104009F4137 /* col-12-sel.png in Resources */,
 				DFC755D31527F104009F4137 /* col-34-sel.png in Resources */,
@@ -1195,6 +1210,7 @@
 				DFCB1638153FB02700936D28 /* button-input-clear@2x.png in Resources */,
 				DFCB1639153FB02700936D28 /* button-input-menu.png in Resources */,
 				DFCB163A153FB02700936D28 /* button-input-menu@2x.png in Resources */,
+				DFA5BD6A1860F4B900F11F5F /* Icon-40@2x.png in Resources */,
 				DFCB163D153FB03800936D28 /* TextFieldRightView.xib in Resources */,
 				DFCB169A1544842700936D28 /* Icon-50.png in Resources */,
 				DFCB169B1544842700936D28 /* Icon-50@2x.png in Resources */,
