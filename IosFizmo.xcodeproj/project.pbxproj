@@ -156,6 +156,11 @@
 		DFA5BD6B1860F4B900F11F5F /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFA5BD671860F4B800F11F5F /* Icon-60@2x.png */; };
 		DFA5BD6C1860F4B900F11F5F /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = DFA5BD681860F4B800F11F5F /* Icon-76.png */; };
 		DFA5BD6D1860F4B900F11F5F /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFA5BD691860F4B900F11F5F /* Icon-76@2x.png */; };
+		DFA5BD8518623C0B00F11F5F /* Default-New-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFA5BD8018623C0B00F11F5F /* Default-New-568h@2x.png */; };
+		DFA5BD8618623C0B00F11F5F /* Default-New-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = DFA5BD8118623C0B00F11F5F /* Default-New-Landscape.png */; };
+		DFA5BD8718623C0B00F11F5F /* Default-New-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = DFA5BD8218623C0B00F11F5F /* Default-New-Portrait.png */; };
+		DFA5BD8818623C0B00F11F5F /* Default-New@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFA5BD8318623C0B00F11F5F /* Default-New@2x.png */; };
+		DFA5BD8918623C0B00F11F5F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFA5BD8418623C0B00F11F5F /* Default@2x.png */; };
 		DFAA384A14F1DAAE0096A848 /* tabicon-game.png in Resources */ = {isa = PBXBuildFile; fileRef = DFAA384914F1DAAE0096A848 /* tabicon-game.png */; };
 		DFB7A70A151E395600C07499 /* tabicon-game@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFB7A709151E395600C07499 /* tabicon-game@2x.png */; };
 		DFB7A70D151E3B3300C07499 /* tabicon-help@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFB7A70C151E3B3200C07499 /* tabicon-help@2x.png */; };
@@ -482,6 +487,11 @@
 		DFA5BD671860F4B800F11F5F /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
 		DFA5BD681860F4B800F11F5F /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
 		DFA5BD691860F4B900F11F5F /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		DFA5BD8018623C0B00F11F5F /* Default-New-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-New-568h@2x.png"; sourceTree = "<group>"; };
+		DFA5BD8118623C0B00F11F5F /* Default-New-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-New-Landscape.png"; sourceTree = "<group>"; };
+		DFA5BD8218623C0B00F11F5F /* Default-New-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-New-Portrait.png"; sourceTree = "<group>"; };
+		DFA5BD8318623C0B00F11F5F /* Default-New@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-New@2x.png"; sourceTree = "<group>"; };
+		DFA5BD8418623C0B00F11F5F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		DFAA384914F1DAAE0096A848 /* tabicon-game.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabicon-game.png"; sourceTree = "<group>"; };
 		DFB7A709151E395600C07499 /* tabicon-game@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabicon-game@2x.png"; sourceTree = "<group>"; };
 		DFB7A70C151E3B3200C07499 /* tabicon-help@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabicon-help@2x.png"; sourceTree = "<group>"; };
@@ -997,9 +1007,14 @@
 				DFA5BD681860F4B800F11F5F /* Icon-76.png */,
 				DFA5BD691860F4B900F11F5F /* Icon-76@2x.png */,
 				DF564932158909F1002A52E2 /* Default.png */,
+				DFA5BD8418623C0B00F11F5F /* Default@2x.png */,
 				DF4ACCAD169CAB8100620E03 /* Default-568h@2x.png */,
 				DF564930158909F1002A52E2 /* Default-Landscape.png */,
 				DF564931158909F1002A52E2 /* Default-Portrait.png */,
+				DFA5BD8018623C0B00F11F5F /* Default-New-568h@2x.png */,
+				DFA5BD8118623C0B00F11F5F /* Default-New-Landscape.png */,
+				DFA5BD8218623C0B00F11F5F /* Default-New-Portrait.png */,
+				DFA5BD8318623C0B00F11F5F /* Default-New@2x.png */,
 				DF9A848014E0EE8A002C2FCB /* Game.z5 */,
 			);
 			name = "Other Sources";
@@ -1139,6 +1154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFA0DFAB14E0BDA700B67057 /* GlkFileSelectLoad.xib in Resources */,
+				DFA5BD8718623C0B00F11F5F /* Default-New-Portrait.png in Resources */,
 				DFA5BD651860CBA300F11F5F /* baricon-styles-old@2x.png in Resources */,
 				DFA0DFAC14E0BDA700B67057 /* GlkFileSelectStore.xib in Resources */,
 				DF9A848114E0EE8A002C2FCB /* Game.z5 in Resources */,
@@ -1158,6 +1174,7 @@
 				DFBB4E4214F6E4450041016A /* TranscriptVC.xib in Resources */,
 				DF361B6214F72C5C00A8D670 /* DisplayTextVC.xib in Resources */,
 				DF53C4451559E61800709FC2 /* MoreBoxView.xib in Resources */,
+				DFA5BD8518623C0B00F11F5F /* Default-New-568h@2x.png in Resources */,
 				DFCB1641153FB13C00936D28 /* NotesVC~ipad.xib in Resources */,
 				DF70A1521513D9EE00B109A2 /* selecthandle.png in Resources */,
 				DF70A1531513D9EE00B109A2 /* selecthandle@2x.png in Resources */,
@@ -1184,6 +1201,7 @@
 				DFA5BD641860CBA300F11F5F /* baricon-styles-old.png in Resources */,
 				DFC755C91527EC54009F4137 /* col-12.png in Resources */,
 				DFC755CA1527EC54009F4137 /* col-12@2x.png in Resources */,
+				DFA5BD8918623C0B00F11F5F /* Default@2x.png in Resources */,
 				DFC755CB1527EC54009F4137 /* col-34.png in Resources */,
 				DFC755CC1527EC54009F4137 /* col-34@2x.png in Resources */,
 				DFA5BD621860CBA300F11F5F /* baricon-edit-old.png in Resources */,
@@ -1209,6 +1227,7 @@
 				DFCB1637153FB02700936D28 /* button-input-clear.png in Resources */,
 				DFCB1638153FB02700936D28 /* button-input-clear@2x.png in Resources */,
 				DFCB1639153FB02700936D28 /* button-input-menu.png in Resources */,
+				DFA5BD8618623C0B00F11F5F /* Default-New-Landscape.png in Resources */,
 				DFCB163A153FB02700936D28 /* button-input-menu@2x.png in Resources */,
 				DFA5BD6A1860F4B900F11F5F /* Icon-40@2x.png in Resources */,
 				DFCB163D153FB03800936D28 /* TextFieldRightView.xib in Resources */,
@@ -1224,6 +1243,7 @@
 				DFCB16A31544842700936D28 /* Icon@2x.png in Resources */,
 				DF0C5FB51545F73F002081D5 /* InputMenuDecor~ipad.xib in Resources */,
 				DF0C5FB91545F75B002081D5 /* HistoryMenuView~ipad.xib in Resources */,
+				DFA5BD8818623C0B00F11F5F /* Default-New@2x.png in Resources */,
 				DF0C5FBA1545F75B002081D5 /* PaletteMenuView~ipad.xib in Resources */,
 				DF188B5F1547113F00CC6929 /* button-input-menu-sel.png in Resources */,
 				DF188B601547113F00CC6929 /* button-input-menu-sel@2x.png in Resources */,
