@@ -22,5 +22,7 @@
 
 - (FizmoGlkDelegate *) fizmoDelegate;
 - (IBAction) showPreferences;
+- (void) handleSwipeLeft:(UIGestureRecognizer *)recognizer;
+- (void) handleSwipeRight:(UIGestureRecognizer *)recognizer;
 
 @end
