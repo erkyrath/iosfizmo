@@ -191,6 +191,27 @@ typedef struct z_file_struct z_file;
 	}
 }
 
+/* UITabBarController delegate method; iOS7+ only */
+- (id<UIViewControllerAnimatedTransitioning>) tabBarController:(UITabBarController *)tabBarController animationControllerForTransitionFromViewController:(UIViewController *)fromvc toViewController:(UIViewController *)tovc {
+
+	if (![fromvc isKindOfClass:[UINavigationController class]])
+		return nil;
+	if (![tovc isKindOfClass:[UINavigationController class]])
+		return nil;
+
+	NSUInteger fromindex = self.tabBarController.selectedIndex;
+	NSUInteger toindex = [self.tabBarController.viewControllers indexOfObjectIdenticalTo:tovc];
+	if (toindex == NSNotFound || fromindex == NSNotFound)
+		return nil;
+		
+	TabSlideTransitioning *trans = [[[TabSlideTransitioning alloc] init] autorelease];
+	trans.forwards = (toindex > fromindex);
+	if ((toindex+fromindex+1 == self.tabBarController.viewControllers.count)
+		&& (toindex == 0 || fromindex == 0))
+		trans.forwards = !trans.forwards;
+	return trans;
+}
+
 /* UIGestureRecognizer delegate method */
 - (BOOL) gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
 	/* Turn off tab-swiping if an input menu is open. */
@@ -276,3 +297,49 @@ typedef struct z_file_struct z_file;
 }
 
 @end
+
+
+@implementation TabSlideTransitioning
+
+@synthesize forwards;
+
+- (void) animateTransition:(id<UIViewControllerContextTransitioning>)transition
+{
+	UIViewController *fromvc = [transition viewControllerForKey:UITransitionContextFromViewControllerKey];
+	UIViewController *tovc = [transition viewControllerForKey:UITransitionContextToViewControllerKey];
+	
+	CGRect curframe = fromvc.view.frame;
+	CGRect oldframe = curframe;
+	CGRect newframe = curframe;
+	if (!forwards) {
+		oldframe.origin.x -= oldframe.size.width;
+		newframe.origin.x += newframe.size.width;
+	}
+	else {
+		oldframe.origin.x += oldframe.size.width;
+		newframe.origin.x -= newframe.size.width;
+	}
+	
+	tovc.view.frame = oldframe;
+	[transition.containerView addSubview:tovc.view];
+	
+	[UIView animateWithDuration:0.2
+                          delay:0
+                        options:0
+                     animations:^{
+                         tovc.view.frame = curframe;
+						 fromvc.view.frame = newframe;
+					 } completion:^(BOOL finished) {
+						 [transition completeTransition:YES];
+						 [fromvc.view removeFromSuperview];
+					 }];
+}
+
+- (NSTimeInterval) transitionDuration:(id<UIViewControllerContextTransitioning>)transition
+{
+	return 0.2;
+}
+
+@end
+
+

@@ -26,3 +26,10 @@
 - (void) handleSwipeRight:(UIGestureRecognizer *)recognizer;
 
 @end
+
+
+@interface TabSlideTransitioning : NSObject <UIViewControllerAnimatedTransitioning>
+
+@property (nonatomic) BOOL forwards;
+
+@end
