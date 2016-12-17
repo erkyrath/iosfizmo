@@ -16,7 +16,6 @@
 @synthesize titlelabel;
 @synthesize datelabel;
 @synthesize thumb;
-@synthesize exportsheet;
 
 - (id) initWithNibName:(NSString *)nibName thumb:(GlkFileThumb *)thumbref bundle:(NSBundle *)nibBundle
 {
@@ -32,7 +31,6 @@
 	self.textview = nil;
 	self.titlelabel = nil;
 	self.datelabel = nil;
-	self.exportsheet = nil;
 	[super dealloc];
 }
 
@@ -76,55 +74,19 @@
 
 - (void) buttonSend:(id)sender
 {
-	NSString *copylabel = NSLocalizedStringFromTable(@"label.copy-all", @"TerpLocalize", nil);
-	NSString *emaillabel = nil;
-	if ([MFMailComposeViewController class] && [MFMailComposeViewController canSendMail])
-		emaillabel = NSLocalizedStringFromTable(@"label.email", @"TerpLocalize", nil);
-	
-	self.exportsheet = [[[UIActionSheet alloc]
-						 initWithTitle:nil
-						 delegate:self
-						 cancelButtonTitle:NSLocalizedStringFromTable(@"button.cancel", @"TerpLocalize", nil)
-						 destructiveButtonTitle:nil
-						 otherButtonTitles: copylabel, emaillabel, nil] autorelease];
-	
-	// iOS3 compatibility
-	if ([exportsheet respondsToSelector:@selector(showFromBarButtonItem:animated:)])
-		[exportsheet showFromBarButtonItem:self.navigationItem.rightBarButtonItem animated:YES];
-	else
-		[exportsheet showInView:textview];
-}
-
-- (void) actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
-	self.exportsheet = nil;
-	
-	/* Because we have a variable number of options, cancelButtonIndex might be 1. */
-	if (buttonIndex == actionSheet.cancelButtonIndex)
+	if ([UIActivityViewController class]) {
+		// Available in iOS6+
+		NSArray *ls = [NSArray arrayWithObject:textview.text];
+		UIActivityViewController *actvc = [[[UIActivityViewController alloc] initWithActivityItems:ls applicationActivities:nil] autorelease];
+		if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+			[self presentViewController:actvc animated:YES completion:nil];
+		}
+		else {
+			UIPopoverController *popover = [[[UIPopoverController alloc] initWithContentViewController:actvc] autorelease];
+			[popover presentPopoverFromBarButtonItem:sender permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+		}
 		return;
-	
-	switch (buttonIndex) {
-		case 0:
-			[UIPasteboard generalPasteboard].string = textview.text;
-			break;
-			
-		case 1: {
-			MFMailComposeViewController *compose = [[MFMailComposeViewController alloc] init];
-			compose.mailComposeDelegate = self;
-			
-			NSString *subjstr = [NSString stringWithFormat:@"%@: %@", NSLocalizedStringFromTable(@"title.transcript", @"TerpLocalize", nil), thumb.label];
-			[compose setSubject:subjstr];
-			[compose setMessageBody:textview.text isHTML:NO];
-			
-			[self presentModalViewController:compose animated:YES];
-			[compose release]; // Can safely release the controller now.
-			}
-			break;
 	}
-}
-
-- (void) mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
-{
-    [self dismissModalViewControllerAnimated:YES];
 }
 
 - (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)orientation {
