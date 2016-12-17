@@ -31,9 +31,7 @@
 	[webview loadHTMLString:html baseURL:url];
 	webview.delegate = self;
 
-	if ([IosGlkAppDelegate gesturesavailable]) {
-		/* gestures are available in iOS 3.2 and up */
-		
+	if (true) {
 		FizmoGlkViewController *mainviewc = [FizmoGlkViewController singleton];
 		UISwipeGestureRecognizer *recognizer;
 		recognizer = [[[UISwipeGestureRecognizer alloc] initWithTarget:mainviewc action:@selector(handleSwipeLeft:)] autorelease];

@@ -58,9 +58,7 @@
 	keepopencell.selectionStyle = UITableViewCellSelectionStyleNone;
 	keepopencell.accessoryView = keepopenswitch;
 		
-	if ([IosGlkAppDelegate gesturesavailable]) {
-		/* gestures are available in iOS 3.2 and up */
-		
+	if (true) {
 		FizmoGlkViewController *mainviewc = [FizmoGlkViewController singleton];
 		UISwipeGestureRecognizer *recognizer;
 		recognizer = [[[UISwipeGestureRecognizer alloc] initWithTarget:mainviewc action:@selector(handleSwipeLeft:)] autorelease];
