@@ -191,6 +191,9 @@ typedef struct z_file_struct z_file;
 	}
 }
 
+#if 0 /* tab-slide not yet working */
+//### This screws up retention of the keyboard up/down state! Work on that.
+
 /* UITabBarController delegate method; iOS7+ only */
 - (id<UIViewControllerAnimatedTransitioning>) tabBarController:(UITabBarController *)tabBarController animationControllerForTransitionFromViewController:(UIViewController *)fromvc toViewController:(UIViewController *)tovc {
 
@@ -211,6 +214,8 @@ typedef struct z_file_struct z_file;
 		trans.forwards = !trans.forwards;
 	return trans;
 }
+
+#endif /* 0 */
 
 /* UIGestureRecognizer delegate method */
 - (BOOL) gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
@@ -298,6 +303,7 @@ typedef struct z_file_struct z_file;
 
 @end
 
+#if 0 /* tab-slide not yet working */
 
 @implementation TabSlideTransitioning
 
@@ -341,5 +347,7 @@ typedef struct z_file_struct z_file;
 }
 
 @end
+
+#endif /* 0 */
 
 

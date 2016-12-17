@@ -27,9 +27,13 @@
 
 @end
 
+#if 0 /* tab-slide not yet working */
 
 @interface TabSlideTransitioning : NSObject <UIViewControllerAnimatedTransitioning>
 
 @property (nonatomic) BOOL forwards;
 
 @end
+
+#endif /* 0 */
+
