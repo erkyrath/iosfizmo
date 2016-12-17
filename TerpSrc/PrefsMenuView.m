@@ -221,7 +221,7 @@
 	[glkviewc.frameview updateWindowStyles];
 	
 	if (faderview) {
-		if ([IosGlkAppDelegate animblocksavailable]) {
+		if (true) {
 			[UIView animateWithDuration:0.15 
 				animations:^{ faderview.alpha = (isdark ? 1.0 : 0.0); } ];
 		}
@@ -319,7 +319,7 @@
 	CGFloat curheight = content.frame.size.height;
 	[self resizeContentTo:fontscontainer.frame.size animated:YES];
 	
-	if ([IosGlkAppDelegate animblocksavailable]) {
+	if (true) {
 		CGRect oldrect = container.frame;
 		CGRect rect = fontscontainer.frame;
 		fontscontainer.frame = CGRectMake(rect.origin.x, rect.origin.y+curheight, rect.size.width, rect.size.height);
@@ -341,7 +341,7 @@
 	CGFloat curheight = content.frame.size.height;
 	[self resizeContentTo:colorscontainer.frame.size animated:YES];
 	
-	if ([IosGlkAppDelegate animblocksavailable]) {
+	if (true) {
 		CGRect oldrect = container.frame;
 		CGRect rect = colorscontainer.frame;
 		colorscontainer.frame = CGRectMake(rect.origin.x, rect.origin.y+curheight, rect.size.width, rect.size.height);
