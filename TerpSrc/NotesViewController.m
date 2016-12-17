@@ -90,9 +90,9 @@
 	else {
 		/* Transparent background colors won't load properly. We substitute opaque ones, which handily cover up the missing gradient view. */
 		if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
-			stripeimg = [UIImage imageNamed:[IosGlkAppDelegate imageHackPNG:@"background-notesopaque-s"]];
+			stripeimg = [UIImage imageNamed:@"background-notesopaque-s"];
 		else
-			stripeimg = [UIImage imageNamed:[IosGlkAppDelegate imageHackPNG:@"background-notesopaque"]];
+			stripeimg = [UIImage imageNamed:@"background-notesopaque"];
 		if (stripeimg)
 			textview.backgroundColor = [UIColor colorWithPatternImage:stripeimg];
 	}
@@ -127,9 +127,7 @@
 			[keyboardbutton setImage:[UIImage imageNamed:@"baricon-edit-old"]];
 	}
 	
-	if ([IosGlkAppDelegate gesturesavailable]) {
-		/* gestures are available in iOS 3.2 and up */
-		
+	if (true) {
 		FizmoGlkViewController *mainviewc = [FizmoGlkViewController singleton];
 		UISwipeGestureRecognizer *recognizer;
 		recognizer = [[[UISwipeGestureRecognizer alloc] initWithTarget:mainviewc action:@selector(handleSwipeLeft:)] autorelease];
