@@ -34,6 +34,14 @@ typedef struct z_file_struct z_file;
 	return nil;
 }
 
+/* Check whether the given file is a Glulx save file matching our game.
+ 
+	This replicates the Quetzal-parsing code in glulxe. It's a stable algorithm and I don't want to go chopping additional entry points into the interpreter.
+ */
+- (GlkSaveFormat) checkGlkSaveFileFormat:(NSString *)path {
+	return saveformat_UnknownFormat; //###
+}
+
 /* Open the Share Files view in the Settings tab. Make sure the given file is highlighted. */
 - (void) displayGlkFileUsage:(int)usage name:(NSString *)name {
 	FizmoGlkViewController *terpvc = [FizmoGlkViewController singleton];
