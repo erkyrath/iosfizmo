@@ -5,6 +5,8 @@
  */
 
 #import "FizmoGlkDelegate.h"
+#import "FizmoGlkViewController.h"
+#import "SettingsViewController.h"
 #import "IosGlkLibDelegate.h"
 #import "FizmoGlkWindows.h"
 #import "GlkWindowState.h"
@@ -30,6 +32,23 @@ typedef struct z_file_struct z_file;
 
 - (NSString *) gameId {
 	return nil;
+}
+
+/* Open the Share Files view in the Settings tab. Make sure the given file is highlighted. */
+- (void) displayGlkFileUsage:(int)usage name:(NSString *)name {
+	FizmoGlkViewController *terpvc = [FizmoGlkViewController singleton];
+	UITabBarController *tabbc = terpvc.tabBarController;
+	if (!tabbc)
+		return;
+	
+	if (tabbc.selectedViewController != terpvc.settingsvc.navigationController) {
+		// Switch to the settings view.
+		tabbc.selectedViewController = terpvc.settingsvc.navigationController;
+	}
+	// Pop out to the root of the settings view.
+	[terpvc.settingsvc.navigationController popToRootViewControllerAnimated:NO];
+	// Push in to the share view.
+	[terpvc.settingsvc handleShareFilesHighlightUsage:usage name:name];
 }
 
 - (NSString *) gameTitle {
@@ -202,7 +221,7 @@ typedef struct z_file_struct z_file;
 - (UIEdgeInsets) viewMarginForWindow:(GlkWindowState *)win rect:(CGRect)rect framebounds:(CGRect)framebounds {
 	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
 		return UIEdgeInsetsZero;
-		
+	
 	if ([win isKindOfClass:[GlkWindowBufferState class]]) {
 		CGFloat left = rect.origin.x - framebounds.origin.x;
 		CGFloat right = (framebounds.origin.x+framebounds.size.width) - (rect.origin.x+rect.size.width);
