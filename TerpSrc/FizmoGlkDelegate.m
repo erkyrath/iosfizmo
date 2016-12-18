@@ -117,7 +117,6 @@ typedef struct z_file_struct z_file;
 			if (gamehan) {
 				int len = 0x20; // the Z-machine header
 				NSData *gamedat = [gamehan readDataOfLength:len];
-				NSLog(@"### chunk length %ld, gamedat length %ld", (long)dat.length, (long)gamedat.length);
 				if (gamedat && len == 0x20) {
 					int ix;
 					const unsigned char *bytes = dat.bytes;
@@ -174,7 +173,6 @@ typedef struct z_file_struct z_file;
 	
 	[fhan closeFile];
 	
-	NSLog(@"### checkGlkSaveFileFormat result %d", result);
 	return result;
 }
 
