@@ -23,6 +23,8 @@
 
 - (void) viewDidLoad
 {
+	[super viewDidLoad];
+	
 	NSBundle *bundle = [NSBundle mainBundle];
 	// Do this the annoying iOS3-compatible way
 	NSString *path = [bundle pathForResource:@"index" ofType:@"html" inDirectory:@"WebSite"];
@@ -41,10 +43,6 @@
 		recognizer.direction = UISwipeGestureRecognizerDirectionRight;
 		[webview addGestureRecognizer:recognizer];
 	}
-}
-
-- (void) viewDidUnload
-{
 }
 
 /* Ensure that all external URLs are sent to Safari. (UIWebView delegate method.)
