@@ -37,6 +37,8 @@
 
 - (void) viewDidLoad
 {
+	[super viewDidLoad];
+	
 	self.navigationItem.title = doctitle;
 
 	NSBundle *bundle = [NSBundle mainBundle];
