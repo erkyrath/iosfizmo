@@ -144,7 +144,6 @@
 - (void) viewWillUnload
 {
 	[super viewWillUnload];
-	
 	[self saveIfNeeded];
 	textview.delegate = nil;
 }
