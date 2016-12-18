@@ -24,6 +24,7 @@
 		DF19DDE314E8A950007DCB29 /* FizmoGlkDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19DDE214E8A950007DCB29 /* FizmoGlkDelegate.m */; };
 		DF19DDE514E8DF5C007DCB29 /* IosGlkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF19DDE414E8DF5C007DCB29 /* IosGlkViewController.xib */; };
 		DF19DDF914EA0776007DCB29 /* FizmoGlkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19DDF814EA0776007DCB29 /* FizmoGlkViewController.m */; };
+		DF19E97D1E06209D005C3ED7 /* ShareFilesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19E97C1E06209D005C3ED7 /* ShareFilesViewController.m */; };
 		DF1DCC0E14FDC4C7001660B9 /* GlkWindowState.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1DCC0D14FDC4C7001660B9 /* GlkWindowState.m */; };
 		DF1DCC1214FDC8B2001660B9 /* GlkLibraryState.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1DCC1114FDC8B2001660B9 /* GlkLibraryState.m */; };
 		DF1F3FEF14F1FD19008FF1C7 /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1F3FEE14F1FD19008FF1C7 /* NotesViewController.m */; };
@@ -268,6 +269,8 @@
 		DF19DDE414E8DF5C007DCB29 /* IosGlkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IosGlkViewController.xib; sourceTree = "<group>"; };
 		DF19DDF714EA0776007DCB29 /* FizmoGlkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FizmoGlkViewController.h; sourceTree = "<group>"; };
 		DF19DDF814EA0776007DCB29 /* FizmoGlkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizmoGlkViewController.m; sourceTree = "<group>"; };
+		DF19E97B1E06209D005C3ED7 /* ShareFilesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareFilesViewController.h; sourceTree = "<group>"; };
+		DF19E97C1E06209D005C3ED7 /* ShareFilesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareFilesViewController.m; sourceTree = "<group>"; };
 		DF1DCC0C14FDC4C7001660B9 /* GlkWindowState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkWindowState.h; sourceTree = "<group>"; };
 		DF1DCC0D14FDC4C7001660B9 /* GlkWindowState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkWindowState.m; sourceTree = "<group>"; };
 		DF1DCC1014FDC8B2001660B9 /* GlkLibraryState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkLibraryState.h; sourceTree = "<group>"; };
@@ -646,6 +649,8 @@
 				DF1F3FEE14F1FD19008FF1C7 /* NotesViewController.m */,
 				DFBB4E4414F6E5700041016A /* TranscriptViewController.h */,
 				DFBB4E4514F6E5700041016A /* TranscriptViewController.m */,
+				DF19E97B1E06209D005C3ED7 /* ShareFilesViewController.h */,
+				DF19E97C1E06209D005C3ED7 /* ShareFilesViewController.m */,
 				DFEFAC2B14F1E0E50062859F /* HelpViewController.h */,
 				DFEFAC2C14F1E0E50062859F /* HelpViewController.m */,
 				DF29B821155AE24E009DA4BE /* SettingsViewController.h */,
@@ -956,8 +961,8 @@
 				DF9A837514E0CD7C002C2FCB /* AppSrc */,
 				DF9A839414E0CD8D002C2FCB /* LibSrc */,
 				DF9A83AD14E0CD98002C2FCB /* LayerSrc */,
-				DFA0DFA214E0B5BB00B67057 /* Other Sources */,
 				DF19DDE014E8A8CA007DCB29 /* TerpSrc */,
+				DFA0DFA214E0B5BB00B67057 /* Other Sources */,
 				DF19DDCF14E89EFA007DCB29 /* Resources */,
 				DFAA384714F1DA930096A848 /* Media */,
 				DFEFAC3114F1E4B00062859F /* WebSite */,
@@ -1386,6 +1391,7 @@
 				DF1DCC0E14FDC4C7001660B9 /* GlkWindowState.m in Sources */,
 				DF1DCC1214FDC8B2001660B9 /* GlkLibraryState.m in Sources */,
 				DF8FD3F51500AA8C00890116 /* TextSelectView.m in Sources */,
+				DF19E97D1E06209D005C3ED7 /* ShareFilesViewController.m in Sources */,
 				DFB7A71C151EBDC500C07499 /* GradientView.m in Sources */,
 				DFDFBD4B151F7DFD0053783F /* GlkAccessTypes.m in Sources */,
 				DFDA85DD153545DC00891B91 /* ios-autosave.m in Sources */,
