@@ -12,6 +12,7 @@
 
 @property (nonatomic, retain) IBOutlet UITableViewCell *autocorrectcell;
 @property (nonatomic, retain) IBOutlet UITableViewCell *keepopencell;
+@property (nonatomic, retain) IBOutlet UITableViewCell *sharefilescell;
 @property (nonatomic, retain) IBOutlet UITableViewCell *licensecell;
 
 @property (nonatomic, retain) IBOutlet UISwitch *autocorrectswitch;
@@ -20,5 +21,7 @@
 - (IBAction) handleAutoCorrect:(id)sender;
 - (IBAction) handleKeepOpen:(id)sender;
 - (void) handleLicenses;
+- (void) handleShareFiles;
+- (void) handleShareFilesHighlightUsage:(int)usage name:(NSString *)filename;
 
 @end

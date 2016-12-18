@@ -7,6 +7,7 @@
 #import "SettingsViewController.h"
 #import "FizmoGlkViewController.h"
 #import "DisplayWebViewController.h"
+#import "ShareFilesViewController.h"
 #import "GlkFrameView.h"
 #import "IosGlkAppDelegate.h"
 
@@ -15,6 +16,7 @@
 @synthesize tableview;
 @synthesize autocorrectcell;
 @synthesize keepopencell;
+@synthesize sharefilescell;
 @synthesize licensecell;
 @synthesize autocorrectswitch;
 @synthesize keepopenswitch;
@@ -23,6 +25,7 @@
 	self.tableview = nil;
 	self.autocorrectcell = nil;
 	self.keepopencell = nil;
+	self.sharefilescell = nil;
 	self.licensecell = nil;
 	self.autocorrectswitch = nil;
 	self.keepopenswitch = nil;
@@ -45,6 +48,12 @@
 	licensecell.textLabel.text = NSLocalizedStringFromTable(@"settings.cell.license", @"TerpLocalize", nil);
 	licensecell.textLabel.textColor = [UIColor colorWithRed:0.35 green:0.215 blue:0 alpha:1];
 	licensecell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+	
+	self.sharefilescell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Settings"] autorelease];
+	sharefilescell.backgroundColor = licensecell.backgroundColor;
+	sharefilescell.textLabel.text = NSLocalizedStringFromTable(@"settings.cell.sharefiles", @"TerpLocalize", nil);
+	sharefilescell.textLabel.textColor = licensecell.textLabel.textColor;
+	sharefilescell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 	
 	self.autocorrectcell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Settings"] autorelease];
 	autocorrectcell.backgroundColor = licensecell.backgroundColor;
@@ -110,11 +119,30 @@
 	[self.navigationController pushViewController:viewc animated:YES];
 }
 
+- (void) handleShareFiles
+{
+	[self handleShareFilesHighlightUsage:0 name:nil];
+}
+
+- (void) handleShareFilesHighlightUsage:(int)usage name:(NSString *)filename
+{
+	ShareFilesViewController *viewc = [[[ShareFilesViewController alloc] initWithNibName:@"ShareFilesVC" bundle:nil] autorelease];
+	BOOL animated = YES;
+	if (filename) {
+		// It so happens that if filename exists, this is an arriving file (and the caller is displayGlkFileUsage). Don't animate in that case.
+		animated = NO;
+		viewc.highlightusage = usage;
+		viewc.highlightname = filename;
+	}
+	[self.navigationController pushViewController:viewc animated:animated];
+}
+
 /* UITableViewDataSource methods */
 
 #define SECTION_PREFS (0)
-#define SECTION_LICENSE (1)
-#define NUM_SECTIONS (2)
+#define SECTION_FILES (1)
+#define SECTION_LICENSE (2)
+#define NUM_SECTIONS (3)
 
 - (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -140,6 +168,8 @@
 	switch (section) {
 		case SECTION_PREFS:
 			return 2;
+		case SECTION_FILES:
+			return 1;
 		case SECTION_LICENSE:
 			return 1;
 		default:
@@ -156,6 +186,14 @@
 					return keepopencell;
 				case 1:
 					return autocorrectcell;
+				default:
+					return nil;
+			}
+			
+		case SECTION_FILES:
+			switch (indexpath.row) {
+				case 0:
+					return sharefilescell;
 				default:
 					return nil;
 			}
@@ -180,6 +218,8 @@
 	[tableview deselectRowAtIndexPath:indexpath animated:NO];
 	if (indexpath.section == SECTION_LICENSE && indexpath.row == 0)
 		[self handleLicenses];
+	if (indexpath.section == SECTION_FILES && indexpath.row == 0)
+		[self handleShareFiles];
 }
 
 
