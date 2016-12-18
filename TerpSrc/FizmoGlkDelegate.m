@@ -34,12 +34,134 @@ typedef struct z_file_struct z_file;
 	return nil;
 }
 
+#define IFFID(c1, c2, c3, c4)  \
+  ( (((glui32)c1) << 24)    \
+  | (((glui32)c2) << 16)    \
+  | (((glui32)c3) << 8)     \
+  | (((glui32)c4)) )
+
 /* Check whether the given file is a Glulx save file matching our game.
  
 	This replicates the Quetzal-parsing code in glulxe. It's a stable algorithm and I don't want to go chopping additional entry points into the interpreter.
+ 
+	Recall that for Z-code, the IFhd chunk contains: release (2 bytes), serial (6 bytes), checksum (2 bytes), PC (3 bytes).
+	http://inform-fiction.org/zmachine/standards/quetzal/index.html#five
  */
 - (GlkSaveFormat) checkGlkSaveFileFormat:(NSString *)path {
-	return saveformat_UnknownFormat; //###
+	NSFileHandle *fhan = [NSFileHandle fileHandleForReadingAtPath:path];
+	if (!fhan)
+		return saveformat_Unreadable;
+	
+	// Let's do this using a block.
+	BOOL (^Read4)(glui32 *) = ^(glui32 *val) {
+		NSData *dat = [fhan readDataOfLength:4];
+		if (!dat || dat.length < 4) {
+			*val = 0;
+			return NO;
+		}
+		const unsigned char *bytes = dat.bytes;
+		*val = ((bytes[0] << 24) | (bytes[1] << 16) | (bytes[2] << 8) | (bytes[3]));
+		return YES;
+	};
+	
+	BOOL res;
+	glui32 val;
+	
+	res = Read4(&val);
+	if (!res || val != IFFID('F', 'O', 'R', 'M')) {
+		[fhan closeFile];
+		return saveformat_UnknownFormat;
+	}
+	
+	glui32 filelen;
+	res = Read4(&filelen);
+	if (!res) {
+		[fhan closeFile];
+		return saveformat_UnknownFormat;
+	}
+	glui32 filestart = fhan.offsetInFile;
+	
+	res = Read4(&val);
+	if (!res || val != IFFID('I', 'F', 'Z', 'S')) {
+		[fhan closeFile];
+		return saveformat_UnknownFormat;
+	}
+	
+	GlkSaveFormat result = saveformat_UnknownFormat;
+	
+	while (fhan.offsetInFile < filestart+filelen) {
+		/* Read a chunk and deal with it. */
+		glui32 chunktype=0, chunkstart=0, chunklen=0;
+		
+		res = Read4(&chunktype);
+		if (!res) {
+			result = saveformat_UnknownFormat;
+			break;
+		}
+		res = Read4(&chunklen);
+		if (!res) {
+			result = saveformat_UnknownFormat;
+			break;
+		}
+		chunkstart = fhan.offsetInFile;
+		
+		if (chunktype == IFFID('I', 'F', 'h', 'd')) {
+			/* Read the value, compare to the game file. If it matches, we're good. */
+			NSData *dat = [fhan readDataOfLength:chunklen];
+			if (!dat || dat.length < chunklen) {
+				result = saveformat_UnknownFormat;
+				break;
+			}
+			result = saveformat_UnknownFormat;
+			NSFileHandle *gamehan = [NSFileHandle fileHandleForReadingAtPath:[self gamePath]];
+			if (gamehan) {
+				int len = dat.length;
+				NSData *gamedat = [gamehan readDataOfLength:len];
+				if (gamedat && gamedat.length == len) {
+					int ix;
+					const unsigned char *bytes = dat.bytes;
+					const unsigned char *gamebytes = gamedat.bytes;
+					result = saveformat_Ok;
+					for (ix=0; ix<len; ix++) {
+						if (bytes[ix] != gamebytes[ix]) {
+							result = saveformat_WrongGame;
+							break;
+						}
+					}
+				}
+			}
+			/* Whatever happened, we're done now. */
+			[gamehan closeFile];
+			break;
+		}
+		else {
+			/* Unknown chunk type. Skip it. */
+			NSData *dat = [fhan readDataOfLength:chunklen];
+			if (!dat || dat.length < chunklen) {
+				result = saveformat_UnknownFormat;
+				break;
+			}
+		}
+		
+		if (chunkstart+chunklen != fhan.offsetInFile) {
+			/* Funny chunk length. */
+			result = saveformat_UnknownFormat;
+			break;
+		}
+		
+		if ((chunklen & 1) != 0) {
+			/* Skip the mandatory byte after an odd-length chunk. */
+			NSData *dat = [fhan readDataOfLength:1];
+			if (!dat || dat.length < 1) {
+				result = saveformat_UnknownFormat;
+				break;
+			}
+		}
+	}
+	
+	[fhan closeFile];
+	
+	return result;
 }
 
 /* Open the Share Files view in the Settings tab. Make sure the given file is highlighted. */
