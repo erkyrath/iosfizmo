@@ -31,6 +31,8 @@
 
 - (void) viewDidLoad
 {
+	[super viewDidLoad];
+	
 	if ([tableview respondsToSelector:@selector(backgroundView)]) {
 		/* This is only available in iOS 3.2 and up */
 		tableview.backgroundView = [[[UIView alloc] initWithFrame:tableview.backgroundView.frame] autorelease];
