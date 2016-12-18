@@ -115,15 +115,28 @@ typedef struct z_file_struct z_file;
 			result = saveformat_UnknownFormat;
 			NSFileHandle *gamehan = [NSFileHandle fileHandleForReadingAtPath:[self gamePath]];
 			if (gamehan) {
-				int len = dat.length;
+				int len = 0x20; // the Z-machine header
 				NSData *gamedat = [gamehan readDataOfLength:len];
-				if (gamedat && gamedat.length == len) {
+				NSLog(@"### chunk length %ld, gamedat length %ld", (long)dat.length, (long)gamedat.length);
+				if (gamedat && len == 0x20) {
 					int ix;
 					const unsigned char *bytes = dat.bytes;
 					const unsigned char *gamebytes = gamedat.bytes;
 					result = saveformat_Ok;
-					for (ix=0; ix<len; ix++) {
-						if (bytes[ix] != gamebytes[ix]) {
+					for (ix=0; ix<2; ix++) {
+						if (bytes[0+ix] != gamebytes[0x02+ix]) {
+							result = saveformat_WrongGame;
+							break;
+						}
+					}
+					for (ix=0; ix<6; ix++) {
+						if (bytes[2+ix] != gamebytes[0x12+ix]) {
+							result = saveformat_WrongGame;
+							break;
+						}
+					}
+					for (ix=0; ix<2; ix++) {
+						if (bytes[8+ix] != gamebytes[0x1C+ix]) {
 							result = saveformat_WrongGame;
 							break;
 						}
@@ -161,6 +174,7 @@ typedef struct z_file_struct z_file;
 	
 	[fhan closeFile];
 	
+	NSLog(@"### checkGlkSaveFileFormat result %d", result);
 	return result;
 }
 
