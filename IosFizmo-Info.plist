@@ -6,6 +6,42 @@
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
 	<string>Fizmo</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeIconFiles</key>
+			<array/>
+			<key>CFBundleTypeName</key>
+			<string>Glk Save File</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.eblong.glk.glksave</string>
+			</array>
+		</dict>
+	</array>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.eblong.glk.glksave</string>
+			<key>UTTypeDescription</key>
+			<string>Glk save file</string>
+			<key>UTTypeReferenceURL</key>
+			<string>http://eblong.com/zarf/glk/</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.content</string>
+				<string>public.data</string>
+			</array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<string>glksave</string>
+				<key>public.mime-type</key>
+				<string>application/x-glksave</string>
+			</dict>
+		</dict>
+	</array>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFiles</key>
