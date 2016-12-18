@@ -1142,6 +1142,11 @@
 			attributes = {
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Zarfhome;
+				TargetAttributes = {
+					DFA0DF7814E0B41900B67057 = {
+						DevelopmentTeam = BK75QRDQ9E;
+					};
+				};
 			};
 			buildConfigurationList = DFA0DF7314E0B41900B67057 /* Build configuration list for PBXProject "IosFizmo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1589,6 +1594,7 @@
 		DFA0DF9B14E0B41900B67057 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = BK75QRDQ9E;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IosFizmo-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
@@ -1602,6 +1608,7 @@
 		DFA0DF9C14E0B41900B67057 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = BK75QRDQ9E;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IosFizmo-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
