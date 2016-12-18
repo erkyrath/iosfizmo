@@ -25,6 +25,7 @@
 		DF19DDE514E8DF5C007DCB29 /* IosGlkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF19DDE414E8DF5C007DCB29 /* IosGlkViewController.xib */; };
 		DF19DDF914EA0776007DCB29 /* FizmoGlkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19DDF814EA0776007DCB29 /* FizmoGlkViewController.m */; };
 		DF19E97D1E06209D005C3ED7 /* ShareFilesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19E97C1E06209D005C3ED7 /* ShareFilesViewController.m */; };
+		DF19E97F1E0622F6005C3ED7 /* ShareFilesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF19E97E1E0622F6005C3ED7 /* ShareFilesVC.xib */; };
 		DF1DCC0E14FDC4C7001660B9 /* GlkWindowState.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1DCC0D14FDC4C7001660B9 /* GlkWindowState.m */; };
 		DF1DCC1214FDC8B2001660B9 /* GlkLibraryState.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1DCC1114FDC8B2001660B9 /* GlkLibraryState.m */; };
 		DF1F3FEF14F1FD19008FF1C7 /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1F3FEE14F1FD19008FF1C7 /* NotesViewController.m */; };
@@ -271,6 +272,7 @@
 		DF19DDF814EA0776007DCB29 /* FizmoGlkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizmoGlkViewController.m; sourceTree = "<group>"; };
 		DF19E97B1E06209D005C3ED7 /* ShareFilesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareFilesViewController.h; sourceTree = "<group>"; };
 		DF19E97C1E06209D005C3ED7 /* ShareFilesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareFilesViewController.m; sourceTree = "<group>"; };
+		DF19E97E1E0622F6005C3ED7 /* ShareFilesVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShareFilesVC.xib; sourceTree = "<group>"; };
 		DF1DCC0C14FDC4C7001660B9 /* GlkWindowState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkWindowState.h; sourceTree = "<group>"; };
 		DF1DCC0D14FDC4C7001660B9 /* GlkWindowState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkWindowState.m; sourceTree = "<group>"; };
 		DF1DCC1014FDC8B2001660B9 /* GlkLibraryState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkLibraryState.h; sourceTree = "<group>"; };
@@ -626,6 +628,7 @@
 				DFCB1640153FB13700936D28 /* NotesVC.xib */,
 				DFCB1643153FB13C00936D28 /* NotesVC~ipad.xib */,
 				DFBB4E4114F6E4450041016A /* TranscriptVC.xib */,
+				DF19E97E1E0622F6005C3ED7 /* ShareFilesVC.xib */,
 				DF29B831155B051B009DA4BE /* WebDocVC.xib */,
 				DF361B6114F72C5C00A8D670 /* DisplayTextVC.xib */,
 				DFCB15D6153E158800936D28 /* Localizable.strings */,
@@ -1279,6 +1282,7 @@
 				DF29B832155B051B009DA4BE /* WebDocVC.xib in Resources */,
 				DF564933158909F1002A52E2 /* Default-Landscape.png in Resources */,
 				DF564934158909F1002A52E2 /* Default-Portrait.png in Resources */,
+				DF19E97F1E0622F6005C3ED7 /* ShareFilesVC.xib in Resources */,
 				DF564935158909F1002A52E2 /* Default.png in Resources */,
 				DF56494115894112002A52E2 /* brightness-hi.png in Resources */,
 				DF56494215894112002A52E2 /* brightness-lo.png in Resources */,
