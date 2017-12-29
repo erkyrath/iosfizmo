@@ -21,6 +21,7 @@
 {
 	self = [super initWithNibName:nibName bundle:nibBundle];
 	if (self) {
+		self.edgesForExtendedLayout = 0; // avoid navbar underrun
 		self.thumb = thumbref;
 	}
 	return self;
