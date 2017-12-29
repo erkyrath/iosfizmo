@@ -53,7 +53,7 @@
 		NSString *anchor = request.URL.fragment;
 		if (navigationType == UIWebViewNavigationTypeLinkClicked && anchor && anchor.length) {
 			/* But handle internal anchor links with JS. UIWebView stopped handling this right in iOS11? */
-			NSString *res = [webView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"document.getElementsByName('%@')[0].scrollIntoView();", anchor]];
+			[webView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"document.getElementsByName('%@')[0].scrollIntoView();", anchor]];
 			return NO;
 		}
 		return YES;
