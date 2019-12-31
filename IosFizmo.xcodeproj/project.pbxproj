@@ -246,7 +246,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DF0C5FB41545F73F002081D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "iosglk/Resources/en.lproj/InputMenuDecor~ipad.xib"; sourceTree = SOURCE_ROOT; };
 		DF0C5FB71545F75B002081D5 /* HistoryMenuView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "HistoryMenuView~ipad.xib"; path = "iosglk/Resources/HistoryMenuView~ipad.xib"; sourceTree = SOURCE_ROOT; };
 		DF0C5FB81545F75B002081D5 /* PaletteMenuView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "PaletteMenuView~ipad.xib"; path = "iosglk/Resources/PaletteMenuView~ipad.xib"; sourceTree = SOURCE_ROOT; };
 		DF0FBD46159B6D34002CE66A /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
@@ -256,7 +255,6 @@
 		DF188B9015479A3000CC6929 /* GameOverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverView.m; sourceTree = "<group>"; };
 		DF188B9115479A3000CC6929 /* MButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MButton.h; sourceTree = "<group>"; };
 		DF188B9215479A3000CC6929 /* MButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MButton.m; sourceTree = "<group>"; };
-		DF188B9615479B4900CC6929 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GameOverView.xib; sourceTree = "<group>"; };
 		DF19DDD014E89F8A007DCB29 /* CmdTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CmdTextField.h; sourceTree = "<group>"; };
 		DF19DDD114E89F8A007DCB29 /* CmdTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CmdTextField.m; sourceTree = "<group>"; };
 		DF19DDD214E89F8A007DCB29 /* InputMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputMenuView.h; sourceTree = "<group>"; };
@@ -290,12 +288,10 @@
 		DF2247C31551B20D002EBC30 /* baricon-edit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baricon-edit@2x.png"; sourceTree = "<group>"; };
 		DF2247CF1551D97C002EBC30 /* FizmoGameOverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FizmoGameOverView.h; sourceTree = "<group>"; };
 		DF2247D01551D97C002EBC30 /* FizmoGameOverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizmoGameOverView.m; sourceTree = "<group>"; };
-		DF2247D61551DCF6002EBC30 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FatalGameOverView.xib; sourceTree = "<group>"; };
 		DF2247D81551E15E002EBC30 /* ios-restart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ios-restart.h"; sourceTree = "<group>"; };
 		DF2247D91551E15E002EBC30 /* ios-restart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ios-restart.m"; sourceTree = "<group>"; };
 		DF29B821155AE24E009DA4BE /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		DF29B822155AE24E009DA4BE /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
-		DF29B828155AE4D2009DA4BE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SettingsVC.xib; sourceTree = "<group>"; };
 		DF29B82A155AE576009DA4BE /* tabicon-settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabicon-settings.png"; sourceTree = "<group>"; };
 		DF29B82B155AE576009DA4BE /* tabicon-settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabicon-settings@2x.png"; sourceTree = "<group>"; };
 		DF29B82E155B0351009DA4BE /* DisplayWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayWebViewController.h; sourceTree = "<group>"; };
@@ -500,6 +496,15 @@
 		DFA5BD8418623C0B00F11F5F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		DFA7F4F11E04E64B00C97556 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		DFAA384914F1DAAE0096A848 /* tabicon-game.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabicon-game.png"; sourceTree = "<group>"; };
+		DFAC4C7D23BB35270063C565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SettingsVC.xib; sourceTree = "<group>"; };
+		DFAC4C7E23BB35270063C565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NotesVC.xib; sourceTree = "<group>"; };
+		DFAC4C7F23BB35270063C565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Base.lproj/NotesVC~ipad.xib"; sourceTree = "<group>"; };
+		DFAC4C8023BB35350063C565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/InputMenuDecor.xib; sourceTree = "<group>"; };
+		DFAC4C8123BB353B0063C565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PrefsMenuView.xib; sourceTree = "<group>"; };
+		DFAC4C8223BB35420063C565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "../iosglk/Resources/Base.lproj/InputMenuDecor~ipad.xib"; sourceTree = "<group>"; };
+		DFAC4C8323BB35480063C565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Base.lproj/PrefsMenuView~ipad.xib"; sourceTree = "<group>"; };
+		DFAC4C8423BB354E0063C565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/GameOverView.xib; sourceTree = "<group>"; };
+		DFAC4C8523BB35530063C565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/FatalGameOverView.xib; sourceTree = "<group>"; };
 		DFB7A709151E395600C07499 /* tabicon-game@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabicon-game@2x.png"; sourceTree = "<group>"; };
 		DFB7A70C151E3B3200C07499 /* tabicon-help@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabicon-help@2x.png"; sourceTree = "<group>"; };
 		DFB7A70E151E463E00C07499 /* tabicon-notes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabicon-notes@2x.png"; sourceTree = "<group>"; };
@@ -544,7 +549,6 @@
 		DFC75660152D3E4C009F4137 /* button-tab-sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-tab-sel@2x.png"; path = "iosglk/Media/button-tab-sel@2x.png"; sourceTree = SOURCE_ROOT; };
 		DFCB15D5153E158800936D28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DFCB15DA153E1D5600936D28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TerpLocalize.strings; sourceTree = "<group>"; };
-		DFCB1625153FAF8500936D28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/InputMenuDecor.xib; sourceTree = "<group>"; };
 		DFCB162F153FB02700936D28 /* button-input-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-input-back.png"; path = "iosglk/Media/button-input-back.png"; sourceTree = SOURCE_ROOT; };
 		DFCB1630153FB02700936D28 /* button-input-back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-input-back@2x.png"; path = "iosglk/Media/button-input-back@2x.png"; sourceTree = SOURCE_ROOT; };
 		DFCB1631153FB02700936D28 /* button-input-clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-input-clear.png"; path = "iosglk/Media/button-input-clear.png"; sourceTree = SOURCE_ROOT; };
@@ -552,10 +556,6 @@
 		DFCB1633153FB02700936D28 /* button-input-menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-input-menu.png"; path = "iosglk/Media/button-input-menu.png"; sourceTree = SOURCE_ROOT; };
 		DFCB1634153FB02700936D28 /* button-input-menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-input-menu@2x.png"; path = "iosglk/Media/button-input-menu@2x.png"; sourceTree = SOURCE_ROOT; };
 		DFCB163C153FB03800936D28 /* TextFieldRightView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TextFieldRightView.xib; path = iosglk/Resources/TextFieldRightView.xib; sourceTree = SOURCE_ROOT; };
-		DFCB163F153FB13700936D28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NotesVC.xib; sourceTree = "<group>"; };
-		DFCB1642153FB13C00936D28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "en.lproj/NotesVC~ipad.xib"; sourceTree = "<group>"; };
-		DFCB1645153FB14A00936D28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PrefsMenuView.xib; sourceTree = "<group>"; };
-		DFCB1648153FB14D00936D28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "en.lproj/PrefsMenuView~ipad.xib"; sourceTree = "<group>"; };
 		DFCB16901544842700936D28 /* Icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-50.png"; sourceTree = "<group>"; };
 		DFCB16911544842700936D28 /* Icon-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-50@2x.png"; sourceTree = "<group>"; };
 		DFCB16921544842700936D28 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
@@ -1150,11 +1150,11 @@
 			};
 			buildConfigurationList = DFA0DF7314E0B41900B67057 /* Build configuration list for PBXProject "IosFizmo" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
+				Base,
 			);
 			mainGroup = DFA0DF6E14E0B41900B67057;
 			productRefGroup = DFA0DF7A14E0B41900B67057 /* Products */;
@@ -1420,7 +1420,7 @@
 		DF0C5FB31545F73F002081D5 /* InputMenuDecor~ipad.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DF0C5FB41545F73F002081D5 /* en */,
+				DFAC4C8223BB35420063C565 /* Base */,
 			);
 			name = "InputMenuDecor~ipad.xib";
 			sourceTree = "<group>";
@@ -1428,7 +1428,7 @@
 		DF188B9515479B4900CC6929 /* GameOverView.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DF188B9615479B4900CC6929 /* en */,
+				DFAC4C8423BB354E0063C565 /* Base */,
 			);
 			name = GameOverView.xib;
 			sourceTree = "<group>";
@@ -1436,7 +1436,7 @@
 		DF2247D71551DCF6002EBC30 /* FatalGameOverView.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DF2247D61551DCF6002EBC30 /* en */,
+				DFAC4C8523BB35530063C565 /* Base */,
 			);
 			name = FatalGameOverView.xib;
 			sourceTree = "<group>";
@@ -1444,7 +1444,7 @@
 		DF29B829155AE4D2009DA4BE /* SettingsVC.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DF29B828155AE4D2009DA4BE /* en */,
+				DFAC4C7D23BB35270063C565 /* Base */,
 			);
 			name = SettingsVC.xib;
 			sourceTree = "<group>";
@@ -1469,7 +1469,7 @@
 		DFCB1626153FAF8500936D28 /* InputMenuDecor.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DFCB1625153FAF8500936D28 /* en */,
+				DFAC4C8023BB35350063C565 /* Base */,
 			);
 			name = InputMenuDecor.xib;
 			path = iosglk/Resources;
@@ -1478,7 +1478,7 @@
 		DFCB1640153FB13700936D28 /* NotesVC.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DFCB163F153FB13700936D28 /* en */,
+				DFAC4C7E23BB35270063C565 /* Base */,
 			);
 			name = NotesVC.xib;
 			sourceTree = "<group>";
@@ -1486,7 +1486,7 @@
 		DFCB1643153FB13C00936D28 /* NotesVC~ipad.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DFCB1642153FB13C00936D28 /* en */,
+				DFAC4C7F23BB35270063C565 /* Base */,
 			);
 			name = "NotesVC~ipad.xib";
 			sourceTree = "<group>";
@@ -1494,7 +1494,7 @@
 		DFCB1646153FB14A00936D28 /* PrefsMenuView.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DFCB1645153FB14A00936D28 /* en */,
+				DFAC4C8123BB353B0063C565 /* Base */,
 			);
 			name = PrefsMenuView.xib;
 			sourceTree = "<group>";
@@ -1502,7 +1502,7 @@
 		DFCB1649153FB14D00936D28 /* PrefsMenuView~ipad.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DFCB1648153FB14D00936D28 /* en */,
+				DFAC4C8323BB35480063C565 /* Base */,
 			);
 			name = "PrefsMenuView~ipad.xib";
 			sourceTree = "<group>";
