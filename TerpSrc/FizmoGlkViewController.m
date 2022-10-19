@@ -75,8 +75,6 @@ typedef struct z_file_struct z_file;
 		fontfamily = @"Georgia";
 	self.fizmoDelegate.fontfamily = fontfamily;
 	
-	self.navigationController.navigationBar.barStyle = (self.fizmoDelegate.hasDarkTheme ? UIBarStyleBlack : UIBarStyleDefault);
-	
 	// Yes, this is in two places.
 	self.frameview.backgroundColor = (self.fizmoDelegate).genBackgroundColor;
 }
