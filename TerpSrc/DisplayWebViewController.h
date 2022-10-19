@@ -5,13 +5,14 @@
  */
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 
-@interface DisplayWebViewController : UIViewController <UIWebViewDelegate>
+@interface DisplayWebViewController : UIViewController <WKNavigationDelegate>
 
-@property (nonatomic, retain) IBOutlet UIWebView *webview;
-@property (nonatomic, retain) NSString *filename;
-@property (nonatomic, retain) NSString *doctitle;
+@property (nonatomic, strong) IBOutlet WKWebView *webview;
+@property (nonatomic, strong) NSString *filename;
+@property (nonatomic, strong) NSString *doctitle;
 
-- (id) initWithNibName:(NSString *)nibName filename:(NSString *)filename title:(NSString *)title bundle:(NSBundle *)nibBundle;
+- (instancetype) initWithNibName:(NSString *)nibName filename:(NSString *)filename title:(NSString *)title bundle:(NSBundle *)nibBundle;
 
 @end

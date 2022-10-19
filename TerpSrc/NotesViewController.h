@@ -13,12 +13,12 @@
 	BOOL textchanged;
 }
 
-@property (nonatomic, retain) IBOutlet GradientView *gradview;
-@property (nonatomic, retain) IBOutlet UITextView *textview;
-@property (nonatomic, retain) IBOutlet UITableView *buttontable;
-@property (nonatomic, retain) IBOutlet UITableViewCell *transcriptcell;
-
-@property (nonatomic, retain) NSString *notespath;
+@property (nonatomic, strong) IBOutlet GradientView *gradview;
+@property (nonatomic, strong) IBOutlet UITextView *textview;
+@property (nonatomic, strong) IBOutlet UITableView *buttontable;
+@property (nonatomic, strong) IBOutlet UITableViewCell *transcriptcell;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *textbottomconstraint;
+@property (nonatomic, strong) NSString *notespath;
 
 - (IBAction) toggleKeyboard;
 - (IBAction) handleTranscripts;

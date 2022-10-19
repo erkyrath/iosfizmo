@@ -15,7 +15,7 @@
 @synthesize filename;
 @synthesize doctitle;
 
-- (id) initWithNibName:(NSString *)nibName filename:(NSString *)fileref title:(NSString *)titleref bundle:(NSBundle *)nibBundle
+- (instancetype) initWithNibName:(NSString *)nibName filename:(NSString *)fileref title:(NSString *)titleref bundle:(NSBundle *)nibBundle
 {
 	self = [super initWithNibName:nibName bundle:nibBundle];
 	if (self) {
@@ -27,19 +27,15 @@
 }
 
 - (void) dealloc {
-	self.filename = nil;
-	self.doctitle = nil;
 	if (webview) {
-		webview.delegate = nil;
-		self.webview = nil;
+		webview.navigationDelegate = nil;
 	}
-	[super dealloc];
 }
 
 - (void) viewDidLoad
 {
 	[super viewDidLoad];
-	
+
 	self.navigationItem.title = doctitle;
 
 	NSBundle *bundle = [NSBundle mainBundle];
@@ -48,11 +44,11 @@
 	NSURL *url = [NSURL fileURLWithPath:path isDirectory:NO];
 	NSString *html = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
 	[webview loadHTMLString:html baseURL:url];
-	webview.delegate = self;
+	webview.navigationDelegate = self;
 
 	if (true) {
 		UISwipeGestureRecognizer *recognizer;
-		recognizer = [[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeRight:)] autorelease];
+		recognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeRight:)];
 		recognizer.direction = UISwipeGestureRecognizerDirectionRight;
 		[webview addGestureRecognizer:recognizer];
 	}
@@ -64,20 +60,14 @@
 
 /* Ensure that all external URLs are sent to Safari. (UIWebView delegate method.)
  */
-- (BOOL) webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
-	if ([request.URL isFileURL]) {
+- (BOOL) webView:(WKWebView *)webView decidePolicyForNavigationAction:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+	if ((request.URL).fileURL) {
 		/* Let file:... URLs load normally */
 		return YES;
 	}
-	
-	[[UIApplication sharedApplication] openURL:request.URL];
-	return NO;
-}
 
-- (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)orientation
-{
-	IosGlkViewController *glkviewc = [IosGlkViewController singleton];
-	return [glkviewc shouldAutorotateToInterfaceOrientation:orientation];
+    [[UIApplication sharedApplication] openURL:request.URL options:@{} completionHandler:nil];
+	return NO;
 }
 
 @end

@@ -11,7 +11,7 @@
 
 @implementation FizmoGlkWinBufferView
 
-- (id) initWithWindow:(GlkWindowState *)winref frame:(CGRect)box margin:(UIEdgeInsets)margin {
+- (instancetype) initWithWindow:(GlkWindowState *)winref frame:(CGRect)box margin:(UIEdgeInsets)margin {
 	self = [super initWithWindow:winref frame:box margin:margin];
 	if (self) {
 		FizmoGlkViewController *glkviewc = [FizmoGlkViewController singleton];

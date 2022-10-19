@@ -16,11 +16,10 @@
 	NSDateFormatter *dateformatter;
 }
 
-@property (nonatomic, retain) IBOutlet UITableView *tableView;
-@property (nonatomic, retain) NSMutableArray *filelist;
-@property (nonatomic, retain) NSDateFormatter *dateformatter;
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) NSMutableArray *filelist;
+@property (nonatomic, strong) NSDateFormatter *dateformatter;
 
-- (id) initWithNibName:(NSString *)nibName bundle:(NSBundle *)nibBundle;
 - (void) addBlankThumb;
 
 @end

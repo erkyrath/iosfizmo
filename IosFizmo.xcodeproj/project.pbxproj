@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3A4D0AB28FF975E00FE34E5 /* ShareFiles.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A4D0A628FF975D00FE34E5 /* ShareFiles.storyboard */; };
+		C3A4D0AC28FF975E00FE34E5 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A4D0A728FF975D00FE34E5 /* MainStoryboard.storyboard */; };
+		C3A4D0AD28FF975E00FE34E5 /* Transcript.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A4D0A828FF975E00FE34E5 /* Transcript.storyboard */; };
+		C3A4D0AE28FF975E00FE34E5 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A4D0A928FF975E00FE34E5 /* Launch Screen.storyboard */; };
+		C3A4D0AF28FF975E00FE34E5 /* DisplayText.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A4D0AA28FF975E00FE34E5 /* DisplayText.storyboard */; };
+		C3A4D0B128FF978600FE34E5 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3A4D0B028FF978500FE34E5 /* Media.xcassets */; };
+		C3A4D0B328FF9D3F00FE34E5 /* GlkFileSelect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A4D0B228FF9D3F00FE34E5 /* GlkFileSelect.storyboard */; };
 		DF0C5FB51545F73F002081D5 /* InputMenuDecor~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0C5FB31545F73F002081D5 /* InputMenuDecor~ipad.xib */; };
 		DF0C5FB91545F75B002081D5 /* HistoryMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0C5FB71545F75B002081D5 /* HistoryMenuView~ipad.xib */; };
 		DF0C5FBA1545F75B002081D5 /* PaletteMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0C5FB81545F75B002081D5 /* PaletteMenuView~ipad.xib */; };
@@ -25,7 +32,6 @@
 		DF19DDE514E8DF5C007DCB29 /* IosGlkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF19DDE414E8DF5C007DCB29 /* IosGlkViewController.xib */; };
 		DF19DDF914EA0776007DCB29 /* FizmoGlkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19DDF814EA0776007DCB29 /* FizmoGlkViewController.m */; };
 		DF19E97D1E06209D005C3ED7 /* ShareFilesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19E97C1E06209D005C3ED7 /* ShareFilesViewController.m */; };
-		DF19E97F1E0622F6005C3ED7 /* ShareFilesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF19E97E1E0622F6005C3ED7 /* ShareFilesVC.xib */; };
 		DF1DCC0E14FDC4C7001660B9 /* GlkWindowState.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1DCC0D14FDC4C7001660B9 /* GlkWindowState.m */; };
 		DF1DCC1214FDC8B2001660B9 /* GlkLibraryState.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1DCC1114FDC8B2001660B9 /* GlkLibraryState.m */; };
 		DF1F3FEF14F1FD19008FF1C7 /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1F3FEE14F1FD19008FF1C7 /* NotesViewController.m */; };
@@ -40,13 +46,10 @@
 		DF2247D51551DCF6002EBC30 /* FatalGameOverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF2247D71551DCF6002EBC30 /* FatalGameOverView.xib */; };
 		DF2247DA1551E15E002EBC30 /* ios-restart.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2247D91551E15E002EBC30 /* ios-restart.m */; };
 		DF29B823155AE24E009DA4BE /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF29B822155AE24E009DA4BE /* SettingsViewController.m */; };
-		DF29B827155AE4D2009DA4BE /* SettingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF29B829155AE4D2009DA4BE /* SettingsVC.xib */; };
 		DF29B82C155AE576009DA4BE /* tabicon-settings.png in Resources */ = {isa = PBXBuildFile; fileRef = DF29B82A155AE576009DA4BE /* tabicon-settings.png */; };
 		DF29B82D155AE576009DA4BE /* tabicon-settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF29B82B155AE576009DA4BE /* tabicon-settings@2x.png */; };
 		DF29B830155B0351009DA4BE /* DisplayWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF29B82F155B0351009DA4BE /* DisplayWebViewController.m */; };
-		DF29B832155B051B009DA4BE /* WebDocVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF29B831155B051B009DA4BE /* WebDocVC.xib */; };
 		DF361B5F14F72B5C00A8D670 /* DisplayTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF361B5E14F72B5C00A8D670 /* DisplayTextViewController.m */; };
-		DF361B6214F72C5C00A8D670 /* DisplayTextVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF361B6114F72C5C00A8D670 /* DisplayTextVC.xib */; };
 		DF361B6414F73B7000A8D670 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF361B6314F73B7000A8D670 /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		DF361B7014FAAFED00A8D670 /* MoreBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF361B6F14FAAFEC00A8D670 /* MoreBoxView.m */; };
 		DF4ACCAE169CAB8100620E03 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4ACCAD169CAB8100620E03 /* Default-568h@2x.png */; };
@@ -143,13 +146,10 @@
 		DF9A848614E0F097002C2FCB /* fizmo-iosglk.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9A848514E0F097002C2FCB /* fizmo-iosglk.m */; };
 		DF9D1A4D14E1BFCF006A6749 /* ios-trace.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9D1A4C14E1BFCF006A6749 /* ios-trace.m */; };
 		DF9D1A5414E47E85006A6749 /* FizmoLocales in Resources */ = {isa = PBXBuildFile; fileRef = DF9D1A5314E47E85006A6749 /* FizmoLocales */; };
-		DF9D1A5914E59EF0006A6749 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF9D1A5814E59EF0006A6749 /* MainWindow.xib */; };
 		DFA0DF7E14E0B41900B67057 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA0DF7D14E0B41900B67057 /* UIKit.framework */; };
 		DFA0DF8014E0B41900B67057 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA0DF7F14E0B41900B67057 /* Foundation.framework */; };
 		DFA0DF8214E0B41900B67057 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA0DF8114E0B41900B67057 /* CoreGraphics.framework */; };
 		DFA0DF8A14E0B41900B67057 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA0DF8914E0B41900B67057 /* main.m */; };
-		DFA0DFAB14E0BDA700B67057 /* GlkFileSelectLoad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFA0DFA714E0BDA700B67057 /* GlkFileSelectLoad.xib */; };
-		DFA0DFAC14E0BDA700B67057 /* GlkFileSelectStore.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFA0DFA814E0BDA700B67057 /* GlkFileSelectStore.xib */; };
 		DFA5BD621860CBA300F11F5F /* baricon-edit-old.png in Resources */ = {isa = PBXBuildFile; fileRef = DFA5BD5E1860CBA300F11F5F /* baricon-edit-old.png */; };
 		DFA5BD631860CBA300F11F5F /* baricon-edit-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFA5BD5F1860CBA300F11F5F /* baricon-edit-old@2x.png */; };
 		DFA5BD641860CBA300F11F5F /* baricon-styles-old.png in Resources */ = {isa = PBXBuildFile; fileRef = DFA5BD601860CBA300F11F5F /* baricon-styles-old.png */; };
@@ -177,7 +177,6 @@
 		DFB7A721151ED33700C07499 /* background-notesopaque-s.png in Resources */ = {isa = PBXBuildFile; fileRef = DFB7A71F151ED33700C07499 /* background-notesopaque-s.png */; };
 		DFB7A722151ED33700C07499 /* background-notesopaque.png in Resources */ = {isa = PBXBuildFile; fileRef = DFB7A720151ED33700C07499 /* background-notesopaque.png */; };
 		DFBB4DE914F5D72D0041016A /* FizmoGlkWindows.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBB4DE814F5D72D0041016A /* FizmoGlkWindows.m */; };
-		DFBB4E4214F6E4450041016A /* TranscriptVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBB4E4114F6E4450041016A /* TranscriptVC.xib */; };
 		DFBB4E4614F6E5700041016A /* TranscriptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBB4E4514F6E5700041016A /* TranscriptViewController.m */; };
 		DFC755A715242354009F4137 /* background-popbox.png in Resources */ = {isa = PBXBuildFile; fileRef = DFC755A615242354009F4137 /* background-popbox.png */; };
 		DFC755AA15242808009F4137 /* background-popbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFC755A915242808009F4137 /* background-popbox@2x.png */; };
@@ -214,8 +213,6 @@
 		DFCB1639153FB02700936D28 /* button-input-menu.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCB1633153FB02700936D28 /* button-input-menu.png */; };
 		DFCB163A153FB02700936D28 /* button-input-menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCB1634153FB02700936D28 /* button-input-menu@2x.png */; };
 		DFCB163D153FB03800936D28 /* TextFieldRightView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFCB163C153FB03800936D28 /* TextFieldRightView.xib */; };
-		DFCB163E153FB13700936D28 /* NotesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFCB1640153FB13700936D28 /* NotesVC.xib */; };
-		DFCB1641153FB13C00936D28 /* NotesVC~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFCB1643153FB13C00936D28 /* NotesVC~ipad.xib */; };
 		DFCB1644153FB14A00936D28 /* PrefsMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFCB1646153FB14A00936D28 /* PrefsMenuView.xib */; };
 		DFCB1647153FB14D00936D28 /* PrefsMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFCB1649153FB14D00936D28 /* PrefsMenuView~ipad.xib */; };
 		DFCB169A1544842700936D28 /* Icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCB16901544842700936D28 /* Icon-50.png */; };
@@ -241,11 +238,17 @@
 		DFDA85DD153545DC00891B91 /* ios-autosave.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDA85DC153545DC00891B91 /* ios-autosave.m */; };
 		DFDFBD4B151F7DFD0053783F /* GlkAccessTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDFBD4A151F7DFD0053783F /* GlkAccessTypes.m */; };
 		DFEFAC2E14F1E0E50062859F /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEFAC2C14F1E0E50062859F /* HelpViewController.m */; };
-		DFEFAC2F14F1E0E50062859F /* HelpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFEFAC2D14F1E0E50062859F /* HelpVC.xib */; };
 		DFEFAC3214F1E4B00062859F /* WebSite in Resources */ = {isa = PBXBuildFile; fileRef = DFEFAC3114F1E4B00062859F /* WebSite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C3A4D0A628FF975D00FE34E5 /* ShareFiles.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShareFiles.storyboard; sourceTree = "<group>"; };
+		C3A4D0A728FF975D00FE34E5 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		C3A4D0A828FF975E00FE34E5 /* Transcript.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Transcript.storyboard; sourceTree = "<group>"; };
+		C3A4D0A928FF975E00FE34E5 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		C3A4D0AA28FF975E00FE34E5 /* DisplayText.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DisplayText.storyboard; sourceTree = "<group>"; };
+		C3A4D0B028FF978500FE34E5 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		C3A4D0B228FF9D3F00FE34E5 /* GlkFileSelect.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = GlkFileSelect.storyboard; path = iosglk/Resources/GlkFileSelect.storyboard; sourceTree = SOURCE_ROOT; };
 		DF0C5FB71545F75B002081D5 /* HistoryMenuView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "HistoryMenuView~ipad.xib"; path = "iosglk/Resources/HistoryMenuView~ipad.xib"; sourceTree = SOURCE_ROOT; };
 		DF0C5FB81545F75B002081D5 /* PaletteMenuView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "PaletteMenuView~ipad.xib"; path = "iosglk/Resources/PaletteMenuView~ipad.xib"; sourceTree = SOURCE_ROOT; };
 		DF0FBD46159B6D34002CE66A /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
@@ -270,7 +273,6 @@
 		DF19DDF814EA0776007DCB29 /* FizmoGlkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizmoGlkViewController.m; sourceTree = "<group>"; };
 		DF19E97B1E06209D005C3ED7 /* ShareFilesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareFilesViewController.h; sourceTree = "<group>"; };
 		DF19E97C1E06209D005C3ED7 /* ShareFilesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareFilesViewController.m; sourceTree = "<group>"; };
-		DF19E97E1E0622F6005C3ED7 /* ShareFilesVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShareFilesVC.xib; sourceTree = "<group>"; };
 		DF1DCC0C14FDC4C7001660B9 /* GlkWindowState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkWindowState.h; sourceTree = "<group>"; };
 		DF1DCC0D14FDC4C7001660B9 /* GlkWindowState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkWindowState.m; sourceTree = "<group>"; };
 		DF1DCC1014FDC8B2001660B9 /* GlkLibraryState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkLibraryState.h; sourceTree = "<group>"; };
@@ -296,10 +298,8 @@
 		DF29B82B155AE576009DA4BE /* tabicon-settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabicon-settings@2x.png"; sourceTree = "<group>"; };
 		DF29B82E155B0351009DA4BE /* DisplayWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayWebViewController.h; sourceTree = "<group>"; };
 		DF29B82F155B0351009DA4BE /* DisplayWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayWebViewController.m; sourceTree = "<group>"; };
-		DF29B831155B051B009DA4BE /* WebDocVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebDocVC.xib; sourceTree = "<group>"; };
 		DF361B5D14F72B5C00A8D670 /* DisplayTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayTextViewController.h; sourceTree = "<group>"; };
 		DF361B5E14F72B5C00A8D670 /* DisplayTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayTextViewController.m; sourceTree = "<group>"; };
-		DF361B6114F72C5C00A8D670 /* DisplayTextVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DisplayTextVC.xib; sourceTree = "<group>"; };
 		DF361B6314F73B7000A8D670 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		DF361B6514F83CC200A8D670 /* glkstart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glkstart.h; sourceTree = "<group>"; };
 		DF361B6E14FAAFEC00A8D670 /* MoreBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreBoxView.h; sourceTree = "<group>"; };
@@ -471,7 +471,6 @@
 		DF9A848514E0F097002C2FCB /* fizmo-iosglk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "fizmo-iosglk.m"; sourceTree = "<group>"; };
 		DF9D1A4C14E1BFCF006A6749 /* ios-trace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ios-trace.m"; sourceTree = "<group>"; };
 		DF9D1A5314E47E85006A6749 /* FizmoLocales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FizmoLocales; sourceTree = "<group>"; };
-		DF9D1A5814E59EF0006A6749 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		DFA0DF7914E0B41900B67057 /* IosFizmo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosFizmo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFA0DF7D14E0B41900B67057 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DFA0DF7F14E0B41900B67057 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -479,8 +478,6 @@
 		DFA0DF8514E0B41900B67057 /* IosFizmo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IosFizmo-Info.plist"; sourceTree = "<group>"; };
 		DFA0DF8914E0B41900B67057 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DFA0DF8B14E0B41900B67057 /* IosFizmo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IosFizmo-Prefix.pch"; sourceTree = "<group>"; };
-		DFA0DFA714E0BDA700B67057 /* GlkFileSelectLoad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GlkFileSelectLoad.xib; path = ../iosglk/Resources/GlkFileSelectLoad.xib; sourceTree = "<group>"; };
-		DFA0DFA814E0BDA700B67057 /* GlkFileSelectStore.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GlkFileSelectStore.xib; path = ../iosglk/Resources/GlkFileSelectStore.xib; sourceTree = "<group>"; };
 		DFA5BD5E1860CBA300F11F5F /* baricon-edit-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baricon-edit-old.png"; sourceTree = "<group>"; };
 		DFA5BD5F1860CBA300F11F5F /* baricon-edit-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baricon-edit-old@2x.png"; sourceTree = "<group>"; };
 		DFA5BD601860CBA300F11F5F /* baricon-styles-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baricon-styles-old.png"; sourceTree = "<group>"; };
@@ -496,9 +493,6 @@
 		DFA5BD8418623C0B00F11F5F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		DFA7F4F11E04E64B00C97556 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		DFAA384914F1DAAE0096A848 /* tabicon-game.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabicon-game.png"; sourceTree = "<group>"; };
-		DFAC4C7D23BB35270063C565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SettingsVC.xib; sourceTree = "<group>"; };
-		DFAC4C7E23BB35270063C565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NotesVC.xib; sourceTree = "<group>"; };
-		DFAC4C7F23BB35270063C565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Base.lproj/NotesVC~ipad.xib"; sourceTree = "<group>"; };
 		DFAC4C8023BB35350063C565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/InputMenuDecor.xib; sourceTree = "<group>"; };
 		DFAC4C8123BB353B0063C565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PrefsMenuView.xib; sourceTree = "<group>"; };
 		DFAC4C8223BB35420063C565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "../iosglk/Resources/Base.lproj/InputMenuDecor~ipad.xib"; sourceTree = "<group>"; };
@@ -519,7 +513,6 @@
 		DFB7A720151ED33700C07499 /* background-notesopaque.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-notesopaque.png"; sourceTree = "<group>"; };
 		DFBB4DE714F5D72D0041016A /* FizmoGlkWindows.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FizmoGlkWindows.h; sourceTree = "<group>"; };
 		DFBB4DE814F5D72D0041016A /* FizmoGlkWindows.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizmoGlkWindows.m; sourceTree = "<group>"; };
-		DFBB4E4114F6E4450041016A /* TranscriptVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TranscriptVC.xib; sourceTree = "<group>"; };
 		DFBB4E4414F6E5700041016A /* TranscriptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranscriptViewController.h; sourceTree = "<group>"; };
 		DFBB4E4514F6E5700041016A /* TranscriptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranscriptViewController.m; sourceTree = "<group>"; };
 		DFC755A615242354009F4137 /* background-popbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background-popbox.png"; path = "iosglk/Media/background-popbox.png"; sourceTree = SOURCE_ROOT; };
@@ -582,7 +575,6 @@
 		DFDFBD4A151F7DFD0053783F /* GlkAccessTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkAccessTypes.m; sourceTree = "<group>"; };
 		DFEFAC2B14F1E0E50062859F /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
 		DFEFAC2C14F1E0E50062859F /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
-		DFEFAC2D14F1E0E50062859F /* HelpVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpVC.xib; sourceTree = "<group>"; };
 		DFEFAC3114F1E4B00062859F /* WebSite */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WebSite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -606,10 +598,14 @@
 		DF19DDCF14E89EFA007DCB29 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DF9D1A5814E59EF0006A6749 /* MainWindow.xib */,
+				C3A4D0B028FF978500FE34E5 /* Media.xcassets */,
+				C3A4D0A928FF975E00FE34E5 /* Launch Screen.storyboard */,
+				C3A4D0A728FF975D00FE34E5 /* MainStoryboard.storyboard */,
+				C3A4D0B228FF9D3F00FE34E5 /* GlkFileSelect.storyboard */,
+				C3A4D0A828FF975E00FE34E5 /* Transcript.storyboard */,
+				C3A4D0AA28FF975E00FE34E5 /* DisplayText.storyboard */,
+				C3A4D0A628FF975D00FE34E5 /* ShareFiles.storyboard */,
 				DF19DDE414E8DF5C007DCB29 /* IosGlkViewController.xib */,
-				DFA0DFA714E0BDA700B67057 /* GlkFileSelectLoad.xib */,
-				DFA0DFA814E0BDA700B67057 /* GlkFileSelectStore.xib */,
 				DF1F3FFD14F2BA68008FF1C7 /* PopBoxView.xib */,
 				DFCB163C153FB03800936D28 /* TextFieldRightView.xib */,
 				DFCB1626153FAF8500936D28 /* InputMenuDecor.xib */,
@@ -623,14 +619,6 @@
 				DFCB1649153FB14D00936D28 /* PrefsMenuView~ipad.xib */,
 				DF188B9515479B4900CC6929 /* GameOverView.xib */,
 				DF2247D71551DCF6002EBC30 /* FatalGameOverView.xib */,
-				DFEFAC2D14F1E0E50062859F /* HelpVC.xib */,
-				DF29B829155AE4D2009DA4BE /* SettingsVC.xib */,
-				DFCB1640153FB13700936D28 /* NotesVC.xib */,
-				DFCB1643153FB13C00936D28 /* NotesVC~ipad.xib */,
-				DFBB4E4114F6E4450041016A /* TranscriptVC.xib */,
-				DF19E97E1E0622F6005C3ED7 /* ShareFilesVC.xib */,
-				DF29B831155B051B009DA4BE /* WebDocVC.xib */,
-				DF361B6114F72C5C00A8D670 /* DisplayTextVC.xib */,
 				DFCB15D6153E158800936D28 /* Localizable.strings */,
 				DFCB15DB153E1D5600936D28 /* TerpLocalize.strings */,
 			);
@@ -1140,11 +1128,12 @@
 		DFA0DF7014E0B41900B67057 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1400;
 				ORGANIZATIONNAME = Zarfhome;
 				TargetAttributes = {
 					DFA0DF7814E0B41900B67057 = {
-						DevelopmentTeam = BK75QRDQ9E;
+						DevelopmentTeam = 6U7YY3724Y;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -1171,35 +1160,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFA0DFAB14E0BDA700B67057 /* GlkFileSelectLoad.xib in Resources */,
 				DFA5BD8718623C0B00F11F5F /* Default-New-Portrait.png in Resources */,
 				DFA5BD651860CBA300F11F5F /* baricon-styles-old@2x.png in Resources */,
-				DFA0DFAC14E0BDA700B67057 /* GlkFileSelectStore.xib in Resources */,
 				DF9A848114E0EE8A002C2FCB /* Game.z5 in Resources */,
 				DF9D1A5414E47E85006A6749 /* FizmoLocales in Resources */,
-				DF9D1A5914E59EF0006A6749 /* MainWindow.xib in Resources */,
 				DF19DDDB14E8A069007DCB29 /* HistoryMenuView.xib in Resources */,
 				DF19DDDC14E8A069007DCB29 /* PaletteMenuView.xib in Resources */,
 				DF19DDE514E8DF5C007DCB29 /* IosGlkViewController.xib in Resources */,
 				DFAA384A14F1DAAE0096A848 /* tabicon-game.png in Resources */,
-				DFEFAC2F14F1E0E50062859F /* HelpVC.xib in Resources */,
 				DFEFAC3214F1E4B00062859F /* WebSite in Resources */,
-				DFCB163E153FB13700936D28 /* NotesVC.xib in Resources */,
 				DF1F3FF214F1FF1D008FF1C7 /* tabicon-help.png in Resources */,
 				DF1F3FF314F1FF1D008FF1C7 /* tabicon-notes.png in Resources */,
 				DF1F3FFE14F2BA68008FF1C7 /* PopBoxView.xib in Resources */,
 				DFCB1644153FB14A00936D28 /* PrefsMenuView.xib in Resources */,
-				DFBB4E4214F6E4450041016A /* TranscriptVC.xib in Resources */,
-				DF361B6214F72C5C00A8D670 /* DisplayTextVC.xib in Resources */,
 				DF53C4451559E61800709FC2 /* MoreBoxView.xib in Resources */,
 				DFA5BD8518623C0B00F11F5F /* Default-New-568h@2x.png in Resources */,
-				DFCB1641153FB13C00936D28 /* NotesVC~ipad.xib in Resources */,
 				DF70A1521513D9EE00B109A2 /* selecthandle.png in Resources */,
 				DF70A1531513D9EE00B109A2 /* selecthandle@2x.png in Resources */,
 				DFB7A70A151E395600C07499 /* tabicon-game@2x.png in Resources */,
 				DFB7A70D151E3B3300C07499 /* tabicon-help@2x.png in Resources */,
 				DFB7A70F151E463E00C07499 /* tabicon-notes@2x.png in Resources */,
 				DFB7A711151E59ED00C07499 /* baricon-styles.png in Resources */,
+				C3A4D0B328FF9D3F00FE34E5 /* GlkFileSelect.storyboard in Resources */,
 				DFB7A713151E5D1A00C07499 /* baricon-styles@2x.png in Resources */,
 				DFB7A717151E674500C07499 /* background-notes.png in Resources */,
 				DFB7A719151E69B300C07499 /* background-notes-s.png in Resources */,
@@ -1212,6 +1194,7 @@
 				DFC755B71524C02E009F4137 /* button-pref-base.png in Resources */,
 				DFC755B81524C02E009F4137 /* button-pref-base@2x.png in Resources */,
 				DFC755BB1524C607009F4137 /* button-pref-hi.png in Resources */,
+				C3A4D0AE28FF975E00FE34E5 /* Launch Screen.storyboard in Resources */,
 				DFC755BC1524C607009F4137 /* button-pref-hi@2x.png in Resources */,
 				DFC755BF1524D372009F4137 /* checkmark.png in Resources */,
 				DFC755C01524D372009F4137 /* checkmark@2x.png in Resources */,
@@ -1219,6 +1202,7 @@
 				DFA5BD641860CBA300F11F5F /* baricon-styles-old.png in Resources */,
 				DFC755C91527EC54009F4137 /* col-12.png in Resources */,
 				DFC755CA1527EC54009F4137 /* col-12@2x.png in Resources */,
+				C3A4D0AD28FF975E00FE34E5 /* Transcript.storyboard in Resources */,
 				DFA5BD8918623C0B00F11F5F /* Default@2x.png in Resources */,
 				DFC755CB1527EC54009F4137 /* col-34.png in Resources */,
 				DFC755CC1527EC54009F4137 /* col-34@2x.png in Resources */,
@@ -1247,7 +1231,9 @@
 				DFCB1639153FB02700936D28 /* button-input-menu.png in Resources */,
 				DFA5BD8618623C0B00F11F5F /* Default-New-Landscape.png in Resources */,
 				DFCB163A153FB02700936D28 /* button-input-menu@2x.png in Resources */,
+				C3A4D0AF28FF975E00FE34E5 /* DisplayText.storyboard in Resources */,
 				DFA5BD6A1860F4B900F11F5F /* Icon-40@2x.png in Resources */,
+				C3A4D0AC28FF975E00FE34E5 /* MainStoryboard.storyboard in Resources */,
 				DFCB163D153FB03800936D28 /* TextFieldRightView.xib in Resources */,
 				DFCB169A1544842700936D28 /* Icon-50.png in Resources */,
 				DFCB169B1544842700936D28 /* Icon-50@2x.png in Resources */,
@@ -1282,13 +1268,12 @@
 				DFD1D7401555E6540091E8EB /* lead-wide@2x.png in Resources */,
 				DF53C4411559E4D800709FC2 /* more-arrow.png in Resources */,
 				DF53C4441559E4EA00709FC2 /* more-arrow@2x.png in Resources */,
-				DF29B827155AE4D2009DA4BE /* SettingsVC.xib in Resources */,
 				DF29B82C155AE576009DA4BE /* tabicon-settings.png in Resources */,
 				DF29B82D155AE576009DA4BE /* tabicon-settings@2x.png in Resources */,
-				DF29B832155B051B009DA4BE /* WebDocVC.xib in Resources */,
 				DF564933158909F1002A52E2 /* Default-Landscape.png in Resources */,
+				C3A4D0AB28FF975E00FE34E5 /* ShareFiles.storyboard in Resources */,
 				DF564934158909F1002A52E2 /* Default-Portrait.png in Resources */,
-				DF19E97F1E0622F6005C3ED7 /* ShareFilesVC.xib in Resources */,
+				C3A4D0B128FF978600FE34E5 /* Media.xcassets in Resources */,
 				DF564935158909F1002A52E2 /* Default.png in Resources */,
 				DF56494115894112002A52E2 /* brightness-hi.png in Resources */,
 				DF56494215894112002A52E2 /* brightness-lo.png in Resources */,
@@ -1441,14 +1426,6 @@
 			name = FatalGameOverView.xib;
 			sourceTree = "<group>";
 		};
-		DF29B829155AE4D2009DA4BE /* SettingsVC.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DFAC4C7D23BB35270063C565 /* Base */,
-			);
-			name = SettingsVC.xib;
-			sourceTree = "<group>";
-		};
 		DFCB15D6153E158800936D28 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1474,22 +1451,6 @@
 			name = InputMenuDecor.xib;
 			path = iosglk/Resources;
 			sourceTree = SOURCE_ROOT;
-		};
-		DFCB1640153FB13700936D28 /* NotesVC.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DFAC4C7E23BB35270063C565 /* Base */,
-			);
-			name = NotesVC.xib;
-			sourceTree = "<group>";
-		};
-		DFCB1643153FB13C00936D28 /* NotesVC~ipad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DFAC4C7F23BB35270063C565 /* Base */,
-			);
-			name = "NotesVC~ipad.xib";
-			sourceTree = "<group>";
 		};
 		DFCB1646153FB14A00936D28 /* PrefsMenuView.xib */ = {
 			isa = PBXVariantGroup;
@@ -1527,12 +1488,13 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development: Petter Sjolund (B48XUPZHD9)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -1555,7 +1517,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = fizmo/libfizmo/src;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-weak-lSystem";
 				SDKROOT = iphoneos;
@@ -1580,12 +1542,13 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development: Petter Sjolund (B48XUPZHD9)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1600,7 +1563,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = fizmo/libfizmo/src;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-weak-lSystem";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -1613,14 +1576,18 @@
 		DFA0DF9B14E0B41900B67057 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				DEVELOPMENT_TEAM = BK75QRDQ9E;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6U7YY3724Y;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IosFizmo-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "IosFizmo-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eblong.iosfizmotest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1628,14 +1595,18 @@
 		DFA0DF9C14E0B41900B67057 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				DEVELOPMENT_TEAM = BK75QRDQ9E;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6U7YY3724Y;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IosFizmo-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "IosFizmo-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eblong.iosfizmotest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

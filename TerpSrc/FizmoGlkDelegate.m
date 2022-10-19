@@ -25,10 +25,6 @@ typedef struct z_file_struct z_file;
 @synthesize colorscheme;
 @synthesize leading;
 
-- (void) dealloc {
-	self.fontfamily = nil;
-	[super dealloc];
-}
 
 - (NSString *) gameId {
 	return nil;
@@ -113,7 +109,7 @@ typedef struct z_file_struct z_file;
 				break;
 			}
 			result = saveformat_UnknownFormat;
-			NSFileHandle *gamehan = [NSFileHandle fileHandleForReadingAtPath:[self gamePath]];
+			NSFileHandle *gamehan = [NSFileHandle fileHandleForReadingAtPath:self.gamePath];
 			if (gamehan) {
 				int len = 0x20; // the Z-machine header
 				NSData *gamedat = [gamehan readDataOfLength:len];
@@ -204,7 +200,7 @@ typedef struct z_file_struct z_file;
 }
 
 - (GlkWinBufferView *) viewForBufferWindow:(GlkWindowState *)win frame:(CGRect)box margin:(UIEdgeInsets)margin {
-	return [[[FizmoGlkWinBufferView alloc] initWithWindow:win frame:box margin:margin] autorelease];
+	return [[FizmoGlkWinBufferView alloc] initWithWindow:win frame:box margin:margin];
 }
 
 - (GlkWinGridView *) viewForGridWindow:(GlkWindowState *)win frame:(CGRect)box margin:(UIEdgeInsets)margin {
@@ -266,7 +262,7 @@ typedef struct z_file_struct z_file;
 /* This is invoked from both the VM and UI threads.
  */
 - (void) prepareStyles:(StyleSet *)styles forWindowType:(glui32)wintype rock:(glui32)rock {
-	BOOL isiphone = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone);
+	BOOL isiphone = (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPhone);
 	
 	NSString *fontfam = self.fontfamily;
 	
@@ -341,7 +337,7 @@ typedef struct z_file_struct z_file;
 
 - (CGRect) adjustFrame:(CGRect)rect {
 	/* Decode the maxwidth value into a pixel width. 0 means full-width. */
-	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+	if (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPhone)
 		return rect;
 	
 	CGFloat limit = 0;
@@ -368,7 +364,7 @@ typedef struct z_file_struct z_file;
 }
 
 - (UIEdgeInsets) viewMarginForWindow:(GlkWindowState *)win rect:(CGRect)rect framebounds:(CGRect)framebounds {
-	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+	if (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPhone)
 		return UIEdgeInsetsZero;
 	
 	if ([win isKindOfClass:[GlkWindowBufferState class]]) {

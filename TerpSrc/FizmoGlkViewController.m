@@ -42,7 +42,7 @@ typedef struct z_file_struct z_file;
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	
 	/* Set some reasonable defaults, if none have ever been set. */
-	if (UI_USER_INTERFACE_IDIOM() != UIUserInterfaceIdiomPhone) {
+	if (UIDevice.currentDevice.userInterfaceIdiom != UIUserInterfaceIdiomPhone) {
 		/* On the iPad, use a 3/4 column and bump the leading a little. */
 		if (![defaults objectForKey:@"FrameMaxWidth"])
 			[defaults setInteger:1 forKey:@"FrameMaxWidth"];
@@ -78,7 +78,7 @@ typedef struct z_file_struct z_file;
 	self.navigationController.navigationBar.barStyle = (self.fizmoDelegate.hasDarkTheme ? UIBarStyleBlack : UIBarStyleDefault);
 	
 	// Yes, this is in two places.
-	self.frameview.backgroundColor = [self.fizmoDelegate genBackgroundColor];
+	self.frameview.backgroundColor = (self.fizmoDelegate).genBackgroundColor;
 }
 
 - (void) becameInactive {
@@ -98,15 +98,15 @@ typedef struct z_file_struct z_file;
 - (void) viewDidLoad {
 	[super viewDidLoad];
 	
-	self.frameview.backgroundColor = [self.fizmoDelegate genBackgroundColor];
+	self.frameview.backgroundColor = (self.fizmoDelegate).genBackgroundColor;
 	
 	if (true) {
 		UISwipeGestureRecognizer *recognizer;
-		recognizer = [[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeLeft:)] autorelease];
+		recognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeLeft:)];
 		recognizer.direction = UISwipeGestureRecognizerDirectionLeft;
 		recognizer.delegate = self;
 		[frameview addGestureRecognizer:recognizer];
-		recognizer = [[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeRight:)] autorelease];
+		recognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeRight:)];
 		recognizer.direction = UISwipeGestureRecognizerDirectionRight;
 		recognizer.delegate = self;
 		[frameview addGestureRecognizer:recognizer];
@@ -116,7 +116,7 @@ typedef struct z_file_struct z_file;
 	NSString *maintitle = self.navigationItem.title;
 	if (maintitle.length <= 2) {
 		/* Use a title from the delegate */
-		maintitle = [self.fizmoDelegate gameTitle];
+		maintitle = (self.fizmoDelegate).gameTitle;
 		/* ...If that's not provided, pull it from TerpLocalize.strings. */
 		if (!maintitle)
 			maintitle = NSLocalizedStringFromTable(@"title.game", @"TerpLocalize", nil);
@@ -136,9 +136,9 @@ typedef struct z_file_struct z_file;
 	if ([IosGlkAppDelegate oldstyleui]) {
 		/* Use the old-style drop-shadowed buttons in the navbar. */
 		if (stylebutton)
-			[stylebutton setImage:[UIImage imageNamed:@"baricon-styles-old"]];
+			stylebutton.image = [UIImage imageNamed:@"baricon-styles-old"];
 		if (keyboardbutton)
-			[keyboardbutton setImage:[UIImage imageNamed:@"baricon-edit-old"]];
+			keyboardbutton.image = [UIImage imageNamed:@"baricon-edit-old"];
 	}
 }
 
@@ -146,7 +146,6 @@ typedef struct z_file_struct z_file;
 	if (self.vmexited && data && [data isKindOfClass:[GlkFileRefPrompt class]] && data == restorefileprompt) {
 		/* Drop the field reference to the prompt. */
 		GlkFileRefPrompt *prompt = restorefileprompt;
-		[[prompt retain] autorelease];
 		self.restorefileprompt = nil;
 		
 		if (!prompt.filename) {
@@ -155,7 +154,7 @@ typedef struct z_file_struct z_file;
 		}
 		
 		/* Queue up the autorestore file, and restart the interpreter. */
-		iosglk_queue_autosave(prompt.pathname);
+		iosglk_queue_autosave((__bridge void *)(prompt.pathname));
 		[[GlkAppWrapper singleton] acceptEventRestart];
 		return nil;
 	}
@@ -165,7 +164,7 @@ typedef struct z_file_struct z_file;
 
 - (void) postGameOver {
 	CGRect rect = frameview.bounds;
-	FizmoGameOverView *menuview = [[[FizmoGameOverView alloc] initWithFrame:frameview.bounds centerInFrame:rect] autorelease];
+	FizmoGameOverView *menuview = [[FizmoGameOverView alloc] initWithFrame:frameview.bounds centerInFrame:rect];
 	[frameview postPopMenu:menuview];
 }
 
@@ -177,7 +176,7 @@ typedef struct z_file_struct z_file;
 	NSArray *viewcstack = navc.viewControllers;
 	if (!viewcstack || !viewcstack.count)
 		return;
-	UIViewController *rootviewc = [viewcstack objectAtIndex:0];
+	UIViewController *rootviewc = viewcstack[0];
 	//NSLog(@"### tabBarController did select %@ (%@)", navc, rootviewc);
 	
 	if (rootviewc != notesvc) {
@@ -241,7 +240,7 @@ typedef struct z_file_struct z_file;
 }
 
 - (IBAction) toggleKeyboard {
-	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+	if (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPhone) {
 		/* Can't have the prefs menu up at the same time as the keyboard -- the iPhone screen is too small. */
 		if (frameview.menuview && [frameview.menuview isKindOfClass:[PrefsMenuView class]]) {
 			[frameview removePopMenuAnimated:YES];
@@ -269,7 +268,7 @@ typedef struct z_file_struct z_file;
 }
 
 - (IBAction) showPreferences {
-	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+	if (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPhone) {
 		/* Can't have the prefs menu up at the same time as the keyboard */
 		[self hideKeyboard];
 	}
@@ -280,7 +279,7 @@ typedef struct z_file_struct z_file;
 	}
 	
 	CGRect rect = CGRectMake(4, 0, 40, 4);
-	PrefsMenuView *menuview = [[[PrefsMenuView alloc] initWithFrame:frameview.bounds buttonFrame:rect belowButton:YES] autorelease];
+	PrefsMenuView *menuview = [[PrefsMenuView alloc] initWithFrame:frameview.bounds buttonFrame:rect belowButton:YES];
 	[frameview postPopMenu:menuview];
 }
 

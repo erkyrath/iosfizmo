@@ -21,16 +21,15 @@
 	NSDateFormatter *dateformatter;
 }
 
-@property (nonatomic, retain) IBOutlet UITableView *tableView;
-@property (nonatomic, retain) UIBarButtonItem *sendbutton;
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) UIBarButtonItem *sendbutton;
 @property (nonatomic) int highlightusage;
-@property (nonatomic, retain) NSString *highlightname;
-@property (nonatomic, retain) UIDocumentInteractionController *sharedocic;
-@property (nonatomic, retain) NSString *sharetemppath;
-@property (nonatomic, retain) NSMutableArray *filelists;
-@property (nonatomic, retain) NSDateFormatter *dateformatter;
+@property (nonatomic, strong) NSString *highlightname;
+@property (nonatomic, strong) UIDocumentInteractionController *sharedocic;
+@property (nonatomic, strong) NSString *sharetemppath;
+@property (nonatomic, strong) NSMutableArray *filelists;
+@property (nonatomic, strong) NSDateFormatter *dateformatter;
 
-- (id) initWithNibName:(NSString *)nibName bundle:(NSBundle *)nibBundle;
 - (void) addBlankThumb;
 
 @end
