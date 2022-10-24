@@ -10,3 +10,5 @@
 #else
 	#include "fizmo-config.h"
 #endif
+
+#define IOS_GLK
