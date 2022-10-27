@@ -39,7 +39,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xwq-0h-0dv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="CustomText"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -59,12 +61,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7qT-Cz-trf" userLabel="Glk Frameview" customClass="GlkFrameView">
-                                <rect key="frame" x="0.0" y="44" width="414" height="594"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="643"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sJK-ys-wLQ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="CustomBackground"/>
                         <constraints>
                             <constraint firstItem="7qT-Cz-trf" firstAttribute="leading" secondItem="sJK-ys-wLQ" secondAttribute="leading" id="514-8Q-xch"/>
                             <constraint firstItem="7qT-Cz-trf" firstAttribute="top" secondItem="sJK-ys-wLQ" secondAttribute="top" id="GM2-fQ-Y8o"/>
@@ -85,7 +86,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="frameview" destination="7qT-Cz-trf" id="F8C-yL-Tg6"/>
                         <outlet property="glkdelegate" destination="QwX-bV-0p1" id="f4J-Tl-Btr"/>
@@ -370,11 +370,17 @@
         <image name="tabicon-help" width="30" height="30"/>
         <image name="tabicon-notes" width="30" height="30"/>
         <image name="tabicon-settings" width="30" height="30"/>
+        <namedColor name="CustomBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="CustomCellBackground">
             <color red="1" green="0.98000001907348633" blue="0.92000001668930054" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="CustomSwitchBackground">
             <color red="0.63099998235702515" green="0.50300002098083496" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CustomText">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="groupTableViewBackgroundColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

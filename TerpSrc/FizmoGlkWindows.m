@@ -15,7 +15,7 @@
 	self = [super initWithWindow:winref frame:box margin:margin];
 	if (self) {
 		FizmoGlkViewController *glkviewc = [FizmoGlkViewController singleton];
-		BOOL isdark = glkviewc.fizmoDelegate.hasDarkTheme;
+		BOOL isdark = glkviewc.hasDarkTheme;
 		self.textview.indicatorStyle = (isdark ? UIScrollViewIndicatorStyleWhite : UIScrollViewIndicatorStyleDefault);
 	}
 	return self;
@@ -25,7 +25,7 @@
 	[super uncacheLayoutAndStyles];
 
 	FizmoGlkViewController *glkviewc = [FizmoGlkViewController singleton];
-	BOOL isdark = glkviewc.fizmoDelegate.hasDarkTheme;
+	BOOL isdark = glkviewc.hasDarkTheme;
 	self.textview.indicatorStyle = (isdark ? UIScrollViewIndicatorStyleWhite : UIScrollViewIndicatorStyleDefault);
 }
 

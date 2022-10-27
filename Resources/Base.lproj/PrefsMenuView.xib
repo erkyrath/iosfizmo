@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" colorMatched="YES">
-    <device id="ipad9_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -13,7 +11,6 @@
             <connections>
                 <outlet property="brightslider" destination="66" id="67"/>
                 <outlet property="colorbut_bright" destination="46" id="49"/>
-                <outlet property="colorbut_dark" destination="47" id="52"/>
                 <outlet property="colorbut_quiet" destination="45" id="51"/>
                 <outlet property="colorbutton" destination="28" id="35"/>
                 <outlet property="colorsbutton" destination="28" id="58"/>
@@ -35,7 +32,7 @@
             <rect key="frame" x="0.0" y="0.0" width="152" height="214"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="17" customClass="MButton">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17" customClass="MButton">
                     <rect key="frame" x="0.0" y="0.0" width="72" height="37"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <accessibility key="accessibilityConfiguration" label="Decrease font size"/>
@@ -51,7 +48,7 @@
                         <action selector="handleFontSize:" destination="-1" eventType="touchUpInside" id="36"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="18" customClass="MButton">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18" customClass="MButton">
                     <rect key="frame" x="80" y="0.0" width="72" height="37"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <accessibility key="accessibilityConfiguration" label="Increase font size"/>
@@ -67,7 +64,7 @@
                         <action selector="handleFontSize:" destination="-1" eventType="touchUpInside" id="37"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="60" customClass="MButton">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60" customClass="MButton">
                     <rect key="frame" x="0.0" y="45" width="72" height="37"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <accessibility key="accessibilityConfiguration" label="Decrease line spacing"/>
@@ -83,7 +80,7 @@
                         <action selector="handleFontLeading:" destination="-1" eventType="touchUpInside" id="64"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="61" customClass="MButton">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61" customClass="MButton">
                     <rect key="frame" x="80" y="45" width="72" height="37"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <accessibility key="accessibilityConfiguration" label="Increase line spacing"/>
@@ -99,7 +96,7 @@
                         <action selector="handleFontLeading:" destination="-1" eventType="touchUpInside" id="65"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="27" customClass="MButton">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27" customClass="MButton">
                     <rect key="frame" x="0.0" y="90" width="152" height="37"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -114,7 +111,7 @@
                         <action selector="handleFonts:" destination="-1" eventType="touchUpInside" id="56"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="28" customClass="MButton">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28" customClass="MButton">
                     <rect key="frame" x="0.0" y="135" width="152" height="37"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -129,7 +126,7 @@
                         <action selector="handleColors:" destination="-1" eventType="touchUpInside" id="57"/>
                     </connections>
                 </button>
-                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" minimumValueImage="brightness-lo.png" maximumValueImage="brightness-hi.png" id="66">
+                <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" minimumValueImage="brightness-lo.png" maximumValueImage="brightness-hi.png" translatesAutoresizingMaskIntoConstraints="NO" id="66">
                     <rect key="frame" x="0.0" y="180" width="152" height="29"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <accessibility key="accessibilityConfiguration" label="Brightness"/>
@@ -143,12 +140,13 @@
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="39" y="127"/>
         </view>
         <view opaque="NO" contentMode="scaleToFill" id="38" userLabel="Fonts Container" customClass="PrefsContainerView">
             <rect key="frame" x="0.0" y="0.0" width="152" height="82"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="39" customClass="MButton">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39" customClass="MButton">
                     <rect key="frame" x="0.0" y="0.0" width="152" height="37"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -163,7 +161,7 @@
                         <color key="titleColor" red="0.16898968819999999" green="0.10175451639999999" blue="0.04383197799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="40" customClass="MButton">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40" customClass="MButton">
                     <rect key="frame" x="0.0" y="45" width="152" height="37"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -182,14 +180,17 @@
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="123" y="17"/>
         </view>
         <view opaque="NO" contentMode="scaleToFill" id="44" userLabel="Colors Container" customClass="PrefsContainerView">
-            <rect key="frame" x="0.0" y="0.0" width="152" height="127"/>
+            <rect key="frame" x="0.0" y="0.0" width="152" height="82"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="46" customClass="MButton">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46" customClass="MButton">
                     <rect key="frame" x="0.0" y="0.0" width="152" height="37"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="IYB-Iz-awa"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                     <state key="normal" title="Bright" backgroundImage="button-pref-base.png">
                         <color key="titleColor" red="0.44432282449999999" green="0.31342312690000002" blue="0.193227604" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -205,9 +206,11 @@
                         <action selector="handleColor:" destination="-1" eventType="touchUpInside" id="53"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="45" customClass="MButton">
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45" customClass="MButton">
                     <rect key="frame" x="0.0" y="45" width="152" height="37"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="hHz-zh-EV5"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                     <state key="normal" title="Quiet" backgroundImage="button-pref-base.png">
                         <color key="titleColor" red="0.44432282449999999" green="0.31342312690000002" blue="0.193227604" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -223,41 +226,34 @@
                         <action selector="handleColor:" destination="-1" eventType="touchUpInside" id="54"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="47" customClass="MButton">
-                    <rect key="frame" x="0.0" y="90" width="152" height="37"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <state key="normal" title="Dark" backgroundImage="button-pref-base.png">
-                        <color key="titleColor" red="0.44432282449999999" green="0.31342312690000002" blue="0.193227604" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                    <state key="selected">
-                        <color key="titleColor" red="0.71633678670000001" green="0.31163895130000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                    <state key="highlighted" backgroundImage="button-pref-hi.png">
-                        <color key="titleColor" red="0.16898968819999999" green="0.10175451639999999" blue="0.04383197799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                    <connections>
-                        <action selector="handleColor:" destination="-1" eventType="touchUpInside" id="55"/>
-                    </connections>
-                </button>
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="45" firstAttribute="leading" secondItem="44" secondAttribute="leading" id="BAk-Xx-52Q"/>
+                <constraint firstAttribute="trailing" secondItem="45" secondAttribute="trailing" id="Hwl-Lx-EeR"/>
+                <constraint firstItem="46" firstAttribute="top" secondItem="44" secondAttribute="top" id="IzL-Ei-2WC"/>
+                <constraint firstAttribute="bottom" secondItem="45" secondAttribute="bottom" id="JEK-CY-5yS"/>
+                <constraint firstAttribute="trailing" secondItem="45" secondAttribute="trailing" id="QxV-db-LHl"/>
+                <constraint firstAttribute="trailing" secondItem="46" secondAttribute="trailing" id="SiQ-ef-Rkd"/>
+                <constraint firstAttribute="trailing" secondItem="46" secondAttribute="trailing" id="UBN-Ve-lsI"/>
+                <constraint firstItem="45" firstAttribute="leading" secondItem="44" secondAttribute="leading" id="Ubh-Xi-wxr"/>
+                <constraint firstItem="46" firstAttribute="leading" secondItem="44" secondAttribute="leading" id="cHU-3J-jfx"/>
+                <constraint firstAttribute="bottom" secondItem="45" secondAttribute="bottom" id="daY-oM-0uq"/>
+                <constraint firstItem="46" firstAttribute="leading" secondItem="44" secondAttribute="leading" id="nNr-Bx-uBE"/>
+                <constraint firstItem="45" firstAttribute="top" secondItem="46" secondAttribute="bottom" constant="8" symbolic="YES" id="piK-7R-2Dv"/>
+                <constraint firstItem="46" firstAttribute="top" secondItem="44" secondAttribute="top" id="whF-WN-tLP"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="65.625" y="-95.5078125"/>
         </view>
     </objects>
     <resources>
-        <image name="brightness-hi.png" width="20" height="20"/>
-        <image name="brightness-lo.png" width="20" height="20"/>
-        <image name="button-pref-base.png" width="32" height="32"/>
-        <image name="button-pref-hi.png" width="32" height="32"/>
-        <image name="lead-narrow.png" width="20" height="20"/>
-        <image name="lead-wide.png" width="20" height="20"/>
+        <image name="brightness-hi.png" width="32" height="32"/>
+        <image name="brightness-lo.png" width="32" height="32"/>
+        <image name="button-pref-base.png" width="51.200000762939453" height="51.200000762939453"/>
+        <image name="button-pref-hi.png" width="51.200000762939453" height="51.200000762939453"/>
+        <image name="lead-narrow.png" width="32" height="32"/>
+        <image name="lead-wide.png" width="32" height="32"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
-    </simulatedMetricsContainer>
 </document>

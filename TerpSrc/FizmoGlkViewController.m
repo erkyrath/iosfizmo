@@ -38,9 +38,9 @@ typedef struct z_file_struct z_file;
 
 - (void) didFinishLaunching {
 	[super didFinishLaunching];
-	
+
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-	
+
 	/* Set some reasonable defaults, if none have ever been set. */
 	if (UIDevice.currentDevice.userInterfaceIdiom != UIUserInterfaceIdiomPhone) {
 		/* On the iPad, use a 3/4 column and bump the leading a little. */
@@ -52,31 +52,36 @@ typedef struct z_file_struct z_file;
 	else {
 		/* On the iPhone, leave everything as-is. */
 	}
-	
+
 	int maxwidth = [defaults integerForKey:@"FrameMaxWidth"];
 	self.fizmoDelegate.maxwidth = maxwidth;
-	
+
 	/* Font-scale values are arbitrarily between 1 and 5. We default to 3. */
 	int fontscale = [defaults integerForKey:@"FontScale"];
 	if (fontscale == 0)
 		fontscale = 3;
 	self.fizmoDelegate.fontscale = fontscale;
-	
+
 	/* Leading is between 0 and 5. */
 	int leading = [defaults integerForKey:@"FontLeading"];
 	self.fizmoDelegate.leading = leading;
-	
+
 	/* Color-scheme values are 0 to 2. */
 	int colorscheme = [defaults integerForKey:@"ColorScheme"];
 	self.fizmoDelegate.colorscheme = colorscheme;
-	
+
 	NSString *fontfamily = [defaults stringForKey:@"FontFamily"];
 	if (!fontfamily)
 		fontfamily = @"Georgia";
 	self.fizmoDelegate.fontfamily = fontfamily;
-	
+
+    NSMutableDictionary<NSAttributedStringKey, id> *attr = self.navigationController.navigationBar.titleTextAttributes.mutableCopy;
+    attr[NSForegroundColorAttributeName] = ((UITraitCollection.currentTraitCollection.userInterfaceStyle == UIUserInterfaceStyleDark ? [UIColor whiteColor] : [UIColor blackColor]));
+    self.navigationController.navigationBar.titleTextAttributes = attr;
+    self.navigationController.navigationBar.barTintColor = ((UITraitCollection.currentTraitCollection.userInterfaceStyle == UIUserInterfaceStyleDark ? [UIColor blackColor] : [UIColor whiteColor]));
+
 	// Yes, this is in two places.
-	self.frameview.backgroundColor = (self.fizmoDelegate).genBackgroundColor;
+	self.frameview.backgroundColor = [self.fizmoDelegate genBackgroundColor];
 }
 
 - (void) becameInactive {
@@ -85,7 +90,7 @@ typedef struct z_file_struct z_file;
 
 - (void) enteredBackground {
 	[super enteredBackground];
-	
+
 	/* If the interpreter hit a "fatal error" state, and we're just waiting around to tell the user about it, we want the Home button to shut down the app. That is, the user can kill the app by backgrounding it. */
 	GlkLibrary *library = [GlkLibrary singleton];
 	if (library && library.vmexited && !iosglk_can_restart_cleanly()) {
@@ -95,9 +100,9 @@ typedef struct z_file_struct z_file;
 
 - (void) viewDidLoad {
 	[super viewDidLoad];
-	
-	self.frameview.backgroundColor = (self.fizmoDelegate).genBackgroundColor;
-	
+
+	self.frameview.backgroundColor = [self.fizmoDelegate genBackgroundColor];
+
 	if (true) {
 		UISwipeGestureRecognizer *recognizer;
 		recognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeLeft:)];
@@ -109,7 +114,7 @@ typedef struct z_file_struct z_file;
 		recognizer.delegate = self;
 		[frameview addGestureRecognizer:recognizer];
 	}
-	
+
 	/* Set the title of the game tab. */
 	NSString *maintitle = self.navigationItem.title;
 	if (maintitle.length <= 2) {
@@ -120,7 +125,7 @@ typedef struct z_file_struct z_file;
 			maintitle = NSLocalizedStringFromTable(@"title.game", @"TerpLocalize", nil);
 		self.navigationItem.title = maintitle;
 	}
-	
+
 	/* Interface Builder currently doesn't allow us to set the voiceover labels for bar button items. We do it in code. */
 	UIBarButtonItem *stylebutton = self.navigationItem.leftBarButtonItem;
 	if (stylebutton && [stylebutton respondsToSelector:@selector(setAccessibilityLabel:)]) {
@@ -130,7 +135,7 @@ typedef struct z_file_struct z_file;
 	if (keyboardbutton && [keyboardbutton respondsToSelector:@selector(setAccessibilityLabel:)]) {
 		[keyboardbutton setAccessibilityLabel:NSLocalizedStringFromTable(@"label.keyboard", @"TerpLocalize", nil)];
 	}
-	
+
 	if ([IosGlkAppDelegate oldstyleui]) {
 		/* Use the old-style drop-shadowed buttons in the navbar. */
 		if (stylebutton)
@@ -145,18 +150,18 @@ typedef struct z_file_struct z_file;
 		/* Drop the field reference to the prompt. */
 		GlkFileRefPrompt *prompt = restorefileprompt;
 		self.restorefileprompt = nil;
-		
+
 		if (!prompt.filename) {
 			/* Cancelled. Forget it. */
 			return nil;
 		}
-		
+
 		/* Queue up the autorestore file, and restart the interpreter. */
 		iosglk_queue_autosave((__bridge void *)(prompt.pathname));
 		[[GlkAppWrapper singleton] acceptEventRestart];
 		return nil;
 	}
-	
+
 	return data;
 }
 
@@ -164,6 +169,16 @@ typedef struct z_file_struct z_file;
 	CGRect rect = frameview.bounds;
 	FizmoGameOverView *menuview = [[FizmoGameOverView alloc] initWithFrame:frameview.bounds centerInFrame:rect];
 	[frameview postPopMenu:menuview];
+}
+
+- (void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection {
+    if ([self.traitCollection hasDifferentColorAppearanceComparedToTraitCollection:previousTraitCollection]) {
+        [frameview updateWindowStyles];
+        NSMutableDictionary<NSAttributedStringKey, id> *attr = self.navigationController.navigationBar.titleTextAttributes.mutableCopy;
+        attr[NSForegroundColorAttributeName] = ((UITraitCollection.currentTraitCollection.userInterfaceStyle == UIUserInterfaceStyleDark ? [UIColor whiteColor] : [UIColor blackColor]));
+        self.navigationController.navigationBar.titleTextAttributes = attr;
+        self.navigationController.navigationBar.barTintColor = ((UITraitCollection.currentTraitCollection.userInterfaceStyle == UIUserInterfaceStyleDark ? [UIColor blackColor] : [UIColor whiteColor]));
+    }
 }
 
 /* UITabBarController delegate method */
@@ -176,7 +191,7 @@ typedef struct z_file_struct z_file;
 		return;
 	UIViewController *rootviewc = viewcstack[0];
 	//NSLog(@"### tabBarController did select %@ (%@)", navc, rootviewc);
-	
+
 	if (rootviewc != notesvc) {
 		/* If the notesvc was drilled into the transcripts view or subviews, pop out of there. */
 		[notesvc.navigationController popToRootViewControllerAnimated:NO];
@@ -202,7 +217,7 @@ typedef struct z_file_struct z_file;
 	NSUInteger toindex = [self.tabBarController.viewControllers indexOfObjectIdenticalTo:tovc];
 	if (toindex == NSNotFound || fromindex == NSNotFound)
 		return nil;
-		
+
 	TabSlideTransitioning *trans = [[[TabSlideTransitioning alloc] init] autorelease];
 	trans.forwards = (toindex > fromindex);
 	if ((toindex+fromindex+1 == self.tabBarController.viewControllers.count)
@@ -270,12 +285,12 @@ typedef struct z_file_struct z_file;
 		/* Can't have the prefs menu up at the same time as the keyboard */
 		[self hideKeyboard];
 	}
-	
+
 	if (frameview.menuview && [frameview.menuview isKindOfClass:[PrefsMenuView class]]) {
 		[frameview removePopMenuAnimated:YES];
 		return;
 	}
-	
+
 	CGRect rect = CGRectMake(4, 0, 40, 4);
 	PrefsMenuView *menuview = [[PrefsMenuView alloc] initWithFrame:frameview.bounds buttonFrame:rect belowButton:YES];
 	[frameview postPopMenu:menuview];
@@ -309,7 +324,7 @@ typedef struct z_file_struct z_file;
 {
 	UIViewController *fromvc = [transition viewControllerForKey:UITransitionContextFromViewControllerKey];
 	UIViewController *tovc = [transition viewControllerForKey:UITransitionContextToViewControllerKey];
-	
+
 	CGRect curframe = fromvc.view.frame;
 	CGRect oldframe = curframe;
 	CGRect newframe = curframe;
@@ -321,10 +336,10 @@ typedef struct z_file_struct z_file;
 		oldframe.origin.x += oldframe.size.width;
 		newframe.origin.x -= newframe.size.width;
 	}
-	
+
 	tovc.view.frame = oldframe;
 	[transition.containerView addSubview:tovc.view];
-	
+
 	[UIView animateWithDuration:0.2
                           delay:0
                         options:0
