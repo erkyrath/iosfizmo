@@ -1,9 +1,8 @@
-//
-//  UnderlinedTextView.m
-//  iosfizmo
-//
-//  Created by Administrator on 2022-10-24.
-//
+/* UnderlinedTextView.m: A UITextView subclass with underlined text
+ for IosFizmo, an IosGlk port of the Fizmo Z-machine interpreter.
+ Designed by Andrew Plotkin <erkyrath@eblong.com>
+ http://eblong.com/zarf/glk/
+ */
 
 #import <CoreGraphics/CGContext.h>
 #import "UnderlinedTextView.h"

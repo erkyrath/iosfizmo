@@ -1,9 +1,8 @@
-//
-//  FizmoGlkTabBarControllerDelegate.m
-//  iosfizmo
-//
-//  Created by Administrator on 2022-11-30.
-//
+/* FizmoGlkTabBarControllerDelegate.m: IosFizmo-specific subclass of IosGlkTabBarControllerDelegate.
+ for IosFizmo, an IosGlk port of the Fizmo Z-machine interpreter.
+ Designed by Andrew Plotkin <erkyrath@eblong.com>
+ http://eblong.com/zarf/glk/
+ */
 
 #import "NotesViewController.h"
 #import "SettingsViewController.h"
