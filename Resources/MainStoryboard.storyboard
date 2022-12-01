@@ -13,13 +13,14 @@
         <!--Tab Bar Controller-->
         <scene sceneID="fwB-g5-g6a">
             <objects>
-                <tabBarController id="kfb-07-RX0" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="RootTabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kfb-07-RX0" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qsq-tJ-jBd">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </tabBar>
                     <connections>
+                        <outlet property="delegate" destination="gpZ-g6-1Ho" id="jXC-9s-c4q"/>
                         <segue destination="rCU-og-OYH" kind="relationship" relationship="viewControllers" id="orU-i4-YZq"/>
                         <segue destination="NFM-oK-CDI" kind="relationship" relationship="viewControllers" id="PHM-pE-3L8"/>
                         <segue destination="fUw-VV-PNv" kind="relationship" relationship="viewControllers" id="Kgi-Mb-nvv"/>
@@ -27,13 +28,18 @@
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7bs-0p-4mJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <customObject id="gpZ-g6-1Ho" customClass="FizmoGlkTabBarControllerDelegate">
+                    <connections>
+                        <outlet property="tabBarController" destination="kfb-07-RX0" id="orm-bO-5GD"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="-3249" y="93"/>
         </scene>
         <!--Game Nav Controller-->
         <scene sceneID="Vzf-in-bZq">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rCU-og-OYH" userLabel="Game Nav Controller" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="GameNavController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rCU-og-OYH" userLabel="Game Nav Controller" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Game" image="tabicon-game" id="BRu-RG-fDA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xwq-0h-0dv">
@@ -55,7 +61,7 @@
         <!--Fizmo Glk View Controller-->
         <scene sceneID="5qj-IM-CNY">
             <objects>
-                <viewController id="gTF-6X-cJr" customClass="FizmoGlkViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FizmoGlkViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gTF-6X-cJr" customClass="FizmoGlkViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wy5-gw-ttJ" userLabel="Game view">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,7 +98,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zwe-RL-0aj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <customObject id="QwX-bV-0p1" userLabel="Terp Glk Delegate" customClass="FizmoGlkDelegate"/>
+                <customObject id="QwX-bV-0p1" customClass="FizmoGlkDelegate"/>
             </objects>
             <point key="canvasLocation" x="-406.15384615384613" y="-188.38862559241704"/>
         </scene>
@@ -119,7 +125,7 @@
                                 <rect key="frame" x="0.0" y="82" width="414" height="605"/>
                                 <color key="backgroundColor" red="0.94746839999999999" green="0.91692304609999997" blue="0.73587924240000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2fm-BC-mGU">
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2fm-BC-mGU" customClass="UnderlinedTextView">
                                 <rect key="frame" x="0.0" y="82" width="414" height="605"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">My journey began...
@@ -155,7 +161,6 @@
                     <connections>
                         <outlet property="buttontable" destination="6TF-pB-ZCb" id="Wgc-9y-sb9"/>
                         <outlet property="gradview" destination="bFB-9C-eBX" id="6ev-LL-cHO"/>
-                        <outlet property="textbottomconstraint" destination="XDs-xk-HdE" id="fo1-HW-fLJ"/>
                         <outlet property="textview" destination="2fm-BC-mGU" id="lrl-um-Uuq"/>
                     </connections>
                 </viewController>

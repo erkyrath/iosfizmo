@@ -24,10 +24,6 @@ typedef struct z_file_struct z_file;
 
 @implementation FizmoGlkViewController
 
-@synthesize notesvc;
-@synthesize settingsvc;
-@synthesize restorefileprompt;
-
 + (FizmoGlkViewController *) singleton {
 	return (FizmoGlkViewController *)([IosGlkAppDelegate singleton].glkviewc);
 }
@@ -75,17 +71,17 @@ typedef struct z_file_struct z_file;
 		fontfamily = @"Georgia";
 	self.fizmoDelegate.fontfamily = fontfamily;
 
+    self.navigationController.navigationBar.barTintColor = ((UITraitCollection.currentTraitCollection.userInterfaceStyle == UIUserInterfaceStyleDark ? [UIColor blackColor] : [UIColor whiteColor]));
     NSMutableDictionary<NSAttributedStringKey, id> *attr = self.navigationController.navigationBar.titleTextAttributes.mutableCopy;
     attr[NSForegroundColorAttributeName] = ((UITraitCollection.currentTraitCollection.userInterfaceStyle == UIUserInterfaceStyleDark ? [UIColor whiteColor] : [UIColor blackColor]));
     self.navigationController.navigationBar.titleTextAttributes = attr;
-    self.navigationController.navigationBar.barTintColor = ((UITraitCollection.currentTraitCollection.userInterfaceStyle == UIUserInterfaceStyleDark ? [UIColor blackColor] : [UIColor whiteColor]));
 
 	// Yes, this is in two places.
 	self.frameview.backgroundColor = [self.fizmoDelegate genBackgroundColor];
 }
 
 - (void) becameInactive {
-	[notesvc saveIfNeeded];
+	[_notesvc saveIfNeeded];
 }
 
 - (void) enteredBackground {
@@ -108,11 +104,11 @@ typedef struct z_file_struct z_file;
 		recognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeLeft:)];
 		recognizer.direction = UISwipeGestureRecognizerDirectionLeft;
 		recognizer.delegate = self;
-		[frameview addGestureRecognizer:recognizer];
+		[self.frameview addGestureRecognizer:recognizer];
 		recognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeRight:)];
 		recognizer.direction = UISwipeGestureRecognizerDirectionRight;
 		recognizer.delegate = self;
-		[frameview addGestureRecognizer:recognizer];
+		[self.frameview addGestureRecognizer:recognizer];
 	}
 
 	/* Set the title of the game tab. */
@@ -135,20 +131,12 @@ typedef struct z_file_struct z_file;
 	if (keyboardbutton && [keyboardbutton respondsToSelector:@selector(setAccessibilityLabel:)]) {
 		[keyboardbutton setAccessibilityLabel:NSLocalizedStringFromTable(@"label.keyboard", @"TerpLocalize", nil)];
 	}
-
-	if ([IosGlkAppDelegate oldstyleui]) {
-		/* Use the old-style drop-shadowed buttons in the navbar. */
-		if (stylebutton)
-			stylebutton.image = [UIImage imageNamed:@"baricon-styles-old"];
-		if (keyboardbutton)
-			keyboardbutton.image = [UIImage imageNamed:@"baricon-edit-old"];
-	}
 }
 
 - (id) filterEvent:(id)data {
-	if (self.vmexited && data && [data isKindOfClass:[GlkFileRefPrompt class]] && data == restorefileprompt) {
+    if (self.vmexited && data && [data isKindOfClass:[GlkFileRefPrompt class]] && data == _restorefileprompt) {
 		/* Drop the field reference to the prompt. */
-		GlkFileRefPrompt *prompt = restorefileprompt;
+        GlkFileRefPrompt *prompt = _restorefileprompt;
 		self.restorefileprompt = nil;
 
 		if (!prompt.filename) {
@@ -166,40 +154,22 @@ typedef struct z_file_struct z_file;
 }
 
 - (void) postGameOver {
-	CGRect rect = frameview.bounds;
-	FizmoGameOverView *menuview = [[FizmoGameOverView alloc] initWithFrame:frameview.bounds centerInFrame:rect];
-	[frameview postPopMenu:menuview];
+	CGRect rect = self.frameview.bounds;
+	FizmoGameOverView *menuview = [[FizmoGameOverView alloc] initWithFrame:self.frameview.bounds centerInFrame:rect];
+	[self.frameview postPopMenu:menuview];
+
+    [GlkWinBufferView speakString:NSLocalizedString(iosglk_can_restart_cleanly() ? @"The game has ended. You can start over from the beginning." : @"The game has encountered a serious error. Please press the Home button to leave the app.", nil)];
 }
 
 - (void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection {
+    [super traitCollectionDidChange:previousTraitCollection];
     if ([self.traitCollection hasDifferentColorAppearanceComparedToTraitCollection:previousTraitCollection]) {
-        [frameview updateWindowStyles];
+        [self.frameview updateWindowStyles];
         NSMutableDictionary<NSAttributedStringKey, id> *attr = self.navigationController.navigationBar.titleTextAttributes.mutableCopy;
         attr[NSForegroundColorAttributeName] = ((UITraitCollection.currentTraitCollection.userInterfaceStyle == UIUserInterfaceStyleDark ? [UIColor whiteColor] : [UIColor blackColor]));
         self.navigationController.navigationBar.titleTextAttributes = attr;
         self.navigationController.navigationBar.barTintColor = ((UITraitCollection.currentTraitCollection.userInterfaceStyle == UIUserInterfaceStyleDark ? [UIColor blackColor] : [UIColor whiteColor]));
     }
-}
-
-/* UITabBarController delegate method */
-- (void) tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewc {
-	if (![viewc isKindOfClass:[UINavigationController class]])
-		return;
-	UINavigationController *navc = (UINavigationController *)viewc;
-	NSArray *viewcstack = navc.viewControllers;
-	if (!viewcstack || !viewcstack.count)
-		return;
-	UIViewController *rootviewc = viewcstack[0];
-	//NSLog(@"### tabBarController did select %@ (%@)", navc, rootviewc);
-
-	if (rootviewc != notesvc) {
-		/* If the notesvc was drilled into the transcripts view or subviews, pop out of there. */
-		[notesvc.navigationController popToRootViewControllerAnimated:NO];
-	}
-	if (rootviewc != settingsvc) {
-		/* If the settingsvc was drilled into a web subview, pop out of there. */
-		[settingsvc.navigationController popToRootViewControllerAnimated:NO];
-	}
 }
 
 #if 0 /* tab-slide not yet working */
@@ -231,53 +201,21 @@ typedef struct z_file_struct z_file;
 /* UIGestureRecognizer delegate method */
 - (BOOL) gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
 	/* Turn off tab-swiping if an input menu is open. */
-	if (!frameview)
+	if (!self.frameview)
 		return NO;
-	if (frameview.menuview)
+	if (self.frameview.menuview)
 		return NO;
-	/* Reject the swipe if it's on a window's text-selection rectangle. */
-	if (self.textselecttag) {
-		GlkWindowView *winv = [frameview windowViewForTag:textselecttag];
-		if (winv) {
-			CGRect rect = winv.textSelectArea;
-			if (rect.size.width > 0 && rect.size.height > 0) {
-				CGPoint loc = [touch locationInView:winv];
-				if (loc.y >= rect.origin.y - 32 && loc.y < rect.origin.y+rect.size.height + 32
-					&& loc.x >= rect.origin.x && loc.x < rect.origin.x+rect.size.width) {
-					return NO;
-				}
-			}
-		}
-	}
 	return YES;
 }
 
 - (IBAction) toggleKeyboard {
 	if (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPhone) {
 		/* Can't have the prefs menu up at the same time as the keyboard -- the iPhone screen is too small. */
-		if (frameview.menuview && [frameview.menuview isKindOfClass:[PrefsMenuView class]]) {
-			[frameview removePopMenuAnimated:YES];
+		if (self.frameview.menuview && [self.frameview.menuview isKindOfClass:[PrefsMenuView class]]) {
+			[self.frameview removePopMenuAnimated:YES];
 		}
 	}
 	[super toggleKeyboard];
-}
-
-- (void) keyboardWillBeShown:(NSNotification*)notification {
-	[super keyboardWillBeShown:notification];
-	//NSLog(@"Keyboard will be shown (fizmo)");
-
-	if (notesvc) {
-		[notesvc adjustToKeyboardBox];
-	}
-}
-
-- (void) keyboardWillBeHidden:(NSNotification*)notification {
-	[super keyboardWillBeHidden:notification];
-	//NSLog(@"Keyboard will be hidden (fizmo)");
-
-	if (notesvc) {
-		[notesvc adjustToKeyboardBox];
-	}
 }
 
 - (IBAction) showPreferences {
@@ -286,14 +224,14 @@ typedef struct z_file_struct z_file;
 		[self hideKeyboard];
 	}
 
-	if (frameview.menuview && [frameview.menuview isKindOfClass:[PrefsMenuView class]]) {
-		[frameview removePopMenuAnimated:YES];
+	if (self.frameview.menuview && [self.frameview.menuview isKindOfClass:[PrefsMenuView class]]) {
+		[self.frameview removePopMenuAnimated:YES];
 		return;
 	}
 
 	CGRect rect = CGRectMake(4, 0, 40, 4);
-	PrefsMenuView *menuview = [[PrefsMenuView alloc] initWithFrame:frameview.bounds buttonFrame:rect belowButton:YES];
-	[frameview postPopMenu:menuview];
+	PrefsMenuView *menuview = [[PrefsMenuView alloc] initWithFrame:self.frameview.bounds buttonFrame:rect belowButton:YES];
+	[self.frameview postPopMenu:menuview];
 }
 
 - (void) handleSwipeLeft:(UIGestureRecognizer *)recognizer {

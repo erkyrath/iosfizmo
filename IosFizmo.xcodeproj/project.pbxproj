@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		C31C79B62906A6260030F3AC /* GlkEventState.m in Sources */ = {isa = PBXBuildFile; fileRef = C31C79B42906A6260030F3AC /* GlkEventState.m */; };
+		C34235A4293796FC0054CB78 /* IosGlkSceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C34235A3293796FC0054CB78 /* IosGlkSceneDelegate.m */; };
+		C34235A7293797070054CB78 /* IosGlkTabBarControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C34235A6293797070054CB78 /* IosGlkTabBarControllerDelegate.m */; };
+		C34235AA293797180054CB78 /* GlkWindowViewUIState.m in Sources */ = {isa = PBXBuildFile; fileRef = C34235A9293797180054CB78 /* GlkWindowViewUIState.m */; };
+		C34235AD29379B420054CB78 /* FIzmoGlkTabBarControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C34235AC29379B420054CB78 /* FIzmoGlkTabBarControllerDelegate.m */; };
+		C34235B029379F6F0054CB78 /* UnderlinedTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = C34235AE29379F6E0054CB78 /* UnderlinedTextView.m */; };
 		C3A4D0AB28FF975E00FE34E5 /* ShareFiles.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A4D0A628FF975D00FE34E5 /* ShareFiles.storyboard */; };
 		C3A4D0AC28FF975E00FE34E5 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A4D0A728FF975D00FE34E5 /* MainStoryboard.storyboard */; };
 		C3A4D0AD28FF975E00FE34E5 /* Transcript.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A4D0A828FF975E00FE34E5 /* Transcript.storyboard */; };
@@ -30,7 +35,6 @@
 		DF19DDDB14E8A069007DCB29 /* HistoryMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF19DDD914E8A069007DCB29 /* HistoryMenuView.xib */; };
 		DF19DDDC14E8A069007DCB29 /* PaletteMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF19DDDA14E8A069007DCB29 /* PaletteMenuView.xib */; };
 		DF19DDE314E8A950007DCB29 /* FizmoGlkDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19DDE214E8A950007DCB29 /* FizmoGlkDelegate.m */; };
-		DF19DDE514E8DF5C007DCB29 /* IosGlkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF19DDE414E8DF5C007DCB29 /* IosGlkViewController.xib */; };
 		DF19DDF914EA0776007DCB29 /* FizmoGlkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19DDF814EA0776007DCB29 /* FizmoGlkViewController.m */; };
 		DF19E97D1E06209D005C3ED7 /* ShareFilesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19E97C1E06209D005C3ED7 /* ShareFilesViewController.m */; };
 		DF1DCC0E14FDC4C7001660B9 /* GlkWindowState.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1DCC0D14FDC4C7001660B9 /* GlkWindowState.m */; };
@@ -70,7 +74,6 @@
 		DF56495B15898256002A52E2 /* button-done@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF56495715898256002A52E2 /* button-done@2x.png */; };
 		DF70A1521513D9EE00B109A2 /* selecthandle.png in Resources */ = {isa = PBXBuildFile; fileRef = DF70A1501513D9EE00B109A2 /* selecthandle.png */; };
 		DF70A1531513D9EE00B109A2 /* selecthandle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF70A1511513D9EE00B109A2 /* selecthandle@2x.png */; };
-		DF8FD3F51500AA8C00890116 /* TextSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8FD3F41500AA8C00890116 /* TextSelectView.m */; };
 		DF9A837214E0CD5B002C2FCB /* gi_blorb.c in Sources */ = {isa = PBXBuildFile; fileRef = DF9A836C14E0CD5B002C2FCB /* gi_blorb.c */; };
 		DF9A837314E0CD5B002C2FCB /* gi_dispa.c in Sources */ = {isa = PBXBuildFile; fileRef = DF9A836E14E0CD5B002C2FCB /* gi_dispa.c */; };
 		DF9A838A14E0CD7C002C2FCB /* GlkAppWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9A837714E0CD7C002C2FCB /* GlkAppWrapper.m */; };
@@ -82,7 +85,6 @@
 		DF9A839014E0CD7C002C2FCB /* IosGlkAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9A838314E0CD7C002C2FCB /* IosGlkAppDelegate.m */; };
 		DF9A839114E0CD7C002C2FCB /* IosGlkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9A838514E0CD7C002C2FCB /* IosGlkViewController.m */; };
 		DF9A839214E0CD7C002C2FCB /* RelDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9A838714E0CD7C002C2FCB /* RelDateFormatter.m */; };
-		DF9A839314E0CD7C002C2FCB /* StyledTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9A838914E0CD7C002C2FCB /* StyledTextView.m */; };
 		DF9A83A514E0CD8D002C2FCB /* Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9A839614E0CD8D002C2FCB /* Geometry.m */; };
 		DF9A83A614E0CD8D002C2FCB /* GlkFileRef.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9A839814E0CD8D002C2FCB /* GlkFileRef.m */; };
 		DF9A83A714E0CD8D002C2FCB /* GlkFileTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9A839A14E0CD8D002C2FCB /* GlkFileTypes.m */; };
@@ -245,6 +247,16 @@
 /* Begin PBXFileReference section */
 		C31C79B42906A6260030F3AC /* GlkEventState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkEventState.m; sourceTree = "<group>"; };
 		C31C79B52906A6260030F3AC /* GlkEventState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkEventState.h; sourceTree = "<group>"; };
+		C34235A2293796FC0054CB78 /* IosGlkSceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IosGlkSceneDelegate.h; sourceTree = "<group>"; };
+		C34235A3293796FC0054CB78 /* IosGlkSceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IosGlkSceneDelegate.m; sourceTree = "<group>"; };
+		C34235A5293797070054CB78 /* IosGlkTabBarControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IosGlkTabBarControllerDelegate.h; sourceTree = "<group>"; };
+		C34235A6293797070054CB78 /* IosGlkTabBarControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IosGlkTabBarControllerDelegate.m; sourceTree = "<group>"; };
+		C34235A8293797180054CB78 /* GlkWindowViewUIState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkWindowViewUIState.h; sourceTree = "<group>"; };
+		C34235A9293797180054CB78 /* GlkWindowViewUIState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkWindowViewUIState.m; sourceTree = "<group>"; };
+		C34235AB29379B420054CB78 /* FizmoGlkTabBarControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FizmoGlkTabBarControllerDelegate.h; sourceTree = "<group>"; };
+		C34235AC29379B420054CB78 /* FIzmoGlkTabBarControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIzmoGlkTabBarControllerDelegate.m; sourceTree = "<group>"; };
+		C34235AE29379F6E0054CB78 /* UnderlinedTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnderlinedTextView.m; sourceTree = "<group>"; };
+		C34235AF29379F6E0054CB78 /* UnderlinedTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnderlinedTextView.h; sourceTree = "<group>"; };
 		C3A4D0A628FF975D00FE34E5 /* ShareFiles.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShareFiles.storyboard; sourceTree = "<group>"; };
 		C3A4D0A728FF975D00FE34E5 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		C3A4D0A828FF975E00FE34E5 /* Transcript.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Transcript.storyboard; sourceTree = "<group>"; };
@@ -271,7 +283,6 @@
 		DF19DDDA14E8A069007DCB29 /* PaletteMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PaletteMenuView.xib; path = iosglk/Resources/PaletteMenuView.xib; sourceTree = SOURCE_ROOT; };
 		DF19DDE114E8A950007DCB29 /* FizmoGlkDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FizmoGlkDelegate.h; sourceTree = "<group>"; };
 		DF19DDE214E8A950007DCB29 /* FizmoGlkDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizmoGlkDelegate.m; sourceTree = "<group>"; };
-		DF19DDE414E8DF5C007DCB29 /* IosGlkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IosGlkViewController.xib; sourceTree = "<group>"; };
 		DF19DDF714EA0776007DCB29 /* FizmoGlkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FizmoGlkViewController.h; sourceTree = "<group>"; };
 		DF19DDF814EA0776007DCB29 /* FizmoGlkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizmoGlkViewController.m; sourceTree = "<group>"; };
 		DF19E97B1E06209D005C3ED7 /* ShareFilesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareFilesViewController.h; sourceTree = "<group>"; };
@@ -324,8 +335,6 @@
 		DF56495715898256002A52E2 /* button-done@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-done@2x.png"; path = "iosglk/Media/button-done@2x.png"; sourceTree = SOURCE_ROOT; };
 		DF70A1501513D9EE00B109A2 /* selecthandle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = selecthandle.png; path = iosglk/Media/selecthandle.png; sourceTree = SOURCE_ROOT; };
 		DF70A1511513D9EE00B109A2 /* selecthandle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "selecthandle@2x.png"; path = "iosglk/Media/selecthandle@2x.png"; sourceTree = SOURCE_ROOT; };
-		DF8FD3F31500AA8C00890116 /* TextSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextSelectView.h; sourceTree = "<group>"; };
-		DF8FD3F41500AA8C00890116 /* TextSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextSelectView.m; sourceTree = "<group>"; };
 		DF9A836C14E0CD5B002C2FCB /* gi_blorb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gi_blorb.c; sourceTree = "<group>"; };
 		DF9A836D14E0CD5B002C2FCB /* gi_blorb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gi_blorb.h; sourceTree = "<group>"; };
 		DF9A836E14E0CD5B002C2FCB /* gi_dispa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gi_dispa.c; sourceTree = "<group>"; };
@@ -350,8 +359,6 @@
 		DF9A838514E0CD7C002C2FCB /* IosGlkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IosGlkViewController.m; sourceTree = "<group>"; };
 		DF9A838614E0CD7C002C2FCB /* RelDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelDateFormatter.h; sourceTree = "<group>"; };
 		DF9A838714E0CD7C002C2FCB /* RelDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelDateFormatter.m; sourceTree = "<group>"; };
-		DF9A838814E0CD7C002C2FCB /* StyledTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyledTextView.h; sourceTree = "<group>"; };
-		DF9A838914E0CD7C002C2FCB /* StyledTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyledTextView.m; sourceTree = "<group>"; };
 		DF9A839514E0CD8D002C2FCB /* Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Geometry.h; sourceTree = "<group>"; };
 		DF9A839614E0CD8D002C2FCB /* Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Geometry.m; sourceTree = "<group>"; };
 		DF9A839714E0CD8D002C2FCB /* GlkFileRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkFileRef.h; sourceTree = "<group>"; };
@@ -608,7 +615,6 @@
 				C3A4D0A828FF975E00FE34E5 /* Transcript.storyboard */,
 				C3A4D0AA28FF975E00FE34E5 /* DisplayText.storyboard */,
 				C3A4D0A628FF975D00FE34E5 /* ShareFiles.storyboard */,
-				DF19DDE414E8DF5C007DCB29 /* IosGlkViewController.xib */,
 				DF1F3FFD14F2BA68008FF1C7 /* PopBoxView.xib */,
 				DFCB163C153FB03800936D28 /* TextFieldRightView.xib */,
 				DFCB1626153FAF8500936D28 /* InputMenuDecor.xib */,
@@ -635,12 +641,16 @@
 				DF19DDF814EA0776007DCB29 /* FizmoGlkViewController.m */,
 				DF19DDE114E8A950007DCB29 /* FizmoGlkDelegate.h */,
 				DF19DDE214E8A950007DCB29 /* FizmoGlkDelegate.m */,
+				C34235AB29379B420054CB78 /* FizmoGlkTabBarControllerDelegate.h */,
+				C34235AC29379B420054CB78 /* FIzmoGlkTabBarControllerDelegate.m */,
 				DFBB4DE714F5D72D0041016A /* FizmoGlkWindows.h */,
 				DFBB4DE814F5D72D0041016A /* FizmoGlkWindows.m */,
 				DF2247CF1551D97C002EBC30 /* FizmoGameOverView.h */,
 				DF2247D01551D97C002EBC30 /* FizmoGameOverView.m */,
 				DF1F3FED14F1FD19008FF1C7 /* NotesViewController.h */,
 				DF1F3FEE14F1FD19008FF1C7 /* NotesViewController.m */,
+				C34235AF29379F6E0054CB78 /* UnderlinedTextView.h */,
+				C34235AE29379F6E0054CB78 /* UnderlinedTextView.m */,
 				DFBB4E4414F6E5700041016A /* TranscriptViewController.h */,
 				DFBB4E4514F6E5700041016A /* TranscriptViewController.m */,
 				DF19E97B1E06209D005C3ED7 /* ShareFilesViewController.h */,
@@ -678,18 +688,22 @@
 		DF9A837514E0CD7C002C2FCB /* AppSrc */ = {
 			isa = PBXGroup;
 			children = (
-				DF9A838214E0CD7C002C2FCB /* IosGlkAppDelegate.h */,
-				DF9A838314E0CD7C002C2FCB /* IosGlkAppDelegate.m */,
-				DF9A838414E0CD7C002C2FCB /* IosGlkViewController.h */,
-				DF9A838514E0CD7C002C2FCB /* IosGlkViewController.m */,
 				DF19DDD414E89F8A007DCB29 /* IosGlkLibDelegate.h */,
 				DF19DDD514E89F8A007DCB29 /* IosGlkLibDelegate.m */,
+				DF9A838214E0CD7C002C2FCB /* IosGlkAppDelegate.h */,
+				DF9A838314E0CD7C002C2FCB /* IosGlkAppDelegate.m */,
+				C34235A2293796FC0054CB78 /* IosGlkSceneDelegate.h */,
+				C34235A3293796FC0054CB78 /* IosGlkSceneDelegate.m */,
+				C34235A5293797070054CB78 /* IosGlkTabBarControllerDelegate.h */,
+				C34235A6293797070054CB78 /* IosGlkTabBarControllerDelegate.m */,
+				DF9A838414E0CD7C002C2FCB /* IosGlkViewController.h */,
+				DF9A838514E0CD7C002C2FCB /* IosGlkViewController.m */,
+				DF9A837814E0CD7C002C2FCB /* GlkFileSelectViewController.h */,
+				DF9A837914E0CD7C002C2FCB /* GlkFileSelectViewController.m */,
 				DF9A837614E0CD7C002C2FCB /* GlkAppWrapper.h */,
 				DF9A837714E0CD7C002C2FCB /* GlkAppWrapper.m */,
 				C31C79B52906A6260030F3AC /* GlkEventState.h */,
 				C31C79B42906A6260030F3AC /* GlkEventState.m */,
-				DF9A837814E0CD7C002C2FCB /* GlkFileSelectViewController.h */,
-				DF9A837914E0CD7C002C2FCB /* GlkFileSelectViewController.m */,
 				DF9A837A14E0CD7C002C2FCB /* GlkFrameView.h */,
 				DF9A837B14E0CD7C002C2FCB /* GlkFrameView.m */,
 				DF9A837E14E0CD7C002C2FCB /* GlkWindowView.h */,
@@ -698,22 +712,20 @@
 				DF9A837D14E0CD7C002C2FCB /* GlkWinBufferView.m */,
 				DF9A838014E0CD7C002C2FCB /* GlkWinGridView.h */,
 				DF9A838114E0CD7C002C2FCB /* GlkWinGridView.m */,
+				C34235A8293797180054CB78 /* GlkWindowViewUIState.h */,
+				C34235A9293797180054CB78 /* GlkWindowViewUIState.m */,
 				DF9A838614E0CD7C002C2FCB /* RelDateFormatter.h */,
 				DF9A838714E0CD7C002C2FCB /* RelDateFormatter.m */,
+				DF19DDD214E89F8A007DCB29 /* InputMenuView.h */,
+				DF19DDD314E89F8A007DCB29 /* InputMenuView.m */,
 				DF19DDD014E89F8A007DCB29 /* CmdTextField.h */,
 				DF19DDD114E89F8A007DCB29 /* CmdTextField.m */,
 				DF361B6E14FAAFEC00A8D670 /* MoreBoxView.h */,
 				DF361B6F14FAAFEC00A8D670 /* MoreBoxView.m */,
 				DF1F3FFA14F221FB008FF1C7 /* PopMenuView.h */,
 				DF1F3FFB14F221FB008FF1C7 /* PopMenuView.m */,
-				DF19DDD214E89F8A007DCB29 /* InputMenuView.h */,
-				DF19DDD314E89F8A007DCB29 /* InputMenuView.m */,
 				DF188B8F15479A3000CC6929 /* GameOverView.h */,
 				DF188B9015479A3000CC6929 /* GameOverView.m */,
-				DF9A838814E0CD7C002C2FCB /* StyledTextView.h */,
-				DF9A838914E0CD7C002C2FCB /* StyledTextView.m */,
-				DF8FD3F31500AA8C00890116 /* TextSelectView.h */,
-				DF8FD3F41500AA8C00890116 /* TextSelectView.m */,
 				DF188B9115479A3000CC6929 /* MButton.h */,
 				DF188B9215479A3000CC6929 /* MButton.m */,
 			);
@@ -1171,7 +1183,6 @@
 				DF9D1A5414E47E85006A6749 /* FizmoLocales in Resources */,
 				DF19DDDB14E8A069007DCB29 /* HistoryMenuView.xib in Resources */,
 				DF19DDDC14E8A069007DCB29 /* PaletteMenuView.xib in Resources */,
-				DF19DDE514E8DF5C007DCB29 /* IosGlkViewController.xib in Resources */,
 				DFAA384A14F1DAAE0096A848 /* tabicon-game.png in Resources */,
 				DFEFAC3214F1E4B00062859F /* WebSite in Resources */,
 				DF1F3FF214F1FF1D008FF1C7 /* tabicon-help.png in Resources */,
@@ -1312,7 +1323,6 @@
 				DF9A839014E0CD7C002C2FCB /* IosGlkAppDelegate.m in Sources */,
 				DF9A839114E0CD7C002C2FCB /* IosGlkViewController.m in Sources */,
 				DF9A839214E0CD7C002C2FCB /* RelDateFormatter.m in Sources */,
-				DF9A839314E0CD7C002C2FCB /* StyledTextView.m in Sources */,
 				DF9A83A514E0CD8D002C2FCB /* Geometry.m in Sources */,
 				DF9A83A614E0CD8D002C2FCB /* GlkFileRef.m in Sources */,
 				DF9A83A714E0CD8D002C2FCB /* GlkFileTypes.m in Sources */,
@@ -1338,6 +1348,7 @@
 				DF9A844414E0D994002C2FCB /* babel.c in Sources */,
 				DF9A844514E0D994002C2FCB /* blockbuf.c in Sources */,
 				DF9A844614E0D994002C2FCB /* blorb.c in Sources */,
+				C34235A7293797070054CB78 /* IosGlkTabBarControllerDelegate.m in Sources */,
 				DF9A844714E0D994002C2FCB /* cmd_hst.c in Sources */,
 				DF9A844814E0D994002C2FCB /* config.c in Sources */,
 				DF9A844914E0D994002C2FCB /* debugger.c in Sources */,
@@ -1363,6 +1374,7 @@
 				DF9A845E14E0D994002C2FCB /* variable.c in Sources */,
 				C31C79B62906A6260030F3AC /* GlkEventState.m in Sources */,
 				DF9A845F14E0D994002C2FCB /* wordwrap.c in Sources */,
+				C34235A4293796FC0054CB78 /* IosGlkSceneDelegate.m in Sources */,
 				DF9A846014E0D994002C2FCB /* zpu.c in Sources */,
 				DF9A846714E0D994002C2FCB /* libfizmo_locales.c in Sources */,
 				DF9A847114E0D994002C2FCB /* filesys.c in Sources */,
@@ -1380,6 +1392,7 @@
 				DF19DDD714E89F8A007DCB29 /* InputMenuView.m in Sources */,
 				DF19DDD814E89F8A007DCB29 /* IosGlkLibDelegate.m in Sources */,
 				DF19DDE314E8A950007DCB29 /* FizmoGlkDelegate.m in Sources */,
+				C34235AA293797180054CB78 /* GlkWindowViewUIState.m in Sources */,
 				DF19DDF914EA0776007DCB29 /* FizmoGlkViewController.m in Sources */,
 				DFEFAC2E14F1E0E50062859F /* HelpViewController.m in Sources */,
 				DF1F3FEF14F1FD19008FF1C7 /* NotesViewController.m in Sources */,
@@ -1391,9 +1404,9 @@
 				DF361B7014FAAFED00A8D670 /* MoreBoxView.m in Sources */,
 				DF1DCC0E14FDC4C7001660B9 /* GlkWindowState.m in Sources */,
 				DF1DCC1214FDC8B2001660B9 /* GlkLibraryState.m in Sources */,
-				DF8FD3F51500AA8C00890116 /* TextSelectView.m in Sources */,
 				DF19E97D1E06209D005C3ED7 /* ShareFilesViewController.m in Sources */,
 				DFB7A71C151EBDC500C07499 /* GradientView.m in Sources */,
+				C34235AD29379B420054CB78 /* FIzmoGlkTabBarControllerDelegate.m in Sources */,
 				DFDFBD4B151F7DFD0053783F /* GlkAccessTypes.m in Sources */,
 				DFDA85DD153545DC00891B91 /* ios-autosave.m in Sources */,
 				DF188B9315479A3000CC6929 /* GameOverView.m in Sources */,
@@ -1401,6 +1414,7 @@
 				DF2247D11551D97C002EBC30 /* FizmoGameOverView.m in Sources */,
 				DF2247DA1551E15E002EBC30 /* ios-restart.m in Sources */,
 				DF29B823155AE24E009DA4BE /* SettingsViewController.m in Sources */,
+				C34235B029379F6F0054CB78 /* UnderlinedTextView.m in Sources */,
 				DF29B830155B0351009DA4BE /* DisplayWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -5,7 +5,6 @@
  */
 
 #import "FizmoGlkWindows.h"
-#import "StyledTextView.h"
 #import "FizmoGlkViewController.h"
 #import "FizmoGlkDelegate.h"
 

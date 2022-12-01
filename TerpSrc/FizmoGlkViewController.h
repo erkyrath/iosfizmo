@@ -14,8 +14,8 @@
 
 @interface FizmoGlkViewController : IosGlkViewController <UIGestureRecognizerDelegate>
 
-@property (nonatomic, strong) IBOutlet NotesViewController *notesvc;
-@property (nonatomic, strong) IBOutlet SettingsViewController *settingsvc;
+@property (nonatomic, strong) NotesViewController *notesvc;
+@property (nonatomic, strong) SettingsViewController *settingsvc;
 @property (nonatomic, strong) GlkFileRefPrompt *restorefileprompt;
 
 + (FizmoGlkViewController *) singleton;

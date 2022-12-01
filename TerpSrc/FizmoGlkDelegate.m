@@ -11,7 +11,6 @@
 #import "FizmoGlkWindows.h"
 #import "GlkWindowState.h"
 #import "StyleSet.h"
-#import "GlkUtilities.h"
 
 // This typedef works around header file annoyance. We're not going to refer to it.
 typedef struct z_file_struct z_file;

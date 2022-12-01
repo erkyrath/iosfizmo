@@ -15,7 +15,7 @@
 	int maxwidth; // 0 for full-width, 1 for 3/4-ish, 2 for 1/2-ish.
 	NSString *fontfamily; // as the user knows it -- not necessarily the true family name
 	int fontscale; // a number from 1 to FONTSCALE_MAX
-	int colorscheme; // 0:Bright, 1:Quiet, 2:Dark
+	int colorscheme; // 0:Bright, 1:Quiet
 	int leading; // 0 to LEADING_MAX
 }
 

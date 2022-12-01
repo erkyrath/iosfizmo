@@ -10,7 +10,6 @@
 #import "FizmoGlkDelegate.h"
 #import "GlkFrameView.h"
 #import "GlkWinBufferView.h"
-#import "StyledTextView.h"
 #import "MButton.h"
 
 @implementation PrefsMenuView
@@ -109,8 +108,10 @@
 }
 
 - (void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection {
+    [super traitCollectionDidChange:previousTraitCollection];
     if ([self.traitCollection hasDifferentColorAppearanceComparedToTraitCollection:previousTraitCollection]) {
         FizmoGlkViewController *glkviewc = [FizmoGlkViewController singleton];
+        // We hide and show the view again to get a new view with updated colors
         [glkviewc showPreferences];
         [glkviewc showPreferences];
     }
