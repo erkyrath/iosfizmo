@@ -1,6 +1,6 @@
 [submodule "iosglk"]
 	path = iosglk
-	url = https://github.com/angstsmurf/iosglk/tree/update.git
+	url = ../iosglk.git
 [submodule "fizmo"]
 	path = fizmo
-	url = https://github.com/angstsmurf/fizmo/tree/update.git
+	url = ../fizmo.git
