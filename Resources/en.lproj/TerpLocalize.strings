@@ -29,3 +29,7 @@
 "settings.cell.autocorrect" = "Auto-Correction";
 "settings.cell.keepopen" = "Keyboard Stays Open";
 "settings.cell.sharefiles" = "Share Saved Files";
+
+"prefs.button.dark" = "Dark";
+"prefs.button.bright" = "Bright";
+"prefs.button.quiet" = "Quiet";

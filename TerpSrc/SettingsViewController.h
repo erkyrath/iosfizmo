@@ -8,15 +8,15 @@
 
 @interface SettingsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
-@property (nonatomic, retain) IBOutlet UITableView *tableview;
+@property (nonatomic, strong) IBOutlet UITableView *tableview;
 
-@property (nonatomic, retain) IBOutlet UITableViewCell *autocorrectcell;
-@property (nonatomic, retain) IBOutlet UITableViewCell *keepopencell;
-@property (nonatomic, retain) IBOutlet UITableViewCell *sharefilescell;
-@property (nonatomic, retain) IBOutlet UITableViewCell *licensecell;
+@property (nonatomic, strong) IBOutlet UITableViewCell *autocorrectcell;
+@property (nonatomic, strong) IBOutlet UITableViewCell *keepopencell;
+@property (nonatomic, strong) IBOutlet UITableViewCell *sharefilescell;
+@property (nonatomic, strong) IBOutlet UITableViewCell *licensecell;
 
-@property (nonatomic, retain) IBOutlet UISwitch *autocorrectswitch;
-@property (nonatomic, retain) IBOutlet UISwitch *keepopenswitch;
+@property (nonatomic, strong) IBOutlet UISwitch *autocorrectswitch;
+@property (nonatomic, strong) IBOutlet UISwitch *keepopenswitch;
 
 - (IBAction) handleAutoCorrect:(id)sender;
 - (IBAction) handleKeepOpen:(id)sender;

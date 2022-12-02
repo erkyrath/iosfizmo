@@ -15,21 +15,21 @@
 	int maxwidth; // 0 for full-width, 1 for 3/4-ish, 2 for 1/2-ish.
 	NSString *fontfamily; // as the user knows it -- not necessarily the true family name
 	int fontscale; // a number from 1 to FONTSCALE_MAX
-	int colorscheme; // 0:Bright, 1:Quiet, 2:Dark
+	int colorscheme; // 0:Bright, 1:Quiet
 	int leading; // 0 to LEADING_MAX
 }
 
 @property (nonatomic) int maxwidth;
 /* The following properties are read from multiple threads, so we declare them atomic. */
-@property (retain) NSString *fontfamily;
+@property (strong) NSString *fontfamily;
 @property int fontscale;
 @property int colorscheme;
 @property int leading;
 
-- (NSString *) gameTitle;
-- (NSString *) gamePath;
-- (UIColor *) genBackgroundColor;
-- (UIColor *) genForegroundColor;
+@property (NS_NONATOMIC_IOSONLY, readonly, copy) NSString *gameTitle;
+@property (NS_NONATOMIC_IOSONLY, readonly, copy) NSString *gamePath;
+@property (NS_NONATOMIC_IOSONLY, readonly, copy) UIColor *genBackgroundColor;
+@property (NS_NONATOMIC_IOSONLY, readonly, copy) UIColor *genForegroundColor;
 - (FontVariants) fontVariantsForSize:(CGFloat)size label:(NSString *)label;
 
 @end

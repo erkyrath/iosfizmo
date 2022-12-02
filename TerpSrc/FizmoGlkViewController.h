@@ -14,13 +14,13 @@
 
 @interface FizmoGlkViewController : IosGlkViewController <UIGestureRecognizerDelegate>
 
-@property (nonatomic, retain) IBOutlet NotesViewController *notesvc;
-@property (nonatomic, retain) IBOutlet SettingsViewController *settingsvc;
-@property (nonatomic, retain) GlkFileRefPrompt *restorefileprompt;
+@property (nonatomic, strong) NotesViewController *notesvc;
+@property (nonatomic, strong) SettingsViewController *settingsvc;
+@property (nonatomic, strong) GlkFileRefPrompt *restorefileprompt;
 
 + (FizmoGlkViewController *) singleton;
 
-- (FizmoGlkDelegate *) fizmoDelegate;
+@property (NS_NONATOMIC_IOSONLY, readonly, strong) FizmoGlkDelegate *fizmoDelegate;
 - (IBAction) showPreferences;
 - (void) handleSwipeLeft:(UIGestureRecognizer *)recognizer;
 - (void) handleSwipeRight:(UIGestureRecognizer *)recognizer;

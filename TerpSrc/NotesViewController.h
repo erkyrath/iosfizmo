@@ -8,22 +8,18 @@
 
 @class GradientView;
 @class MButton;
+@class UnderlinedTextView;
 
-@interface NotesViewController : UIViewController <UITextViewDelegate, UITableViewDataSource, UITableViewDelegate> {
-	BOOL textchanged;
-}
+@interface NotesViewController : UIViewController <UITextViewDelegate, UITableViewDataSource, UITableViewDelegate>
 
-@property (nonatomic, retain) IBOutlet GradientView *gradview;
-@property (nonatomic, retain) IBOutlet UITextView *textview;
-@property (nonatomic, retain) IBOutlet UITableView *buttontable;
-@property (nonatomic, retain) IBOutlet UITableViewCell *transcriptcell;
-
-@property (nonatomic, retain) NSString *notespath;
+@property (nonatomic, strong) IBOutlet GradientView *gradview;
+@property (nonatomic, strong) IBOutlet UnderlinedTextView *textview;
+@property (nonatomic, strong) IBOutlet UITableView *buttontable;
+@property (nonatomic, strong) IBOutlet UITableViewCell *transcriptcell;
+@property (nonatomic, strong) NSString *notespath;
 
 - (IBAction) toggleKeyboard;
 - (IBAction) handleTranscripts;
 - (void) saveIfNeeded;
-
-- (void) adjustToKeyboardBox;
 
 @end

@@ -5,9 +5,10 @@
  */
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 
-@interface HelpViewController : UIViewController <UIWebViewDelegate>
+@interface HelpViewController : UIViewController <WKNavigationDelegate>
 
-@property (nonatomic, retain) IBOutlet UIWebView *webview;
+@property (nonatomic, strong) IBOutlet WKWebView *webview;
 
 @end

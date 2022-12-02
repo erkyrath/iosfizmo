@@ -5,17 +5,16 @@
  */
 
 #import "FizmoGlkWindows.h"
-#import "StyledTextView.h"
 #import "FizmoGlkViewController.h"
 #import "FizmoGlkDelegate.h"
 
 @implementation FizmoGlkWinBufferView
 
-- (id) initWithWindow:(GlkWindowState *)winref frame:(CGRect)box margin:(UIEdgeInsets)margin {
+- (instancetype) initWithWindow:(GlkWindowState *)winref frame:(CGRect)box margin:(UIEdgeInsets)margin {
 	self = [super initWithWindow:winref frame:box margin:margin];
 	if (self) {
 		FizmoGlkViewController *glkviewc = [FizmoGlkViewController singleton];
-		BOOL isdark = glkviewc.fizmoDelegate.hasDarkTheme;
+		BOOL isdark = glkviewc.hasDarkTheme;
 		self.textview.indicatorStyle = (isdark ? UIScrollViewIndicatorStyleWhite : UIScrollViewIndicatorStyleDefault);
 	}
 	return self;
@@ -25,7 +24,7 @@
 	[super uncacheLayoutAndStyles];
 
 	FizmoGlkViewController *glkviewc = [FizmoGlkViewController singleton];
-	BOOL isdark = glkviewc.fizmoDelegate.hasDarkTheme;
+	BOOL isdark = glkviewc.hasDarkTheme;
 	self.textview.indicatorStyle = (isdark ? UIScrollViewIndicatorStyleWhite : UIScrollViewIndicatorStyleDefault);
 }
 

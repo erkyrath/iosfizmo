@@ -1,20 +1,71 @@
 body {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 16px;
-  background: #D8CC99;
   max-width: 688px;
   margin-left: auto;
   margin-right: auto;
 }
 
 h1 {
-  color: #543;
-  background: #F8E8B8;
   font-size: 20px;
   padding: 4px 40px;
   -moz-border-radius: 16px;
   border-radius: 16px;
   margin-top: 32px;
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background: #D8CC99;
+    }
+    h1 {
+        background: #F8E8B8;
+        color: #543;
+    }
+    .CommandList li, .Command {
+        color: #007;
+    }
+    .Term {
+        color: #067;
+    }
+    .Gloss {
+        color: black;
+    }
+    .LinkLine {
+        background: #F8E8B8;
+    }
+    .LinkLine a {
+        color: #22D;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #071747;
+        color: white;
+    }
+    h1 {
+        background: #273366;
+        color: white;
+    }
+    .CommandList li, .Command {
+        color: #FFFFF8;
+    }
+    .Term {
+        color: #FFFF98;
+    }
+    .Gloss {
+        color: white;
+    }
+    .LinkLine {
+        background: #71747;
+    }
+    a {
+        color: #FFFFA0;
+    }
+    .LinkLine a {
+        color: #FFFF30;
+    }
 }
 
 h2 {
@@ -42,23 +93,16 @@ h2 {
 }
 
 .CommandList li {
-  color: #007;
   font-weight: bold;
   font-size: 14px;
 }
 
 .Command {
-  color: #007;
   font-weight: bold;
   font-size: 14px;
 }
 
-.Term {
-  color: #067;
-}
-
 .Gloss {
-  color: black;
   font-weight: normal;
   font-style: italic;
   padding-left: 4px;
@@ -68,14 +112,9 @@ h2 {
 .LinkLine {
   font-style: italic;
   font-size: 14px;
-  background: #F8E8B8;
   padding: 8px 40px;
   -moz-border-radius: 16px;
   border-radius: 16px;
-}
-
-.LinkLine a {
-  color: #22D;
 }
 
 .License {

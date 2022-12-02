@@ -10,11 +10,11 @@
 
 @interface DisplayTextViewController : UIViewController <UIActionSheetDelegate>
 
-@property (nonatomic, retain) IBOutlet UITextView *textview;
-@property (nonatomic, retain) IBOutlet UILabel *titlelabel;
-@property (nonatomic, retain) IBOutlet UILabel *datelabel;
-@property (nonatomic, retain) GlkFileThumb *thumb;
+@property (nonatomic, strong) IBOutlet UITextView *textview;
+@property (nonatomic, strong) IBOutlet UILabel *titlelabel;
+@property (nonatomic, strong) IBOutlet UILabel *datelabel;
+@property (nonatomic, strong) GlkFileThumb *thumb;
 
-- (id) initWithNibName:(NSString *)nibName thumb:(GlkFileThumb *)thumb bundle:(NSBundle *)nibBundle;
+- (instancetype) initWithNibName:(NSString *)nibName thumb:(GlkFileThumb *)thumb bundle:(NSBundle *)nibBundle;
 
 @end

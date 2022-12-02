@@ -15,9 +15,6 @@
 
 @implementation FizmoGameOverView
 
-- (void) dealloc {
-	[super dealloc];
-}
 
 - (NSString *) nibForContent {
 	if (iosglk_can_restart_cleanly())
@@ -40,7 +37,7 @@
 	
 	FizmoGlkViewController *viewc = [FizmoGlkViewController singleton];
 	
-	viewc.restorefileprompt = [[[GlkFileRefPrompt alloc] initWithUsage:fileusage_SavedGame fmode:filemode_Read dirname:dirname] autorelease];
+	viewc.restorefileprompt = [[GlkFileRefPrompt alloc] initWithUsage:fileusage_SavedGame fmode:filemode_Read dirname:dirname];
 	[viewc displayModalRequest:viewc.restorefileprompt];
 	
 	// The callback from the FileSelectVC will trigger acceptEventRestart.
